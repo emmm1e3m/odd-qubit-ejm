@@ -16,8 +16,8 @@ $$
 
 ## 阅读入口
 
-- [中文论文 PDF](paper/main.pdf)：完整背景、构造、任意比特数的证明与物理解释。
-- [LaTeX 源码](paper/main.tex)及[参考文献](paper/references.bib)。
+- 论文 PDF：[中文](paper/main.pdf) | [English](paper/main-en.pdf)，包含完整背景、构造、任意比特数的证明与物理解释。
+- LaTeX 源码：[中文](paper/main.tex) | [English](paper/main-en.tex)，以及[参考文献](paper/references.bib)。
 - [Lean 说明](lean/README.md)及[主定理](lean/OddEJM/Main.lean)：形式化实现与定理对应。
 
 ## 复现
@@ -46,6 +46,7 @@ lake env lean Audit.lean
 
 ```text
 latexmk -cd -xelatex -interaction=nonstopmode -halt-on-error paper/main.tex
+latexmk -cd -xelatex -interaction=nonstopmode -halt-on-error paper/main-en.tex
 ```
 
 ## 形式化覆盖

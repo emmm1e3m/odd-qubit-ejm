@@ -5,7 +5,7 @@
 **Author: Tingyu Zhang**  
 **Date: 2026-10-30**
 
-This is an English introduction to the accompanying Chinese-language paper. The repository contains the paper, its LaTeX source, exact verification programs, and a Lean formalization.
+This repository contains the complete paper in English and Chinese, the LaTeX sources, exact verification programs, and a Lean formalization.
 
 ## Abstract
 
@@ -33,7 +33,8 @@ The upper endpoint is twice the radius of the known EJM. Each fixed tetrahedral 
 
 ## Paper and formalization
 
-- [Paper PDF — Chinese](paper/main.pdf), [LaTeX source](paper/main.tex), and [bibliography](paper/references.bib).
+- Paper PDF: [English](paper/main-en.pdf) | [Chinese](paper/main.pdf).
+- LaTeX source: [English](paper/main-en.tex) | [Chinese](paper/main.tex), with a shared [bibliography](paper/references.bib).
 - [Lean guide — Chinese](lean/README.md), [main theorem](lean/OddEJM/Main.lean), and [axiom audit](lean/axioms.txt).
 
 `OddEJM.odd_ejm_family` assumes only $n\ge5$ and `Odd n`. It proves properties of the actual circuit-generated measurement states: orthonormality, projector completeness, all single-qubit partial-trace formulas, tetrahedral geometry, label multiplicities, exact recovery of the original phase construction, and the radius's continuity, strict monotonicity on the stated interval, and exact image. Further theorems establish reduced-matrix multiplicities at nonzero radius, reduced-spectrum eigenvalues, and purity.
@@ -62,8 +63,9 @@ lake env lean Audit.lean
 
 The final command prints theorem types and transitive axiom dependencies. Cache download can be skipped when dependencies are already available.
 
-To rebuild the Chinese paper, return to the repository root and use XeLaTeX, latexmk, BibTeX, and ctex/Fandol, as provided by TeX Live 2026:
+To rebuild the papers, return to the repository root and use XeLaTeX, latexmk, and BibTeX. The Chinese version additionally requires ctex/Fandol. Both versions have been built with TeX Live 2026:
 
 ```text
+latexmk -cd -xelatex -interaction=nonstopmode -halt-on-error paper/main-en.tex
 latexmk -cd -xelatex -interaction=nonstopmode -halt-on-error paper/main.tex
 ```

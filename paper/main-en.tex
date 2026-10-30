@@ -1,0 +1,565 @@
+% Compile with XeLaTeX. The construction applies uniformly to every odd n >= 5.
+\documentclass[11pt,a4paper]{article}
+\usepackage[left=25mm,right=25mm,top=23mm,bottom=25mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}
+\usepackage{amsmath,amssymb,amsthm,mathtools,bm}
+\usepackage{booktabs,array,longtable,enumitem}
+\usepackage{placeins}
+\usepackage{xcolor,xurl,hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black,pdftitle={Explicit Tunable Elegant Joint Measurements for All Odd n >= 5},pdfauthor={Tingyu Zhang}}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.18em}
+\linespread{1.08}
+\setlength{\emergencystretch}{2em}
+
+\numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\renewcommand{\proofname}{Proof}
+\newcommand{\F}{\mathbb F}
+\newcommand{\C}{\mathbb C}
+\newcommand{\R}{\mathbb R}
+\newcommand{\ii}{\mathrm i}
+\newcommand{\ee}{\mathrm e}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\wt}{\operatorname{wt}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\ket}[1]{\lvert#1\rangle}
+\newcommand{\bra}[1]{\langle#1\rvert}
+\newcommand{\ip}[2]{\langle#1\vert#2\rangle}
+\newcommand{\E}{\mathcal E}
+\newcommand{\Oset}{\mathcal O}
+\newcommand{\zero}{\bm 0}
+\newcommand{\eps}{\bm\varepsilon}
+\newcommand{\code}[1]{\nolinkurl{#1}}
+\title{Explicit Tunable Elegant Joint Measurements for All Odd $n\geq5$}
+\author{Tingyu Zhang}
+\date{October 30, 2026}
+
+\begin{document}
+\maketitle
+\vspace{-0.5em}
+\begin{abstract}
+Elegant joint measurements connect orthogonal global measurement states with regular tetrahedral geometry in local Bloch spheres. Explicit individual constructions are known for arbitrary numbers of qubits, together with continuously tunable families for even numbers. For odd $n\geq5$, a uniform closed-form family passing through the known EJM, preserving fixed regular tetrahedral directions, and continuously varying a common radius had remained to be constructed. We give a uniform analytic construction for every odd $n\geq5$: the odd and even interior positions are separately compressed into parity bits, a fixed cubic Boolean function of five variables controls the phase, and a single-point correction is applied only to the physical all-zero string. The resulting $2^n$ states form an orthonormal basis for every real parameter. On $t\in[-\pi/2,\pi/2]$, each qubit has its own parameter-independent set of regular tetrahedral directions, while the common Bloch radius is exactly $r_n(t)=\sqrt3(1-\sin t)/2^{n-1}$. At $t=0$, the family recovers the known multiqubit elegant joint measurement state by state. Over the chosen parameter interval, its radius has the exact range $[0,\sqrt3/2^{n-2}]$. The proof separates local expectations into a background with zero single-qubit polarization and interference from a single-point defect, then uses Boolean Fourier cancellation for arbitrary odd $n$; an appendix provides fixed finite character certificates and their general-dimensional reduction. The construction yields continuously tunable single-qubit reduced spectra and connects the known measurement to an endpoint where every single-qubit marginal is maximally mixed.
+
+\medskip\noindent\textbf{Keywords:} elegant joint measurement; multiqubit orthogonal measurement; regular tetrahedron; Boolean Fourier analysis; quantum entanglement
+\end{abstract}
+
+\section{Introduction}
+
+The geometry of a joint quantum measurement is reflected both in global orthogonality and in the local reduced states of its measurement basis. The four states of the two-qubit elegant joint measurement (EJM) form an orthogonal basis, while their single-qubit Bloch vectors point toward the vertices of regular tetrahedra. This structure combines local directional information with global entanglement, making it a natural object for studying joint measurements in quantum networks. Gisin introduced the EJM in the context of the triangle network and other networks with independent sources~\cite{Gisin2017}. Tavakoli, Gisin, and Branciard subsequently constructed a continuous family connecting the two-qubit EJM to a Bell-state measurement, showing that the local tetrahedral radius can vary continuously while orthogonality is preserved~\cite{Tavakoli2021}.
+
+The multiqubit extension requires two sets of conditions to hold simultaneously. The $2^n$ global states must be exactly orthogonal, and, for each qubit, the local Bloch vectors across all measurement outcomes must occupy the four vertices of a single regular tetrahedron, with the same radius for every qubit. Pauwels et al. developed a framework for constructing symmetric multipartite measurements from Pauli-group orbits, relating orthogonality to a seed-state representation with equal-modulus amplitudes and variable phases~\cite{PauwelsPauli2026}. That framework also provides permutation-invariant seed families for arbitrary odd numbers of qubits. Their local outcomes have tetrahedral symmetry, but the equal-inner-product condition for a regular tetrahedron must still be imposed separately. Pauwels and Gisin further investigated the local regular tetrahedral structure in their work on the multiqubit EJM~\cite{PauwelsEJM2026}. Their subsequent work established an explicit EJM for every number of qubits and continuously tunable families for even numbers~\cite{PauwelsTunable2026}. At this known EJM, all single-qubit Bloch radii equal $\sqrt3/2^{n-1}$; the even-qubit families deform the phases so that the radius decreases to zero according to a cosine law.
+
+Odd numbers of qubits require a different choice of phase support. The support used for the even-qubit family in Ref.\ \cite{PauwelsTunable2026} requires selected coordinates to vanish simultaneously. For all local interference terms to vary uniformly, those coordinates must satisfy adjacent-pair coverage and boundary-exclusion conditions, which are incompatible with an odd chain length. Thus that particular support cannot be used unchanged, although other Boolean phase supports remain possible. The same reference explicitly leaves open the construction of tunable families for odd $n\geq5$. Numerical information about local dimension can indicate degrees of freedom for deformations, but does not by itself supply an analytic curve with a common radius or determine its full parameter interval.
+
+Other symmetric multiqubit joint measurements use broader local geometries. The odd-qubit construction of Ding et al. produces opposite local Bloch vectors at one of the qubits~\cite{Ding2025}, whereas the multiqubit extension in the complementary construction of He et al. is restricted to even numbers of qubits~\cite{He2026}. Their local geometry or range of qubit numbers therefore differs from the target considered here: at each fixed qubit, we require a single regular tetrahedron whose orientation does not vary with the parameter. Section~\ref{sec:discussion} explains these distinctions further. Our result addresses this specific explicit-construction problem for odd numbers of qubits, without requiring a classification of all multiqubit measurements.
+
+We use one fixed five-variable Boolean function to obtain a formula valid for all odd $n\geq5$. The system size enters only through parity checks on two interior coordinate blocks and the standard CNOT chain; the Boolean function and the parameter interval remain unchanged. The construction embeds the single-point phase correction of the known EJM into a variable background with zero single-qubit polarization, so that every local Bloch component arises from the same defect interference term. The resulting radius varies continuously from zero to twice its value at the known EJM. We first specify the geometric target and phase normal form, then present the main theorem, its proof for arbitrary $n$, and its physical interpretation.
+
+\section{Local geometry and phase normal form}
+\label{sec:setup}
+
+Consider the Hilbert space $\mathcal H_n=(\C^2)^{\otimes n}$, with the computational basis labeled as $\ket{z_1\cdots z_n}$ in left-to-right qubit order. We use the Pauli convention $Y=\ii XZ$. An orthonormal basis $\{\ket{\psi_\lambda}\}_{\lambda\in\F_2^n}$ defines the rank-one projective measurement $\Pi_\lambda=\ket{\psi_\lambda}\bra{\psi_\lambda}$. Its reduced state at qubit $j$ is
+\begin{equation}
+ \rho_{j,\lambda}=\Tr_{\{1,\ldots,n\}\setminus\{j\}}\Pi_\lambda
+ =\frac12\bigl(I+\bm m_{j,\lambda}\cdot\bm\sigma\bigr),
+ \qquad \bm\sigma=(X,Y,Z).
+\end{equation}
+The vector $\bm m_{j,\lambda}$ is the local Bloch vector.
+
+\begin{definition}[Fixed regular tetrahedra with a common radius]
+Let $J\subseteq\R$ be an interval. A family of orthonormal bases has fixed regular tetrahedral geometry and a common radius if, for each qubit $j$, there are four unit vectors $\bm v_{j,a}$, $a=0,1,2,3$, and a label function $a_j(\lambda)$, all independent of $t$, such that
+\begin{equation}
+ \begin{gathered}
+ \bm v_{j,a}\cdot\bm v_{j,b}=-\frac13\quad(a\ne b),\\
+ \rho_{j,\lambda}(t)=\frac12\left[I+r_n(t)\bm v_{j,a_j(\lambda)}\cdot\bm\sigma\right],
+ \end{gathered}
+ \label{eq:tetdef}
+\end{equation}
+where $r_n(t)\geq0$ is the same for all qubits and measurement outcomes. At zero radius, Eq.~\eqref{eq:tetdef} describes the continuous collapse of the four local Bloch vectors to the center of the Bloch sphere.
+\end{definition}
+
+Different qubits may have differently oriented tetrahedra; the requirement is that the four directions at each individual qubit remain fixed as the parameter varies. We use the phase normal form of Refs.\ \cite{PauwelsPauli2026,PauwelsTunable2026} to realize this structure. Let $H_j$ denote the Hadamard gate on qubit $j$, and define
+\begin{equation}
+ C_n=S(n)H_n,\qquad
+ S(n)=\operatorname{CNOT}_{2\to1}\operatorname{CNOT}_{3\to2}\cdots
+       \operatorname{CNOT}_{n\to n-1}.
+ \label{eq:circuit}
+\end{equation}
+Gate products act from right to left. Any real phase function $f:\F_2^n\to\R$ defines a diagonal unitary
+\begin{equation}
+ D_f\ket z=\ee^{\ii\pi f(z)/2}\ket z.
+\end{equation}
+The columns of the unitary $C_nD_fH^{\otimes n}$ form an orthogonal measurement basis.
+
+The same measurement can be written as the Pauli orbit of a seed. For $\ell\in\F_2^{n-1}$ and $s\in\F_2$, define
+\begin{equation}
+ g_{\ell,s}=\left[\prod_{h=1}^{n-1}(Z_hZ_{h+1})^{\ell_h}\right]
+            (X^{\otimes n})^s.
+ \label{eq:group}
+\end{equation}
+The generators commute pairwise. The CNOT conjugation rules give
+\begin{equation}
+ C_n^\dagger(Z_hZ_{h+1})C_n=Z_h,\qquad
+ C_n^\dagger X^{\otimes n}C_n=Z_n.
+ \label{eq:group-pullback}
+\end{equation}
+They are therefore independent, the group has order $2^n$, and
+\begin{equation}
+ g_{\ell,s}C_nD_f\ket+^{\otimes n}
+ =C_nD_fH^{\otimes n}\ket{\ell_1\cdots\ell_{n-1}s}.
+ \label{eq:orbit}
+\end{equation}
+This representation reduces the geometry of all measurement outcomes to the local Pauli expectations of the seed.
+
+The known EJM through which our family passes is defined by the phase~\cite[Theorem~1]{PauwelsTunable2026}
+\begin{equation}
+ f_0(z)=\sum_{q=2}^{n}(-1)^q e_q(z)\pmod4,
+ \label{eq:f0-symmetric}
+\end{equation}
+where $e_q(z)=\sum_{j_1<\cdots<j_q}z_{j_1}\cdots z_{j_q}$ is the elementary symmetric polynomial. Writing $w=\wt(z)$, the binomial identity gives
+\begin{equation}
+ f_0(z)=
+ \begin{cases}
+ 0,&z=\zero,\\
+ w-1\pmod4,&z\ne\zero.
+ \end{cases}
+ \label{eq:f0-weight}
+\end{equation}
+Indeed, for $w>0$, we have $\sum_{q=2}^w(-1)^q\binom wq=(1-1)^w-1+w=w-1$. This single-point exception is the starting point of the construction.
+
+\section{Uniform construction and main theorem}
+\label{sec:construction}
+
+Throughout the remainder of the paper, let $n=2m+1\geq5$. Partition the interior coordinates into two nonempty sets
+\begin{equation}
+ \E=\{2,4,\ldots,n-3\},\qquad
+ \Oset=\{3,5,\ldots,n-2\};
+ \qquad |\E|=|\Oset|=m-1.
+\end{equation}
+Define the linear map over $\F_2$ by
+\begin{equation}
+ L_nz=(x,b,a,y,\nu)
+ =\left(z_1,\ \bigoplus_{j\in\E}z_j,\
+              \bigoplus_{j\in\Oset}z_j,\ z_{n-1},z_n\right).
+ \label{eq:L}
+\end{equation}
+The supports of its five components are pairwise disjoint and nonempty. Hence $L_n$ has full rank, and each five-bit vector has exactly $2^{n-5}$ preimages.
+
+In the Boolean polynomial below, addition is in $\F_2$ and multiplication is Boolean conjunction. Fix
+\begin{equation}
+ \boxed{\ Q(x,b,a,y,\nu)
+ =1+x+b+a+y+\nu+y\nu+b\nu+by+x\nu+xb\nu.\ }
+ \label{eq:Q}
+\end{equation}
+When the first bit is the most significant bit, the integers at which this function equals $1$ form the set
+\begin{equation}
+ \mathcal Q=\{0,5,6,7,11,12,13,14,18,20,21,23,24,25,26,31\}.
+ \label{eq:Qsupport}
+\end{equation}
+Put $q_n=Q\circ L_n$ and define the actual phase-support indicator by
+\begin{equation}
+ d_n(z)=
+ \begin{cases}0,&z=\zero,\\q_n(z),&z\ne\zero.\end{cases}
+ \label{eq:d}
+\end{equation}
+Equation~\eqref{eq:d} modifies only the physical all-zero string in $\F_2^n$. In particular, for $n>5$, $L_nz=\zero$ does not imply $z=\zero$; the other points in the zero fiber retain the value $Q(0)=1$. Since the variable $a$ occurs in $Q$ only as a linear term with coefficient one, $Q$ is balanced. Consequently,
+\begin{equation}
+ |\supp q_n|=2^{n-1},\qquad |\supp d_n|=2^{n-1}-1.
+\end{equation}
+
+For $t\in\R$, define
+\begin{equation}
+ D_t\ket z=\ii^{f_0(z)}\ee^{\ii t d_n(z)}\ket z,
+ \qquad
+ \ket{\psi_{\ell,s}(t)}=C_nD_tH^{\otimes n}\ket{\ell_1\cdots\ell_{n-1}s}.
+ \label{eq:states}
+\end{equation}
+Equivalently, the phase function is $f_t=f_0+(2t/\pi)d_n$. The construction is analytic for every real $t$. It requires neither a new Boolean-function search for each $n$ nor the solution of implicit constraints for each $t$.
+
+\begin{theorem}[Explicit tunable EJMs for arbitrary odd numbers of qubits]
+\label{thm:main}
+For every odd $n\geq5$, the states in Eq.~\eqref{eq:states} have the following properties.
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=2.8em,itemsep=0.2em,topsep=0.3em]
+\item For every real $t$, the $2^n$ states form an orthonormal basis.
+\item Set $\ell_0=\ell_n=0$ and $p_j=\ell_{j-1}+\ell_j\in\F_2$, and let $\epsilon_j=1$ for $j<n$ and $\epsilon_n=-1$. For $p,s\in\F_2$, define the fixed directions
+\begin{equation}
+ \bm v_{j,2p+s}=\frac1{\sqrt3}
+ \bigl((-1)^p,\epsilon_j(-1)^{p+s},(-1)^s\bigr).
+ \label{eq:vertices}
+\end{equation}
+All reduced states satisfy the exact formula
+\begin{equation}
+ \boxed{\rho_{j,\ell,s}(t)=\frac12
+ \left[I+r_n(t)\bm v_{j,2p_j+s}\cdot\bm\sigma\right],\qquad
+ r_n(t)=\frac{\sqrt3}{2^{n-1}}(1-\sin t).}
+ \label{eq:main-radius}
+\end{equation}
+The four directions form a regular tetrahedron. At each fixed qubit, every direction label corresponds to exactly $2^{n-2}$ measurement outcomes.
+\item At $t=0$, the states agree term by term with the known EJM orbit states defined by Eq.~\eqref{eq:f0-symmetric}. On
+\begin{equation}
+ J=[-\pi/2,\pi/2]
+ \label{eq:J}
+\end{equation}
+the radius is continuous and strictly decreasing, with exact image
+\begin{equation}
+ r_n(J)=\left[0,\frac{\sqrt3}{2^{n-2}}\right].
+ \label{eq:range}
+\end{equation}
+\end{enumerate}
+\end{theorem}
+
+The directions and labels in the theorem remain fixed throughout the interval. At positive radius, each local outcome set contains exactly four distinct points; at the zero endpoint, the corresponding reduced matrices all become $I/2$. We now prove the result for arbitrary $n$.
+
+\section{Analytic proof for arbitrary odd numbers of qubits}
+\label{sec:proof}
+
+\subsection{Background and single-point defect}
+
+Let $u=\ee^{\ii t}$ and define the following unnormalized vector, whose normalized image under $C_n$ will serve as the physical background:
+\begin{equation}
+ \ket{\chi(t)}=\sum_{z\in\F_2^n}\ii^{\wt(z)}u^{q_n(z)}\ket z.
+ \label{eq:background}
+\end{equation}
+Using $q_n(0)=1$, Eq.~\eqref{eq:f0-weight}, and Eq.~\eqref{eq:d}, the seed has the exact decomposition
+\begin{equation}
+ \ket{\psi(t)}:=\ket{\psi_{\zero,0}(t)}
+ =\frac{-\ii}{\sqrt{2^n}}C_n
+ \left[\ket{\chi(t)}+(\ii-u)\ket{\zero}\right].
+ \label{eq:defect}
+\end{equation}
+Consider the vector on the right-hand side before applying $C_n$. At a nonzero string, its amplitude is $2^{-n/2}\ii^{\wt(z)-1}u^{q_n(z)}$. At the all-zero string, the amplitude inside the brackets is $u+\ii-u=\ii$, which restores the amplitude $2^{-n/2}$ after multiplication by the prefactor. This proves the identity amplitude by amplitude before the common action of $C_n$, and hence establishes Eq.~\eqref{eq:defect}.
+
+\subsection{Pullbacks of local Pauli operators}
+
+Let $\eps_j$ be the $j$th unit vector of $\F_2^n$, and write
+\begin{equation}
+ T_j=\eps_j+\eps_{j+1}+\cdots+\eps_n.
+\end{equation}
+To incorporate the orientation of the last qubit into a uniform calculation, define signed observables $\widetilde P_{j\mu}=\sigma_{j\mu}$, except that $\widetilde P_{ny}=-Y_n$. Write their pullbacks as
+\begin{equation}
+ R=C_n^\dagger\widetilde P_{j\mu}C_n
+  =cX^\alpha Z^\beta,\qquad
+ k=\alpha+\beta,\qquad \Gamma=c\ii^{-\wt(\alpha)}.
+ \label{eq:pullnotation}
+\end{equation}
+Here $c\in\{1,\ii\}$, and $X^\alpha Z^\beta$ acts by $Z^\beta$ first and $X^\alpha$ second. Table~\ref{tab:pullback} lists all cases. They follow directly from
+\begin{equation}
+ S^\dagger X_1S=X_1,\quad
+ S^\dagger X_jS=X_{j-1}X_j\ (j\geq2),\quad
+ S^\dagger Z_jS=Z_j\cdots Z_n,
+\end{equation}
+followed by Hadamard conjugation on the last qubit.
+
+\begin{table}[htbp]
+\centering
+\caption{All local Pauli pullbacks. Mask operations are in $\F_2^n$; the internal rows have $2\leq j<n$.}
+\label{tab:pullback}
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{@{}clllll@{}}
+\toprule
+Class & $\widetilde P$ & $\alpha$ & $\beta$ & $k$ & $\Gamma$\\
+\midrule
+I & $X_1$ & $\eps_1$ & $0$ & $\eps_1$ & $-\ii$\\
+I & $Y_1$ & $\eps_1+\eps_n$ & $T_1+\eps_n$ & $T_2$ & $-\ii$\\
+I & $Z_j\ (1\leq j\leq n)$ & $\eps_n$ & $T_j+\eps_n$ & $T_j$ & $-\ii$\\
+I & $X_n$ & $\eps_{n-1}$ & $\eps_n$ & $T_{n-1}$ & $-\ii$\\
+I & $-Y_n$ & $\eps_{n-1}+\eps_n$ & $\eps_n$ & $\eps_{n-1}$ & $-\ii$\\
+II & $X_j$ & $\eps_{j-1}+\eps_j$ & $0$ & $\eps_{j-1}+\eps_j$ & $-1$\\
+II & $Y_j$ & $\eps_{j-1}+\eps_j+\eps_n$ & $T_j+\eps_n$ & $\eps_{j-1}+T_{j+1}$ & $-1$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Every $\alpha$ and $k$ in the table is nonzero. Class I satisfies $k\cdot\alpha=1$, whereas class II satisfies $k\cdot\alpha=0$. Inner products take values in $\F_2$.
+
+\subsection{A Fourier criterion for zero background polarization}
+
+For a Boolean function $F:\F_2^n\to\F_2$, define the normalized Walsh coefficient and directional derivative by
+\begin{equation}
+ \widehat F(k)=2^{-n}\sum_z(-1)^{F(z)+k\cdot z},\qquad
+ D_\alpha F(z)=F(z)+F(z+\alpha).
+ \label{eq:walsh}
+\end{equation}
+Write
+\begin{equation}
+ \ket\xi=2^{-n/2}\sum_z\ii^{\wt(z)}\ket z,\qquad
+ \ket\eta=2^{-n/2}\sum_z(-1)^{q_n(z)}\ii^{\wt(z)}\ket z.
+\end{equation}
+Since $u^q=\ee^{\ii t/2}[\cos(t/2)-\ii(-1)^q\sin(t/2)]$, we have
+\begin{equation}
+ 2^{-n/2}\ket{\chi(t)}
+ =\ee^{\ii t/2}\left[\cos\frac t2\ket\xi-\ii\sin\frac t2\ket\eta\right].
+ \label{eq:chi-decompose}
+\end{equation}
+The phase identity
+\begin{equation}
+ \ii^{\wt(z)-\wt(z+\alpha)}
+ =\ii^{-\wt(\alpha)}(-1)^{\alpha\cdot z}
+\end{equation}
+gives
+\begin{align}
+ \bra\xi R\ket\xi&=\Gamma\widehat 0(k)=0,\\
+ \bra\xi R\ket\eta&=\Gamma\widehat {q_n}(k),\\
+ \bra\eta R\ket\eta&=\Gamma\widehat {D_\alpha q_n}(k).
+ \label{eq:walsh-matrix}
+\end{align}
+The first equality uses $k\ne0$.
+
+\begin{lemma}[Background cancellation conditions for the two classes]
+\label{lem:fourier}
+Suppose every class-I character $k$ in Table~\ref{tab:pullback} satisfies $\widehat {q_n}(k)=0$, and every class-II pair $(\alpha,k)$ satisfies $\widehat {D_\alpha q_n}(k)=0$. Then, for every real $t$ and every local observable,
+\begin{equation}
+ \bra{\chi(t)}C_n^\dagger\widetilde P_{j\mu}C_n\ket{\chi(t)}=0.
+ \label{eq:bgzero}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+For class I, $D_\alpha q_n(z+\alpha)=D_\alpha q_n(z)$ but $k\cdot\alpha=1$. Thus the terms indexed by $z$ and $z+\alpha$ cancel in the Walsh sum, giving $\widehat {D_\alpha q_n}(k)=0$ automatically. The remaining mixed matrix element vanishes by assumption. For class II, $\Gamma=-1$ is real, so the mixed matrix element in Eq.~\eqref{eq:walsh-matrix} is real. The two cross terms in Eq.~\eqref{eq:chi-decompose}, whose relative coefficient is $-\ii$, therefore cancel; both diagonal terms also vanish. The two classes cover all observables.
+\end{proof}
+
+\subsection{Class I: cancellation of all required Fourier coefficients}
+
+Equation~\eqref{eq:Q} has the form $q_n(z)=a+G(x,b,y,\nu)$. If $k$ vanishes at any odd interior coordinate $j\in\Oset$, summing over that coordinate gives $\widehat {q_n}(k)=0$. A nonzero Walsh coefficient therefore requires $k|_{\Oset}=1$. Moreover, $q_n$ depends on the even interior coordinates only through their total parity $b$, so $k|_{\E}$ must be constant: if the character coefficients at two even interior coordinates differ, flipping both coordinates preserves $q_n$ but reverses the sign of the character.
+
+The class-I characters consist of all suffixes $T_j$, together with $\eps_1$ and $\eps_{n-1}$. The latter two vanish on the nonempty block $\Oset$ and are eliminated immediately. If $j\geq4$, $T_j$ omits the first odd interior coordinate, $3$, and is eliminated for the same reason. The character $T_3$ includes every odd interior coordinate but omits coordinate $2$ from the even interior block. When $|\E|\geq2$, it is nonconstant on that block and is also eliminated. Only $T_1,T_2$, and $T_3$ when $|\E|=1$, remain.
+
+These remaining terms all compress to five variables, with characters $(1,1,1,1,1)$, $(0,1,1,1,1)$, and $(0,0,1,1,1)$, respectively. Every compressed input has the same number of preimages, so it suffices to compute the corresponding five-variable Walsh sums. In all three cases, the coefficient of $y$ in the exponent $Q+K\cdot(x,b,a,y,\nu)$ is $b+\nu$; summing over $y$ forces $\nu=b$. Table~\ref{tab:typeI} gives the remaining exponents after substitution. Each contains an independent variable solely as a linear term, so its sum vanishes.
+
+\begin{table}[htbp]
+\centering
+\caption{Direct algebraic cancellation of the last three class-I characters.}
+\label{tab:typeI}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Five-bit character $K$ & Exponent after $\nu=b$ & Summation variable\\
+\midrule
+$(1,1,1,1,1)$ & $1+b$ & $b$\\
+$(0,1,1,1,1)$ & $1+x+b$ & $x$\\
+$(0,0,1,1,1)$ & $1+x$ & $x$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Thus every required class-I coefficient $\widehat {q_n}(k)$ vanishes for every odd $n\geq5$.
+
+\subsection{Class II: cancellation of all required Boolean derivatives}
+
+Each odd interior coordinate occurs in $q_n$ only as a linear term. Hence every directional derivative $D_\alpha q_n$ is independent of all such coordinates. Whenever $k$ includes an odd interior coordinate, it follows that $\widehat {D_\alpha q_n}(k)=0$.
+
+For an internal $X_j$, the character is $\eps_{j-1}+\eps_j$. If $j\geq3$, the adjacent pair always contains an odd interior coordinate, leaving only $X_2$ to check. For an internal $Y_j$, the character is $\eps_{j-1}+T_{j+1}$. If $j$ is even, the suffix contains an odd interior coordinate when $j=2$, while $j-1$ itself belongs to $\Oset$ when $j\geq4$. If $j$ is odd and $j<n-2$, the suffix still contains a larger odd interior coordinate. The only remaining case is $Y_{n-2}$. This classification uses only coordinate parity and interval endpoints, so it does not depend on checking finitely many values of $n$.
+
+The two exceptional derivatives can be computed directly. The flip for $X_2$ acts on the compressed variables as $(x,b)\mapsto(x+1,b+1)$, giving
+\begin{equation}
+ D_\alpha q_n=y+\nu(1+x+b),\qquad
+ k\cdot z=x+z_2.
+ \label{eq:derivative-X2}
+\end{equation}
+In $D_\alpha q_n+k\cdot z$, the variable $y$ occurs only as a linear term, so summing over $y$ gives zero. The flip for $Y_{n-2}$ changes the compressed variables $b,a,\nu$ simultaneously, yielding
+\begin{equation}
+ D_\alpha q_n=(b+\nu)(1+x),\qquad
+ k\cdot z=z_{n-3}+y+\nu.
+ \label{eq:derivative-Y}
+\end{equation}
+The derivative is independent of $y$ and the character contains $y$, so the sum again vanishes. All class-II conditions are now established. Lemma~\ref{lem:fourier} therefore proves the zero-polarization identity~\eqref{eq:bgzero} for the background.
+
+\subsection{Single-point cross terms and the common radius}
+
+Every flip mask $\alpha$ in Table~\ref{tab:pullback} is nonzero, so $\bra{\zero}R\ket{\zero}=0$. The background amplitude at $\alpha$ directly gives
+\begin{equation}
+ \bra{\chi(t)}R\ket{\zero}=\Gamma u^{-q_n(\alpha)}.
+\end{equation}
+The background contribution to the local expectation in Eq.~\eqref{eq:defect} vanishes, as does the diagonal defect term. Hence
+\begin{equation}
+ 2^n\bra{\psi(t)}\widetilde P_{j\mu}\ket{\psi(t)}
+ =2\operatorname{Re}\left[(\ii-u)\Gamma u^{-q_n(\alpha)}\right].
+ \label{eq:cross}
+\end{equation}
+It remains to determine $Q$ at the flip masks. The compressed class-I flips are the integers $1,2,3,16,17$. The class-II adjacent-pair flips are $6,12,24$, and including the last-bit flip gives $7,13,25$. From Eq.~\eqref{eq:Q} or Eq.~\eqref{eq:Qsupport},
+\begin{equation}
+ \begin{array}{c|c|c}
+ \text{Class}&\Gamma&q_n(\alpha)\\\hline
+ \mathrm I&-\ii&0\\
+ \mathrm {II}&-1&1
+ \end{array}
+\end{equation}
+The two classes therefore give, respectively,
+\begin{align}
+ \operatorname{Re}[-\ii(\ii-u)]&=1-\sin t,\\
+ \operatorname{Re}[-u^{-1}(\ii-u)]&=1-\sin t.
+\end{align}
+All signed Pauli expectations are equal to
+\begin{equation}
+ c_n(t)=\frac{1-\sin t}{2^{n-1}}.
+ \label{eq:cn}
+\end{equation}
+Returning to the standard Pauli signs, the seed Bloch vectors are
+\begin{equation}
+ \bm m_j(t)=
+ \begin{cases}
+ c_n(t)(1,1,1),&j<n,\\
+ c_n(t)(1,-1,1),&j=n.
+ \end{cases}
+ \label{eq:seed-bloch}
+\end{equation}
+
+\subsection{Orthogonality, full-orbit geometry, and the known EJM}
+
+The states in Eq.~\eqref{eq:states} are the columns of the unitary $C_nD_tH^{\otimes n}$, proving orthonormality for every real $t$. By Eq.~\eqref{eq:orbit}, the remaining states are $g_{\ell,s}\ket{\psi(t)}$. At qubit $j$, local Pauli conjugation is determined by $p_j=\ell_{j-1}+\ell_j$ and $s$, so Eq.~\eqref{eq:seed-bloch} becomes
+\begin{equation}
+ \bm m_{j,\ell,s}(t)
+ =c_n(t)\bigl((-1)^{p_j},\epsilon_j(-1)^{p_j+s},(-1)^s\bigr).
+\end{equation}
+For two distinct pairs $(p,s)$, exactly two of the three signs differ, so the associated unit directions have inner product $-1/3$. For fixed $j$, $p_j$ is a nonzero linear functional of the $n-1$ edge labels. Specifying $(p_j,s)$ leaves $n-2$ free binary variables, so each vertex label occurs $2^{n-2}$ times. Expansion in the Pauli basis then gives Eq.~\eqref{eq:main-radius}.
+
+At $t=0$, the factor $\ee^{\ii t d_n(z)}=1$ for every input string. Thus all seed amplitudes, group labels, and measurement states recover the known EJM term by term, without an additional local transformation or relabeling of outcomes. On $J$, $1-\sin t$ decreases continuously and strictly from $2$ to $0$, taking the value $1$ at $t=0$. This establishes Eq.~\eqref{eq:range} and the attainability of both endpoints, completing the proof of Theorem~\ref{thm:main}.
+
+\section{Parameter range, reduced spectra, and physical meaning}
+\label{sec:physical}
+
+The construction is defined for every real parameter, while $J=[-\pi/2,\pi/2]$ provides a natural interval over which each radius occurs once. Three distinguished values are
+\begin{equation}
+ r_n(-\pi/2)=\frac{\sqrt3}{2^{n-2}},\qquad
+ r_n(0)=\frac{\sqrt3}{2^{n-1}},\qquad
+ r_n(\pi/2)=0.
+\end{equation}
+Since $n\geq5$, the maximum radius is strictly less than $1$, and the reduced states are valid throughout the interval. The single-qubit polarization scales as $2^{1-n}$ with system size, while the accessible radius relative to the known EJM always ranges over $[0,2]$.
+
+The reduced spectra are identical for all qubits and measurement outcomes:
+\begin{equation}
+ \lambda_\pm(t)=\frac{1\pm r_n(t)}2.
+ \label{eq:spectrum}
+\end{equation}
+The purity is therefore
+\begin{equation}
+ \Tr\rho_{j,\ell,s}(t)^2
+ =\frac{1+r_n(t)^2}{2}
+ =\frac12+\frac{3(1-\sin t)^2}{2^{2n-1}}.
+ \label{eq:purity}
+\end{equation}
+The measurement states are pure, so the entanglement entropy across any $1|(n-1)$ bipartition is
+\begin{equation}
+ S_{1|(n-1)}(t)=h_2\left(\frac{1+r_n(t)}2\right),\qquad
+ h_2(p)=-p\log_2p-(1-p)\log_2(1-p).
+ \label{eq:entropy}
+\end{equation}
+As $t$ increases on $J$, the radius and purity decrease, while this entanglement entropy increases to $1$ bit. At the known EJM,
+\begin{equation}
+ \left.\frac{\mathrm d}{\mathrm dt}r_n(t)^2\right|_{t=0}
+ =-\frac6{2^{2n-2}}\ne0.
+\end{equation}
+The deformation therefore changes the local reduced spectrum and cannot be generated by a global phase, a fixed relabeling of outcomes, or local unitary rotations.
+
+The zero-radius endpoint also has a direct amplitude interpretation. At $t=\pi/2$, $u=\ii$, so the defect amplitude $\ii-u$ in Eq.~\eqref{eq:defect} vanishes. Up to a global phase, the seed is then the normalized image of the background under $C_n$, whose single-qubit polarization has been proved to vanish. Every single-qubit reduced state of every orbit state is therefore $I/2$: the states are $1$-uniform. This establishes maximally mixed single-qubit marginals; spectra of larger subsystems require separate calculations.
+
+More generally, Eq.~\eqref{eq:cross} explains the origin of the common radius. The Boolean Fourier zero conditions enforce vanishing one-body expectations in the physical background, while the single-point defect interferes with it only through a finite set of flip masks. The two pullback classes have phase factors $-\ii$ and $-1$. The Boolean function's values at the corresponding masks compensate for this difference, yielding the same real part $1-\sin t$ in both cases. The tetrahedral shapes remain unchanged, and the parameter controls only their common scale.
+
+\section{Relation to existing constructions and discussion}
+\label{sec:discussion}
+
+We build on the phase normal form and Pauli-orbit framework~\cite{PauwelsPauli2026,PauwelsTunable2026}. The new ingredient is a Boolean phase support valid uniformly for all odd $n\geq5$, together with the common-radius law that it produces. The even-qubit support in Ref.\ \cite{PauwelsTunable2026} is defined by requiring selected coordinates to be zero. Here, two nonempty interior blocks are compressed into parity variables, turning the constraints at arbitrary system size into Boolean algebraic relations of fixed degree. Section~\ref{sec:proof} shows how this structure cancels all local background expectations simultaneously and leaves a common scale in the defect contributions.
+
+The odd-qubit symmetric measurement of Ding et al.~\cite[Sec.~V]{Ding2025} has a different local outcome set: at one qubit it contains both $\bm v$ and $-\bm v$. If $\|\bm v\|=r>0$, their inner product is $-r^2$, whereas distinct vertices of a single regular tetrahedron have inner product $-r^2/3$. This distinction is preserved by local rotations, qubit permutations, and outcome relabelings, so that positive-radius construction cannot directly supply a family satisfying Eq.~\eqref{eq:tetdef}. The multiqubit extension of He et al. is restricted to even numbers of qubits~\cite[Sec.~IV]{He2026} and likewise does not cover the range considered here. Our construction thus addresses the explicit tunable-family problem left open for odd $n\geq5$ in Ref.\ \cite{PauwelsTunable2026}, with fixed regular tetrahedral geometry as specified in this paper.
+
+The condition $n\geq5$ has a structural role: both interior parity blocks must be nonempty for $L_n$ to have full rank and for the Fourier proof to have the required independent summation variables. Our result applies throughout to all odd $n\geq5$. The maximum radius obtained is the exact endpoint of this explicit path; we do not solve the radius-optimization problem over all measurements satisfying the same geometric conditions. Determining whether larger radii are attainable, characterizing multiparameter deformations with fixed local tetrahedra, and evaluating these measurements in specific quantum networks are natural directions for further work.
+
+\appendix
+\section{Fixed five-variable character certificates and reduction in arbitrary dimension}
+\label{app:certificate}
+
+This appendix gives a finite-certificate formulation independent of the two-class Fourier cancellation in the main text. It reduces the vanishing of background expectations for general $n$ to integer identities for a fixed five-variable function, suitable for exact computational verification and formalization.
+
+For any pullback in Eq.~\eqref{eq:pullnotation}, direct expansion of Eq.~\eqref{eq:background} gives
+\begin{equation}
+ \bra\chi R\ket\chi
+ =\Gamma\sum_{z\in\F_2^n}(-1)^{k\cdot z}
+ u^{Q(L_nz)-Q(L_nz+L_n\alpha)}.
+ \label{eq:general-character}
+\end{equation}
+The subtraction in the exponent is over the integers, with the values of $Q$ identified with $0$ and $1$.
+
+If $k\notin\operatorname{row}(L_n)$, there is a $w\in\ker L_n$ such that $k\cdot w=1$. Pairing $z$ with $z+w$ preserves the exponent involving $Q$ and reverses the character sign, so the sum vanishes. If $k=L_n^{\mathsf T}K$, set $A=L_n\alpha$. Every five-bit input has the same number of preimages, giving
+\begin{equation}
+ \bra\chi R\ket\chi
+ =\Gamma2^{n-5}\sum_{v\in\F_2^5}(-1)^{K\cdot v}
+             u^{Q(v)-Q(v+A)}.
+ \label{eq:finite-character}
+\end{equation}
+Since the five compression blocks are disjoint, $k\in\operatorname{row}(L_n)$ if and only if $k$ is constant on $\E$ and also constant on $\Oset$.
+
+We now classify all characters that can survive. Suppose both interior blocks contain at least two coordinates. For every internal $X_j$, the character $k=\eps_{j-1}+\eps_j$ selects a nonempty proper subset of at least one block, so all these terms vanish. The suffix character for $Z_j$ is constant on both blocks only for $j=1,2,n-1,n$; every other suffix includes a larger coordinate in some block while omitting that block's first coordinate.
+
+For an internal $Y_j$, the character support is $\{j-1\}\cup\{j+1,\ldots,n\}$. The two boundary cases $j=2,n-1$ select a nonempty proper subset of the even and odd blocks, respectively. For $3\leq j\leq n-2$, suppose the character is constant on both blocks. The block containing $j$ must be entirely unselected because $j$ is omitted, forcing $j$ to be that block's last coordinate. The other block must be entirely selected because it contains $j-1$, forcing $j-1$ to be that block's first coordinate. For even $j$, these conditions give $j=n-3$ and $j-1=3$, hence only $n=7,j=4$. For odd $j$, they give $j=n-2$ and $j-1=2$, hence only $n=5,j=3$. If both interior blocks contain just one coordinate, $L_n$ is the identity on five bits and all fifteen local observables must be retained. Thus every pair $(A,K)$ required in arbitrary dimension is included in the sixteen rows of Table~\ref{tab:certificate}.
+
+Define the three integer coefficients
+\begin{equation}
+ N_s(A,K)=\sum_{\substack{v\in\F_2^5\\Q(v)-Q(v+A)=s}}(-1)^{K\cdot v},
+ \qquad s=-1,0,1.
+ \label{eq:certificate}
+\end{equation}
+The Laurent polynomial in Eq.~\eqref{eq:finite-character} is $N_{-1}u^{-1}+N_0+N_1u$. All three coefficients vanish in every row of Table~\ref{tab:certificate}. The finite check concerns only the fixed five-variable function; the preceding character classification proves that it suffices for every $n$ under consideration.
+
+\begin{table}[htbp]
+\centering
+\caption{Fixed five-variable certificates. $A,K$ are encoded in decimal with the first bit most significant. The first fifteen rows label fixed five-bit operator patterns; the last row supplies the unique additional pattern arising in the seven-qubit system.}
+\label{tab:certificate}
+\small
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}lrrc@{}}
+\toprule
+Pattern & $A$ & $K$ & $(N_{-1},N_0,N_1)$\\
+\midrule
+$X_1$ &16&16&$(0,0,0)$\\
+$Y_1$ &17&15&$(0,0,0)$\\
+$Z_1$ &1&31&$(0,0,0)$\\
+$X_2$ &24&24&$(0,0,0)$\\
+$Y_2$ &25&23&$(0,0,0)$\\
+$Z_2$ &1&15&$(0,0,0)$\\
+$X_3$ &12&12&$(0,0,0)$\\
+$Y_3$ &13&11&$(0,0,0)$\\
+$Z_3$ &1&7&$(0,0,0)$\\
+$X_4$ &6&6&$(0,0,0)$\\
+$Y_4$ &7&5&$(0,0,0)$\\
+$Z_4$ &1&3&$(0,0,0)$\\
+$X_5$ &2&3&$(0,0,0)$\\
+$-Y_5$ &3&2&$(0,0,0)$\\
+$Z_5$ &1&1&$(0,0,0)$\\
+Additional pattern &13&7&$(0,0,0)$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\FloatBarrier
+\section{Reproducible materials and formalization}
+\label{app:reproducibility}
+
+All integer certificates in Appendix~\ref{app:certificate} can be generated directly by the accompanying Python programs, using only the standard library, with no floating-point tolerances or scientific-computing dependencies. The verification entry points in the paper directory are:
+\begin{itemize}[leftmargin=2em,itemsep=0.35em]
+\item \code{verify_certificate.py}: computes the sixteen fixed Walsh certificates and writes \code{certificate.json}.
+\item \code{verify_measurement.py}: implements the original phase, Hadamard, and CNOT operations gate by gate using Gaussian integers. At several odd system sizes it checks normalization, all local Pauli expectations, and vertex multiplicities exactly, writing \code{exact_results.json}.
+\end{itemize}
+Finite-size computations cross-check the phase conventions, gate order, and normalization. The result for arbitrary $n$ follows from the algebraic cancellation in Sec.~\ref{sec:proof}, the general-dimensional reduction in Appendix~\ref{app:certificate}, and the Lean proof described below.
+
+\paragraph{Lean formalization.}
+The accompanying \code{../lean/} project uses Lean 4.35.0 and mathlib v4.35.0. Its main theorem, \code{OddEJM.odd_ejm_family}, assumes only $5\leq n$ and that $n$ is odd, and proves all parts of Theorem~\ref{thm:main}: the columns of the actual quantum circuit are orthonormal and their projectors sum to the identity; all single-qubit partial traces satisfy the fixed regular tetrahedral formula; each direction label has the stated multiplicity; the radius is continuous, strictly decreasing on the stated interval, and has the exact image; and at $t=0$ every column recovers the original elementary-symmetric-phase construction.
+
+The formalization starts from complex computational-basis amplitudes, gate-by-gate CNOT operations, the Hadamard tensor product, and actual finite sums defining partial traces. \code{OriginalPhase.lean} proves the original phase identity from the subset-product definition of the elementary symmetric polynomials. \code{Walsh.lean}, \code{Masks.lean}, and \code{SeedExpectations.lean} cover background cancellation, the defect, and seed expectations in arbitrary odd dimension; \code{Main.lean} connects all measurement columns to their local density matrices. \code{Consequences.lean} further verifies the multiplicities of the actual local matrices at nonzero radius and that the two stated spectral values are roots of their characteristic determinant. The theorem \code{measurement_purity} verifies the purity of the actual partial trace. The entropy formula~\eqref{eq:entropy} remains an analytic consequence of the reduced spectrum.
+
+Running \texttt{lake build} in the project directory checks all proofs, while \texttt{lake env lean Audit.lean} displays theorem types and axiom dependencies. The main theorem and the consequences above depend only on the standard axioms \code{propext}, \code{Classical.choice}, and \code{Quot.sound}. They use no \code{sorry}, custom axioms, or \code{native_decide}; finite decisions are established by proof terms checked by the kernel.
+
+\clearpage
+\bibliographystyle{unsrt}
+\bibliography{references}
+\end{document}
