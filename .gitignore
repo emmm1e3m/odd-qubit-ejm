@@ -1,0 +1,19 @@
+# Lean缓存和本地虚拟环境
+.lake/
+.venv/
+__pycache__/
+*.pyc
+
+# LaTeX构建中间文件；保留论文PDF
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv

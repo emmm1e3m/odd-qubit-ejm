@@ -1,0 +1,489 @@
+{
+  "Q_support": [
+    0,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    18,
+    20,
+    21,
+    23,
+    24,
+    25,
+    26,
+    31
+  ],
+  "finite_certificate": [
+    {
+      "label": "X1",
+      "a": 16,
+      "eta": 16,
+      "gamma_exponent": 3,
+      "signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "counts": [
+        12,
+        8,
+        12
+      ]
+    },
+    {
+      "label": "Y1",
+      "a": 17,
+      "eta": 15,
+      "gamma_exponent": 3,
+      "signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "counts": [
+        8,
+        16,
+        8
+      ]
+    },
+    {
+      "label": "Z1",
+      "a": 1,
+      "eta": 31,
+      "gamma_exponent": 3,
+      "signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "counts": [
+        8,
+        16,
+        8
+      ]
+    },
+    {
+      "label": "X2",
+      "a": 24,
+      "eta": 24,
+      "gamma_exponent": 2,
+      "signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "counts": [
+        8,
+        16,
+        8
+      ]
+    },
+    {
+      "label": "Y2",
+      "a": 25,
+      "eta": 23,
+      "gamma_exponent": 2,
+      "signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "counts": [
+        4,
+        24,
+        4
+      ]
+    },
+    {
+      "label": "Z2",
+      "a": 1,
+      "eta": 15,
+      "gamma_exponent": 3,
+      "signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "counts": [
+        8,
+        16,
+        8
+      ]
+    },
+    {
+      "label": "X3",
+      "a": 12,
+      "eta": 12,
+      "gamma_exponent": 2,
+      "signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "counts": [
+        8,
+        16,
+        8
+      ]
+    },
+    {
+      "label": "Y3",
+      "a": 13,
+      "eta": 11,
+      "gamma_exponent": 2,
+      "signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "counts": [
+        4,
+        24,
+        4
+      ]
+    },
+    {
+      "label": "Z3",
+      "a": 1,
+      "eta": 7,
+      "gamma_exponent": 3,
+      "signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "counts": [
+        8,
+        16,
+        8
+      ]
+    },
+    {
+      "label": "X4",
+      "a": 6,
+      "eta": 6,
+      "gamma_exponent": 2,
+      "signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "counts": [
+        8,
+        16,
+        8
+      ]
+    },
+    {
+      "label": "Y4",
+      "a": 7,
+      "eta": 5,
+      "gamma_exponent": 2,
+      "signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "counts": [
+        8,
+        16,
+        8
+      ]
+    },
+    {
+      "label": "Z4",
+      "a": 1,
+      "eta": 3,
+      "gamma_exponent": 3,
+      "signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "counts": [
+        8,
+        16,
+        8
+      ]
+    },
+    {
+      "label": "X5",
+      "a": 2,
+      "eta": 3,
+      "gamma_exponent": 3,
+      "signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "counts": [
+        8,
+        16,
+        8
+      ]
+    },
+    {
+      "label": "Y5",
+      "a": 3,
+      "eta": 2,
+      "gamma_exponent": 3,
+      "signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "counts": [
+        8,
+        16,
+        8
+      ]
+    },
+    {
+      "label": "Z5",
+      "a": 1,
+      "eta": 1,
+      "gamma_exponent": 3,
+      "signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "counts": [
+        8,
+        16,
+        8
+      ]
+    },
+    {
+      "label": "K (n=7, Y4)",
+      "a": 13,
+      "eta": 7,
+      "gamma_exponent": 2,
+      "signed_counts": [
+        0,
+        0,
+        0
+      ],
+      "counts": [
+        4,
+        24,
+        4
+      ]
+    }
+  ],
+  "representative_survivors": {
+    "5": [
+      {
+        "label": "X1",
+        "a": 16,
+        "eta": 16
+      },
+      {
+        "label": "Y1",
+        "a": 17,
+        "eta": 15
+      },
+      {
+        "label": "Z1",
+        "a": 1,
+        "eta": 31
+      },
+      {
+        "label": "X2",
+        "a": 24,
+        "eta": 24
+      },
+      {
+        "label": "Y2",
+        "a": 25,
+        "eta": 23
+      },
+      {
+        "label": "Z2",
+        "a": 1,
+        "eta": 15
+      },
+      {
+        "label": "X3",
+        "a": 12,
+        "eta": 12
+      },
+      {
+        "label": "Y3",
+        "a": 13,
+        "eta": 11
+      },
+      {
+        "label": "Z3",
+        "a": 1,
+        "eta": 7
+      },
+      {
+        "label": "X4",
+        "a": 6,
+        "eta": 6
+      },
+      {
+        "label": "Y4",
+        "a": 7,
+        "eta": 5
+      },
+      {
+        "label": "Z4",
+        "a": 1,
+        "eta": 3
+      },
+      {
+        "label": "X5",
+        "a": 2,
+        "eta": 3
+      },
+      {
+        "label": "Y5",
+        "a": 3,
+        "eta": 2
+      },
+      {
+        "label": "Z5",
+        "a": 1,
+        "eta": 1
+      }
+    ],
+    "7": [
+      {
+        "label": "X1",
+        "a": 16,
+        "eta": 16
+      },
+      {
+        "label": "Y1",
+        "a": 17,
+        "eta": 15
+      },
+      {
+        "label": "Z1",
+        "a": 1,
+        "eta": 31
+      },
+      {
+        "label": "Z2",
+        "a": 1,
+        "eta": 15
+      },
+      {
+        "label": "Y4",
+        "a": 13,
+        "eta": 7
+      },
+      {
+        "label": "Z6",
+        "a": 1,
+        "eta": 3
+      },
+      {
+        "label": "X7",
+        "a": 2,
+        "eta": 3
+      },
+      {
+        "label": "Y7",
+        "a": 3,
+        "eta": 2
+      },
+      {
+        "label": "Z7",
+        "a": 1,
+        "eta": 1
+      }
+    ],
+    "9": [
+      {
+        "label": "X1",
+        "a": 16,
+        "eta": 16
+      },
+      {
+        "label": "Y1",
+        "a": 17,
+        "eta": 15
+      },
+      {
+        "label": "Z1",
+        "a": 1,
+        "eta": 31
+      },
+      {
+        "label": "Z2",
+        "a": 1,
+        "eta": 15
+      },
+      {
+        "label": "Z8",
+        "a": 1,
+        "eta": 3
+      },
+      {
+        "label": "X9",
+        "a": 2,
+        "eta": 3
+      },
+      {
+        "label": "Y9",
+        "a": 3,
+        "eta": 2
+      },
+      {
+        "label": "Z9",
+        "a": 1,
+        "eta": 1
+      }
+    ],
+    "11": [
+      {
+        "label": "X1",
+        "a": 16,
+        "eta": 16
+      },
+      {
+        "label": "Y1",
+        "a": 17,
+        "eta": 15
+      },
+      {
+        "label": "Z1",
+        "a": 1,
+        "eta": 31
+      },
+      {
+        "label": "Z2",
+        "a": 1,
+        "eta": 15
+      },
+      {
+        "label": "Z10",
+        "a": 1,
+        "eta": 3
+      },
+      {
+        "label": "X11",
+        "a": 2,
+        "eta": 3
+      },
+      {
+        "label": "Y11",
+        "a": 3,
+        "eta": 2
+      },
+      {
+        "label": "Z11",
+        "a": 1,
+        "eta": 1
+      }
+    ]
+  },
+  "status": "All 16 exact Walsh certificates vanish."
+}
