@@ -1,5 +1,7 @@
 # 任意奇数比特的显式可调 EJM
 
+中文 | [English](README.en.md)
+
 **作者：Tingyu Zhang**  
 **日期：2026-10-30**
 
@@ -15,7 +17,6 @@ $$
 ## 阅读入口
 
 - [中文论文 PDF](paper/main.pdf)：完整背景、构造、任意比特数的证明与物理解释。
-- [数学报告](report.md)：适合在 GitHub 中阅读的公式与证明。
 - [LaTeX 源码](paper/main.tex)及[参考文献](paper/references.bib)。
 - [Lean 说明](lean/README.md)及[主定理](lean/OddEJM/Main.lean)：形式化实现与定理对应。
 
