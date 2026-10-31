@@ -17,3 +17,6 @@ __pycache__/
 *.synctex.gz
 *.toc
 *.xdv
+
+# 论文构建目录
+.build/

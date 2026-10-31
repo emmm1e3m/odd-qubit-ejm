@@ -1,6 +1,29 @@
-import OddEJM.Main
-import OddEJM.Consequences
+-- 新版工程所需的基础模块入口；保留既有命名空间以避免改动证明。
+import OddEJM.Bloch
+import OddEJM.Chain
+import OddEJM.Character
+import OddEJM.Completeness
+import OddEJM.Compress
+import OddEJM.Core
+import OddEJM.Counting
+import OddEJM.Defect
+import OddEJM.Density
+import OddEJM.DensityMultiplicity
+import OddEJM.FamilyGeometry
 import OddEJM.Finite
-import OddEJM.CNOT
-
-/- 通用奇数比特EJM：完整主定理、谱与重数推论、有限证书和真实门序。 -/
+import OddEJM.FourWalsh
+import OddEJM.Geometry
+import OddEJM.Labels
+import OddEJM.LocalExpectation
+import OddEJM.Masks
+import OddEJM.MeasurementBridge
+import OddEJM.OriginalPhase
+import OddEJM.Orthonormal
+import OddEJM.Pauli
+import OddEJM.Phase
+import OddEJM.Quantum
+import OddEJM.Spectrum
+import OddEJM.Split
+import OddEJM.Tensor
+import OddEJM.Walsh
+import OddEJM.WeightPhase

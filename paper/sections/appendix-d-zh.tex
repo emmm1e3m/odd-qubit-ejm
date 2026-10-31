@@ -1,0 +1,307 @@
+\section{低维结果的证明}
+\label{low:appendix}
+
+\subsection{\texorpdfstring{$n=3$}{n=3} 时刚性的精确证书}
+\label{low:app-rigidity}
+
+记 $b_z=i^{f_0(z)}$，并取 $\theta_0=0$。对 带符号 物理 Pauli 算符
+$\widetilde P$，定义固定矩阵系数
+\begin{equation}
+ K_P(z,w)=\overline{b_w}b_z
+ \langle w|C_n^\dagger\widetilde P C_n|z\rangle.
+ \label{low:finite-coeff}
+\end{equation}
+种子分量及其各阶导数均由下列有限恒等式给出：
+\begin{equation}
+ 2^n m_P(\theta)=\sum_{z,w}K_P(z,w)e^{i(\theta_z-\theta_w)}.
+ \label{low:finite-sum}
+\end{equation}
+特别地，
+\begin{equation}
+ 2^n\partial_lm_P(0)
+ =i\sum_{z,w}K_P(z,w)
+ (\mathbf1_{z=l}-\mathbf1_{w=l}).
+ \label{low:jacobian-formula}
+\end{equation}
+上述公式直接采用原电路，明确保留其符号与归一化。
+
+对 $n=3$，令 $\mathcal F$ 由八个差 $m_P-m_{X_1}$ 组成，行顺序为
+\begin{equation*}
+ P=Y_1,Z_1,X_2,Y_2,Z_2,X_3,-Y_3,Z_3.
+\end{equation*}
+列对应 $\theta_1,\ldots,\theta_7$。由式~\eqref{low:jacobian-formula} 得
+\begin{equation}
+ 4D\mathcal F(0)=
+ \begin{pmatrix}
+ -2&-2&0&1&1&0&2\\
+ -1&-2&0&-1&2&2&0\\
+ -1&-1&-1&0&1&0&1\\
+ -1&-1&-1&0&1&1&0\\
+ -1&-2&0&1&0&0&2\\
+ -2&-1&0&1&0&0&2\\
+ 0&-2&-1&1&2&0&0\\
+ -1&0&-2&1&0&2&0
+ \end{pmatrix}.
+ \label{low:jacobian-three}
+\end{equation}
+所示整数矩阵前七行的行列式为 $4$，故对应导数的行列式为
+$4/4^7=1/4096$。对这七个实解析分量差应用逆函数定理，得到其共同零点的局部唯一性。
+指定点附近的每个规则四面体测量都满足这些方程：其全部 带符号 分量保持正号，
+故分量平方相等蕴含分量本身相等。这就在完整七维相位空间中证明了命题~\ref{low:rigidity}。
+
+\subsection{\texorpdfstring{$n=4$}{n=4} 时的全部实相位直线}
+\label{low:app-lines}
+
+现在令 $\mathcal F$ 由其余十一个 带符号 分量与 $X_1$ 的差组成，算符顺序为
+\begin{equation*}
+ Y_1,Z_1,X_2,Y_2,Z_2,X_3,Y_3,Z_3,X_4,-Y_4,Z_4.
+\end{equation*}
+对直线 $\theta=td$，由式~\eqref{low:finite-sum} 得到精确导数公式
+\begin{equation}
+ 16\frac{d^k}{dt^k}m_P(td)\bigg|_{t=0}
+ =\sum_{z,w}K_P(z,w)\bigl[i(d_z-d_w)\bigr]^k.
+ \label{low:line-derivative}
+\end{equation}
+一阶方程的完整解由下列四个任意实参数 $a,b_*,c,\kappa$ 给出：
+\begin{equation}
+ \begin{aligned}
+ d_0&=0,\qquad d_1=d_2=d_9=a,\\
+ d_3=d_8&=a-c,\qquad d_{10}=b_*-c,\\
+ d_4=d_5&=-a+b_*-c/2+\kappa,\\
+ d_6=d_7=d_{12}=d_{13}&=c,\\
+ d_{11}&=b_*,\qquad d_{14}=d_{15}=\kappa.
+ \end{aligned}
+ \label{low:kernel-four}
+\end{equation}
+这里给出式~\eqref{low:jacobian-formula} 的精确线性代数核验：
+所示四个方向均被 $D\mathcal F(0)$ 消去，且 $16D\mathcal F(0)$
+的列 $(1,2,3,4,5,6,7,8,10,12,14)$ 组成的子式行列式为 $65536$。
+因此其秩为 $11$，式~\eqref{low:kernel-four} 穷尽了线性化核。
+
+令 $G_P(t)=16[m_P(td)-m_{X_1}(td)]$。
+由式~\eqref{low:line-derivative} 得到的二阶条件包括
+\begin{align}
+ G''_{Y_1}(0)&=-2c(2a-c),\nonumber\\
+ G''_{Y_2}(0)&=4c(a-2b_*+2c).
+ \label{low:second-order}
+\end{align}
+若 $c\ne0$，两式为零迫使 $a=c/2$、$b_*=5c/4$。
+下一个条件变为
+\begin{equation}
+ G''_{X_2}(0)=-\frac{c(c+4\kappa)}2=0,
+\end{equation}
+从而 $\kappa=-c/4$。但此时相同的导数公式给出
+\begin{equation}
+ G'''_{Y_1}(0)=-\frac{39c^3}{8}\ne0.
+ \label{low:third-order}
+\end{equation}
+因此必有 $c=0$。剩余必要二阶条件为
+\begin{equation}
+ G''_{X_2}(0)=-8(a-b_*)(a-b_*-\kappa)=0.
+ \label{low:two-planes}
+\end{equation}
+定义三个整数输入标号集合
+\begin{align}
+ \mathcal A&=\{1,2,3,8,9,10,11\},\nonumber\\
+ \mathcal B&=\{1,2,3,8,9,14,15\},\nonumber\\
+ \mathcal C&=\{4,5,14,15\}.
+ \label{low:line-supports}
+\end{align}
+分支 $b_*=a$ 给出 $d=a\mathbf1_{\mathcal A}
++\kappa\mathbf1_{\mathcal C}$；分支 $\kappa=a-b_*$ 给出
+$d=b_*\mathbf1_{\mathcal A}+(a-b_*)\mathbf1_{\mathcal B}$。
+将两分支代入有限和~\eqref{low:finite-sum}，对每个 带符号 局部 Pauli 算符均得到
+\begin{equation}
+ 16m_P(td)=e^{iat}+e^{-iat}.
+ \label{low:planes-sufficient}
+\end{equation}
+这证明了全部实参数上的充分性，而不止有限阶的一致。
+因此全部可行方向恰为
+\begin{equation}
+ \operatorname{span}_{\mathbb R}
+ \{\mathbf1_{\mathcal A},\mathbf1_{\mathcal C}\}
+ \ \cup\ 
+ \operatorname{span}_{\mathbb R}
+ \{\mathbf1_{\mathcal A},\mathbf1_{\mathcal B}\}.
+ \label{low:line-classification}
+\end{equation}
+基点处的正号使局部规则性蕴含上述 带符号 方程。
+任意实方向上的分量差都是有限指数和，故在开区间上成立的等式延拓至整条直线。
+式~\eqref{low:planes-sufficient} 与~\eqref{low:line-classification}
+证明了定理~\ref{low:theorem} 的第一部分，其中没有限制 $d$ 所取值的个数。
+
+\subsection{弯曲分支及其完整单调区间}
+\label{low:app-curve}
+
+式~\eqref{low:masks} 指定式~\eqref{low:curve} 的全部相位。
+输入以最高位在左的整数 $z=0,\ldots,15$ 编号。
+将 $\theta_z=bu_z+\delta v_z$ 代入式~\eqref{low:finite-sum}，
+恰得到式~\eqref{low:two-components} 中的两种表达式。
+这些恒等式对独立实参数 $b,\delta$ 成立，无须预先选取根分支。
+
+\begin{equation}
+ \begin{array}{c|rrrrrrrr}
+ z&0&1&2&3&4&5&6&7\\
+ u_z&0&1&1&1&2&2&0&0\\
+ v_z&0&1&1&0&1&1&1&1\\[2pt]
+ z&8&9&10&11&12&13&14&15\\
+ u_z&1&1&0&0&0&0&1&1\\
+ v_z&0&1&0&1&1&1&0&0
+ \end{array}
+ \label{low:masks}
+\end{equation}
+
+令 $q=-\delta$、$z=\tan(q/2)$；仅在以下根分支计算中，字母 $z$ 表示实变量。
+半角公式给出
+\begin{equation}
+ H-T=\frac{2(Az^2-Bz+C)}{1+z^2}.
+ \label{low:quadratic-identity}
+\end{equation}
+下面验证式~\eqref{low:delta} 的根及其完整定义域。
+令 $x=\tan(b/2)$、$k=\sqrt2-1$，则
+\begin{equation}
+ Az^2-Bz+C=\frac{x+1}{(1+x^2)^2}F(x,z),
+ \label{low:halfangle-polynomial}
+\end{equation}
+其中
+\begin{align}
+ F(x,z)={}&-x^3z^2+x^3z-3x^2z^2-3x^2z-4x^2\nonumber\\
+ &+3xz^2+xz+4x+z^2-3z.
+ \label{low:polynomial}
+\end{align}
+在正方形 $0\le x,z\le k$ 上，
+\begin{equation}
+ F_{xx}=6z[x(1-z)-(1+z)]-8<0.
+\end{equation}
+利用 $k^2+2k-1=0$ 及 $4-12k<0$，得到
+\begin{align}
+ F_x(x,z)&\ge F_x(k,z)
+ =4-8k+(4-12k)z\nonumber\\
+ &\ge20k-8=20\sqrt2-28>0.
+ \label{low:fx-positive}
+\end{align}
+另一偏导数满足
+\begin{align}
+ F_z&=2z(1+3x-3x^2-x^3)+x^3-3x^2+x-3\nonumber\\
+ &\le2k(1+3k)+k^3+k-3
+ =5-4\sqrt2<0.
+ \label{low:fz-negative}
+\end{align}
+边界值满足
+\begin{align}
+ F(x,x)&=-x(1+x^2)(x^2+2x-1)\ge0,\nonumber\\
+ F(x,k)&\le F(k,k)=0.
+ \label{low:boundary}
+\end{align}
+因此每个 $x\in[0,k]$ 都有唯一根 $z(x)\in[x,k]$；
+$z(0)=0$、$z(k)=k$，且在区间内部有严格不等式 $x<z(x)<k$。
+根处满足 $F_z<0$。由于 $A>0$，对应二次式的判别式严格为正，且此根为较小根。
+有理化根公式得到
+\begin{equation}
+ z(x)=\frac{2C}{B+\sqrt{B^2-4AC}},
+ \label{low:root-identified}
+\end{equation}
+该式在 $x=0$ 处也有良好定义。由此验证了所给闭式公式，而非仅以隐式存在性来定义路径。
+
+对已经识别的单根求导，得到 $z'(x)=-F_x/F_z>0$，故
+$q'(b)>0$ 且 $b\le q(b)\le\pi/4$。
+将 $T$ 写为 $T=\cos(b-q)+\sin q$，则
+\begin{equation}
+ T'(b)=\sin(q-b)+q'(b)\,[\cos q-\sin(q-b)]>0.
+ \label{low:monotone}
+\end{equation}
+方括号严格为正：若取等号，必须同时有 $q=\pi/4$ 和 $b=0$，与已确定的端点值矛盾。
+第一项非负。最后，由 $T(0)=1$ 及 $T(\pi/4)=1+1/\sqrt2$
+得到式~\eqref{low:curve-range} 的精确像。在原点处，
+$z'(0)=4/3$、$q'(0)=4/3$、$r'_4(0)=\sqrt3/6$。
+
+局部计算决定了全部测量结果。将列标号记为 $(e_1,e_2,e_3,\sigma)$，
+置 $e_0=e_4=0$、$p_j=e_{j-1}\oplus e_j$，以及 $j<4$ 时 $\epsilon_j=1$、
+$\epsilon_4=-1$。轨道关系给出真实约化态
+\begin{equation}
+ \begin{aligned}
+ \rho_{j,e,\sigma}=\frac12\Bigl\{I+\frac{T}{8}\bigl[
+ &(-1)^{p_j}X+\epsilon_j(-1)^{p_j+\sigma}Y\\
+ &+(-1)^\sigma Z\bigr]\Bigr\}.
+ \end{aligned}
+ \label{low:curve-reduced}
+\end{equation}
+四个固定四面体方向各出现四次。式~\eqref{low:curve} 是酉矩阵的乘积，
+故其全部列构成正交完备测量。在 $b=0$ 处，其对角相位恰为指定的 $D_{f_0}$。
+
+\subsection{基准测量与已知 \texorpdfstring{$n=4$}{n=4} 参数段的非等价性}
+\label{low:app-invariant}
+
+本节证明，指定基准测量与文献~\cite{PauwelsGisin2026} 附录 C 所给 $n=4$ 参数段中的任何测量，均不能通过局域酉变换、比特置换及结果重标号相互转换。
+对 $a\in[0,\pi/3]$，令 $x=e^{ia}$，将其输入相位写为 $i^{f_z}x^{k_z}$。
+按 $z=0,\ldots,15$ 排序，两个固定向量为
+\begin{align}
+ f={}&(0,0,0,3,0,0,1,0,\nonumber\\
+ &\hspace{12mm}0,0,0,2,0,1,3,3),\nonumber\\
+ k={}&(0,1,-1,-1,0,1,0,0,\nonumber\\
+ &\hspace{12mm}-1,2,0,1,3,3,1,0).
+ \label{low:f159-data}
+\end{align}
+这里 $a=\pi(1-\tau)/3$，$\tau$ 为该文使用的参数。
+种子 $C_4(i^{f_z}x^{k_z})_z/4$ 的 Bloch 向量分别为
+\begin{equation}
+ \begin{aligned}
+ \mathbf m_1&=c(x)(1,-1,-1),&\mathbf m_2&=c(x)(1,1,1),\\
+ \mathbf m_3&=c(x)(1,-1,1),&\mathbf m_4&=c(x)(1,1,1),
+ \end{aligned}
+\end{equation}
+其中直接计算有限和得到
+\begin{equation}
+ c(x)=\frac{x^3+x^{-3}+2x+2x^{-1}}{16}
+ =\frac{\cos3a+2\cos a}{8}.
+ \label{low:f159-component}
+\end{equation}
+该式在所给参数段上非负，从 $3/8$ 递减至零，给出已知端点 $3r_E(4)$。
+
+对$n=4$ 的纯态定义
+\begin{equation}
+ S(\psi)=\operatorname{Tr}(\rho_{12}^{2})
+ +\operatorname{Tr}(\rho_{13}^{2})
+ +\operatorname{Tr}(\rho_{14}^{2}).
+ \label{low:purity-invariant}
+\end{equation}
+该和在局域酉及比特置换下不变：纯态的互补子系统具有相同非零谱，
+故置换只会重新排列这三个无序 $2|2$ 划分项。
+Pauli 轨道测量的每一列均与种子共享这些不变量，因此结果重标号不能改变比较结果。
+在指定 $f_0$ 点，三个纯度依次为 $(63,39,39)/128$，故 $S_0=141/128$。
+
+对式~\eqref{low:f159-data} 的向量，由其振幅构造各约化态，得到
+\begin{equation}
+ \begin{aligned}
+ 512x^8 S(x)={}&6x^{16}-3x^{14}+74x^{12}+48x^{10}\\
+ &+698x^8+48x^6+74x^4-3x^2+6.
+ \end{aligned}
+ \label{low:f159-purity}
+\end{equation}
+等价测量必须具有相同的单比特谱和 $S$。
+在此参数段上，两条件分别要求 $c=1/8$ 与 $S=141/128$。
+由于 $x\ne0$，将式~\eqref{low:f159-component} 及~\eqref{low:f159-purity}
+乘以相应分母，得到必要方程 $P(x)=Q(x)=0$，其中
+\begin{align}
+ P(x)={}&x^6+2x^4-2x^3+2x^2+1,\nonumber\\
+ Q(x)={}&6x^{16}-3x^{14}+74x^{12}+48x^{10}\nonumber\\
+ &+134x^8+48x^6+74x^4-3x^2+6.
+ \label{low:invariant-polynomials}
+\end{align}
+如下精确整数证书排除了共同根：
+\begin{equation}
+ \operatorname{Res}_x(P,Q)\ne0.
+ \label{low:resultant}
+\end{equation}
+为便于算术复核，第一步 Euclid 余式为
+\begin{equation}
+ \begin{aligned}
+ Q\bmod P={}&816x^5-2340x^4+2168x^3\\
+ &-1240x^2+616x-596,
+ \end{aligned}
+\end{equation}
+其与 $P$ 的最大公因式为 $1$。因此，原参数段中没有任何测量在所允许的操作下等价于指定的 $f_0$ 测量。
+
+
+
+

@@ -1,0 +1,10 @@
+name = "unified_ejm"
+version = "0.1.0"
+defaultTargets = ["UnifiedEJM"]
+
+[[require]]
+name = "odd_ejm"
+path = "../lean"
+
+[[lean_lib]]
+name = "UnifiedEJM"

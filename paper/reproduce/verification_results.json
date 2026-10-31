@@ -1,0 +1,1129 @@
+{
+  "python": "3.12.10",
+  "sympy": "1.14.0",
+  "arithmetic": "exact finite Laurent/Gaussian-integer and SymPy symbolic identities; no numerical tolerance",
+  "checks": {
+    "unified_kernel": {
+      "six_walsh_certificates": [
+        {
+          "derivative_shift": null,
+          "character": 9,
+          "integer_sum": 0
+        },
+        {
+          "derivative_shift": null,
+          "character": 11,
+          "integer_sum": 0
+        },
+        {
+          "derivative_shift": null,
+          "character": 15,
+          "integer_sum": 0
+        },
+        {
+          "derivative_shift": 6,
+          "character": 6,
+          "integer_sum": 0
+        },
+        {
+          "derivative_shift": 7,
+          "character": 13,
+          "integer_sum": 0
+        },
+        {
+          "derivative_shift": 7,
+          "character": 11,
+          "integer_sum": 0
+        }
+      ],
+      "kernel_weight": 10,
+      "original_gate_signed_moments_n": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "normalization": "Laurent expectation numerator divided by 2^(n+1)",
+      "scope": "finite dimension checks; the all-n reduction is proved in Appendix A"
+    },
+    "Boolean_low_dimensions": {
+      "flip_masks_from_original_gates": {
+        "2": {
+          "I": [
+            1,
+            2,
+            3
+          ],
+          "II": []
+        },
+        "3": {
+          "I": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "II": [
+            6,
+            7
+          ]
+        },
+        "4": {
+          "I": [
+            1,
+            2,
+            3,
+            8,
+            9
+          ],
+          "II": [
+            6,
+            7,
+            12,
+            13
+          ]
+        }
+      },
+      "n3_character_equations": [
+        "k",
+        "-k + 2*s"
+      ],
+      "n4_boundary_equations": [
+        "A - B + C - D + E - F + k",
+        "A - B - C + D - E + F + k",
+        "-A + B - C + D + E - F + k",
+        "-A + B + C - D - E + F + k"
+      ],
+      "n4_sum": "4*k",
+      "scope": "analytic exclusion certificates, not enumeration of every Boolean support"
+    },
+    "mother_and_n6_colors": {
+      "conditional_16_point_sums": [
+        {
+          "flip": 8,
+          "character": 8,
+          "counts": {
+            "-1": [
+              3,
+              3
+            ],
+            "0": [
+              4,
+              4
+            ],
+            "1": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "flip": 2,
+          "character": 2,
+          "counts": {
+            "-1": [
+              2,
+              2
+            ],
+            "0": [
+              6,
+              6
+            ],
+            "1": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "flip": 9,
+          "character": 15,
+          "counts": {
+            "-1": [
+              2,
+              2
+            ],
+            "0": [
+              6,
+              6
+            ],
+            "1": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "flip": 5,
+          "character": 7,
+          "counts": {
+            "-1": [
+              2,
+              2
+            ],
+            "0": [
+              6,
+              6
+            ],
+            "1": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "flip": 5,
+          "character": 3,
+          "counts": {
+            "-1": [
+              2,
+              2
+            ],
+            "0": [
+              6,
+              6
+            ],
+            "1": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "flip": 3,
+          "character": 1,
+          "counts": {
+            "-1": [
+              3,
+              3
+            ],
+            "0": [
+              4,
+              4
+            ],
+            "1": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "flip": 4,
+          "character": 4,
+          "counts": {
+            "-1": [
+              4,
+              2
+            ],
+            "0": [
+              4,
+              4
+            ],
+            "1": [
+              0,
+              2
+            ]
+          }
+        }
+      ],
+      "old_even_axis_n": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "mother_n": [
+        8,
+        10
+      ],
+      "n6_exception": "only X3,X4; normalized -sin(alpha)sin(beta)/8",
+      "n6_color_backgrounds": {
+        "X1": [],
+        "Y1": [],
+        "Z1": [],
+        "X2": [],
+        "Y2": [],
+        "Z2": [],
+        "X3": [
+          {
+            "exponent": [
+              -1,
+              0,
+              0
+            ],
+            "coefficient": [
+              -4,
+              0
+            ]
+          },
+          {
+            "exponent": [
+              -1,
+              1,
+              0
+            ],
+            "coefficient": [
+              -4,
+              0
+            ]
+          },
+          {
+            "exponent": [
+              0,
+              -1,
+              1
+            ],
+            "coefficient": [
+              4,
+              0
+            ]
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              -1
+            ],
+            "coefficient": [
+              4,
+              0
+            ]
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              4,
+              0
+            ]
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              -1
+            ],
+            "coefficient": [
+              4,
+              0
+            ]
+          },
+          {
+            "exponent": [
+              1,
+              -1,
+              0
+            ],
+            "coefficient": [
+              -4,
+              0
+            ]
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": [
+              -4,
+              0
+            ]
+          }
+        ],
+        "Y3": [
+          {
+            "exponent": [
+              -1,
+              0,
+              0
+            ],
+            "coefficient": [
+              8,
+              0
+            ]
+          },
+          {
+            "exponent": [
+              0,
+              -1,
+              1
+            ],
+            "coefficient": [
+              -8,
+              0
+            ]
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              -1
+            ],
+            "coefficient": [
+              -8,
+              0
+            ]
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": [
+              8,
+              0
+            ]
+          }
+        ],
+        "Z3": [],
+        "X4": [
+          {
+            "exponent": [
+              -1,
+              0,
+              0
+            ],
+            "coefficient": [
+              -4,
+              0
+            ]
+          },
+          {
+            "exponent": [
+              -1,
+              1,
+              0
+            ],
+            "coefficient": [
+              -4,
+              0
+            ]
+          },
+          {
+            "exponent": [
+              0,
+              -1,
+              1
+            ],
+            "coefficient": [
+              4,
+              0
+            ]
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              -1
+            ],
+            "coefficient": [
+              4,
+              0
+            ]
+          },
+          {
+            "exponent": [
+              0,
+              0,
+              1
+            ],
+            "coefficient": [
+              4,
+              0
+            ]
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              -1
+            ],
+            "coefficient": [
+              4,
+              0
+            ]
+          },
+          {
+            "exponent": [
+              1,
+              -1,
+              0
+            ],
+            "coefficient": [
+              -4,
+              0
+            ]
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              0
+            ],
+            "coefficient": [
+              -4,
+              0
+            ]
+          }
+        ],
+        "Y4": [],
+        "Z4": [
+          {
+            "exponent": [
+              -1,
+              0,
+              1
+            ],
+            "coefficient": [
+              0,
+              -8
+            ]
+          },
+          {
+            "exponent": [
+              0,
+              -1,
+              0
+            ],
+            "coefficient": [
+              0,
+              -8
+            ]
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              0,
+              8
+            ]
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              -1
+            ],
+            "coefficient": [
+              0,
+              8
+            ]
+          }
+        ],
+        "X5": [],
+        "Y5": [],
+        "Z5": [
+          {
+            "exponent": [
+              -1,
+              0,
+              1
+            ],
+            "coefficient": [
+              0,
+              -8
+            ]
+          },
+          {
+            "exponent": [
+              0,
+              -1,
+              0
+            ],
+            "coefficient": [
+              0,
+              -8
+            ]
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              0,
+              8
+            ]
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              -1
+            ],
+            "coefficient": [
+              0,
+              8
+            ]
+          }
+        ],
+        "X6": [
+          {
+            "exponent": [
+              -1,
+              0,
+              1
+            ],
+            "coefficient": [
+              0,
+              -8
+            ]
+          },
+          {
+            "exponent": [
+              0,
+              -1,
+              0
+            ],
+            "coefficient": [
+              0,
+              -8
+            ]
+          },
+          {
+            "exponent": [
+              0,
+              1,
+              0
+            ],
+            "coefficient": [
+              0,
+              8
+            ]
+          },
+          {
+            "exponent": [
+              1,
+              0,
+              -1
+            ],
+            "coefficient": [
+              0,
+              8
+            ]
+          }
+        ],
+        "Y6": [],
+        "Z6": []
+      },
+      "n6_four_parameter_full_expectations": 18,
+      "zero_phase_derivative": -1,
+      "background_normalization": "listed Laurent numerators divide by 128; Appendix C B divides by 64"
+    },
+    "low_dimensional_lines": {
+      "n3_Jacobian": [
+        [
+          "-1/2",
+          "-1/2",
+          "0",
+          "1/4",
+          "1/4",
+          "0",
+          "1/2"
+        ],
+        [
+          "-1/4",
+          "-1/2",
+          "0",
+          "-1/4",
+          "1/2",
+          "1/2",
+          "0"
+        ],
+        [
+          "-1/4",
+          "-1/4",
+          "-1/4",
+          "0",
+          "1/4",
+          "0",
+          "1/4"
+        ],
+        [
+          "-1/4",
+          "-1/4",
+          "-1/4",
+          "0",
+          "1/4",
+          "1/4",
+          "0"
+        ],
+        [
+          "-1/4",
+          "-1/2",
+          "0",
+          "1/4",
+          "0",
+          "0",
+          "1/2"
+        ],
+        [
+          "-1/2",
+          "-1/4",
+          "0",
+          "1/4",
+          "0",
+          "0",
+          "1/2"
+        ],
+        [
+          "0",
+          "-1/2",
+          "-1/4",
+          "1/4",
+          "1/2",
+          "0",
+          "0"
+        ],
+        [
+          "-1/4",
+          "0",
+          "-1/2",
+          "1/4",
+          "0",
+          "1/2",
+          "0"
+        ]
+      ],
+      "n3_minor": "1/4096",
+      "n4_Jacobian_rank": 11,
+      "n4_kernel_basis": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "-1",
+          "1",
+          "-1/2",
+          "1"
+        ],
+        [
+          "-1",
+          "1",
+          "-1/2",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "n4_third_derivative_numerator": "-39*g**3/4",
+      "derivative_normalization": "n3 denominator 16, n4 denominator 32",
+      "two_sufficient_planes": [
+        "span(1_A,1_C)",
+        "span(1_A,1_B)"
+      ],
+      "masks": {
+        "A": [
+          1,
+          2,
+          3,
+          8,
+          9,
+          10,
+          11
+        ],
+        "B": [
+          1,
+          2,
+          3,
+          8,
+          9,
+          14,
+          15
+        ],
+        "C": [
+          4,
+          5,
+          14,
+          15
+        ]
+      }
+    },
+    "curved_family": {
+      "all_signed_Laurent_identities": 12,
+      "phase_masks": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "H_numerator": [
+        {
+          "exponent": [
+            -2,
+            0
+          ],
+          "coefficient": [
+            0,
+            4
+          ]
+        },
+        {
+          "exponent": [
+            -1,
+            -1
+          ],
+          "coefficient": [
+            0,
+            2
+          ]
+        },
+        {
+          "exponent": [
+            -1,
+            0
+          ],
+          "coefficient": [
+            2,
+            0
+          ]
+        },
+        {
+          "exponent": [
+            -1,
+            1
+          ],
+          "coefficient": [
+            0,
+            -2
+          ]
+        },
+        {
+          "exponent": [
+            1,
+            -1
+          ],
+          "coefficient": [
+            0,
+            2
+          ]
+        },
+        {
+          "exponent": [
+            1,
+            0
+          ],
+          "coefficient": [
+            2,
+            0
+          ]
+        },
+        {
+          "exponent": [
+            1,
+            1
+          ],
+          "coefficient": [
+            0,
+            -2
+          ]
+        },
+        {
+          "exponent": [
+            2,
+            0
+          ],
+          "coefficient": [
+            0,
+            -4
+          ]
+        }
+      ],
+      "T_numerator": [
+        {
+          "exponent": [
+            -1,
+            -1
+          ],
+          "coefficient": [
+            2,
+            0
+          ]
+        },
+        {
+          "exponent": [
+            0,
+            -1
+          ],
+          "coefficient": [
+            0,
+            -2
+          ]
+        },
+        {
+          "exponent": [
+            0,
+            1
+          ],
+          "coefficient": [
+            0,
+            2
+          ]
+        },
+        {
+          "exponent": [
+            1,
+            1
+          ],
+          "coefficient": [
+            2,
+            0
+          ]
+        }
+      ],
+      "half_angle_polynomial": "-x**3*z**2 + x**3*z - 3*x**2*z**2 - 3*x**2*z - 4*x**2 + 3*x*z**2 + x*z + 4*x + z**2 - 3*z",
+      "Bernstein_Fx": [
+        [
+          "4",
+          "sqrt(2)/2 + 7/2",
+          "12 - 5*sqrt(2)"
+        ],
+        [
+          "8 - 4*sqrt(2)",
+          "3 - sqrt(2)/2",
+          "28 - 18*sqrt(2)"
+        ],
+        [
+          "12 - 8*sqrt(2)",
+          "-8 + 6*sqrt(2)",
+          "-28 + 20*sqrt(2)"
+        ]
+      ],
+      "Bernstein_Fz": [
+        [
+          "-3",
+          "-5 + 2*sqrt(2)"
+        ],
+        [
+          "-10/3 + sqrt(2)/3",
+          "2/3 - 5*sqrt(2)/3"
+        ],
+        [
+          "-20/3 + 8*sqrt(2)/3",
+          "52/3 - 40*sqrt(2)/3"
+        ],
+        [
+          "-20 + 12*sqrt(2)",
+          "4 - 4*sqrt(2)"
+        ]
+      ],
+      "endpoint_radius_ratios": [
+        "1",
+        "1+1/sqrt(2)"
+      ],
+      "scope": "exact identities and interval sign certificates; the root and monotonicity argument is in Appendix D"
+    },
+    "inequivalence_certificate": {
+      "source": "Pauwels--Gisin, arXiv:2607.16020v1, Appendix C",
+      "integer_base_phase": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        1,
+        3,
+        3
+      ],
+      "integer_speed": [
+        0,
+        1,
+        -1,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        3,
+        3,
+        1,
+        0
+      ],
+      "parameter": "x=exp(i*pi*(1-tau)/3), 0<=tau<=1",
+      "base_two_cut_purities": [
+        "63/128",
+        "39/128",
+        "39/128"
+      ],
+      "line_purity_sum": "(6*x**16 - 3*x**14 + 74*x**12 + 48*x**10 + 698*x**8 + 48*x**6 + 74*x**4 - 3*x**2 + 6)/(512*x**8)",
+      "radius_polynomial": "x**6 + 2*x**4 - 2*x**3 + 2*x**2 + 1",
+      "purity_polynomial": "(x**2 - x + 1)*(x**2 + x + 1)*(6*x**12 - 9*x**10 + 77*x**8 - 20*x**6 + 77*x**4 - 9*x**2 + 6)",
+      "resultant": "21153523695616"
+    },
+    "full_Gram_and_partial_traces": {
+      "curve_n4": {
+        "n": 4,
+        "gram_entries": 256,
+        "one_qubit_reduced_matrices": 64,
+        "normalization_denominator": 32,
+        "method": "exact Laurent identities"
+      },
+      "unified_n5": {
+        "n": 5,
+        "gram_entries": 1024,
+        "one_qubit_reduced_matrices": 160,
+        "normalization_denominator": 64,
+        "method": "exact Laurent identities"
+      },
+      "curve_scope": "partial traces verified for independent b,delta; equality H=T follows from the quadratic certificate"
+    }
+  },
+  "status": "PASS"
+}

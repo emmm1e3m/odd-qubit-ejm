@@ -1,0 +1,342 @@
+\section{Low-dimensional proofs}
+\label{low:appendix}
+
+\subsection{An exact rigidity certificate at \texorpdfstring{$n=3$}{n=3}}
+\label{low:app-rigidity}
+
+Write $b_z=i^{f_0(z)}$ and let $\theta_0=0$.  For a signed physical
+Pauli operator $\widetilde P$, define the fixed matrix coefficients
+\begin{equation}
+ K_P(z,w)=\overline{b_w}b_z
+ \langle w|C_n^\dagger\widetilde P C_n|z\rangle.
+ \label{low:finite-coeff}
+\end{equation}
+The seed component and all its derivatives follow from the finite identity
+\begin{equation}
+ 2^n m_P(\theta)=\sum_{z,w}K_P(z,w)e^{i(\theta_z-\theta_w)}.
+ \label{low:finite-sum}
+\end{equation}
+In particular,
+\begin{equation}
+ 2^n\partial_lm_P(0)
+ =i\sum_{z,w}K_P(z,w)
+ (\mathbf1_{z=l}-\mathbf1_{w=l}).
+ \label{low:jacobian-formula}
+\end{equation}
+These formulas use the original circuit and therefore keep its signs and
+normalization explicit.
+
+For $n=3$, let $\mathcal F$ contain the eight differences $m_P-m_{X_1}$,
+in the order
+\begin{equation*}
+ P=Y_1,Z_1,X_2,Y_2,Z_2,X_3,-Y_3,Z_3.
+\end{equation*}
+The columns correspond to $\theta_1,\ldots,\theta_7$.
+Equation~\eqref{low:jacobian-formula} gives
+\begin{equation}
+ 4D\mathcal F(0)=
+ \begin{pmatrix}
+ -2&-2&0&1&1&0&2\\
+ -1&-2&0&-1&2&2&0\\
+ -1&-1&-1&0&1&0&1\\
+ -1&-1&-1&0&1&1&0\\
+ -1&-2&0&1&0&0&2\\
+ -2&-1&0&1&0&0&2\\
+ 0&-2&-1&1&2&0&0\\
+ -1&0&-2&1&0&2&0
+ \end{pmatrix}.
+ \label{low:jacobian-three}
+\end{equation}
+The determinant of the first seven rows of the displayed integer matrix is
+$4$.  Hence the corresponding derivative determinant is
+$4/4^7=1/4096$.  The inverse function theorem applies to these seven
+real analytic component differences and implies that their common zero is
+locally unique.  Every regular-tetrahedral measurement sufficiently near
+the specified point satisfies these equations: all signed components are
+positive there, so equality of their squares implies equality of the
+components themselves.  This proves Proposition~\ref{low:rigidity} in
+the full seven-dimensional phase space.
+
+\subsection{All real phase lines at \texorpdfstring{$n=4$}{n=4}}
+\label{low:app-lines}
+
+Let $\mathcal F$ now contain the eleven differences from $X_1$, with the
+remaining signed operators ordered as
+\begin{equation*}
+ Y_1,Z_1,X_2,Y_2,Z_2,X_3,Y_3,Z_3,X_4,-Y_4,Z_4.
+\end{equation*}
+For a line $\theta=td$, Eq.~\eqref{low:finite-sum} gives the exact
+derivative rule
+\begin{equation}
+ 16\frac{d^k}{dt^k}m_P(td)\bigg|_{t=0}
+ =\sum_{z,w}K_P(z,w)\bigl[i(d_z-d_w)\bigr]^k.
+ \label{low:line-derivative}
+\end{equation}
+The first-order equations have precisely the following four-parameter
+solution, where $a,b_*,c,\kappa$ are arbitrary real numbers:
+\begin{equation}
+ \begin{aligned}
+ d_0&=0,\qquad d_1=d_2=d_9=a,\\
+ d_3=d_8&=a-c,\qquad d_{10}=b_*-c,\\
+ d_4=d_5&=-a+b_*-c/2+\kappa,\\
+ d_6=d_7=d_{12}=d_{13}&=c,\\
+ d_{11}&=b_*,\qquad d_{14}=d_{15}=\kappa.
+ \end{aligned}
+ \label{low:kernel-four}
+\end{equation}
+For completeness, this is an exact linear-algebra reduction of
+Eq.~\eqref{low:jacobian-formula}: all four displayed directions annihilate
+$D\mathcal F(0)$, and the minor of $16D\mathcal F(0)$ with columns
+$(1,2,3,4,5,6,7,8,10,12,14)$ has determinant $65536$.
+Thus its rank is $11$ and the displayed kernel is exhaustive.
+
+Put $G_P(t)=16[m_P(td)-m_{X_1}(td)]$.  The second-order conditions from
+Eq.~\eqref{low:line-derivative} include
+\begin{align}
+ G''_{Y_1}(0)&=-2c(2a-c),\nonumber\\
+ G''_{Y_2}(0)&=4c(a-2b_*+2c).
+ \label{low:second-order}
+\end{align}
+If $c\ne0$, their vanishing requires $a=c/2$ and $b_*=5c/4$.
+The next condition becomes
+\begin{equation}
+ G''_{X_2}(0)=-\frac{c(c+4\kappa)}2=0,
+\end{equation}
+so $\kappa=-c/4$.  But the same derivative rule then gives
+\begin{equation}
+ G'''_{Y_1}(0)=-\frac{39c^3}{8}\ne0.
+ \label{low:third-order}
+\end{equation}
+Consequently $c=0$.  The remaining necessary second-order condition is
+\begin{equation}
+ G''_{X_2}(0)=-8(a-b_*)(a-b_*-\kappa)=0.
+ \label{low:two-planes}
+\end{equation}
+Define the three subsets of the integer input labels
+\begin{align}
+ \mathcal A&=\{1,2,3,8,9,10,11\},\nonumber\\
+ \mathcal B&=\{1,2,3,8,9,14,15\},\nonumber\\
+ \mathcal C&=\{4,5,14,15\}.
+ \label{low:line-supports}
+\end{align}
+The branch $b_*=a$ gives $d=a\mathbf1_{\mathcal A}
++\kappa\mathbf1_{\mathcal C}$, whereas the branch
+$\kappa=a-b_*$ gives $d=b_*\mathbf1_{\mathcal A}
++(a-b_*)\mathbf1_{\mathcal B}$.  Substitution into the finite sum
+\eqref{low:finite-sum} gives, for every signed local Pauli operator and
+either branch,
+\begin{equation}
+ 16m_P(td)=e^{iat}+e^{-iat}.
+ \label{low:planes-sufficient}
+\end{equation}
+This checks sufficiency for all real parameters, rather than merely to
+finite order.  Hence all allowable directions are exactly
+\begin{equation}
+ \operatorname{span}_{\mathbb R}
+ \{\mathbf1_{\mathcal A},\mathbf1_{\mathcal C}\}
+ \ \cup\ 
+ \operatorname{span}_{\mathbb R}
+ \{\mathbf1_{\mathcal A},\mathbf1_{\mathcal B}\}.
+ \label{low:line-classification}
+\end{equation}
+Local regularity implies the signed equations used above by positivity at
+the base point.  Their differences along any real direction are finite
+exponential sums, so equality on an open interval extends to the whole
+line.  Equations~\eqref{low:planes-sufficient} and
+\eqref{low:line-classification} establish the first part of
+Theorem~\ref{low:theorem} without a restriction on the number of values
+taken by $d$.
+
+\subsection{The curved branch and its full monotonic interval}
+\label{low:app-curve}
+
+Equation~\eqref{low:masks} specifies all phases in Eq.~\eqref{low:curve}.
+Its entries are indexed by $z=0,\ldots,15$, with the most significant
+bit first.  Inserting $\theta_z=bu_z+\delta v_z$ into
+Eq.~\eqref{low:finite-sum} gives precisely the two expressions
+in Eq.~\eqref{low:two-components}.  In particular, these identities
+hold for independent real $b,\delta$, before any branch is selected.
+
+\begin{equation}
+ \begin{array}{c|rrrrrrrr}
+ z&0&1&2&3&4&5&6&7\\
+ u_z&0&1&1&1&2&2&0&0\\
+ v_z&0&1&1&0&1&1&1&1\\[2pt]
+ z&8&9&10&11&12&13&14&15\\
+ u_z&1&1&0&0&0&0&1&1\\
+ v_z&0&1&0&1&1&1&0&0
+ \end{array}
+ \label{low:masks}
+\end{equation}
+
+Set $q=-\delta$ and $z=\tan(q/2)$; the letter $z$ denotes a real
+variable only in the following branch calculation.  The half-angle
+identities give
+\begin{equation}
+ H-T=\frac{2(Az^2-Bz+C)}{1+z^2}.
+ \label{low:quadratic-identity}
+\end{equation}
+We now verify the root in Eq.~\eqref{low:delta}, including its entire
+domain.  Put $x=\tan(b/2)$ and $k=\sqrt2-1$.  Then
+\begin{equation}
+ Az^2-Bz+C=\frac{x+1}{(1+x^2)^2}F(x,z),
+ \label{low:halfangle-polynomial}
+\end{equation}
+where
+\begin{align}
+ F(x,z)={}&-x^3z^2+x^3z-3x^2z^2-3x^2z-4x^2\nonumber\\
+ &+3xz^2+xz+4x+z^2-3z.
+ \label{low:polynomial}
+\end{align}
+On the square $0\le x,z\le k$, one has
+\begin{equation}
+ F_{xx}=6z[x(1-z)-(1+z)]-8<0.
+\end{equation}
+Using $k^2+2k-1=0$ and $4-12k<0$, it follows that
+\begin{align}
+ F_x(x,z)&\ge F_x(k,z)
+ =4-8k+(4-12k)z\nonumber\\
+ &\ge20k-8=20\sqrt2-28>0.
+ \label{low:fx-positive}
+\end{align}
+The other derivative satisfies
+\begin{align}
+ F_z&=2z(1+3x-3x^2-x^3)+x^3-3x^2+x-3\nonumber\\
+ &\le2k(1+3k)+k^3+k-3
+ =5-4\sqrt2<0.
+ \label{low:fz-negative}
+\end{align}
+The boundary values obey
+\begin{align}
+ F(x,x)&=-x(1+x^2)(x^2+2x-1)\ge0,\nonumber\\
+ F(x,k)&\le F(k,k)=0.
+ \label{low:boundary}
+\end{align}
+Thus each $x\in[0,k]$ has a unique root $z(x)\in[x,k]$;
+$z(0)=0$, $z(k)=k$, and $x<z(x)<k$ in the interior.
+At the root, $F_z<0$.  Since $A>0$, the corresponding quadratic has
+positive discriminant and this is its smaller root.  Rationalizing that
+root gives
+\begin{equation}
+ z(x)=\frac{2C}{B+\sqrt{B^2-4AC}},
+ \label{low:root-identified}
+\end{equation}
+which is well defined also at $x=0$.  This proves the stated closed
+formula rather than defining the path by an implicit existence argument.
+
+Differentiating the now-identified simple root gives
+$z'(x)=-F_x/F_z>0$.  Consequently $q'(b)>0$ and
+$b\le q(b)\le\pi/4$.  With $T=\cos(b-q)+\sin q$,
+\begin{equation}
+ T'(b)=\sin(q-b)+q'(b)\,[\cos q-\sin(q-b)]>0.
+ \label{low:monotone}
+\end{equation}
+The bracket is strictly positive: equality would require both
+$q=\pi/4$ and $b=0$, inconsistent with the determined endpoint values.
+The first term is nonnegative.  Finally,
+$T(0)=1$ and $T(\pi/4)=1+1/\sqrt2$ prove the exact image
+\eqref{low:curve-range}.  At the origin,
+$z'(0)=4/3$, $q'(0)=4/3$, and $r'_4(0)=\sqrt3/6$.
+
+The local calculation determines every measurement outcome.  If the
+column label is $(e_1,e_2,e_3,\sigma)$, put $e_0=e_4=0$,
+$p_j=e_{j-1}\oplus e_j$, and $\epsilon_j=1$ for $j<4$,
+$\epsilon_4=-1$.  The orbit relation gives the actual reduced state
+\begin{equation}
+ \begin{aligned}
+ \rho_{j,e,\sigma}=\frac12\Bigl\{I+\frac{T}{8}\bigl[
+ &(-1)^{p_j}X+\epsilon_j(-1)^{p_j+\sigma}Y\\
+ &+(-1)^\sigma Z\bigr]\Bigr\}.
+ \end{aligned}
+ \label{low:curve-reduced}
+\end{equation}
+Each of the four fixed tetrahedral directions occurs four times.
+The matrix in Eq.~\eqref{low:curve} is a product of unitary matrices,
+so its columns are a complete orthonormal measurement.  At $b=0$ its
+diagonal phase is exactly the specified $D_{f_0}$.
+
+\subsection{Non-equivalence of the reference measurement to the known \texorpdfstring{$n=4$}{n=4} segment}
+\label{low:app-invariant}
+
+We show that the specified reference measurement is not equivalent, under local unitaries, qubit permutations, or outcome relabeling, to any measurement on the $n=4$ segment in Appendix C of Ref.~\cite{PauwelsGisin2026}.
+With $a\in[0,\pi/3]$, let $x=e^{ia}$ and write its input phases as
+$i^{f_z}x^{k_z}$.  In order $z=0,\ldots,15$, the two fixed vectors are
+\begin{align}
+ f={}&(0,0,0,3,0,0,1,0,\nonumber\\
+ &\hspace{12mm}0,0,0,2,0,1,3,3),\nonumber\\
+ k={}&(0,1,-1,-1,0,1,0,0,\nonumber\\
+ &\hspace{12mm}-1,2,0,1,3,3,1,0).
+ \label{low:f159-data}
+\end{align}
+Here $a=\pi(1-\tau)/3$ in the parameterization of that reference.
+The seed $C_4(i^{f_z}x^{k_z})_z/4$ has Bloch vectors
+\begin{equation}
+ \begin{aligned}
+ \mathbf m_1&=c(x)(1,-1,-1),&\mathbf m_2&=c(x)(1,1,1),\\
+ \mathbf m_3&=c(x)(1,-1,1),&\mathbf m_4&=c(x)(1,1,1),
+ \end{aligned}
+\end{equation}
+where the directly evaluated finite sum is
+\begin{equation}
+ c(x)=\frac{x^3+x^{-3}+2x+2x^{-1}}{16}
+ =\frac{\cos3a+2\cos a}{8}.
+ \label{low:f159-component}
+\end{equation}
+This is nonnegative on the stated segment, decreases from $3/8$ to
+zero, and gives the already known endpoint $3r_E(4)$.
+
+For a pure state at $n=4$ define
+\begin{equation}
+ S(\psi)=\operatorname{Tr}(\rho_{12}^{2})
+ +\operatorname{Tr}(\rho_{13}^{2})
+ +\operatorname{Tr}(\rho_{14}^{2}).
+ \label{low:purity-invariant}
+\end{equation}
+The sum is invariant under local unitaries and qubit permutations:
+complementary subsystems of a pure state have identical nonzero spectra,
+so a permutation only permutes the three unordered $2|2$ terms.
+Each column of a Pauli-orbit measurement shares these invariants with
+its seed.  Outcome relabeling therefore cannot change the comparison.
+At the specified $f_0$ point the three purities are
+$(63,39,39)/128$, and hence $S_0=141/128$.
+
+For the vector in Eq.~\eqref{low:f159-data}, forming each reduced state
+from its amplitudes gives
+\begin{equation}
+ \begin{aligned}
+ 512x^8 S(x)={}&6x^{16}-3x^{14}+74x^{12}+48x^{10}\\
+ &+698x^8+48x^6+74x^4-3x^2+6.
+ \end{aligned}
+ \label{low:f159-purity}
+\end{equation}
+An equivalent measurement must have both the same one-qubit spectrum
+and the same $S$.  On this segment these conditions require $c=1/8$
+and $S=141/128$, respectively.  Because $x\ne0$, multiplying
+Eqs.~\eqref{low:f159-component} and \eqref{low:f159-purity} by their
+denominators yields the necessary equations $P(x)=Q(x)=0$, with
+\begin{align}
+ P(x)={}&x^6+2x^4-2x^3+2x^2+1,\nonumber\\
+ Q(x)={}&6x^{16}-3x^{14}+74x^{12}+48x^{10}\nonumber\\
+ &+134x^8+48x^6+74x^4-3x^2+6.
+ \label{low:invariant-polynomials}
+\end{align}
+An exact integer certificate excludes a common root:
+\begin{equation}
+ \operatorname{Res}_x(P,Q)\ne0.
+ \label{low:resultant}
+\end{equation}
+For a shorter arithmetic check, the first Euclidean remainder is
+\begin{equation}
+ \begin{aligned}
+ Q\bmod P={}&816x^5-2340x^4+2168x^3\\
+ &-1240x^2+616x-596,
+ \end{aligned}
+\end{equation}
+whose gcd with $P$ is $1$.  Thus the original parameter segment
+contains no measurement equivalent to the specified $f_0$ measurement
+under the allowed operations.
+
+
+
+
+

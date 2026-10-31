@@ -1,71 +1,37 @@
-# Explicit Tunable Elegant Joint Measurements for Every Odd Number of Qubits
+# A unified construction of multiqubit elegant joint measurements
 
 [中文](README.md) | English
 
-**Author: Tingyu Zhang**  
-**Date: 2026-10-30**
+**Tingyu Zhang and Yan Cen (corresponding author)**<br>
+Department of Physics, Fudan University, Shanghai, China<br>
+Email: [23300190021@m.fudan.edu.cn](mailto:23300190021@m.fudan.edu.cn) · [cenyan@fudan.edu.cn](mailto:cenyan@fudan.edu.cn)<br>
+**Version: October 31, 2026; bilingual draft in PRA format**
 
-This repository contains the complete paper in English and Chinese, the LaTeX sources, exact verification programs, and a Lean formalization.
+- Paper PDFs: [English, 15 pages](paper/main.pdf) · [Chinese, 16 pages](paper/main-zh.pdf)
+- LaTeX sources: [English](paper/main.tex) · [Chinese](paper/main-zh.tex)
+- Reproduction: [exact computations](paper/reproduce/README.md) · [Lean project](lean-unified/README.md) · [formal coverage](lean-unified/COVERAGE.md)
 
-## Abstract
+We study continuous phase deformations through a specified elegant joint measurement (EJM). The complete measurement remains orthonormal, and each qubit's local Bloch vectors form a regular tetrahedron with a common radius. Write $r_E(n)=\sqrt3/2^{n-1}$ for the reference radius.
 
-Elegant joint measurements connect orthogonal global measurement states with regular tetrahedral geometry in local Bloch spheres. Explicit individual constructions are known for arbitrary numbers of qubits, together with continuously tunable families for even numbers. For odd $n\ge5$, a uniform closed-form family passing through the known EJM, preserving fixed regular tetrahedral directions, and continuously varying a common radius had remained to be constructed. This work gives a uniform analytic construction for every odd $n\ge5$: the odd and even interior positions are separately compressed into parity bits, a fixed cubic Boolean function of five variables controls the phase, and a single-point correction is applied only to the physical all-zero string. The resulting $2^n$ states form an orthonormal basis for every real parameter. On $t\in[-\pi/2,\pi/2]$, each qubit has its own parameter-independent set of regular tetrahedral directions, while all qubits and measurement outcomes share the Bloch radius
+## Main results
 
-$$
-r_n(t)=\frac{\sqrt3}{2^{n-1}}(1-\sin t).
-$$
+1. **A unified enhanced family for every integer $n\ge5$.** One four-feature Boolean kernel gives complete measurements with fixed tetrahedral directions and radius
 
-At $t=0$, the family recovers the known multiqubit EJM state by state. Over the chosen parameter interval, its radius has the exact range $[0,\sqrt3/2^{n-2}]$. The proof separates local expectations into a background with zero single-qubit polarization and interference from a single-point defect, then uses Boolean Fourier cancellation for arbitrary odd $n$. An appendix provides fixed finite character certificates and their general-dimensional reduction. The construction yields continuously tunable single-qubit reduced spectra and connects the known measurement to an endpoint where every single-qubit marginal is maximally mixed.
+   $$r_n(t)=r_E(n)(1-\sin t).$$
 
-## Construction and main consequences
+   On $[-\pi/2,\pi/2]$, the radius is continuous and strictly decreasing, with exact image $[0,2r_E(n)]$. At $t=0$, the reference measurement is recovered column by column; at the right endpoint, every one-qubit reduced state is $I/2$.
+2. **The exact optimum for Boolean phase lines.** In the fixed phase representation, maximize over all Boolean generators through the reference point that preserve regular geometry in a neighborhood of that point, and over all real parameters. The maximum is $r_E(n)$ for $n=2,3,4$ and $2r_E(n)$ for $n\ge5$, with both bounds attained. The result also applies to two-valued real generators after removing a global phase and reparametrizing.
+3. **A two-parameter embedding for even qubit numbers.** For every even $n\ge8$, the earlier even-qubit family and the unified enhanced family are coordinate sections of one complete measurement family. On the domain $\Omega$ specified in the paper, $r_n(\alpha,\beta)=r_E(n)(\cos\alpha-\sin\beta)$ has exact image $[0,2r_E(n)]$. The two axes recover the corresponding measurements column by column, and the two directions are independent at the level of ordered measurement projectors.
+4. **A four-qubit obstruction for straight paths and a curved enhancement.** Every real phase line through the reference point in the fixed representation that preserves regular geometry locally has radius at most $r_E(4)$ for all parameters. An explicit curved path through the same point strictly increases the radius throughout $[0,\pi/4]$, reaching exactly $(1+1/\sqrt2)r_E(4)$.
 
-The construction uses the established Pauli-orbit and diagonal-phase framework. The same five-variable Boolean rule applies to all odd $n\ge5$; only the parity blocks and the standard CNOT chain depend on the system size. No new search or implicit parameter equation is required for each $n$.
+The paper also proves local rigidity of the specified three-qubit point in the fixed Pauli-orbit representation. At six qubits, the direct superposition has **equal signed local components** exactly when $\sin\alpha\sin\beta=0$. Within the paper's four-color phase model, including an independent zero-string phase, the regular solutions near the reference point are exactly two crossing branches.
 
-The radius decreases strictly across the chosen interval:
+These optima concern the specified phase models. An earlier four-qubit parameter segment reaches the larger radius $3r_E(4)$. We prove that no measurement on that segment is equivalent to our specified reference point under a common local unitary, qubit permutations, and outcome relabeling; we do not claim global optimality over all EJMs.
 
-$$
-r_n(-\pi/2)=\frac{\sqrt3}{2^{n-2}},\qquad
-r_n(0)=\frac{\sqrt3}{2^{n-1}},\qquad
-r_n(\pi/2)=0.
-$$
+## Formalization and reproduction
 
-The upper endpoint is twice the radius of the known EJM. Each fixed tetrahedral direction label occurs $2^{n-2}$ times at each qubit. At zero radius, the four local points coincide at the Bloch-sphere center, and every single-qubit reduced state equals $I/2$. The stated upper endpoint is the maximum along this constructed path.
+The [Lean 4.35.0 / mathlib v4.35.0 project](lean-unified/README.md) formalizes these constructions, model optima, low-dimensional results, and inequivalence from the actual circuit columns and reduced matrices. Coverage also includes the actual reduced spectrum $\lambda_\pm=(1\pm r)/2$, the von Neumann entropy identity $S=h_2((1+r)/2)$, and strict entropy monotonicity and endpoints along the unified path. See [COVERAGE.md](lean-unified/COVERAGE.md) for precise assumptions and declaration names. The adjacent `lean/` directory supplies the required common foundations.
 
-## Paper and formalization
+The [exact reproduction scripts](paper/reproduce/README.md), using Python and SymPy, independently check the original phases and circuit, finite character sums, derivative certificates, curved-path identities, and polynomial inequivalence certificates, with saved results included. Finite-dimensional recomputation provides cross-checks; the Lean proofs establish the statements for arbitrary dimension.
 
-- Paper PDF: [English](paper/main-en.pdf) | [Chinese](paper/main.pdf).
-- LaTeX source: [English](paper/main-en.tex) | [Chinese](paper/main.tex), with a shared [bibliography](paper/references.bib).
-- [Lean guide — Chinese](lean/README.md), [main theorem](lean/OddEJM/Main.lean), and [axiom audit](lean/axioms.txt).
-
-`OddEJM.odd_ejm_family` assumes only $n\ge5$ and `Odd n`. It proves properties of the actual circuit-generated measurement states: orthonormality, projector completeness, all single-qubit partial-trace formulas, tetrahedral geometry, label multiplicities, exact recovery of the original phase construction, and the radius's continuity, strict monotonicity on the stated interval, and exact image. Further theorems establish reduced-matrix multiplicities at nonzero radius, reduced-spectrum eigenvalues, and purity.
-
-The proofs use the standard axioms `propext`, `Classical.choice`, and `Quot.sound`, without `sorry`, custom axioms, or `native_decide`. The paper's base-2 entanglement-entropy formula remains an analytic consequence of the reduced spectrum and is outside the Lean formalization.
-
-## Reproduction
-
-From the repository root, run the exact checks with **Python 3.10+**, using only the standard library:
-
-```text
-python paper/verify_certificate.py
-python paper/verify_measurement.py
-```
-
-These generate the sixteen Walsh certificates and direct gate checks at $n=5,7,9,11$. Finite-size checks cross-check signs and normalization; the analytic and Lean proofs establish the result for arbitrary odd $n\ge5$.
-
-With elan installed, build the project pinned to **Lean 4.35.0 and mathlib v4.35.0**:
-
-```text
-cd lean
-lake exe cache get
-lake build
-lake env lean Audit.lean
-```
-
-The final command prints theorem types and transitive axiom dependencies. Cache download can be skipped when dependencies are already available.
-
-To rebuild the papers, return to the repository root and use XeLaTeX, latexmk, and BibTeX. The Chinese version additionally requires ctex/Fandol. Both versions have been built with TeX Live 2026:
-
-```text
-latexmk -cd -xelatex -interaction=nonstopmode -halt-on-error paper/main-en.tex
-latexmk -cd -xelatex -interaction=nonstopmode -halt-on-error paper/main.tex
-```
+The earlier odd-qubit version remains in Git history. The new version uses a different four-feature kernel and covers all $n\ge5$. The links above point to the current paper, sources, and verification materials.

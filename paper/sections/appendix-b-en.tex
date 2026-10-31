@@ -1,0 +1,156 @@
+\section{Proof of the sharp bounds for Boolean phase lines}
+\label{bound:appendix}
+
+\subsection{From tetrahedral regularity to equal signed components}
+The local action of the Pauli orbit sends a seed Bloch vector $(x,y,z)$
+to the four vectors
+\begin{equation}
+ (x,y,z),\quad(-x,-y,z),\quad(x,-y,-z),\quad(-x,y,-z).
+ \label{bound:orbit-four}
+\end{equation}
+The label map is onto these four sign patterns.  The three distinct
+off-diagonal inner products are
+$-x^2-y^2+z^2$, $x^2-y^2-z^2$, and $-x^2+y^2-z^2$.
+They are equal precisely when $x^2=y^2=z^2$.
+A common radius at all sites then makes the squares of all $3n$
+signed components equal.  At the specified base point each signed
+component equals $c_n>0$.  By continuity their signs remain positive
+on a sufficiently small interval, and the components themselves are
+equal there.
+
+For Boolean $d$, every term in a local expectation has a phase
+$e^{it[d(z)-d(z')]}$ with $d(z)-d(z')\in\{0,\pm1\}$.
+Thus any difference of two signed components is
+$A+B\cos t+C\sin t$.  If this vanishes near zero, its value and its
+first two derivatives at zero give $A=B=C=0$.
+Equality therefore holds for all real $t$, including any zero-radius
+points.  Conversely, equal signed components give the regular orbit
+in Eq.~\eqref{bound:orbit-four}, with radius
+$\sqrt3\,|m_d|$.  This proves the local-to-global step used in
+Theorem~\ref{bound:theorem}.
+
+\subsection{Background terms and coefficient comparison}
+Write $N=2^n$, $c=2/N$, and $q=d+\delta_0$.
+For a pulled-back signed Pauli operator
+\begin{equation}
+ R=i^pX^aZ^b,\qquad h=a\oplus b,\qquad
+ \Gamma=i^{p-|a|},
+ \label{bound:pullback}
+\end{equation}
+the local table has $a\ne0$, $h\ne0$ and two types:
+class I has $\Gamma=-i$, $h\cdot a=1$; class II has
+$\Gamma=-1$, $h\cdot a=0$.
+The phase identity $i^{f_0(z)}=-i\,i^{|z|}$ for $z\ne0$
+expresses the input seed as
+\begin{equation}
+ -\frac{i}{\sqrt N}\left[
+ \sum_z i^{|z|}e^{itq(z)}\ket z
+ +(i-e^{it})\ket0\right].
+ \label{bound:input-split}
+\end{equation}
+Consequently its expectation of $R$ is a background term
+\begin{equation}
+ B_R(t)=\frac{\Gamma}{N}\sum_z(-1)^{h\cdot z}
+ e^{it[q(z)-q(z\oplus a)]}
+ \label{bound:background}
+\end{equation}
+plus the cross term
+\begin{equation}
+ c\operatorname{Re}\!\left[
+ \Gamma e^{-itq(a)}(i-e^{it})\right].
+ \label{bound:cross}
+\end{equation}
+The defect has no diagonal contribution because $a\ne0$.
+
+Pairing $z$ with $z\oplus a$ in Eq.~\eqref{bound:background}
+cancels the cosine part for class I.  Since $h\ne0$,
+$\sum_z(-1)^{h\cdot z}=0$, and the remaining term is
+$B_I=-W_q(h)\sin t$.
+For class II the imaginary part cancels.  Using
+\begin{equation}
+ \cos\!\bigl(t[q(z)-q(z\oplus a)]\bigr)
+ =1-(1-\cos t)D_aq(z)
+\end{equation}
+gives $B_{II}=-W_{D_aq}(h)(1-\cos t)/2$.
+Adding Eq.~\eqref{bound:cross}, we obtain
+\begin{equation}
+ m_I(t)=\begin{cases}
+ c\cos t-W_q(h)\sin t,&q(a)=1,\\
+ c-[c+W_q(h)]\sin t,&q(a)=0,
+ \end{cases}
+ \label{bound:component-i}
+\end{equation}
+and
+\begin{equation}
+ \begin{split}
+ m_{II}(t)={}&-\tfrac12W_{D_aq}(h)(1-\cos t)\\
+ &+c\bigl\{[1-q(a)]\cos t+q(a)(1-\sin t)\bigr\}.
+ \end{split}
+ \label{bound:component-ii}
+\end{equation}
+
+For $n\ge3$, both classes occur.  The cosine coefficient in
+Eq.~\eqref{bound:component-i} forces all class-I flip values to equal
+some $s\in\{0,1\}$.  The sine coefficient in
+Eq.~\eqref{bound:component-ii} forces all class-II flip values to
+equal some $k\in\{0,1\}$.  Comparing the sine coefficients across
+the classes gives $W_q(h)=c(s+k-1)$, while comparing the constants
+gives $W_{D_aq}(h)=2c(s+k-1)$.  The cosine coefficients then also
+agree.  Substitution proves both directions of
+Eq.~\eqref{bound:conditions} and yields the four laws.
+Their maximum absolute values prove the general upper bound.
+
+\subsection{Analytic exclusions at \texorpdfstring{$n=2,3,4$}{n=2,3,4}}
+Use binary integers with $z_1$ the most significant bit.
+For $n\ge3$ and every class-I character, the Walsh condition is equivalently
+\begin{equation}
+ \sum_z q(z)(-1)^{h\cdot z}=1-s-k.
+ \label{bound:linear-character}
+\end{equation}
+Indeed, $W_q(h)=-2N^{-1}\sum_zq(z)(-1)^{h\cdot z}$ for $h\ne0$.
+
+For $n=2$, only class I occurs and its flip masks cover all three
+nonzero strings.  Equality of the cosine coefficients forces
+$q(z)=s$ for every $z\ne0$.  The choices $s=0$ and $s=1$
+give $q=\delta_0$ and $q\equiv1$, respectively.
+Their common components are $c$ and $c\cos t$, so neither exceeds
+the base radius in absolute value.
+
+For $n=3$, the class-I flip masks are $\{1,2,3,4,5\}$ and
+the class-II flip masks are $\{6,7\}$.
+Thus $q(0)=1$, the first set has value $s$, and the second set
+has value $k$; there are no further unknowns.
+For $h=1$, the left side of Eq.~\eqref{bound:linear-character}
+is $1-s$, which gives $k=0$.
+For $h=4$, it is $1+s-2k$, which gives $2s-k=0$.
+Hence $s=k=0$ and $d=0$.
+
+For $n=4$, the class-I flip masks are $\{1,2,3,8,9\}$ and
+the class-II masks are $\{6,7,12,13\}$.  Put
+\begin{equation}
+ (A,B,C,D,E,F)=(q_4,q_5,q_{10},q_{11},q_{14},q_{15}),
+ \label{bound:unknown-values}
+\end{equation}
+where $q_j=q(j)$.  The four class-I characters $h=1,3,7,15$
+give, respectively,
+\begin{equation}
+ \begin{aligned}
+ A-B+C-D+E-F+k&=0,\\
+ A-B-C+D-E+F+k&=0,\\
+ -A+B-C+D+E-F+k&=0,\\
+ -A+B+C-D-E+F+k&=0.
+ \end{aligned}
+ \label{bound:four-boundary-equations}
+\end{equation}
+Adding these equations gives $4k=0$ and therefore $k=0$.
+Equation~\eqref{bound:four-laws} now leaves only $m=c$ or
+$m=c\cos t$.  This exclusion covers every Boolean function at $n=4$; no ansatz for its support was used.
+It is sufficient for the radius bound, so a list of individual
+admissible supports is unnecessary.
+
+The low-dimensional upper bounds are attained at $t=0$.
+For every $n\ge5$, the explicit unified generator satisfies the
+admissibility conditions and gives $m(-\pi/2)=2c_n$.
+These two observations complete the proof of
+Eq.~\eqref{bound:sharp-max}, with a maximum rather than merely a
+supremum.

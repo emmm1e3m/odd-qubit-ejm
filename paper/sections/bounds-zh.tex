@@ -1,0 +1,54 @@
+\section{Boolean 相位直线的精确界}
+\label{bound:section}
+
+上述增强族还达到了一个更大相位变形类别中的最大半径。本节允许物理输入串上的任意 Boolean 函数，不要求特定压缩结构，也不预设背景态的条件。令
+\begin{equation}
+ \begin{gathered}
+ M_d(t)=C_n\operatorname{diag}_{z}
+ \bigl(i^{f_0(z)}e^{itd(z)}\bigr)H^{\otimes n},\\
+ d:\mathbb F_2^n\longrightarrow\{0,1\},\qquad d(0)=0.
+ \end{gathered}
+ \label{bound:line}
+\end{equation}
+若在包含 $t=0$ 的某个开区间内，各局部 Pauli 轨道形成共同半径的正四面体，就称这条直线为可容许直线。这一条件针对完整测量；酉分解已保证每个实参数处的正交归一性。
+
+\begin{theorem}[四律与 Boolean 直线的精确界]
+\label{bound:theorem}
+设 $n\ge3$，$d$ 为可容许直线的生成元，并记 $c_n=2^{1-n}$。全部带符号局部分量在所有实数 $t$ 上具有同一值 $m_d(t)$，且存在一个固定的 $(s,k)\in\{0,1\}^2$，使
+\begin{equation}
+ m_d(t)=c_n\bigl[(1-s)+s\cos t-k\sin t\bigr].
+ \label{bound:four-laws}
+\end{equation}
+因此，$m_d/c_n$ 只有四种可能的函数形式：$1$、$\cos t$、$1-\sin t$ 和 $\cos t-\sin t$；每个维数中未必都能实现全部四种形式。另外，对每个 $n\ge2$，记 $r_E(n)=\sqrt3\,c_n$，则可容许直线中的精确最大半径为
+\begin{equation}
+ \max_{\substack{d\ \text{admissible}\\t\in\mathbb R}}r_d(t)
+ =\begin{cases}
+ r_E(n),&n=2,3,4,\\
+ 2r_E(n),&n\ge5.
+ \end{cases}
+ \label{bound:sharp-max}
+\end{equation}
+两种最大值均能达到。
+\end{theorem}
+
+在基点处，这些分量全部等于正数 $c_n$，故规则性要求它们在基点邻域相等。每个分量均为 $1$、$\cos t$ 和 $\sin t$ 的线性组合，邻域中的相等因而延伸到全部实数 $t$。特别地，
+\begin{equation}
+ r_d(t)=\sqrt3\,|m_d(t)|.
+ \label{bound:radius}
+\end{equation}
+在 $m_d\ge0$ 的区间内，四面体保持原有取向。
+
+关键约束来自两类拉回 Pauli 算符的系数比较。令 $q=d+\delta_0$，则 $q$ 仍为 Boolean 函数且 $q(0)=1$，沿用式~\eqref{core:walsh-def} 的 Walsh 系数与 Boolean 导数定义。
+I 类分量的余弦系数为 $c_nq(a)$，II 类分量的正弦系数为 $-c_nq(a)$。对 $n\ge3$，两类均非空，因此分量相等迫使 I 类的所有翻转值为同一个 $s$，II 类的所有翻转值为同一个 $k$。其余系数相等恰好等价于
+\begin{equation}
+ \begin{aligned}
+ q(a)&=s,& W_q(h)&=c_n(s+k-1)&&({\rm I}),\\
+ q(a)&=k,& W_{D_aq}(h)&=2c_n(s+k-1)&&({\rm II}).
+ \end{aligned}
+ \label{bound:conditions}
+\end{equation}
+这些条件给出式~\eqref{bound:four-laws}，并且也是充分条件。对增强规律 $1-\sin t$，这些条件迫使两类 Walsh 系数均为零，从式~\eqref{core:boolean-background} 得到背景恒为零。
+
+四个归一化函数的绝对值最大值依次为 $1$、$1$、$2$ 和 $\sqrt2$，由此得到全部 $n\ge3$ 的上界 $2r_E$。低维条件更强：$n=3$ 时，两条 I 类字符方程迫使 $s=k=0$；$n=4$ 时，四条此类方程相加得到 $4k=0$，只余常值与余弦规律。$n=2$ 时没有 II 类，单独计算后同样只允许这两种规律。附录~\ref{bound:appendix} 给出系数计算与这些解析排除。低维上界在基点达到，而统一增强族对每个 $n\ge5$ 都在 $t=-\pi/2$ 达到 $2r_E$。
+
+因此，沿经过指定基点的 Boolean 相位直线增加半径，所需的最小系统规模为 $n=5$。这一结论也涵盖任意两值实对角生成元：减去其在 $z=0$ 的值可去除整体相位，再缩放或反向参数 $t$，便得到式~\eqref{bound:line}。一般多值相位直线和弯曲路径需要另行分析；后文 $n=4$ 的结果具体展示了这种区别。

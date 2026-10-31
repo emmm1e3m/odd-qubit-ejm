@@ -1,0 +1,140 @@
+\section{混合背景与\texorpdfstring{$n=6$}{n=6} 的例外}
+\label{embed:appendix}
+
+\subsection{归约为六个有限恒等式}
+
+本节证明定理~\ref{embed:theorem} 所需的联合背景消去。在本附录中，以 $\mathcal B_R=2^n B_R$ 表示未归一化背景期望，其中 $B_R$ 是式~\eqref{core:signal} 的归一化量。对拉回的 带符号 Pauli 算符 $R=i^pX^aZ^b$，令 $h=a\oplus b$、$\Gamma=i^{p-|a|}$。由式~\eqref{embed:seed} 得
+\begin{equation}
+ \mathcal B_R=\Gamma\sum_z(-1)^{h\cdot z}
+ u^{q_A(z)-q_A(z\oplus a)}
+ v^{q_B(z)-q_B(z\oplus a)}.
+ \label{embed:background-sum}
+\end{equation}
+其中符号由恒等式
+$i^{|z|-|z\oplus a|}=i^{-|a|}(-1)^{a\cdot z}$ 确定。
+
+对 I 类，$a$ 不含偶数内部位置，故 $u$ 的指数为零，余下的 $q_B$ 期望由统一族的计算知为零。每个 II 类翻转在 $E$ 中恰含一个位置 $e$。$u$ 的指数 $1$ 与 $-1$ 分别恰好对应 $z|_E=0$ 与 $z|_E=e_e$。写为
+\begin{equation}
+ \mathcal B_R=\Gamma\left[uK_+(v)+K_0(v)+u^{-1}K_-(v)\right].
+ \label{embed:sectors}
+\end{equation}
+II 类满足 $h\cdot a=0$。平移 $z\mapsto z\oplus a$ 交换两个非零扇区，保持字符不变，并反转 $v$ 的指数，因此
+$K_-(v)=K_+(v^{-1})$。令 $u=1$，单 $q_B$ 的结果给出 $K_++K_0+K_-=0$。所以只需证明 $K_+=0$。
+
+在正扇区中，$q_B$ 仅依赖
+\begin{align}
+ w&=(z_1,c,z_{n-1},z_n),\qquad c=\bigoplus_{j\in O}z_j,\notag\\
+ O&=\{3,5,\ldots,n-3\}.
+ \label{embed:four-sector-bits}
+\end{align}
+若 $h$ 在 $O$ 上同时取零和一，选取分别取这两值的两个位置。共同翻转它们保持 $c$、$q_B(z)$ 与 $q_B(z\oplus a)$，却反转 $(-1)^{h\cdot z}$，从而成对消去求和项。
+
+以下分类覆盖 $n\ge8$ 的全部内部观测量。对 $X_j$，有 $h=e_{j-1}\oplus e_j$。只有 $j=2,n-1$ 不选中任何奇数内部位；其它 $j$ 恰选中 $O$ 中一位，而 $O$ 至少有两位。对 $Y_j$，
+$h=e_{j-1}\oplus\bigoplus_{k=j+1}^n e_k$。当 $j=2,4$ 时，它在 $O$ 上全为一；当偶数 $j\ge6$ 时，选中 $j-1$ 而遗漏 $3$；当奇数 $j\le n-5$ 时，选中 $O$ 的非空真后缀；当 $j=n-3,n-1$ 时，在 $O$ 上全为零。因此字符配对后仅剩
+\begin{equation}
+ X_2,\ X_{n-1},\ Y_2,\ Y_4,\ Y_{n-3},\ Y_{n-1}.
+ \label{embed:six-remaining}
+\end{equation}
+
+这六项有一份仅使用式~\eqref{core:kernel} 四特征核 $F$ 的显式有限证书。对 $w=(w_1,w_2,w_3,w_4)$，定义
+\begin{equation}
+ T_\varepsilon(w)=F(w_1\oplus w_3,\varepsilon,w_2,w_1\oplus w_4),
+ \qquad\varepsilon\in\{0,1\}.
+ \label{embed:restricted-kernel}
+\end{equation}
+令 $A$ 表示 $a$ 在 $w$ 上诱导的翻转，$H$ 表示剩余字符；二者均按 $w_1$ 为最高位的四位整数编码。于是
+\begin{equation}
+ K_+(v)=2^{|O|-1}\sum_{w\in\mathbb F_2^4}
+ (-1)^{H\cdot w}v^{T_0(w)-T_1(w\oplus A)}.
+ \label{embed:finite-sector-sum}
+\end{equation}
+对 $k=-1,0,1$，令 $N_k^\pm$ 计数指数为 $k$、字符符号为 $\pm1$ 的输入。代入 $F$ 的两个分支，完整计数如下，各项均为 $(N_k^+,N_k^-)$：
+\begin{center}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{c rr ccc}
+\hline\hline
+观测量 & $A$ & $H$ & $k=-1$ & $k=0$ & $k=1$\\
+\hline
+$X_2$ & 8 & 8 & $(3,3)$ & $(4,4)$ & $(1,1)$\\
+$X_{n-1}$ & 2 & 2 & $(2,2)$ & $(6,6)$ & $(0,0)$\\
+$Y_2$ & 9 & 15 & $(2,2)$ & $(6,6)$ & $(0,0)$\\
+$Y_4$ & 5 & 7 & $(2,2)$ & $(6,6)$ & $(0,0)$\\
+$Y_{n-3}$ & 5 & 3 & $(2,2)$ & $(6,6)$ & $(0,0)$\\
+$Y_{n-1}$ & 3 & 1 & $(3,3)$ & $(4,4)$ & $(1,1)$\\
+\hline\hline
+\end{tabular}
+\end{center}
+因此式~\eqref{embed:finite-sector-sum} 的每个系数均为零。联立式~\eqref{embed:sectors} 与式~\eqref{embed:defect}，对全部偶数 $n\ge8$ 得共同 带符号 分量 $2^{1-n}(\cos\alpha-\sin\beta)$。酉性及式~\eqref{core:bloch-orbit} 的轨道传递随后给出完整测量结论。
+
+\subsection{\texorpdfstring{$n=6$}{n=6} 时的直接叠加}
+
+当 $n=6$ 时，$O=\{3\}$。两个额外项 $X_3,X_4$ 在式~\eqref{embed:finite-sector-sum} 中均有 $(A,H)=(4,4)$。它们对应 $k=-1,0,1$ 的计数为 $(4,2),(4,4),(0,2)$，因此
+\begin{align}
+ K_+(v)&=2v^{-1}-2v,\notag\\
+ K_-(v)&=-K_+(v),\qquad K_0(v)=0.
+ \label{embed:six-sectors}
+\end{align}
+由于 $\Gamma=-1$，未归一化背景为
+\begin{equation}
+ \mathcal B_{X_3}=\mathcal B_{X_4}
+ =2(u-u^{-1})(v-v^{-1})=-8\sin\alpha\sin\beta.
+ \label{embed:six-mixed}
+\end{equation}
+其余十六个背景均为零。全部十八项缺陷贡献仍等于 $2(\cos\alpha-\sin\beta)$，所以对全部实参数，相同 带符号 分量等价于 $\sin\alpha\sin\beta=0$。在基点邻域内，这恰为两条坐标轴。只改变零串相位无法消除分量之差，因为 $X_2$ 与 $X_3$ 属于同一类，缺陷项完全相同。
+
+\subsection{四种颜色与独立零串相位}
+
+为得到更强的局部结论，允许对 $(q_A,q_B)$ 的四种取值赋任意相位。去除整体相位后写为
+\begin{equation}
+ \lambda_{00}=1,\quad\lambda_{10}=e^{i\alpha},\quad
+ \lambda_{01}=e^{i\beta},\quad\lambda_{11}=e^{i\gamma}.
+ \label{embed:colors}
+\end{equation}
+种子为
+\begin{equation}
+ \frac{-i}{8}C_6\left[\sum_z i^{|z|}\lambda_{q_A(z),q_B(z)}\ket z
+ +(e^{i\phi}-e^{i\gamma})\ket{0^6}\right].
+ \label{embed:color-seed}
+\end{equation}
+基点是 $(\alpha,\beta,\gamma,\phi)=(0,0,0,\pi/2)$。直接叠加对应 $\gamma=\alpha+\beta$、$\phi=\pi/2$。
+
+除去系数 $2/64$ 后，两类缺陷贡献为
+\begin{align}
+ F_I&=\sin(\phi-\alpha)-\sin(\gamma-\alpha),\notag\\
+ F_{II}&=\cos(\gamma-\beta)-\cos(\phi-\beta).
+ \label{embed:color-defect}
+\end{align}
+完整未归一化背景由以下有限和给出：
+\begin{equation}
+ \mathcal B_R=\Gamma\sum_{z\in\mathbb F_2^6}(-1)^{h\cdot z}
+ \lambda_{q_A(z),q_B(z)}
+ \overline{\lambda_{q_A(z\oplus a),q_B(z\oplus a)}}.
+ \label{embed:color-sum}
+\end{equation}
+代入表~\ref{core:pullback-table} 的拉回及上述显式 Boolean 函数，仅有以下非零表达式：
+\begin{align}
+ \mathcal B_{X_3}=\mathcal B_{X_4}
+ &=4[-\cos\alpha+\cos\gamma\notag\\[-2pt]
+ &\hspace{1.4em}-\cos(\alpha-\beta)+\cos(\beta-\gamma)],\notag\\
+ \mathcal B_{Y_3}&=8[\cos\alpha-\cos(\beta-\gamma)],\notag\\
+ \mathcal B_{Z_4}=\mathcal B_{Z_5}=\mathcal B_{X_6}
+ &=-8[\sin\beta+\sin(\alpha-\gamma)].
+ \label{embed:color-backgrounds}
+\end{align}
+其它十二项恒为零。因此，每个真实 带符号 期望按所属类别分别为 $(\mathcal B_R+2F_I)/64$ 或 $(\mathcal B_R+2F_{II})/64$。
+
+特别地，$X_1$ 与 $X_2$ 的背景均为零，分别属于 I 类与 II 类。因此，所有 带符号 分量相等必要求 $F_I=F_{II}$，继而迫使式~\eqref{embed:color-backgrounds} 中每项为零；反之，这些条件也充分。背景方程归约为
+\begin{align}
+ \sin\beta&=\sin(\gamma-\alpha),\notag\\
+ \cos\alpha&=\cos(\gamma-\beta),\notag\\
+ \cos\gamma&=\cos(\alpha-\beta).
+ \label{embed:color-equations}
+\end{align}
+在原点附近，最后一式给出 $\gamma=\alpha-\beta$ 或 $\gamma=\beta-\alpha$。第一种情形下，首式化为 $\sin\beta=-\sin\beta$，故 $\beta=0$、$\gamma=\alpha$。第二种情形下，首式化为 $2\cos(\beta-\alpha)\sin\alpha=0$，故 $\alpha=0$、$\gamma=\beta$。两支均满足中间方程。
+
+最后，令 $G=F_I-F_{II}$。基点处 $\partial_\phi G=-1$，而 $\phi=\pi/2$ 沿两支都满足 $G=0$。隐函数定理保证附近该解唯一。因此，完整局部解集为
+\begin{equation}
+ (\alpha,0,\alpha,\pi/2)\quad\text{或}\quad(0,\beta,\beta,\pi/2).
+ \label{embed:color-crossing}
+\end{equation}
+基点处全部 带符号 分量严格为正。在足够小邻域内，如附录 B 所述，固定轨道下的共同半径正四面体条件因而等价于 带符号 分量相等。所以式~\eqref{embed:color-crossing} 精确分类了所述颜色模型中的局部规则测量，证明命题~\ref{embed:six-proposition}。

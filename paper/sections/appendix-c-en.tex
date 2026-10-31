@@ -1,0 +1,141 @@
+\section{Mixed backgrounds and the exception at \texorpdfstring{$n=6$}{n=6}}
+\label{embed:appendix}
+
+\subsection{Reduction to six finite identities}
+
+We prove the joint-background cancellation used in Theorem~\ref{embed:theorem}. In this appendix, write $\mathcal B_R=2^n B_R$ for the unnormalized background expectation, where $B_R$ is the normalized quantity in Eq.~\eqref{core:signal}. For a pulled-back signed Pauli $R=i^pX^aZ^b$, put $h=a\oplus b$ and $\Gamma=i^{p-|a|}$. Equation~\eqref{embed:seed} gives
+\begin{equation}
+ \mathcal B_R=\Gamma\sum_z(-1)^{h\cdot z}
+ u^{q_A(z)-q_A(z\oplus a)}
+ v^{q_B(z)-q_B(z\oplus a)}.
+ \label{embed:background-sum}
+\end{equation}
+The sign follows from
+$i^{|z|-|z\oplus a|}=i^{-|a|}(-1)^{a\cdot z}$.
+
+For class I, $a$ contains no even internal position, so the exponent of $u$ vanishes. The remaining $q_B$ expectation is zero by the unified-family calculation. Every class-II flip contains exactly one position $e\in E$. The $u$ exponents $1$ and $-1$ occur precisely on $z|_E=0$ and $z|_E=e_e$, respectively. Write
+\begin{equation}
+ \mathcal B_R=\Gamma\left[uK_+(v)+K_0(v)+u^{-1}K_-(v)\right].
+ \label{embed:sectors}
+\end{equation}
+For class II, $h\cdot a=0$. Translation by $a$ exchanges the two nonzero sectors without changing the character and reverses the $v$ exponent. Hence
+$K_-(v)=K_+(v^{-1})$. At $u=1$, the single-$q_B$ result gives $K_++K_0+K_-=0$. It is therefore enough to prove $K_+=0$.
+
+On the positive sector, $q_B$ depends only on
+\begin{align}
+ w&=(z_1,c,z_{n-1},z_n),\qquad c=\bigoplus_{j\in O}z_j,\notag\\
+ O&=\{3,5,\ldots,n-3\}.
+ \label{embed:four-sector-bits}
+\end{align}
+If $h$ takes both values zero and one on $O$, choose two such positions. Flipping both preserves $c$, $q_B(z)$, and $q_B(z\oplus a)$, but reverses $(-1)^{h\cdot z}$. The corresponding terms cancel.
+
+The following classification covers all internal observables when $n\ge8$. For $X_j$, $h=e_{j-1}\oplus e_j$. Only $j=2,n-1$ select no odd internal position; every other $j$ selects exactly one of the at least two positions in $O$. For $Y_j$,
+$h=e_{j-1}\oplus\bigoplus_{k=j+1}^n e_k$. At $j=2,4$, its restriction to $O$ is all ones. At even $j\ge6$, it contains $j-1$ but omits $3$. At odd $j\le n-5$, it is a nonempty proper suffix of $O$. At $j=n-3,n-1$, it is zero. Consequently, only
+\begin{equation}
+ X_2,\ X_{n-1},\ Y_2,\ Y_4,\ Y_{n-3},\ Y_{n-1}
+ \label{embed:six-remaining}
+\end{equation}
+remain after character pairing.
+
+Here is an explicit finite certificate for these six terms, using only the four-feature kernel $F$ of Eq.~\eqref{core:kernel}. For $w=(w_1,w_2,w_3,w_4)$ define
+\begin{equation}
+ T_\varepsilon(w)=F(w_1\oplus w_3,\varepsilon,w_2,w_1\oplus w_4),
+ \qquad\varepsilon\in\{0,1\}.
+ \label{embed:restricted-kernel}
+\end{equation}
+Let $A$ encode the flip induced by $a$ on $w$ and let $H$ encode the remaining character. Both are written as four-bit integers, with $w_1$ the most significant bit. Then
+\begin{equation}
+ K_+(v)=2^{|O|-1}\sum_{w\in\mathbb F_2^4}
+ (-1)^{H\cdot w}v^{T_0(w)-T_1(w\oplus A)}.
+ \label{embed:finite-sector-sum}
+\end{equation}
+For $k=-1,0,1$, let $N_k^\pm$ count the inputs with exponent $k$ and character sign $\pm1$. Substitution of the two branches of $F$ gives the following complete counts; each entry is $(N_k^+,N_k^-)$:
+\begin{center}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{c rr ccc}
+\hline\hline
+Observable & $A$ & $H$ & $k=-1$ & $k=0$ & $k=1$\\
+\hline
+$X_2$ & 8 & 8 & $(3,3)$ & $(4,4)$ & $(1,1)$\\
+$X_{n-1}$ & 2 & 2 & $(2,2)$ & $(6,6)$ & $(0,0)$\\
+$Y_2$ & 9 & 15 & $(2,2)$ & $(6,6)$ & $(0,0)$\\
+$Y_4$ & 5 & 7 & $(2,2)$ & $(6,6)$ & $(0,0)$\\
+$Y_{n-3}$ & 5 & 3 & $(2,2)$ & $(6,6)$ & $(0,0)$\\
+$Y_{n-1}$ & 3 & 1 & $(3,3)$ & $(4,4)$ & $(1,1)$\\
+\hline\hline
+\end{tabular}
+\end{center}
+Thus every coefficient in Eq.~\eqref{embed:finite-sector-sum} vanishes. Equations~\eqref{embed:sectors} and \eqref{embed:defect} give the common signed component $2^{1-n}(\cos\alpha-\sin\beta)$ for all even $n\ge8$. Unitarity and the orbit transfer in Eq.~\eqref{core:bloch-orbit} then establish the full measurement statement.
+
+\subsection{The direct superposition at \texorpdfstring{$n=6$}{n=6}}
+
+For $n=6$, $O=\{3\}$. The two additional terms $X_3,X_4$ both have $(A,H)=(4,4)$ in Eq.~\eqref{embed:finite-sector-sum}. Their counts for $k=-1,0,1$ are $(4,2),(4,4),(0,2)$, giving
+\begin{align}
+ K_+(v)&=2v^{-1}-2v,\notag\\
+ K_-(v)&=-K_+(v),\qquad K_0(v)=0.
+ \label{embed:six-sectors}
+\end{align}
+Since $\Gamma=-1$, the unnormalized backgrounds are
+\begin{equation}
+ \mathcal B_{X_3}=\mathcal B_{X_4}
+ =2(u-u^{-1})(v-v^{-1})=-8\sin\alpha\sin\beta.
+ \label{embed:six-mixed}
+\end{equation}
+The other sixteen backgrounds vanish. All eighteen defect contributions still equal $2(\cos\alpha-\sin\beta)$, so equal signed components are equivalent to $\sin\alpha\sin\beta=0$ for all real parameters. In a neighborhood of the base point, these are exactly the two coordinate axes. Changing only the zero-string phase cannot remove their difference: $X_2$ and $X_3$ belong to the same class and have identical defect terms.
+
+\subsection{Four colors with an independent zero-string phase}
+
+For a stronger local statement, allow arbitrary phases on the four values of $(q_A,q_B)$. After removing a global phase, write
+\begin{equation}
+ \lambda_{00}=1,\quad\lambda_{10}=e^{i\alpha},\quad
+ \lambda_{01}=e^{i\beta},\quad\lambda_{11}=e^{i\gamma}.
+ \label{embed:colors}
+\end{equation}
+The seed is
+\begin{equation}
+ \frac{-i}{8}C_6\left[\sum_z i^{|z|}\lambda_{q_A(z),q_B(z)}\ket z
+ +(e^{i\phi}-e^{i\gamma})\ket{0^6}\right].
+ \label{embed:color-seed}
+\end{equation}
+The base point is $(\alpha,\beta,\gamma,\phi)=(0,0,0,\pi/2)$. The direct superposition has $\gamma=\alpha+\beta$ and $\phi=\pi/2$.
+
+The defect contributions before the factor $2/64$ are
+\begin{align}
+ F_I&=\sin(\phi-\alpha)-\sin(\gamma-\alpha),\notag\\
+ F_{II}&=\cos(\gamma-\beta)-\cos(\phi-\beta).
+ \label{embed:color-defect}
+\end{align}
+The complete unnormalized backgrounds follow from the finite sum
+\begin{equation}
+ \mathcal B_R=\Gamma\sum_{z\in\mathbb F_2^6}(-1)^{h\cdot z}
+ \lambda_{q_A(z),q_B(z)}
+ \overline{\lambda_{q_A(z\oplus a),q_B(z\oplus a)}}.
+ \label{embed:color-sum}
+\end{equation}
+With the pullbacks of Table~\ref{core:pullback-table} and the explicit Boolean functions above, the only nonzero expressions are
+\begin{align}
+ \mathcal B_{X_3}=\mathcal B_{X_4}
+ &=4[-\cos\alpha+\cos\gamma\notag\\[-2pt]
+ &\hspace{1.4em}-\cos(\alpha-\beta)+\cos(\beta-\gamma)],\notag\\
+ \mathcal B_{Y_3}&=8[\cos\alpha-\cos(\beta-\gamma)],\notag\\
+ \mathcal B_{Z_4}=\mathcal B_{Z_5}=\mathcal B_{X_6}
+ &=-8[\sin\beta+\sin(\alpha-\gamma)].
+ \label{embed:color-backgrounds}
+\end{align}
+The other twelve expressions vanish identically. Thus each actual signed expectation is $(\mathcal B_R+2F_I)/64$ or $(\mathcal B_R+2F_{II})/64$, according to its class.
+
+In particular, $X_1$ and $X_2$ have zero background and belong to classes I and II, respectively. Equal signed components therefore require $F_I=F_{II}$ and force each expression in Eq.~\eqref{embed:color-backgrounds} to vanish. Conversely, these conditions are sufficient. The background equations reduce to
+\begin{align}
+ \sin\beta&=\sin(\gamma-\alpha),\notag\\
+ \cos\alpha&=\cos(\gamma-\beta),\notag\\
+ \cos\gamma&=\cos(\alpha-\beta).
+ \label{embed:color-equations}
+\end{align}
+Near the origin, the last equation gives $\gamma=\alpha-\beta$ or $\gamma=\beta-\alpha$. In the first case, the first equation gives $\sin\beta=-\sin\beta$, hence $\beta=0$ and $\gamma=\alpha$. In the second case, it gives $2\cos(\beta-\alpha)\sin\alpha=0$, hence $\alpha=0$ and $\gamma=\beta$. Both branches satisfy the middle equation.
+
+Finally, let $G=F_I-F_{II}$. At the base point, $\partial_\phi G=-1$, and $\phi=\pi/2$ solves $G=0$ along both branches. The implicit function theorem makes this solution unique nearby. The complete local solution set is therefore
+\begin{equation}
+ (\alpha,0,\alpha,\pi/2)\quad\text{or}\quad(0,\beta,\beta,\pi/2).
+ \label{embed:color-crossing}
+\end{equation}
+All signed components are positive at the base point. In a sufficiently small neighborhood, the fixed-orbit tetrahedral conditions with a common radius are consequently equivalent to equal signed components, as in Appendix B. Equation~\eqref{embed:color-crossing} therefore classifies the local regular measurements in the stated color model and proves Proposition~\ref{embed:six-proposition}.

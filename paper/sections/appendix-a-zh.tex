@@ -1,0 +1,151 @@
+\section{局部公式与全\texorpdfstring{$n$}{n}归约}
+\label{core:appendix}
+
+\subsection{逐门拉回与物理单点修正}
+\label{core:pullbacks}
+
+以$\mathbf e_j$表示二进制单位向量，记$T_j=\mathbf e_j\oplus\cdots\oplus\mathbf e_n$。对CNOT链直接共轭得到
+\begin{align}
+ S^\dagger X_1S&=X_1,\nonumber\\
+ S^\dagger X_jS&=X_{j-1}X_j\quad(j>1),\nonumber\\
+ S^\dagger Z_jS&=Z_jZ_{j+1}\cdots Z_n.
+ \label{core:cnot-pullbacks}
+\end{align}
+再经末位Hadamard共轭，并使用$Y=iXZ$，即得表\ref{core:pullback-table}。在$R=i^kX^aZ^b$中，$Z$因子先作用。例如，$Y_n$拉回为$-iX_{n-1}X_nZ_n$；因此带符号可观测量$-Y_n$与其余I类一样，均有$\Gamma=-i$。每一行均满足$a\ne0$、$h\ne0$。
+
+\begin{table*}[t]
+\caption{拉回算符$C_n^\dagger\widetilde P C_n=i^kX^aZ^b$，以$a$、$h=a\oplus b$和$\Gamma=i^{k-|a|}$表示。该表对每个$n\ge2$成立；$n=2$时没有内部行。}
+\label{core:pullback-table}
+\begin{ruledtabular}
+\begin{tabular}{ccccc}
+类别&带符号可观测量&$a$&$h$&$\Gamma$\\
+I&$X_1$&$\mathbf e_1$&$\mathbf e_1$&$-i$\\
+I&$Y_1$&$\mathbf e_1\oplus\mathbf e_n$&$T_2$&$-i$\\
+I&$Z_j$，$1\le j\le n$&$\mathbf e_n$&$T_j$&$-i$\\
+I&$X_n$&$\mathbf e_{n-1}$&$T_{n-1}$&$-i$\\
+I&$-Y_n$&$\mathbf e_{n-1}\oplus\mathbf e_n$&$\mathbf e_{n-1}$&$-i$\\
+II&$X_j$，$2\le j<n$&$\mathbf e_{j-1}\oplus\mathbf e_j$&$\mathbf e_{j-1}\oplus\mathbf e_j$&$-1$\\
+II&$Y_j$，$2\le j<n$&$\mathbf e_{j-1}\oplus\mathbf e_j\oplus\mathbf e_n$&$\mathbf e_{j-1}\oplus T_{j+1}$&$-1$\\
+\end{tabular}
+\end{ruledtabular}
+\end{table*}
+
+对任意实函数$\Theta$，直接求和得到
+\begin{equation}
+ B_R=2^{-n}\Gamma\sum_z(-1)^{h\cdot z}
+ e^{i[\Theta(z)-\Theta(z\oplus a)]}.
+ \label{core:background-sum}
+\end{equation}
+这是因为$i^{|z|-|z\oplus a|}=i^{-|a|}(-1)^{a\cdot z}$。此外，
+\begin{equation}
+ \bra{\chi_\Theta}R\ket0
+ =2^{-n/2}\Gamma e^{-i\Theta(a)},\qquad
+ \bra0R\ket0=0.
+\end{equation}
+展开式\eqref{core:defect-state}即证明式\eqref{core:signal}，并同时确定其归一化及背景项。
+
+基点相位恒等式由
+\begin{equation}
+ \sum_{\ell=0}^{w}(-1)^\ell\binom w\ell=0\quad(w>0)
+\end{equation}
+得到。移除$\ell=0,1$两项，就有$w>0$时$f_0=w-1$。在$z=0$处，式\eqref{core:defect-state}方括号内的振幅为$2^{-n/2}i$，再乘$-i$即恢复基点振幅$2^{-n/2}$。在其余输入上，振幅为$2^{-n/2}i^{f_0(z)}e^{i\Theta(z)}$。这在实际输入振幅层面证明了分解式。
+
+\subsection{Boolean背景与字符配对}
+\label{core:pairing}
+
+置$\xi_z=2^{-n/2}i^{|z|}$、$\eta_z=(-1)^{q(z)}\xi_z$。由于$q$为Boolean函数，
+\begin{equation}
+ \ket{\chi_{tq}}=e^{it/2}
+ \left[\cos(t/2)\ket\xi-i\sin(t/2)\ket\eta\right].
+\end{equation}
+由式\eqref{core:background-sum}，
+\begin{align}
+ \bra\xi R\ket\xi&=0,\nonumber\\
+ \bra\xi R\ket\eta&=\Gamma W_q(h),\nonumber\\
+ \bra\eta R\ket\eta&=\Gamma W_{D_aq}(h).
+\end{align}
+I类中，$D_aq$沿$a$平移不变，而$h\cdot a=1$，故其Walsh系数由配对消去。余下交叉项为$-\sin t\,W_q(h)$。II类中，$\Gamma=-1$为实数，交叉项消失，对角项为$-\sin^2(t/2)W_{D_aq}(h)$。这证明了式\eqref{core:boolean-background}，不需要预先假设背景为零。
+
+一般地，设$L:\mathbb F_2^n\to\mathbb F_2^k$的秩为$k$。若$h\notin\operatorname{row}L=(\ker L)^\perp$，则存在$w\in\ker L$使$h\cdot w=1$。沿$w$平移使$(-1)^{h\cdot z}$反号，同时保持所有$Lz$的函数不变。若$h=L^TH$，则
+\begin{equation}
+ 2^{-n}\sum_z(-1)^{h\cdot z}G(Lz)
+ =2^{-k}\sum_v(-1)^{H\cdot v}G(v),
+ \label{core:compression}
+\end{equation}
+因为每个纤维含$2^{n-k}$个元素。这里仅需这一初等配对结论，无需更一般的线性编码理论。
+
+\subsection{每个\texorpdfstring{$n\ge5$}{n >= 5}的完整字符分类}
+\label{core:alln-classification}
+
+对式\eqref{core:features}的四特征映射，物理字符$h$属于其行空间，当且仅当
+\begin{equation}
+ \begin{gathered}
+ h\text{在}E_n\text{及}O_n\text{上分别为常量},\\
+ h_1=h_{n-1}\oplus h_n.
+ \end{gathered}
+ \label{core:row-test}
+\end{equation}
+此时对应的四位字符是
+\[
+ H=(h_{n-1},h_E,h_O,h_n).
+\]
+第一项条件检验两个内部奇偶特征；第二项来自$z_1$的系数等于$x$与$s$系数之和。反过来，这些条件足以从四个特征重建原字符。两个内部块都包含至少一个坐标，故该表示唯一。
+
+将式\eqref{core:row-test}用于表\ref{core:pullback-table}，恰得到表\ref{core:residual-table}。此处及下文的四位整数均按$(x,b,c,s)$顺序编码。
+
+\begin{table}[tbp]
+\caption{四特征映射下，字符配对后留下的全部局部项。$A=\mathcal L_na$，$h=\mathcal L_n^TH$。未在表中出现的项，在使用$F$的任何性质之前就已相消。}
+\label{core:residual-table}
+\begin{ruledtabular}
+\begin{tabular}{cccc}
+可观测量&维数&类别&$(A,H)$\\
+$Y_1$&$n\ge5$&I&$(8,15)$\\
+$Z_2$&$n\ge5$&I&$(1,15)$\\
+$Z_{n-1}$&$n\ge5$&I&$(1,9)$\\
+$X_n$&$n\ge5$&I&$(8,9)$\\
+$Z_3$&$n=5$&I&$(1,11)$\\
+$X_3$&$n=5$&II&$(6,6)$\\
+$Y_3$&$n=5,6$&II&$(7,13)$\\
+$Y_4$&$n=6,7$&II&$(7,11)$\\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+分类直接来自各字符的支持。I类的$X_1,Z_1,Z_n,-Y_n$均违反式\eqref{core:row-test}的端点关系。表\ref{core:residual-table}中四个与维数无关的行满足该关系，并且选择完整的奇偶块。内部后缀$T_j$（$3\le j\le n-2$）只有在$n=5,j=3$时才能选择完整块。$n\ge6$时，$j=3$选择$4$而遗漏$2$；$j\ge4$时，被选中的内部坐标$n-2$与遗漏的首个块坐标$2$或$3$奇偶相同。
+
+对于II类$X_j$，端点情形$j=2,n-1$违反端点关系。其余情形的字符仅选择两个相邻内部坐标；要同时选全两个奇偶块，两块必须各含一个元素，即$n=5,j=3$。对于II类$Y_j$，支持为$\{j-1\}\cup\{j+1,\ldots,n\}$。$j=2,n-1$同样违反端点关系。$j=3$时，奇块必须只有$3$，得到$n=5,6$；$j=4$时，偶块中不能有$6$，得到$n=6,7$；$j\ge5$时，选中的$j-1$与遗漏的同奇偶块首坐标破坏块内常值性。这就对无上界的$n$证明了整张表。
+
+为计算残留项，注意$F$中$x$的系数为$1\oplus s\oplus c$。三个字符$9,11,15$的$x$系数均为一，故对$x$求和后只保留$c=s$。在$c=s=0$与$c=s=1$两个切片上，分别有
+\begin{equation}
+ F=1\oplus x\oplus b,\qquad F=x\oplus b.
+\end{equation}
+字符$9,11$不含$b$，其和式沿$b$相消。字符$15$在这两个切片上贡献$x\oplus b\oplus c\oplus s=x\oplus b$，只留下符号相反的两个常数。由此得到式\eqref{core:six-cancellations}的前三式。展开$F(v)\oplus F(v\oplus A)$得到式\eqref{core:derivatives}，其$x$依赖直接给出后三式。因此对全部实数$t$，所有背景项都为零。
+
+还需检查字符已相消的行所对应的翻转。由表\ref{core:pullback-table}，I类翻转映入$\{1,8,9\}$，II类翻转映入$\{6,7,10,11,12,13\}$。直接代入式\eqref{core:kernel}的两个分支得到
+\begin{equation}
+ \begin{aligned}
+ F(A)&=0\quad(A\in\{1,8,9\}),\\
+ F(A)&=1\quad(A\in\{6,7,10,11,12,13\}).
+ \end{aligned}
+ \label{core:flip-values}
+\end{equation}
+这些集合包含末个内部坐标两种奇偶情形，证明了定理\ref{core:unified-theorem}所用的交叉项恒等式。
+
+\subsection{完整测量、约化态与重数}
+\label{core:full-measurement}
+
+该电路满足
+\begin{equation}
+ \begin{aligned}
+ C_n^\dagger(Z_hZ_{h+1})C_n&=Z_h\quad(h<n),\\
+ C_n^\dagger X^{\otimes n}C_n&=Z_n.
+ \end{aligned}
+\end{equation}
+由于$D$为对角矩阵，且$H^{\otimes n}\ket{k}=Z^k\ket{+}^{\otimes n}$，这些恒等式证明了式\eqref{core:orbit}，列的原始次序为$k=(e_1,\ldots,e_{n-1},\sigma)$，不需要随参数变化的重标号或列相位。在位置$j$，轨道元的Pauli共轭分别将物理$X,Y,Z$期望乘以$(-1)^{\kappa_j},(-1)^{\kappa_j+\sigma},(-1)^\sigma$。结合种子的取向$\epsilon_j$，即得式\eqref{core:vertices}。
+
+对于实际偏迹$\rho_j=\operatorname{Tr}_{\bar j}\ket\psi\!\bra\psi$，有$\operatorname{Tr}(\rho_j\sigma_\alpha)=\langle\psi|\sigma_{j\alpha}|\psi\rangle$。归一化及三个Pauli分量唯一确定一个$2\times2$厄米矩阵，因此得到式\eqref{core:bloch-orbit}。式\eqref{core:vertices}中每个向量均为单位向量；两个不同标签恰改变两个坐标的符号，故内积为$-1/3$。
+
+固定$j$后，$\kappa_j=e_{j-1}\oplus e_j$是$e$的非零线性函数，包括$j=1,n$的情形。它与列比特$\sigma$独立，故每对$(\kappa_j,\sigma)$恰有$2^{n-2}$个原像。正半径时它们对应四个不同约化态；零半径时全部等于$I/2$。最后，$M[D]$的酉性同时证明正交归一性以及$\sum_k\ket{\psi_k}\!\bra{\psi_k}=I$。由此完成从相位核到完整投影测量的连接。
+
+
+

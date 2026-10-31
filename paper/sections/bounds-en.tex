@@ -1,0 +1,94 @@
+\section{Sharp bounds for Boolean phase lines}
+\label{bound:section}
+
+The enhanced family also attains the largest radius possible for a much
+broader class of phase deformations.  We now allow an arbitrary Boolean
+function on the physical input strings, without a compression assumption
+or a condition on the background state.  Let
+\begin{equation}
+ \begin{gathered}
+ M_d(t)=C_n\operatorname{diag}_{z}
+ \bigl(i^{f_0(z)}e^{itd(z)}\bigr)H^{\otimes n},\\
+ d:\mathbb F_2^n\longrightarrow\{0,1\},\qquad d(0)=0.
+ \end{gathered}
+ \label{bound:line}
+\end{equation}
+We call such a line admissible if, on an open interval containing $t=0$,
+its local Pauli orbits form regular tetrahedra with a common radius.
+This requirement refers to the complete measurement.  The unitary
+factorization already guarantees orthonormality for every real $t$.
+
+\begin{theorem}[Four laws and the sharp Boolean-line bound]
+\label{bound:theorem}
+Let $n\ge3$ and let $d$ be admissible.  Set $c_n=2^{1-n}$.
+All signed local components have one common value $m_d(t)$ for every
+real $t$, and, for one fixed pair $(s,k)\in\{0,1\}^2$,
+\begin{equation}
+ m_d(t)=c_n\bigl[(1-s)+s\cos t-k\sin t\bigr].
+ \label{bound:four-laws}
+\end{equation}
+Thus the four possible functional forms of $m_d/c_n$ are
+$1$, $\cos t$, $1-\sin t$, and $\cos t-\sin t$.
+Not every form occurs in every dimension.
+For every $n\ge2$, with $r_E(n)=\sqrt3\,c_n$, the exact maximum over admissible lines is
+\begin{equation}
+ \max_{\substack{d\ \text{admissible}\\t\in\mathbb R}}r_d(t)
+ =\begin{cases}
+ r_E(n),&n=2,3,4,\\
+ 2r_E(n),&n\ge5.
+ \end{cases}
+ \label{bound:sharp-max}
+\end{equation}
+Both maxima are attained.
+\end{theorem}
+
+At the base point all these components equal $c_n>0$.
+Regularity therefore makes them equal on a neighborhood of the base
+point.  Each component is a linear combination of $1$, $\cos t$, and
+$\sin t$, so equality on that neighborhood implies equality for all
+real $t$.  In particular,
+\begin{equation}
+ r_d(t)=\sqrt3\,|m_d(t)|.
+ \label{bound:radius}
+\end{equation}
+Intervals with $m_d\ge0$ retain the original tetrahedral orientation.
+
+The essential restriction comes from comparing coefficients for the two
+classes of pulled-back Pauli operators.  Put $q=d+\delta_0$, so that
+$q$ is Boolean and $q(0)=1$, and use the Walsh coefficients and Boolean
+derivatives defined in Eq.~\eqref{core:walsh-def}.
+For class I, the coefficient of $\cos t$ is $c_nq(a)$; for class II,
+the coefficient of $\sin t$ is $-c_nq(a)$.  Since both classes occur
+for $n\ge3$, equality of the components forces a common flip value
+$s$ in class I and a common flip value $k$ in class II.  The remaining
+coefficients agree precisely when
+\begin{equation}
+ \begin{aligned}
+ q(a)&=s,& W_q(h)&=c_n(s+k-1)&&({\rm I}),\\
+ q(a)&=k,& W_{D_aq}(h)&=2c_n(s+k-1)&&({\rm II}).
+ \end{aligned}
+ \label{bound:conditions}
+\end{equation}
+These conditions give Eq.~\eqref{bound:four-laws} and are also
+sufficient.  For the enhanced law $1-\sin t$, they force both Walsh
+coefficients to vanish, so Eq.~\eqref{core:boolean-background} makes the
+background identically zero.
+
+The maximum absolute values of the four normalized functions are,
+respectively, $1$, $1$, $2$, and $\sqrt2$.  This proves the upper bound
+$2r_E$ for every $n\ge3$.  The low-dimensional restrictions are stronger.
+For $n=3$, two class-I character equations force $s=k=0$.
+For $n=4$, four such equations sum to $4k=0$, leaving only the constant
+and cosine laws.  The calculation for $n=2$, where class II is absent,
+also permits only these two laws.  Appendix~\ref{bound:appendix}
+gives the coefficient calculation and these analytic exclusions.
+The base point attains the low-dimensional maximum, while the unified
+family attains $2r_E$ at $t=-\pi/2$ for every $n\ge5$.
+
+Consequently, $n=5$ is the smallest system size permitting an
+increase of the radius along a Boolean phase line through the specified
+base point.  The same statement holds for any two-valued real diagonal
+generator: subtracting its value at $z=0$ removes a global phase, and
+rescaling or reversing $t$ gives Eq.~\eqref{bound:line}.  General
+multivalued phase lines and curved paths require a separate analysis;
+the case $n=4$ below makes this distinction concrete.

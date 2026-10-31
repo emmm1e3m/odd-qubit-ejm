@@ -1,0 +1,151 @@
+\section{Local formulas and the all-\texorpdfstring{$n$}{n} reduction}
+\label{core:appendix}
+
+\subsection{Gate pullbacks and the physical point correction}
+\label{core:pullbacks}
+
+Let $\mathbf e_j$ denote a binary unit vector and $T_j=\mathbf e_j\oplus\cdots\oplus\mathbf e_n$. Direct conjugation through the CNOT chain gives
+\begin{align}
+ S^\dagger X_1S&=X_1,\nonumber\\
+ S^\dagger X_jS&=X_{j-1}X_j\quad(j>1),\nonumber\\
+ S^\dagger Z_jS&=Z_jZ_{j+1}\cdots Z_n.
+ \label{core:cnot-pullbacks}
+\end{align}
+Conjugating by the final-qubit Hadamard and using $Y=iXZ$ gives Table~\ref{core:pullback-table}. In $R=i^kX^aZ^b$, the $Z$ factors act first. For example, $Y_n$ pulls back to $-iX_{n-1}X_nZ_n$; the signed observable $-Y_n$ therefore has $\Gamma=-i$, as do the other class-I rows. Every row has $a\ne0$ and $h\ne0$.
+
+\begin{table*}[t]
+\caption{Pullbacks $C_n^\dagger\widetilde P C_n=i^kX^aZ^b$, expressed by $a$, $h=a\oplus b$, and $\Gamma=i^{k-|a|}$. The table is valid for every $n\ge2$; internal rows are absent at $n=2$.}
+\label{core:pullback-table}
+\begin{ruledtabular}
+\begin{tabular}{ccccc}
+Class&Signed observable&$a$&$h$&$\Gamma$\\
+I&$X_1$&$\mathbf e_1$&$\mathbf e_1$&$-i$\\
+I&$Y_1$&$\mathbf e_1\oplus\mathbf e_n$&$T_2$&$-i$\\
+I&$Z_j$, $1\le j\le n$&$\mathbf e_n$&$T_j$&$-i$\\
+I&$X_n$&$\mathbf e_{n-1}$&$T_{n-1}$&$-i$\\
+I&$-Y_n$&$\mathbf e_{n-1}\oplus\mathbf e_n$&$\mathbf e_{n-1}$&$-i$\\
+II&$X_j$, $2\le j<n$&$\mathbf e_{j-1}\oplus\mathbf e_j$&$\mathbf e_{j-1}\oplus\mathbf e_j$&$-1$\\
+II&$Y_j$, $2\le j<n$&$\mathbf e_{j-1}\oplus\mathbf e_j\oplus\mathbf e_n$&$\mathbf e_{j-1}\oplus T_{j+1}$&$-1$\\
+\end{tabular}
+\end{ruledtabular}
+\end{table*}
+
+For any real $\Theta$, direct summation yields
+\begin{equation}
+ B_R=2^{-n}\Gamma\sum_z(-1)^{h\cdot z}
+ e^{i[\Theta(z)-\Theta(z\oplus a)]}.
+ \label{core:background-sum}
+\end{equation}
+Indeed, $i^{|z|-|z\oplus a|}=i^{-|a|}(-1)^{a\cdot z}$. Also,
+\begin{equation}
+ \bra{\chi_\Theta}R\ket0
+ =2^{-n/2}\Gamma e^{-i\Theta(a)},\qquad
+ \bra0R\ket0=0.
+\end{equation}
+Expanding Eq.~\eqref{core:defect-state} therefore proves Eq.~\eqref{core:signal}, including its normalization and its background term.
+
+For completeness, the reference-phase identity follows from
+\begin{equation}
+ \sum_{\ell=0}^{w}(-1)^\ell\binom w\ell=0\quad(w>0).
+\end{equation}
+Removing the $\ell=0,1$ terms gives $f_0=w-1$ for $w>0$. At $z=0$, the bracket in Eq.~\eqref{core:defect-state} has amplitude $2^{-n/2}i$; multiplication by $-i$ restores the reference amplitude $2^{-n/2}$. At every other input it has amplitude $2^{-n/2}i^{f_0(z)}e^{i\Theta(z)}$. This proves the decomposition at the level of the actual input amplitudes.
+
+\subsection{Boolean backgrounds and character pairing}
+\label{core:pairing}
+
+Put $\xi_z=2^{-n/2}i^{|z|}$ and $\eta_z=(-1)^{q(z)}\xi_z$. Since $q$ is Boolean,
+\begin{equation}
+ \ket{\chi_{tq}}=e^{it/2}
+ \left[\cos(t/2)\ket\xi-i\sin(t/2)\ket\eta\right].
+\end{equation}
+Equation~\eqref{core:background-sum} gives
+\begin{align}
+ \bra\xi R\ket\xi&=0,\nonumber\\
+ \bra\xi R\ket\eta&=\Gamma W_q(h),\nonumber\\
+ \bra\eta R\ket\eta&=\Gamma W_{D_aq}(h).
+\end{align}
+In class I, $D_aq$ is invariant under translation by $a$, whereas $h\cdot a=1$. Its Walsh coefficient vanishes by pairing. The remaining cross term is $-\sin t\,W_q(h)$. In class II, $\Gamma=-1$ is real, so the cross term vanishes and the diagonal term is $-\sin^2(t/2)W_{D_aq}(h)$. This proves Eq.~\eqref{core:boolean-background} without requiring the background to vanish.
+
+More generally, let $L:\mathbb F_2^n\to\mathbb F_2^k$ have rank $k$. If $h\notin\operatorname{row}L=(\ker L)^\perp$, there is a $w\in\ker L$ with $h\cdot w=1$. Translation by $w$ changes the sign of $(-1)^{h\cdot z}$ and leaves every function of $Lz$ unchanged. If $h=L^TH$, instead,
+\begin{equation}
+ 2^{-n}\sum_z(-1)^{h\cdot z}G(Lz)
+ =2^{-k}\sum_v(-1)^{H\cdot v}G(v),
+ \label{core:compression}
+\end{equation}
+because every fiber has $2^{n-k}$ elements. This elementary pairing is the only general linear-encoding fact needed here.
+
+\subsection{Exhaustive character classification for every \texorpdfstring{$n\ge5$}{n >= 5}}
+\label{core:alln-classification}
+
+For the four-feature map in Eq.~\eqref{core:features}, a physical character $h$ lies in its row space exactly when
+\begin{equation}
+ \begin{gathered}
+ h\text{ is constant on }E_n\text{ and on }O_n,\\
+ h_1=h_{n-1}\oplus h_n.
+ \end{gathered}
+ \label{core:row-test}
+\end{equation}
+Its four-bit representative is
+\[
+ H=(h_{n-1},h_E,h_O,h_n).
+\]
+The first condition tests the two internal parity features; the second follows because the coefficient of $z_1$ is the sum of the coefficients of $x$ and $s$. Conversely these conditions reconstruct the character from the four features. Both internal blocks contain a coordinate, so this representation is unique.
+
+Applying Eq.~\eqref{core:row-test} to Table~\ref{core:pullback-table} gives exactly Table~\ref{core:residual-table}. Here and below, a four-bit integer uses $(x,b,c,s)$ in that order.
+
+\begin{table}[tbp]
+\caption{All local terms that survive character pairing for the four-feature map. $A=\mathcal L_na$, $h=\mathcal L_n^TH$. All rows absent from this table cancel before any property of $F$ is used.}
+\label{core:residual-table}
+\begin{ruledtabular}
+\begin{tabular}{cccc}
+Observable&Dimension&Class&$(A,H)$\\
+$Y_1$&$n\ge5$&I&$(8,15)$\\
+$Z_2$&$n\ge5$&I&$(1,15)$\\
+$Z_{n-1}$&$n\ge5$&I&$(1,9)$\\
+$X_n$&$n\ge5$&I&$(8,9)$\\
+$Z_3$&$n=5$&I&$(1,11)$\\
+$X_3$&$n=5$&II&$(6,6)$\\
+$Y_3$&$n=5,6$&II&$(7,13)$\\
+$Y_4$&$n=6,7$&II&$(7,11)$\\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The classification follows directly from the supports of the characters. For class I, $X_1,Z_1,Z_n,-Y_n$ fail the endpoint relation in Eq.~\eqref{core:row-test}. The four dimension-independent rows in Table~\ref{core:residual-table} satisfy it and select complete parity blocks. An internal suffix $T_j$, $3\le j\le n-2$, can select complete blocks only for $n=5,j=3$. For $n\ge6$, $j=3$ selects $4$ and omits $2$; for $j\ge4$, the selected internal coordinate $n-2$ has the same parity as an omitted first block coordinate $2$ or $3$.
+
+For class-II $X_j$, the endpoint cases $j=2,n-1$ fail the endpoint relation. Otherwise its character selects two neighboring internal coordinates. Both parity blocks can be fully selected only when each has one member, which gives $n=5,j=3$. For class-II $Y_j$, the support is $\{j-1\}\cup\{j+1,\ldots,n\}$. Again $j=2,n-1$ fail the endpoint relation. At $j=3$, the odd block must consist only of $3$, giving $n=5,6$. At $j=4$, the even block can contain no $6$, giving $n=6,7$. For $j\ge5$, the selected coordinate $j-1$ and the omitted first coordinate of the same parity violate block constancy. This proves the table for unbounded $n$.
+
+To evaluate the surviving terms, the coefficient of $x$ in $F$ is $1\oplus s\oplus c$. All three characters $9,11,15$ have $x$ coefficient one, so summing over $x$ leaves only $c=s$. On the slices $c=s=0$ and $c=s=1$, respectively,
+\begin{equation}
+ F=1\oplus x\oplus b,\qquad F=x\oplus b.
+\end{equation}
+Characters $9$ and $11$ omit $b$, so their sums cancel over $b$. Character $15$ contributes $x\oplus b\oplus c\oplus s=x\oplus b$ on these slices, leaving opposite constant signs. These are the first three identities in Eq.~\eqref{core:six-cancellations}. Expanding $F(v)\oplus F(v\oplus A)$ gives Eq.~\eqref{core:derivatives}, whose $x$ dependence proves the other three. Thus all backgrounds vanish for all real $t$.
+
+It remains to check the flips even when their characters have canceled. From Table~\ref{core:pullback-table}, class-I flips map into $\{1,8,9\}$, while class-II flips map into $\{6,7,10,11,12,13\}$. Direct substitution in the two branches of Eq.~\eqref{core:kernel} gives
+\begin{equation}
+ \begin{aligned}
+ F(A)&=0\quad(A\in\{1,8,9\}),\\
+ F(A)&=1\quad(A\in\{6,7,10,11,12,13\}).
+ \end{aligned}
+ \label{core:flip-values}
+\end{equation}
+These sets include both parities of the final internal coordinate. They prove the cross-term identities used in Theorem~\ref{core:unified-theorem}.
+
+\subsection{Complete measurement, reduced states, and multiplicity}
+\label{core:full-measurement}
+
+The circuit obeys
+\begin{equation}
+ \begin{aligned}
+ C_n^\dagger(Z_hZ_{h+1})C_n&=Z_h\quad(h<n),\\
+ C_n^\dagger X^{\otimes n}C_n&=Z_n.
+ \end{aligned}
+\end{equation}
+Since $D$ is diagonal and $H^{\otimes n}\ket{k}=Z^k\ket{+}^{\otimes n}$, these identities prove Eq.~\eqref{core:orbit} with the original column ordering $k=(e_1,\ldots,e_{n-1},\sigma)$. No parameter-dependent relabeling or column phase is needed. At site $j$, Pauli conjugation by the orbit element multiplies the physical $X,Y,Z$ expectations by $(-1)^{\kappa_j},(-1)^{\kappa_j+\sigma},(-1)^\sigma$, respectively. With the seed's orientation $\epsilon_j$, this gives Eq.~\eqref{core:vertices}.
+
+For the actual partial trace $\rho_j=\operatorname{Tr}_{\bar j}\ket\psi\!\bra\psi$, one has $\operatorname{Tr}(\rho_j\sigma_\alpha)=\langle\psi|\sigma_{j\alpha}|\psi\rangle$. Normalization and the three Pauli components determine a $2\times2$ Hermitian matrix uniquely, proving Eq.~\eqref{core:bloch-orbit}. Each vector in Eq.~\eqref{core:vertices} has norm one. Two distinct labels change exactly two coordinate signs, so their dot product is $-1/3$.
+
+For fixed $j$, $\kappa_j=e_{j-1}\oplus e_j$ is a nonzero linear functional of $e$, including $j=1,n$. It is independent of the column bit $\sigma$. Consequently each pair $(\kappa_j,\sigma)$ has exactly $2^{n-2}$ preimages. At positive radius these are four distinct reduced states; at zero radius they all equal $I/2$. Finally, unitarity of $M[D]$ proves both orthonormality and $\sum_k\ket{\psi_k}\!\bra{\psi_k}=I$. This closes the link from the phase kernel to a complete projective measurement.
+
+
+
