@@ -65,6 +65,7 @@ import UnifiedEJM.SixCertificate
 import UnifiedEJM.SixCoefficients
 import UnifiedEJM.SixDirect
 import UnifiedEJM.SixFamily
+import UnifiedEJM.SixGeometry
 import UnifiedEJM.SixLocal
 import UnifiedEJM.SixMeasurement
 import UnifiedEJM.SixPhysical

@@ -67,23 +67,31 @@ def figure_unified():
     scheme.set_xlim(0, 1)
     scheme.set_ylim(0, 1)
     scheme.text(0.0, 1.055, "(a)", weight="bold", fontsize=10)
-    scheme.text(0.09, 0.96, r"$n\geq 5$", ha="center", va="center")
-    scheme.text(0.09, 0.70, r"$\mathbf{z}$", fontsize=16, ha="center")
-    scheme.annotate("", xy=(0.28, 0.73), xytext=(0.16, 0.73),
+    # 用括号归组四个特征；输入、箭头与核函数共用组中心线。
+    flow_y = 0.585
+    scheme.text(0.10, 0.80, r"$n\geq 5$", ha="center", va="center")
+    scheme.text(0.10, flow_y, r"$\mathbf{z}$", fontsize=16,
+                ha="center", va="center")
+    scheme.annotate("", xy=(0.315, flow_y), xytext=(0.18, flow_y),
                     arrowprops={"arrowstyle": "->", "lw": 0.9, "color": INK})
     definitions = [
         r"$x=z_1\oplus z_{n-1}$",
-        r"$b=\bigoplus_{j\in E} z_j$",
-        r"$c=\bigoplus_{j\in O} z_j$",
+        r"$b=\bigoplus_{j\in E_n} z_j$",
+        r"$c=\bigoplus_{j\in O_n} z_j$",
         r"$s=z_1\oplus z_n$",
     ]
-    for y, label in zip((0.91, 0.75, 0.59, 0.43), definitions):
-        scheme.text(0.31, y, label, fontsize=9.1, va="center")
-    scheme.annotate("", xy=(0.91, 0.73), xytext=(0.80, 0.73),
+    for y, label in zip((0.93, 0.72, 0.48, 0.25), definitions):
+        scheme.text(0.37, y, label, fontsize=9.1, va="center")
+    for outer, inner in ((0.33, 0.35), (0.69, 0.67)):
+        scheme.plot([inner, outer, outer, inner], [1.00, 1.00, 0.17, 0.17],
+                    color=INK, lw=0.75, solid_capstyle="butt")
+    scheme.annotate("", xy=(0.87, flow_y), xytext=(0.705, flow_y),
                     arrowprops={"arrowstyle": "->", "lw": 0.9, "color": INK})
-    scheme.text(0.95, 0.73, r"$F$", fontsize=16, va="center", ha="center")
-    scheme.text(0.51, 0.19, r"$q_n(\mathbf{z})=F(x,b,c,s)$", ha="center", fontsize=10)
-    scheme.text(0.51, -0.02, r"$d_n=q_n-\delta_{\mathbf{z},0}$", ha="center", fontsize=10)
+    scheme.text(0.92, flow_y, r"$F$", fontsize=16, va="center", ha="center")
+    scheme.text(0.51, 0.035, r"$q_n(\mathbf{z})=F(x,b,c,s)$",
+                ha="center", va="center", fontsize=10)
+    scheme.text(0.51, -0.16, r"$d_n=q_n-\delta_{\mathbf{z},0}$",
+                ha="center", va="center", fontsize=10)
     t = np.linspace(-np.pi/2, np.pi/2, 601)
     ax.plot(t, 1-np.sin(t), color=BLUE)
     ax.scatter([-np.pi/2, 0, np.pi/2], [2, 1, 0], s=22, color=BLUE, zorder=4)

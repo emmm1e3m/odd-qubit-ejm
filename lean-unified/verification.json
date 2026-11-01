@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-01",
+  "lean_version": "4.35.0",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "new_lean_modules": 78,
+  "foundation_modules": 29,
+  "isolated_compiled_modules_including_entry": 108,
+  "isolated_build_exit": 0,
+  "all_declarations_audited": 3050,
+  "theorem_declarations_audited": 2592,
+  "nonstandard_axiom_dependencies": 0,
+  "key_axiom_declarations": 77,
+  "audit_exit": 0,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "production_sources_match_fresh_compilation": true,
+  "exact_recomputation_groups_passed": 7,
+  "six_geometry_repair_independently_reviewed": true,
+  "original_gate_sequence_explicitly_connected": true,
+  "paper_pages": {
+    "en": 15,
+    "zh": 16
+  },
+  "bilingual_labels_match": 130,
+  "bilingual_references_match": 7,
+  "method": "Every project module recompiled from source in an isolated import directory; pinned mathlib/toolchain dependency caches retained. Interrupted modules were resumed only after checking unchanged sources and dependencies.",
+  "scope_note": "The maximum theorem quantifies normalized Boolean generators. Pointwise two-rate normalization is formalized; the arbitrary-real-generator radius-set wrapper is not separately stated.",
+  "manuscript_revision_note": "These are the current manuscript statistics after condensing Appendices B and D. The remaining 107 display blocks and the main results are unchanged. Lean sources are identical to those used for the isolated audit; the Lean audit was not rerun for this editorial revision."
+}

@@ -132,8 +132,8 @@
 \end{equation}
 这里的减法取整数意义。因为$F(0)=1$，$d_n$仍为Boolean函数。被移除的只有物理全零串，不是整个纤维$\mathcal L_nz=0$。
 
-图~\ref{fig:unified} 展示这一构造。
-\input{sections/figure-unified-zh}
+图~\ref{fig:unified}(a)展示同一四特征核如何确定每个$n\ge5$的相位；图(b)给出以$r_E(n)$归一化的半径变化。
+\input{sections/figure-unified}
 \begin{theorem}[统一增强族]
 \label{core:unified-theorem}
 对每个整数$n\ge5$，令
@@ -170,13 +170,7 @@
  W_{D_6F}(6)&=W_{D_7F}(13)=W_{D_7F}(11)=0.
  \label{core:six-cancellations}
 \end{align}
-整数按$(x,b,c,s)$编码，$x$为最高位；本式Walsh系数的归一化因子为$2^{-4}$。前三式中，对$x$求和强制$c=s$。随后，字符$9,11$的和式由$b$配对消去，字符$15$则由两个$s$切片相消。导数恒等式为
-\begin{align}
- D_6F&=x\oplus b\oplus c\oplus s(b\oplus c\oplus1),\nonumber\\
- D_7F&=bc\oplus bs\oplus cs\oplus s.
- \label{core:derivatives}
-\end{align}
-第一行中，$x$仅出现在导数中；第二行中，$x$仅出现在字符$13,11$中。因此对$x$配对即可证明三个导数条件。附录\ref{core:alln-classification}证明，这六式覆盖每个$n\ge5$的全部局部分量，包括$n=5,6,7$的额外残留项。由式\eqref{core:boolean-background}，$B_R(t)$恒为零。
+整数按$(x,b,c,s)$编码，$x$为最高位；Walsh系数的归一化因子为$2^{-4}$。六个和式均可通过特征位配对消去。附录~\ref{core:alln-classification}给出有限计算，并证明这六式覆盖每个$n\ge5$的全部局部分量，包括$n=5,6,7$的额外残留项。由式\eqref{core:boolean-background}，$B_R(t)$恒为零。
 
 最后，所有I类翻转均满足$F(\mathcal L_na)=0$，所有II类翻转均满足$F(\mathcal L_na)=1$。式\eqref{core:signal}分别化为
 \begin{align}
@@ -185,8 +179,6 @@
 \end{align}
 引理\ref{core:mechanism}把种子恒等式传递到全部测量列。端点、基点与精确像的结论由对角相位以及$\sin t$在$J$上的严格单调性得到。
 \end{proof}
-
-该核也可展开为三次Boolean多项式$F=1\oplus x\oplus b\oplus s\oplus xs\oplus xc\oplus bc\oplus bcs$。它在$s=0$时有六个输入取值为一，$s=1$时有四个；每个特征纤维的大小均为$2^{n-4}$，故$d_n$的支持大小为$10\,2^{n-4}-1$。
 
 该增强具有直接的单比特纠缠含义。所有测量结果、所有$1|(n-1)$划分共享同一局部谱
 \begin{equation}

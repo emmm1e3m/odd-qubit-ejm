@@ -10,6 +10,8 @@ import UnifiedEJM
 #check UnifiedEJM.EvenLow.even_cosine_family
 #check UnifiedEJM.EvenFamily.ordered_measurement_parameter_injective
 #check UnifiedEJM.SixFamily.actual_local_crossing
+#check UnifiedEJM.SixFamily.geometric_local_crossing
+#check UnifiedEJM.Physical.measurement_eq_original_gate_sequence
 #check UnifiedEJM.SixFamily.direct_regular_iff
 #check UnifiedEJM.ThreeQubit.geometric_three_qubit_rigidity
 #check UnifiedEJM.LowDimensional.geometric_line_iff_planes
@@ -28,6 +30,8 @@ import UnifiedEJM
 #print axioms UnifiedEJM.Physical.measurement_orthonormal
 #print axioms UnifiedEJM.Physical.measurement_complete
 #print axioms UnifiedEJM.Physical.measurement_eq_gate_column
+#print axioms UnifiedEJM.Physical.measurement_eq_original_gate_sequence
+#print axioms OddEJM.circuit_gate_order
 #print axioms UnifiedEJM.Regularity.geometric_iff_seed_squares
 #print axioms UnifiedEJM.Regularity.geometric_column_radius
 #print axioms UnifiedEJM.F_branch
@@ -64,6 +68,9 @@ import UnifiedEJM
 #print axioms UnifiedEJM.EvenFamily.second_axis_measurement
 #print axioms UnifiedEJM.EvenFamily.ordered_measurement_parameter_injective
 #print axioms UnifiedEJM.SixFamily.actual_local_crossing
+#print axioms UnifiedEJM.SixFamily.geometric_iff_actual_of_pos
+#print axioms UnifiedEJM.SixFamily.eventually_total_pos
+#print axioms UnifiedEJM.SixFamily.geometric_local_crossing
 #print axioms UnifiedEJM.SixFamily.measurement_reduced_of_regular
 #print axioms UnifiedEJM.SixFamily.regular_component_positive
 #print axioms UnifiedEJM.SixFamily.direct_regular_iff

@@ -1,6 +1,8 @@
 \section{Local formulas and the all-\texorpdfstring{$n$}{n} reduction}
 \label{core:appendix}
 
+This appendix derives the local phase formula in Lemma~\ref{core:mechanism} and proves the all-$n$ cancellations and orbit statements used in Theorem~\ref{core:unified-theorem}.
+
 \subsection{Gate pullbacks and the physical point correction}
 \label{core:pullbacks}
 
@@ -13,22 +15,7 @@ Let $\mathbf e_j$ denote a binary unit vector and $T_j=\mathbf e_j\oplus\cdots\o
 \end{align}
 Conjugating by the final-qubit Hadamard and using $Y=iXZ$ gives Table~\ref{core:pullback-table}. In $R=i^kX^aZ^b$, the $Z$ factors act first. For example, $Y_n$ pulls back to $-iX_{n-1}X_nZ_n$; the signed observable $-Y_n$ therefore has $\Gamma=-i$, as do the other class-I rows. Every row has $a\ne0$ and $h\ne0$.
 
-\begin{table*}[t]
-\caption{Pullbacks $C_n^\dagger\widetilde P C_n=i^kX^aZ^b$, expressed by $a$, $h=a\oplus b$, and $\Gamma=i^{k-|a|}$. The table is valid for every $n\ge2$; internal rows are absent at $n=2$.}
-\label{core:pullback-table}
-\begin{ruledtabular}
-\begin{tabular}{ccccc}
-Class&Signed observable&$a$&$h$&$\Gamma$\\
-I&$X_1$&$\mathbf e_1$&$\mathbf e_1$&$-i$\\
-I&$Y_1$&$\mathbf e_1\oplus\mathbf e_n$&$T_2$&$-i$\\
-I&$Z_j$, $1\le j\le n$&$\mathbf e_n$&$T_j$&$-i$\\
-I&$X_n$&$\mathbf e_{n-1}$&$T_{n-1}$&$-i$\\
-I&$-Y_n$&$\mathbf e_{n-1}\oplus\mathbf e_n$&$\mathbf e_{n-1}$&$-i$\\
-II&$X_j$, $2\le j<n$&$\mathbf e_{j-1}\oplus\mathbf e_j$&$\mathbf e_{j-1}\oplus\mathbf e_j$&$-1$\\
-II&$Y_j$, $2\le j<n$&$\mathbf e_{j-1}\oplus\mathbf e_j\oplus\mathbf e_n$&$\mathbf e_{j-1}\oplus T_{j+1}$&$-1$\\
-\end{tabular}
-\end{ruledtabular}
-\end{table*}
+\input{sections/table-pullbacks}
 
 For any real $\Theta$, direct summation yields
 \begin{equation}
@@ -93,33 +80,25 @@ The first condition tests the two internal parity features; the second follows b
 
 Applying Eq.~\eqref{core:row-test} to Table~\ref{core:pullback-table} gives exactly Table~\ref{core:residual-table}. Here and below, a four-bit integer uses $(x,b,c,s)$ in that order.
 
-\begin{table}[tbp]
-\caption{All local terms that survive character pairing for the four-feature map. $A=\mathcal L_na$, $h=\mathcal L_n^TH$. All rows absent from this table cancel before any property of $F$ is used.}
-\label{core:residual-table}
-\begin{ruledtabular}
-\begin{tabular}{cccc}
-Observable&Dimension&Class&$(A,H)$\\
-$Y_1$&$n\ge5$&I&$(8,15)$\\
-$Z_2$&$n\ge5$&I&$(1,15)$\\
-$Z_{n-1}$&$n\ge5$&I&$(1,9)$\\
-$X_n$&$n\ge5$&I&$(8,9)$\\
-$Z_3$&$n=5$&I&$(1,11)$\\
-$X_3$&$n=5$&II&$(6,6)$\\
-$Y_3$&$n=5,6$&II&$(7,13)$\\
-$Y_4$&$n=6,7$&II&$(7,11)$\\
-\end{tabular}
-\end{ruledtabular}
-\end{table}
+\input{sections/table-residual}
 
 The classification follows directly from the supports of the characters. For class I, $X_1,Z_1,Z_n,-Y_n$ fail the endpoint relation in Eq.~\eqref{core:row-test}. The four dimension-independent rows in Table~\ref{core:residual-table} satisfy it and select complete parity blocks. An internal suffix $T_j$, $3\le j\le n-2$, can select complete blocks only for $n=5,j=3$. For $n\ge6$, $j=3$ selects $4$ and omits $2$; for $j\ge4$, the selected internal coordinate $n-2$ has the same parity as an omitted first block coordinate $2$ or $3$.
 
 For class-II $X_j$, the endpoint cases $j=2,n-1$ fail the endpoint relation. Otherwise its character selects two neighboring internal coordinates. Both parity blocks can be fully selected only when each has one member, which gives $n=5,j=3$. For class-II $Y_j$, the support is $\{j-1\}\cup\{j+1,\ldots,n\}$. Again $j=2,n-1$ fail the endpoint relation. At $j=3$, the odd block must consist only of $3$, giving $n=5,6$. At $j=4$, the even block can contain no $6$, giving $n=6,7$. For $j\ge5$, the selected coordinate $j-1$ and the omitted first coordinate of the same parity violate block constancy. This proves the table for unbounded $n$.
 
+The kernel also has the cubic Boolean expansion $F=1\oplus x\oplus b\oplus s\oplus xs\oplus xc\oplus bc\oplus bcs$. It equals one at six inputs with $s=0$ and four with $s=1$; because each feature fiber has size $2^{n-4}$, $d_n$ has support size $10\,2^{n-4}-1$.
+
 To evaluate the surviving terms, the coefficient of $x$ in $F$ is $1\oplus s\oplus c$. All three characters $9,11,15$ have $x$ coefficient one, so summing over $x$ leaves only $c=s$. On the slices $c=s=0$ and $c=s=1$, respectively,
 \begin{equation}
  F=1\oplus x\oplus b,\qquad F=x\oplus b.
 \end{equation}
-Characters $9$ and $11$ omit $b$, so their sums cancel over $b$. Character $15$ contributes $x\oplus b\oplus c\oplus s=x\oplus b$ on these slices, leaving opposite constant signs. These are the first three identities in Eq.~\eqref{core:six-cancellations}. Expanding $F(v)\oplus F(v\oplus A)$ gives Eq.~\eqref{core:derivatives}, whose $x$ dependence proves the other three. Thus all backgrounds vanish for all real $t$.
+Characters $9$ and $11$ omit $b$, so their sums cancel over $b$. Character $15$ contributes $x\oplus b\oplus c\oplus s=x\oplus b$ on these slices, leaving opposite constant signs. These are the first three identities in Eq.~\eqref{core:six-cancellations}. Expanding $F(v)\oplus F(v\oplus A)$ gives
+\begin{align}
+ D_6F&=x\oplus b\oplus c\oplus s(b\oplus c\oplus1),\nonumber\\
+ D_7F&=bc\oplus bs\oplus cs\oplus s.
+ \label{core:derivatives}
+\end{align}
+In the first line, $x$ occurs only in the derivative; in the second, it occurs only in characters $13$ and $11$. Pairing over $x$ proves the remaining three identities. Thus all backgrounds vanish for all real $t$.
 
 It remains to check the flips even when their characters have canceled. From Table~\ref{core:pullback-table}, class-I flips map into $\{1,8,9\}$, while class-II flips map into $\{6,7,10,11,12,13\}$. Direct substitution in the two branches of Eq.~\eqref{core:kernel} gives
 \begin{equation}

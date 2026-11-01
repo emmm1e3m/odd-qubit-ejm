@@ -1,6 +1,8 @@
 \section{Mixed backgrounds and the exception at \texorpdfstring{$n=6$}{n=6}}
 \label{embed:appendix}
 
+This appendix proves Theorem~\ref{embed:theorem} and Proposition~\ref{embed:six-proposition}. It evaluates the mixed backgrounds for even $n\ge8$ and solves the four-color phase equations near the reference measurement at $n=6$.
+
 \subsection{Reduction to six finite identities}
 
 We prove the joint-background cancellation used in Theorem~\ref{embed:theorem}. In this appendix, write $\mathcal B_R=2^n B_R$ for the unnormalized background expectation, where $B_R$ is the normalized quantity in Eq.~\eqref{core:signal}. For a pulled-back signed Pauli $R=i^pX^aZ^b$, put $h=a\oplus b$ and $\Gamma=i^{p-|a|}$. Equation~\eqref{embed:seed} gives
@@ -13,7 +15,7 @@ We prove the joint-background cancellation used in Theorem~\ref{embed:theorem}. 
 The sign follows from
 $i^{|z|-|z\oplus a|}=i^{-|a|}(-1)^{a\cdot z}$.
 
-For class I, $a$ contains no even internal position, so the exponent of $u$ vanishes. The remaining $q_B$ expectation is zero by the unified-family calculation. Every class-II flip contains exactly one position $e\in E$. The $u$ exponents $1$ and $-1$ occur precisely on $z|_E=0$ and $z|_E=e_e$, respectively. Write
+For class I, $a$ contains no even internal position, so the exponent of $u$ vanishes. The remaining $q_B$ expectation is zero by the unified-family calculation. Every class-II flip contains exactly one position $e\in E_n$. The $u$ exponents $1$ and $-1$ occur precisely on $z|_{E_n}=0$ and $z|_{E_n}=e_e$, respectively. Write
 \begin{equation}
  \mathcal B_R=\Gamma\left[uK_+(v)+K_0(v)+u^{-1}K_-(v)\right].
  \label{embed:sectors}
@@ -23,14 +25,14 @@ $K_-(v)=K_+(v^{-1})$. At $u=1$, the single-$q_B$ result gives $K_++K_0+K_-=0$. I
 
 On the positive sector, $q_B$ depends only on
 \begin{align}
- w&=(z_1,c,z_{n-1},z_n),\qquad c=\bigoplus_{j\in O}z_j,\notag\\
- O&=\{3,5,\ldots,n-3\}.
+ w&=(z_1,c,z_{n-1},z_n),\qquad c=\bigoplus_{j\in O_n}z_j,\notag\\
+ O_n&=\{3,5,\ldots,n-3\}.
  \label{embed:four-sector-bits}
 \end{align}
-If $h$ takes both values zero and one on $O$, choose two such positions. Flipping both preserves $c$, $q_B(z)$, and $q_B(z\oplus a)$, but reverses $(-1)^{h\cdot z}$. The corresponding terms cancel.
+If $h$ takes both values zero and one on $O_n$, choose two such positions. Flipping both preserves $c$, $q_B(z)$, and $q_B(z\oplus a)$, but reverses $(-1)^{h\cdot z}$. The corresponding terms cancel.
 
-The following classification covers all internal observables when $n\ge8$. For $X_j$, $h=e_{j-1}\oplus e_j$. Only $j=2,n-1$ select no odd internal position; every other $j$ selects exactly one of the at least two positions in $O$. For $Y_j$,
-$h=e_{j-1}\oplus\bigoplus_{k=j+1}^n e_k$. At $j=2,4$, its restriction to $O$ is all ones. At even $j\ge6$, it contains $j-1$ but omits $3$. At odd $j\le n-5$, it is a nonempty proper suffix of $O$. At $j=n-3,n-1$, it is zero. Consequently, only
+The following classification covers all internal observables when $n\ge8$. For $X_j$, $h=e_{j-1}\oplus e_j$. Only $j=2,n-1$ select no odd internal position; every other $j$ selects exactly one of the at least two positions in $O_n$. For $Y_j$,
+$h=e_{j-1}\oplus\bigoplus_{k=j+1}^n e_k$. At $j=2,4$, its restriction to $O_n$ is all ones. At even $j\ge6$, it contains $j-1$ but omits $3$. At odd $j\le n-5$, it is a nonempty proper suffix of $O_n$. At $j=n-3,n-1$, it is zero. Consequently, only
 \begin{equation}
  X_2,\ X_{n-1},\ Y_2,\ Y_4,\ Y_{n-3},\ Y_{n-1}
  \label{embed:six-remaining}
@@ -45,31 +47,17 @@ Here is an explicit finite certificate for these six terms, using only the four-
 \end{equation}
 Let $A$ encode the flip induced by $a$ on $w$ and let $H$ encode the remaining character. Both are written as four-bit integers, with $w_1$ the most significant bit. Then
 \begin{equation}
- K_+(v)=2^{|O|-1}\sum_{w\in\mathbb F_2^4}
+ K_+(v)=2^{|O_n|-1}\sum_{w\in\mathbb F_2^4}
  (-1)^{H\cdot w}v^{T_0(w)-T_1(w\oplus A)}.
  \label{embed:finite-sector-sum}
 \end{equation}
-For $k=-1,0,1$, let $N_k^\pm$ count the inputs with exponent $k$ and character sign $\pm1$. Substitution of the two branches of $F$ gives the following complete counts; each entry is $(N_k^+,N_k^-)$:
-\begin{center}
-\small\setlength{\tabcolsep}{4pt}
-\begin{tabular}{c rr ccc}
-\hline\hline
-Observable & $A$ & $H$ & $k=-1$ & $k=0$ & $k=1$\\
-\hline
-$X_2$ & 8 & 8 & $(3,3)$ & $(4,4)$ & $(1,1)$\\
-$X_{n-1}$ & 2 & 2 & $(2,2)$ & $(6,6)$ & $(0,0)$\\
-$Y_2$ & 9 & 15 & $(2,2)$ & $(6,6)$ & $(0,0)$\\
-$Y_4$ & 5 & 7 & $(2,2)$ & $(6,6)$ & $(0,0)$\\
-$Y_{n-3}$ & 5 & 3 & $(2,2)$ & $(6,6)$ & $(0,0)$\\
-$Y_{n-1}$ & 3 & 1 & $(3,3)$ & $(4,4)$ & $(1,1)$\\
-\hline\hline
-\end{tabular}
-\end{center}
+For $k=-1,0,1$, let $N_k^\pm$ count the inputs with exponent $k$ and character sign $\pm1$. Table~\ref{embed:sector-table} gives the complete counts obtained by substituting the two branches of $F$.
+\input{sections/table-sectors}
 Thus every coefficient in Eq.~\eqref{embed:finite-sector-sum} vanishes. Equations~\eqref{embed:sectors} and \eqref{embed:defect} give the common signed component $2^{1-n}(\cos\alpha-\sin\beta)$ for all even $n\ge8$. Unitarity and the orbit transfer in Eq.~\eqref{core:bloch-orbit} then establish the full measurement statement.
 
 \subsection{The direct superposition at \texorpdfstring{$n=6$}{n=6}}
 
-For $n=6$, $O=\{3\}$. The two additional terms $X_3,X_4$ both have $(A,H)=(4,4)$ in Eq.~\eqref{embed:finite-sector-sum}. Their counts for $k=-1,0,1$ are $(4,2),(4,4),(0,2)$, giving
+For $n=6$, $O_n=\{3\}$. The two additional terms $X_3,X_4$ both have $(A,H)=(4,4)$ in Eq.~\eqref{embed:finite-sector-sum}. Their counts for $k=-1,0,1$ are $(4,2),(4,4),(0,2)$, giving
 \begin{align}
  K_+(v)&=2v^{-1}-2v,\notag\\
  K_-(v)&=-K_+(v),\qquad K_0(v)=0.

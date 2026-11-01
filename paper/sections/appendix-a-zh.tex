@@ -1,6 +1,8 @@
 \section{局部公式与全\texorpdfstring{$n$}{n}归约}
 \label{core:appendix}
 
+本附录推导引理~\ref{core:mechanism}中的局部相位公式，并证明定理~\ref{core:unified-theorem}所用的全$n$消去关系与测量轨道性质。
+
 \subsection{逐门拉回与物理单点修正}
 \label{core:pullbacks}
 
@@ -13,22 +15,7 @@
 \end{align}
 再经末位Hadamard共轭，并使用$Y=iXZ$，即得表\ref{core:pullback-table}。在$R=i^kX^aZ^b$中，$Z$因子先作用。例如，$Y_n$拉回为$-iX_{n-1}X_nZ_n$；因此带符号可观测量$-Y_n$与其余I类一样，均有$\Gamma=-i$。每一行均满足$a\ne0$、$h\ne0$。
 
-\begin{table*}[t]
-\caption{拉回算符$C_n^\dagger\widetilde P C_n=i^kX^aZ^b$，以$a$、$h=a\oplus b$和$\Gamma=i^{k-|a|}$表示。该表对每个$n\ge2$成立；$n=2$时没有内部行。}
-\label{core:pullback-table}
-\begin{ruledtabular}
-\begin{tabular}{ccccc}
-类别&带符号可观测量&$a$&$h$&$\Gamma$\\
-I&$X_1$&$\mathbf e_1$&$\mathbf e_1$&$-i$\\
-I&$Y_1$&$\mathbf e_1\oplus\mathbf e_n$&$T_2$&$-i$\\
-I&$Z_j$，$1\le j\le n$&$\mathbf e_n$&$T_j$&$-i$\\
-I&$X_n$&$\mathbf e_{n-1}$&$T_{n-1}$&$-i$\\
-I&$-Y_n$&$\mathbf e_{n-1}\oplus\mathbf e_n$&$\mathbf e_{n-1}$&$-i$\\
-II&$X_j$，$2\le j<n$&$\mathbf e_{j-1}\oplus\mathbf e_j$&$\mathbf e_{j-1}\oplus\mathbf e_j$&$-1$\\
-II&$Y_j$，$2\le j<n$&$\mathbf e_{j-1}\oplus\mathbf e_j\oplus\mathbf e_n$&$\mathbf e_{j-1}\oplus T_{j+1}$&$-1$\\
-\end{tabular}
-\end{ruledtabular}
-\end{table*}
+\input{sections/table-pullbacks}
 
 对任意实函数$\Theta$，直接求和得到
 \begin{equation}
@@ -93,33 +80,25 @@ I类中，$D_aq$沿$a$平移不变，而$h\cdot a=1$，故其Walsh系数由配�
 
 将式\eqref{core:row-test}用于表\ref{core:pullback-table}，恰得到表\ref{core:residual-table}。此处及下文的四位整数均按$(x,b,c,s)$顺序编码。
 
-\begin{table}[tbp]
-\caption{四特征映射下，字符配对后留下的全部局部项。$A=\mathcal L_na$，$h=\mathcal L_n^TH$。未在表中出现的项，在使用$F$的任何性质之前就已相消。}
-\label{core:residual-table}
-\begin{ruledtabular}
-\begin{tabular}{cccc}
-可观测量&维数&类别&$(A,H)$\\
-$Y_1$&$n\ge5$&I&$(8,15)$\\
-$Z_2$&$n\ge5$&I&$(1,15)$\\
-$Z_{n-1}$&$n\ge5$&I&$(1,9)$\\
-$X_n$&$n\ge5$&I&$(8,9)$\\
-$Z_3$&$n=5$&I&$(1,11)$\\
-$X_3$&$n=5$&II&$(6,6)$\\
-$Y_3$&$n=5,6$&II&$(7,13)$\\
-$Y_4$&$n=6,7$&II&$(7,11)$\\
-\end{tabular}
-\end{ruledtabular}
-\end{table}
+\input{sections/table-residual}
 
 分类直接来自各字符的支持。I类的$X_1,Z_1,Z_n,-Y_n$均违反式\eqref{core:row-test}的端点关系。表\ref{core:residual-table}中四个与维数无关的行满足该关系，并且选择完整的奇偶块。内部后缀$T_j$（$3\le j\le n-2$）只有在$n=5,j=3$时才能选择完整块。$n\ge6$时，$j=3$选择$4$而遗漏$2$；$j\ge4$时，被选中的内部坐标$n-2$与遗漏的首个块坐标$2$或$3$奇偶相同。
 
 对于II类$X_j$，端点情形$j=2,n-1$违反端点关系。其余情形的字符仅选择两个相邻内部坐标；要同时选全两个奇偶块，两块必须各含一个元素，即$n=5,j=3$。对于II类$Y_j$，支持为$\{j-1\}\cup\{j+1,\ldots,n\}$。$j=2,n-1$同样违反端点关系。$j=3$时，奇块必须只有$3$，得到$n=5,6$；$j=4$时，偶块中不能有$6$，得到$n=6,7$；$j\ge5$时，选中的$j-1$与遗漏的同奇偶块首坐标破坏块内常值性。这就对无上界的$n$证明了整张表。
 
+该核也可展开为三次Boolean多项式$F=1\oplus x\oplus b\oplus s\oplus xs\oplus xc\oplus bc\oplus bcs$。它在$s=0$时有六个输入取值为一，$s=1$时有四个；每个特征纤维的大小均为$2^{n-4}$，故$d_n$的支持大小为$10\,2^{n-4}-1$。
+
 为计算残留项，注意$F$中$x$的系数为$1\oplus s\oplus c$。三个字符$9,11,15$的$x$系数均为一，故对$x$求和后只保留$c=s$。在$c=s=0$与$c=s=1$两个切片上，分别有
 \begin{equation}
  F=1\oplus x\oplus b,\qquad F=x\oplus b.
 \end{equation}
-字符$9,11$不含$b$，其和式沿$b$相消。字符$15$在这两个切片上贡献$x\oplus b\oplus c\oplus s=x\oplus b$，只留下符号相反的两个常数。由此得到式\eqref{core:six-cancellations}的前三式。展开$F(v)\oplus F(v\oplus A)$得到式\eqref{core:derivatives}，其$x$依赖直接给出后三式。因此对全部实数$t$，所有背景项都为零。
+字符$9,11$不含$b$，其和式沿$b$相消。字符$15$在这两个切片上贡献$x\oplus b\oplus c\oplus s=x\oplus b$，只留下符号相反的两个常数。由此得到式\eqref{core:six-cancellations}的前三式。展开$F(v)\oplus F(v\oplus A)$得到
+\begin{align}
+ D_6F&=x\oplus b\oplus c\oplus s(b\oplus c\oplus1),\nonumber\\
+ D_7F&=bc\oplus bs\oplus cs\oplus s.
+ \label{core:derivatives}
+\end{align}
+第一行中，$x$仅出现在导数中；第二行中，$x$仅出现在字符$13,11$中。因此对$x$配对即可证明后三个恒等式。因此对全部实数$t$，所有背景项都为零。
 
 还需检查字符已相消的行所对应的翻转。由表\ref{core:pullback-table}，I类翻转映入$\{1,8,9\}$，II类翻转映入$\{6,7,10,11,12,13\}$。直接代入式\eqref{core:kernel}的两个分支得到
 \begin{equation}

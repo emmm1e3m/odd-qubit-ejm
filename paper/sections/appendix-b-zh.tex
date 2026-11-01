@@ -1,6 +1,8 @@
 \section{Boolean 相位直线精确界的证明}
 \label{bound:appendix}
 
+本附录证明定理~\ref{bound:theorem}：先由正四面体条件确定带符号局部分量，再比较系数得到四种半径规律，最后由低维字符恒等式确定可实现的规律。
+
 \subsection{由四面体规则性到带符号分量相等}
 Pauli 轨道的局部作用将种子 Bloch 向量 $(x,y,z)$ 变为四个向量
 \begin{equation}
@@ -12,39 +14,10 @@ Pauli 轨道的局部作用将种子 Bloch 向量 $(x,y,z)$ 变为四个向量
 对 Boolean 函数 $d$，局部期望中的每一项都带有相位 $e^{it[d(z)-d(z')]}$，其中 $d(z)-d(z')\in\{0,\pm1\}$。因此，任意两个带符号分量之差都形如 $A+B\cos t+C\sin t$。若它在零点邻域恒为零，则在零点处的函数值及前两阶导数给出 $A=B=C=0$。分量相等因而成立于所有实数 $t$，包括可能出现的零半径点。反过来，带符号分量相等就给出式~\eqref{bound:orbit-four} 的规则轨道，半径为 $\sqrt3\,|m_d|$。这证明了定理~\ref{bound:theorem} 使用的从局部到全参数的推论。
 
 \subsection{背景项与系数比较}
-记 $N=2^n$、$c=2/N$，并令 $q=d+\delta_0$。对拉回后的带符号 Pauli 算符，写成
-\begin{equation}
- R=i^pX^aZ^b,\qquad h=a\oplus b,\qquad
- \Gamma=i^{p-|a|}.
- \label{bound:pullback}
-\end{equation}
-局部拉回表中的 $a,h$ 均非零，并分为两类：I 类满足 $\Gamma=-i$、$h\cdot a=1$；II 类满足 $\Gamma=-1$、$h\cdot a=0$。利用 $z\ne0$ 时的相位恒等式 $i^{f_0(z)}=-i\,i^{|z|}$，输入种子可写为
-\begin{equation}
- -\frac{i}{\sqrt N}\left[
- \sum_z i^{|z|}e^{itq(z)}\ket z
- +(i-e^{it})\ket0\right].
- \label{bound:input-split}
-\end{equation}
-它对 $R$ 的期望等于背景项
-\begin{equation}
- B_R(t)=\frac{\Gamma}{N}\sum_z(-1)^{h\cdot z}
- e^{it[q(z)-q(z\oplus a)]}
- \label{bound:background}
-\end{equation}
-与交叉项
-\begin{equation}
- c\operatorname{Re}\!\left[
- \Gamma e^{-itq(a)}(i-e^{it})\right]
- \label{bound:cross}
-\end{equation}
-之和。由于 $a\ne0$，零点修正自身没有对角贡献。
-
-在式~\eqref{bound:background} 中将 $z$ 与 $z\oplus a$ 配对，I 类的余弦部分消去。由 $h\ne0$ 知 $\sum_z(-1)^{h\cdot z}=0$，余下项为 $B_I=-W_q(h)\sin t$。对 II 类，配对消去虚部，再利用
-\begin{equation}
- \cos\!\bigl(t[q(z)-q(z\oplus a)]\bigr)
- =1-(1-\cos t)D_aq(z)
-\end{equation}
-得到 $B_{II}=-W_{D_aq}(h)(1-\cos t)/2$。加上式~\eqref{bound:cross}，可得
+记 $N=2^n$、$c=2/N$，并令 $q=d+\delta_0$，则 $q$ 为 Boolean 函数且 $q(0)=1$。
+在式~\eqref{core:defect-state} 中取 $\Theta=tq$，再将局部公式~\eqref{core:signal}
+与式~\eqref{core:boolean-background} 中的 Boolean 背景项结合，得到表~\ref{core:pullback-table}
+中 I、II 两类的分量：
 \begin{equation}
  m_I(t)=\begin{cases}
  c\cos t-W_q(h)\sin t,&q(a)=1,\\

@@ -1,11 +1,11 @@
-# A unified construction of multiqubit elegant joint measurements
+# A unified construction of continuously tunable multiqubit elegant joint measurements
 
 [中文](README.md) | English
 
 **Tingyu Zhang and Yan Cen (corresponding author)**<br>
 Department of Physics, Fudan University, Shanghai, China<br>
 Email: [23300190021@m.fudan.edu.cn](mailto:23300190021@m.fudan.edu.cn) · [cenyan@fudan.edu.cn](mailto:cenyan@fudan.edu.cn)<br>
-**Version: October 31, 2026; bilingual draft in PRA format**
+**Version: November 1, 2026; bilingual author-review manuscript in PRA format**
 
 - Paper PDFs: [English, 15 pages](paper/main.pdf) · [Chinese, 16 pages](paper/main-zh.pdf)
 - LaTeX sources: [English](paper/main.tex) · [Chinese](paper/main-zh.tex)
@@ -34,4 +34,4 @@ The [Lean 4.35.0 / mathlib v4.35.0 project](lean-unified/README.md) formalizes t
 
 The [exact reproduction scripts](paper/reproduce/README.md), using Python and SymPy, independently check the original phases and circuit, finite character sums, derivative certificates, curved-path identities, and polynomial inequivalence certificates, with saved results included. Finite-dimensional recomputation provides cross-checks; the Lean proofs establish the statements for arbitrary dimension.
 
-The earlier odd-qubit version remains in Git history. The new version uses a different four-feature kernel and covers all $n\ge5$. The links above point to the current paper, sources, and verification materials.
+The manuscript has separate Discussion and Conclusions sections. Both language versions share three figures and four tables in English. Acknowledgments and funding, and data and code availability, remain as placeholders for the authors to complete; see the [author-review notes](paper/README.md).

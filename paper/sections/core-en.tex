@@ -132,8 +132,8 @@ Define
 \end{equation}
 Here the subtraction is in the integers. Since $F(0)=1$, $d_n$ is still Boolean. Only the physical zero string is removed, not the whole fiber $\mathcal L_nz=0$.
 
-Figure~\ref{fig:unified} illustrates this construction.
-\input{sections/figure-unified-en}
+Figure~\ref{fig:unified}(a) shows how the same four-feature kernel determines the phase at every $n\ge5$; panel (b) displays the resulting radius in units of $r_E(n)$.
+\input{sections/figure-unified}
 \begin{theorem}[Unified enhanced family]
 \label{core:unified-theorem}
 For every integer $n\ge5$, let
@@ -170,13 +170,7 @@ Second, the local characters in the pullback table leave only
  W_{D_6F}(6)&=W_{D_7F}(13)=W_{D_7F}(11)=0.
  \label{core:six-cancellations}
 \end{align}
-Integers encode $(x,b,c,s)$ with $x$ the most significant bit; the Walsh normalization in this equation is $2^{-4}$. For the first three identities, summing over $x$ forces $c=s$. The remaining sums cancel over $b$ for characters $9,11$, and between the two $s$ slices for character $15$. For the derivative identities, use
-\begin{align}
- D_6F&=x\oplus b\oplus c\oplus s(b\oplus c\oplus1),\nonumber\\
- D_7F&=bc\oplus bs\oplus cs\oplus s.
- \label{core:derivatives}
-\end{align}
-In the first line, $x$ occurs only in the derivative; in the second, it occurs only in characters $13$ and $11$. Pairing over $x$ proves all three cancellations. Appendix~\ref{core:alln-classification} establishes that these six identities cover every local component at every $n\ge5$, including the exceptional residual terms at $n=5,6,7$. Thus Eq.~\eqref{core:boolean-background} gives $B_R(t)=0$ identically.
+Integers encode $(x,b,c,s)$ with $x$ the most significant bit; the Walsh normalization is $2^{-4}$. The six sums vanish by pairing over feature bits. Appendix~\ref{core:alln-classification} gives the finite calculation and proves that these six identities cover every local component for all $n\ge5$, including the additional residual terms at $n=5,6,7$. Equation~\eqref{core:boolean-background} therefore gives $B_R(t)=0$ identically.
 
 Third, every class-I flip satisfies $F(\mathcal L_na)=0$, and every class-II flip satisfies $F(\mathcal L_na)=1$. Equation~\eqref{core:signal} therefore reduces, respectively, to
 \begin{align}
@@ -185,8 +179,6 @@ Third, every class-I flip satisfies $F(\mathcal L_na)=0$, and every class-II fli
 \end{align}
 Lemma~\ref{core:mechanism} transfers this seed identity to all measurement columns. The endpoint, base-point, and image statements follow from the diagonal phase and the strict monotonicity of $\sin t$ on $J$.
 \end{proof}
-
-The kernel also has the cubic Boolean expansion $F=1\oplus x\oplus b\oplus s\oplus xs\oplus xc\oplus bc\oplus bcs$. It equals one at six inputs with $s=0$ and four with $s=1$; because each feature fiber has size $2^{n-4}$, $d_n$ has support size $10\,2^{n-4}-1$.
 
 The enhancement has a direct one-qubit entanglement interpretation. All outcomes and all $1|(n-1)$ cuts share the spectrum
 \begin{equation}

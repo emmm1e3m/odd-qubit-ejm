@@ -1,6 +1,8 @@
 \section{混合背景与\texorpdfstring{$n=6$}{n=6} 的例外}
 \label{embed:appendix}
 
+本附录证明定理~\ref{embed:theorem}与命题~\ref{embed:six-proposition}，计算偶数$n\ge8$时的混合背景，并求解$n=6$基准测量附近的四颜色相位方程。
+
 \subsection{归约为六个有限恒等式}
 
 本节证明定理~\ref{embed:theorem} 所需的联合背景消去。在本附录中，以 $\mathcal B_R=2^n B_R$ 表示未归一化背景期望，其中 $B_R$ 是式~\eqref{core:signal} 的归一化量。对拉回的 带符号 Pauli 算符 $R=i^pX^aZ^b$，令 $h=a\oplus b$、$\Gamma=i^{p-|a|}$。由式~\eqref{embed:seed} 得
@@ -13,7 +15,7 @@
 其中符号由恒等式
 $i^{|z|-|z\oplus a|}=i^{-|a|}(-1)^{a\cdot z}$ 确定。
 
-对 I 类，$a$ 不含偶数内部位置，故 $u$ 的指数为零，余下的 $q_B$ 期望由统一族的计算知为零。每个 II 类翻转在 $E$ 中恰含一个位置 $e$。$u$ 的指数 $1$ 与 $-1$ 分别恰好对应 $z|_E=0$ 与 $z|_E=e_e$。写为
+对 I 类，$a$ 不含偶数内部位置，故 $u$ 的指数为零，余下的 $q_B$ 期望由统一族的计算知为零。每个 II 类翻转在 $E_n$ 中恰含一个位置 $e$。$u$ 的指数 $1$ 与 $-1$ 分别恰好对应 $z|_{E_n}=0$ 与 $z|_{E_n}=e_e$。写为
 \begin{equation}
  \mathcal B_R=\Gamma\left[uK_+(v)+K_0(v)+u^{-1}K_-(v)\right].
  \label{embed:sectors}
@@ -23,14 +25,14 @@ $K_-(v)=K_+(v^{-1})$。令 $u=1$，单 $q_B$ 的结果给出 $K_++K_0+K_-=0$。�
 
 在正扇区中，$q_B$ 仅依赖
 \begin{align}
- w&=(z_1,c,z_{n-1},z_n),\qquad c=\bigoplus_{j\in O}z_j,\notag\\
- O&=\{3,5,\ldots,n-3\}.
+ w&=(z_1,c,z_{n-1},z_n),\qquad c=\bigoplus_{j\in O_n}z_j,\notag\\
+ O_n&=\{3,5,\ldots,n-3\}.
  \label{embed:four-sector-bits}
 \end{align}
-若 $h$ 在 $O$ 上同时取零和一，选取分别取这两值的两个位置。共同翻转它们保持 $c$、$q_B(z)$ 与 $q_B(z\oplus a)$，却反转 $(-1)^{h\cdot z}$，从而成对消去求和项。
+若 $h$ 在 $O_n$ 上同时取零和一，选取分别取这两值的两个位置。共同翻转它们保持 $c$、$q_B(z)$ 与 $q_B(z\oplus a)$，却反转 $(-1)^{h\cdot z}$，从而成对消去求和项。
 
-以下分类覆盖 $n\ge8$ 的全部内部观测量。对 $X_j$，有 $h=e_{j-1}\oplus e_j$。只有 $j=2,n-1$ 不选中任何奇数内部位；其它 $j$ 恰选中 $O$ 中一位，而 $O$ 至少有两位。对 $Y_j$，
-$h=e_{j-1}\oplus\bigoplus_{k=j+1}^n e_k$。当 $j=2,4$ 时，它在 $O$ 上全为一；当偶数 $j\ge6$ 时，选中 $j-1$ 而遗漏 $3$；当奇数 $j\le n-5$ 时，选中 $O$ 的非空真后缀；当 $j=n-3,n-1$ 时，在 $O$ 上全为零。因此字符配对后仅剩
+以下分类覆盖 $n\ge8$ 的全部内部观测量。对 $X_j$，有 $h=e_{j-1}\oplus e_j$。只有 $j=2,n-1$ 不选中任何奇数内部位；其它 $j$ 恰选中 $O_n$ 中一位，而 $O_n$ 至少有两位。对 $Y_j$，
+$h=e_{j-1}\oplus\bigoplus_{k=j+1}^n e_k$。当 $j=2,4$ 时，它在 $O_n$ 上全为一；当偶数 $j\ge6$ 时，选中 $j-1$ 而遗漏 $3$；当奇数 $j\le n-5$ 时，选中 $O_n$ 的非空真后缀；当 $j=n-3,n-1$ 时，在 $O_n$ 上全为零。因此字符配对后仅剩
 \begin{equation}
  X_2,\ X_{n-1},\ Y_2,\ Y_4,\ Y_{n-3},\ Y_{n-1}.
  \label{embed:six-remaining}
@@ -44,31 +46,17 @@ $h=e_{j-1}\oplus\bigoplus_{k=j+1}^n e_k$。当 $j=2,4$ 时，它在 $O$ 上全�
 \end{equation}
 令 $A$ 表示 $a$ 在 $w$ 上诱导的翻转，$H$ 表示剩余字符；二者均按 $w_1$ 为最高位的四位整数编码。于是
 \begin{equation}
- K_+(v)=2^{|O|-1}\sum_{w\in\mathbb F_2^4}
+ K_+(v)=2^{|O_n|-1}\sum_{w\in\mathbb F_2^4}
  (-1)^{H\cdot w}v^{T_0(w)-T_1(w\oplus A)}.
  \label{embed:finite-sector-sum}
 \end{equation}
-对 $k=-1,0,1$，令 $N_k^\pm$ 计数指数为 $k$、字符符号为 $\pm1$ 的输入。代入 $F$ 的两个分支，完整计数如下，各项均为 $(N_k^+,N_k^-)$：
-\begin{center}
-\small\setlength{\tabcolsep}{4pt}
-\begin{tabular}{c rr ccc}
-\hline\hline
-观测量 & $A$ & $H$ & $k=-1$ & $k=0$ & $k=1$\\
-\hline
-$X_2$ & 8 & 8 & $(3,3)$ & $(4,4)$ & $(1,1)$\\
-$X_{n-1}$ & 2 & 2 & $(2,2)$ & $(6,6)$ & $(0,0)$\\
-$Y_2$ & 9 & 15 & $(2,2)$ & $(6,6)$ & $(0,0)$\\
-$Y_4$ & 5 & 7 & $(2,2)$ & $(6,6)$ & $(0,0)$\\
-$Y_{n-3}$ & 5 & 3 & $(2,2)$ & $(6,6)$ & $(0,0)$\\
-$Y_{n-1}$ & 3 & 1 & $(3,3)$ & $(4,4)$ & $(1,1)$\\
-\hline\hline
-\end{tabular}
-\end{center}
+对 $k=-1,0,1$，令 $N_k^\pm$ 计数指数为 $k$、字符符号为 $\pm1$ 的输入。表~\ref{embed:sector-table} 给出代入 $F$ 的两个分支所得的完整计数。
+\input{sections/table-sectors}
 因此式~\eqref{embed:finite-sector-sum} 的每个系数均为零。联立式~\eqref{embed:sectors} 与式~\eqref{embed:defect}，对全部偶数 $n\ge8$ 得共同 带符号 分量 $2^{1-n}(\cos\alpha-\sin\beta)$。酉性及式~\eqref{core:bloch-orbit} 的轨道传递随后给出完整测量结论。
 
 \subsection{\texorpdfstring{$n=6$}{n=6} 时的直接叠加}
 
-当 $n=6$ 时，$O=\{3\}$。两个额外项 $X_3,X_4$ 在式~\eqref{embed:finite-sector-sum} 中均有 $(A,H)=(4,4)$。它们对应 $k=-1,0,1$ 的计数为 $(4,2),(4,4),(0,2)$，因此
+当 $n=6$ 时，$O_n=\{3\}$。两个额外项 $X_3,X_4$ 在式~\eqref{embed:finite-sector-sum} 中均有 $(A,H)=(4,4)$。它们对应 $k=-1,0,1$ 的计数为 $(4,2),(4,4),(0,2)$，因此
 \begin{align}
  K_+(v)&=2v^{-1}-2v,\notag\\
  K_-(v)&=-K_+(v),\qquad K_0(v)=0.

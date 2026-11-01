@@ -1,6 +1,8 @@
 \section{低维结果的证明}
 \label{low:appendix}
 
+本附录给出第~\ref{low:section}节的刚性与弯曲路径证明，并用不变量区分指定四比特基准测量与已知大半径参数段。
+
 \subsection{\texorpdfstring{$n=3$}{n=3} 时刚性的精确证书}
 \label{low:app-rigidity}
 
@@ -46,7 +48,7 @@ $\widetilde P$，定义固定矩阵系数
 \end{equation}
 所示整数矩阵前七行的行列式为 $4$，故对应导数的行列式为
 $4/4^7=1/4096$。对这七个实解析分量差应用逆函数定理，得到其共同零点的局部唯一性。
-指定点附近的每个规则四面体测量都满足这些方程：其全部 带符号 分量保持正号，
+指定点附近的每个正四面体测量都满足这些方程：其全部 带符号 分量保持正号，
 故分量平方相等蕴含分量本身相等。这就在完整七维相位空间中证明了命题~\ref{low:rigidity}。
 
 \subsection{\texorpdfstring{$n=4$}{n=4} 时的全部实相位直线}
@@ -215,19 +217,9 @@ $q'(b)>0$ 且 $b\le q(b)\le\pi/4$。
 得到式~\eqref{low:curve-range} 的精确像。在原点处，
 $z'(0)=4/3$、$q'(0)=4/3$、$r'_4(0)=\sqrt3/6$。
 
-局部计算决定了全部测量结果。将列标号记为 $(e_1,e_2,e_3,\sigma)$，
-置 $e_0=e_4=0$、$p_j=e_{j-1}\oplus e_j$，以及 $j<4$ 时 $\epsilon_j=1$、
-$\epsilon_4=-1$。轨道关系给出真实约化态
-\begin{equation}
- \begin{aligned}
- \rho_{j,e,\sigma}=\frac12\Bigl\{I+\frac{T}{8}\bigl[
- &(-1)^{p_j}X+\epsilon_j(-1)^{p_j+\sigma}Y\\
- &+(-1)^\sigma Z\bigr]\Bigr\}.
- \end{aligned}
- \label{low:curve-reduced}
-\end{equation}
-四个固定四面体方向各出现四次。式~\eqref{low:curve} 是酉矩阵的乘积，
-故其全部列构成正交完备测量。在 $b=0$ 处，其对角相位恰为指定的 $D_{f_0}$。
+在式~\eqref{core:bloch-orbit} 中取 $n=4$、$m=T/8$，即可得到全部约化态，
+每个固定正四面体方向各出现四次。式~\eqref{low:curve} 的酉分解给出正交完备测量，
+且 $b=0$ 恢复指定的 $D_{f_0}$。
 
 \subsection{基准测量与已知 \texorpdfstring{$n=4$}{n=4} 参数段的非等价性}
 \label{low:app-invariant}
@@ -243,14 +235,8 @@ $\epsilon_4=-1$。轨道关系给出真实约化态
  \label{low:f159-data}
 \end{align}
 这里 $a=\pi(1-\tau)/3$，$\tau$ 为该文使用的参数。
-种子 $C_4(i^{f_z}x^{k_z})_z/4$ 的 Bloch 向量分别为
-\begin{equation}
- \begin{aligned}
- \mathbf m_1&=c(x)(1,-1,-1),&\mathbf m_2&=c(x)(1,1,1),\\
- \mathbf m_3&=c(x)(1,-1,1),&\mathbf m_4&=c(x)(1,1,1),
- \end{aligned}
-\end{equation}
-其中直接计算有限和得到
+种子 $C_4(i^{f_z}x^{k_z})_z/4$ 的单比特本征值为
+$(1\pm\sqrt3\,c(x))/2$，其中
 \begin{equation}
  c(x)=\frac{x^3+x^{-3}+2x+2x^{-1}}{16}
  =\frac{\cos3a+2\cos a}{8}.
@@ -270,30 +256,17 @@ $\epsilon_4=-1$。轨道关系给出真实约化态
 Pauli 轨道测量的每一列均与种子共享这些不变量，因此结果重标号不能改变比较结果。
 在指定 $f_0$ 点，三个纯度依次为 $(63,39,39)/128$，故 $S_0=141/128$。
 
-对式~\eqref{low:f159-data} 的向量，由其振幅构造各约化态，得到
-\begin{equation}
- \begin{aligned}
- 512x^8 S(x)={}&6x^{16}-3x^{14}+74x^{12}+48x^{10}\\
- &+698x^8+48x^6+74x^4-3x^2+6.
- \end{aligned}
- \label{low:f159-purity}
-\end{equation}
 等价测量必须具有相同的单比特谱和 $S$。
 在此参数段上，两条件分别要求 $c=1/8$ 与 $S=141/128$。
-由于 $x\ne0$，将式~\eqref{low:f159-component} 及~\eqref{low:f159-purity}
-乘以相应分母，得到必要方程 $P(x)=Q(x)=0$，其中
+由式~\eqref{low:f159-data} 的振幅计算各约化态的纯度，并利用 $x\ne0$ 清除分母，
+得到必要方程 $P(x)=Q(x)=0$，其中
 \begin{align}
  P(x)={}&x^6+2x^4-2x^3+2x^2+1,\nonumber\\
  Q(x)={}&6x^{16}-3x^{14}+74x^{12}+48x^{10}\nonumber\\
  &+134x^8+48x^6+74x^4-3x^2+6.
  \label{low:invariant-polynomials}
 \end{align}
-如下精确整数证书排除了共同根：
-\begin{equation}
- \operatorname{Res}_x(P,Q)\ne0.
- \label{low:resultant}
-\end{equation}
-为便于算术复核，第一步 Euclid 余式为
+Euclid 算法排除了共同根，其第一步余式为
 \begin{equation}
  \begin{aligned}
  Q\bmod P={}&816x^5-2340x^4+2168x^3\\

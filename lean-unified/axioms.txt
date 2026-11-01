@@ -92,6 +92,18 @@ UnifiedEJM.SixFamily.actual_local_crossing {α β γ φ : ℝ} (hα : |α| ≤ R
   (hγ : |γ| ≤ Real.pi / 12) (hφ : |φ - Real.pi / 2| ≤ Real.pi / 12) :
   UnifiedEJM.SixFamily.ActualRegular (UnifiedEJM.SixFamily.seed α β γ φ) ↔
     (β = 0 ∧ γ = α ∨ α = 0 ∧ γ = β) ∧ φ = Real.pi / 2
+UnifiedEJM.SixFamily.geometric_local_crossing :
+  ∃ U,
+    IsOpen U ∧
+      UnifiedEJM.SixFamily.phaseOrigin ∈ U ∧
+        ∀ x ∈ U,
+          (∃ r, UnifiedEJM.Regularity.GeometricRegular (UnifiedEJM.SixFamily.diagonal (x 0) (x 1) (x 2) (x 3)) r) ↔
+            (x 1 = 0 ∧ x 2 = x 0 ∨ x 0 = 0 ∧ x 2 = x 1) ∧ x 3 = Real.pi / 2
+UnifiedEJM.Physical.measurement_eq_original_gate_sequence {n : ℕ} (hn : 0 < n) (u : OddEJM.Bits n → ℂ)
+  (label : OddEJM.Bits n) :
+  UnifiedEJM.Physical.measurement u label =
+    OddEJM.rightCNOTCircuit (n - 1)
+      (OddEJM.hadamardAt (n - 1) (OddEJM.phaseGate u (OddEJM.tensorHadamard (OddEJM.ket label))))
 UnifiedEJM.SixFamily.direct_regular_iff (α β : ℝ) :
   UnifiedEJM.SixFamily.ActualRegular (UnifiedEJM.EvenFamily.seed 6 α β) ↔ Real.sin α * Real.sin β = 0
 UnifiedEJM.ThreeQubit.geometric_three_qubit_rigidity :
@@ -170,6 +182,8 @@ fun u v =>
 'UnifiedEJM.Physical.measurement_orthonormal' depends on axioms: [propext, Classical.choice, Quot.sound]
 'UnifiedEJM.Physical.measurement_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
 'UnifiedEJM.Physical.measurement_eq_gate_column' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnifiedEJM.Physical.measurement_eq_original_gate_sequence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEJM.circuit_gate_order' depends on axioms: [propext, Classical.choice, Quot.sound]
 'UnifiedEJM.Regularity.geometric_iff_seed_squares' depends on axioms: [propext, Classical.choice, Quot.sound]
 'UnifiedEJM.Regularity.geometric_column_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
 'UnifiedEJM.F_branch' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -206,6 +220,9 @@ fun u v =>
  Classical.choice,
  Quot.sound]
 'UnifiedEJM.SixFamily.actual_local_crossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnifiedEJM.SixFamily.geometric_iff_actual_of_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnifiedEJM.SixFamily.eventually_total_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnifiedEJM.SixFamily.geometric_local_crossing' depends on axioms: [propext, Classical.choice, Quot.sound]
 'UnifiedEJM.SixFamily.measurement_reduced_of_regular' depends on axioms: [propext, Classical.choice, Quot.sound]
 'UnifiedEJM.SixFamily.regular_component_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
 'UnifiedEJM.SixFamily.direct_regular_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

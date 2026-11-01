@@ -1,11 +1,11 @@
-# 多比特优雅联合测量的统一构造
+# 连续可调多比特优雅联合测量的统一构造
 
 中文 | [English](README.en.md)
 
 **Tingyu Zhang、Yan Cen（通讯作者）**<br>
 Department of Physics, Fudan University, Shanghai, China<br>
 邮箱：[23300190021@m.fudan.edu.cn](mailto:23300190021@m.fudan.edu.cn) · [cenyan@fudan.edu.cn](mailto:cenyan@fudan.edu.cn)<br>
-**版本：2026-10-31，PRA 格式双语初稿**
+**版本：2026-11-01，PRA 格式双语校阅稿**
 
 - 论文 PDF：[英文，15 页](paper/main.pdf) · [中文，16 页](paper/main-zh.pdf)
 - LaTeX 源码：[英文](paper/main.tex) · [中文](paper/main-zh.tex)
@@ -34,4 +34,4 @@ Department of Physics, Fudan University, Shanghai, China<br>
 
 [精确复算程序](paper/reproduce/README.md) 使用 Python 与 SymPy，独立核对原相位、电路、有限字符和、导数证书、曲线恒等式及多项式不等价证书，并提供运行结果。有限维复算与任意维数的 Lean 证明分别承担交叉核验和普遍结论。
 
-旧奇数比特版本保留在 Git 历史中。新版使用不同的四特征核，结果扩展至全部 $n\ge5$；当前论文、源码和验证入口均以上述链接为准。
+论文包含独立讨论与结论，两版共用三张英文图和四张英文表。致谢及资助、数据与代码可用性声明留有作者待填占位符，详见[校阅说明](paper/README.md)。

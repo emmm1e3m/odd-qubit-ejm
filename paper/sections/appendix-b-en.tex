@@ -1,6 +1,8 @@
 \section{Proof of the sharp bounds for Boolean phase lines}
 \label{bound:appendix}
 
+This appendix proves Theorem~\ref{bound:theorem}: tetrahedral regularity fixes the signed local components, coefficient comparison gives the four radius laws, and low-dimensional character identities determine which laws are possible.
+
 \subsection{From tetrahedral regularity to equal signed components}
 The local action of the Pauli orbit sends a seed Bloch vector $(x,y,z)$
 to the four vectors
@@ -31,48 +33,11 @@ Theorem~\ref{bound:theorem}.
 
 \subsection{Background terms and coefficient comparison}
 Write $N=2^n$, $c=2/N$, and $q=d+\delta_0$.
-For a pulled-back signed Pauli operator
-\begin{equation}
- R=i^pX^aZ^b,\qquad h=a\oplus b,\qquad
- \Gamma=i^{p-|a|},
- \label{bound:pullback}
-\end{equation}
-the local table has $a\ne0$, $h\ne0$ and two types:
-class I has $\Gamma=-i$, $h\cdot a=1$; class II has
-$\Gamma=-1$, $h\cdot a=0$.
-The phase identity $i^{f_0(z)}=-i\,i^{|z|}$ for $z\ne0$
-expresses the input seed as
-\begin{equation}
- -\frac{i}{\sqrt N}\left[
- \sum_z i^{|z|}e^{itq(z)}\ket z
- +(i-e^{it})\ket0\right].
- \label{bound:input-split}
-\end{equation}
-Consequently its expectation of $R$ is a background term
-\begin{equation}
- B_R(t)=\frac{\Gamma}{N}\sum_z(-1)^{h\cdot z}
- e^{it[q(z)-q(z\oplus a)]}
- \label{bound:background}
-\end{equation}
-plus the cross term
-\begin{equation}
- c\operatorname{Re}\!\left[
- \Gamma e^{-itq(a)}(i-e^{it})\right].
- \label{bound:cross}
-\end{equation}
-The defect has no diagonal contribution because $a\ne0$.
-
-Pairing $z$ with $z\oplus a$ in Eq.~\eqref{bound:background}
-cancels the cosine part for class I.  Since $h\ne0$,
-$\sum_z(-1)^{h\cdot z}=0$, and the remaining term is
-$B_I=-W_q(h)\sin t$.
-For class II the imaginary part cancels.  Using
-\begin{equation}
- \cos\!\bigl(t[q(z)-q(z\oplus a)]\bigr)
- =1-(1-\cos t)D_aq(z)
-\end{equation}
-gives $B_{II}=-W_{D_aq}(h)(1-\cos t)/2$.
-Adding Eq.~\eqref{bound:cross}, we obtain
+Then $q$ is Boolean with $q(0)=1$, and Eq.~\eqref{core:defect-state}
+applies with $\Theta=tq$. Combining the local formula
+\eqref{core:signal} with the Boolean backgrounds in
+Eq.~\eqref{core:boolean-background} gives the components for
+classes I and II of Table~\ref{core:pullback-table}:
 \begin{equation}
  m_I(t)=\begin{cases}
  c\cos t-W_q(h)\sin t,&q(a)=1,\\

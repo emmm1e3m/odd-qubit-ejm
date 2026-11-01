@@ -1,19 +1,22 @@
 # Verification record
 
-Version: October 31, 2026.
+Version: November 1, 2026. The appendix condensation changes presentation only. The packaged Lean sources are identical to the sources used for the isolated audit below; that audit was not rerun for the editorial revision. The seven exact recomputation groups were rerun successfully from this publication package.
 
 | Check | Result |
 |---|---|
-| English and Chinese manuscripts | Compiled in REVTeX 4.2 PRA format; 15 and 16 pages. All 31 pages were visually inspected, and 115 displayed formulas and their numbering were compared between languages. The title, abstracts, narrative flow, literature terminology, and qubit-count notation were revised; an independent comparison confirmed that mathematical statements and assumptions were preserved. The final abstracts were separately checked against the theorem statements and for bilingual consistency; both PDFs were rebuilt and inspected afterward. |
-| Lean source package | 77 `UnifiedEJM` modules and 28 required foundation modules; Lean 4.35.0 and mathlib v4.35.0. The complete project builds successfully. |
-| Public axiom audit | All 72 declarations in `lean-unified/Audit.lean` passed. Dependencies are limited to `propext`, `Classical.choice`, and `Quot.sound`. |
-| Proof placeholders | No `sorry`, custom axioms, or `native_decide` in the supplied proof sources. |
-| Exact recomputation | All seven checks passed. Calculations use exact finite sums, Laurent polynomials, rational arithmetic, and symbolic identities. |
-| Independent review | The analytic argument, bilingual manuscript, physical meaning of the formal objects, and theorem assumptions were independently reviewed; the resulting corrections were incorporated. |
+| Current manuscripts | English 15 pages; Chinese 16 pages. Both recompiled after condensing Appendices B and D. Nine repeated display blocks were removed; the remaining 107 display blocks and the main results are unchanged. Rendered pages were inspected; 130 labels and 7 references agree. |
+| Lean source package | 78 UnifiedEJM modules and 29 required foundation modules, plus the unified entry, recompiled from source in an isolated directory. Original project build directories were excluded from the import path. Lean 4.35.0 and pinned mathlib v4.35.0 dependency caches were retained. |
+| Key declaration audit | 77 declarations passed. |
+| Complete local declaration audit | 3050 declarations, including 2592 theorem declarations, private helpers and generated declarations. No nonstandard axiom dependencies. |
+| Allowed foundational axioms | propext, Classical.choice, Quot.sound. No sorryAx or custom axioms. |
+| Exact recomputation | All seven groups passed, using exact finite sums, Laurent polynomials, rational arithmetic and symbolic identities. |
+| Semantic review | Six independent topic reviews checked physical definitions, hypotheses and manuscript correspondence. The repaired six-qubit geometry bridge was independently reviewed. |
 
-The [coverage table](lean-unified/COVERAGE.md) maps manuscript statements to precise declarations. The public [audit output](lean-unified/axioms.txt) displays theorem types and transitive axiom dependencies. The [exact computation results](paper/reproduce/verification_results.json) accompany the [reproduction instructions](paper/reproduce/README.md).
+This audit added the six-qubit theorem `SixFamily.geometric_local_crossing`, which derives the general geometric classification on an actual open neighborhood without an extra positivity assumption. It also brought the explicit CNOT sequence into the unified import closure and added `Physical.measurement_eq_original_gate_sequence`.
 
-Finite-dimensional checks include 1,280 Gram-matrix entries and 224 actual partial-trace matrices. Statements for arbitrary qubit number and entire continuous parameter intervals are proved analytically and in Lean; these finite checks supply an additional comparison with the original circuit definitions.
+The [coverage table](lean-unified/COVERAGE.md) specifies the assumptions and interfaces. The exact maximum theorem uses normalized Boolean generators; two-rate phase normalization and complement identities are formalized separately. There is no separately stated radius-set equality theorem for arbitrary real-valued generators.
+
+Evidence: [key audit](lean-unified/axioms.txt), [complete declaration audit](lean-unified/all_axioms.txt), [machine-readable summary](lean-unified/verification.json), [exact calculation results](paper/reproduce/verification_results.json).
 
 Build and audit from `lean-unified/`:
 
@@ -21,6 +24,7 @@ Build and audit from `lean-unified/`:
 lake exe cache get
 lake build
 lake env lean Audit.lean
+lake env lean AllAxioms.lean
 ```
 
-The adjacent `lean/` directory contains only the foundation modules needed by the current proof. Obsolete manuscript files, old finite-check programs, and unused old theorem modules have been removed from the working version; the earlier version remains in Git history.
+Finite-dimensional checks include 1,280 Gram entries and 224 actual partial traces. Arbitrary dimension and continuous parameter intervals are covered by the analytic arguments and Lean proofs.

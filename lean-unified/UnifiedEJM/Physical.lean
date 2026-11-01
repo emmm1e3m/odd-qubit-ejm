@@ -1,6 +1,7 @@
 import OddEJM.MeasurementBridge
 import OddEJM.Completeness
 import OddEJM.Tensor
+import OddEJM.CNOT
 import OddEJM.Spectrum
 import OddEJM.DensityMultiplicity
 
@@ -30,6 +31,13 @@ theorem measurement_eq_gate_column {n : ℕ} (u : Bits n → ℂ) (label : Bits 
   congr 1
   funext z
   ring
+
+/-- 全部测量列直接等于论文中从右至左执行的逐门电路。 -/
+theorem measurement_eq_original_gate_sequence {n : ℕ} (hn : 0 < n)
+    (u : Bits n → ℂ) (label : Bits n) :
+    measurement u label = rightCNOTCircuit (n - 1)
+      (hadamardAt (n - 1) (phaseGate u (tensorHadamard (ket label)))) := by
+  rw [measurement_eq_gate_column, circuit_gate_order hn]
 
 theorem measurement_orthonormal {n : ℕ} (hn : 0 < n) (u : Bits n → ℂ)
     (hu : ∀ z, star (u z) * u z = 1) (k l : Bits n) :
