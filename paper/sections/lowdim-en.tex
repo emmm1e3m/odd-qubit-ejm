@@ -1,13 +1,7 @@
 \section{Low-dimensional rigidity and curved deformations}
 \label{low:section}
-\input{sections/summary-table}
-\input{sections/figure-curved}
 
-The threshold $n=5$ has a geometric explanation within the fixed
-phase representation.  At $n=3$ the specified measurement is locally
-isolated.  At $n=4$ the regularity equations admit deformations, but
-every admissible phase line fails to increase the radius.  A curved path
-through the same point does increase it.
+This section examines admissible phase variations near the reference point in low dimensions, identifying the restrictions on straight paths and the role of curvature. At $n=3$ the specified measurement is locally isolated. At $n=4$, every admissible straight phase path fails to increase the radius, while a curved path through the same reference point does increase it.
 
 \begin{proposition}[Local rigidity at $n=3$]
 \label{low:rigidity}
@@ -15,16 +9,14 @@ In the fixed Pauli-orbit representation, the specified EJM at $n=3$ is
 isolated in a neighborhood of its phase vector, after removing the overall
 phase.
 \end{proposition}
-Indeed, the seven independent phases give eight differences between signed
-local components.  Seven of their derivatives have determinant
-$1/4096$ at the specified point.  The inverse function theorem therefore
+For $n=3$, removing the overall phase leaves seven independent phase variables. The three qubits have nine signed local components; subtracting the $X_1$ component from each of the other eight gives eight equality constraints. The Jacobian of seven of these constraints with respect to the seven phase variables has determinant $1/4096$ at the reference point.  The inverse function theorem therefore
 isolates the zero of these seven equations.  Since every signed component
 equals $1/4$ at that point, the squared regularity conditions are equivalent
-to signed equality in a neighborhood.  The exact Jacobian in
+to signed equality in a neighborhood.  The Jacobian given in
 Appendix~\ref{low:app-rigidity} turns the numerical rank reported in
 Ref.~\cite{PauwelsGisin2026} into an analytic local statement.
 
-For $n=4$, write an arbitrary phase line as
+At $n=4$, straight Boolean phase paths cannot increase the radius. We next ask whether arbitrary real generators can overcome this restriction, writing a general straight phase path as
 \begin{equation}
  M_d(t)=C_4\operatorname{diag}
  \bigl(i^{f_0(z)}e^{itd_z}\bigr)H^{\otimes4},\qquad d_0=0.
@@ -33,9 +25,9 @@ For $n=4$, write an arbitrary phase line as
 The normalization $d_0=0$ removes only a common phase; the remaining
 15 entries of $d$ are arbitrary real numbers.
 
-Figure~\ref{fig:curved} compares the phase-line bound with the curved
-enhancement described below.
-\begin{theorem}[Phase lines and a curved enhancement at $n=4$]
+Figure~\ref{fig:curved} compares the bound for all real straight phase paths with the increase obtained along the curved path below.
+\input{sections/figure-curved}
+\begin{theorem}[Straight-path bound and a curved path at $n=4$]
 \label{low:theorem}
 Every line~\eqref{low:line} that remains a common-radius regular
 tetrahedral measurement in a neighborhood of $t=0$ has
@@ -53,17 +45,9 @@ path through the same measurement for which
 and the radius is strictly increasing along the path.
 \end{theorem}
 
-The obstruction to straight paths is stronger than the Boolean bound.
-The full linearized constraint kernel is four dimensional; second-order
-conditions eliminate one direction except for a single candidate ratio,
-and a nonzero third-order term eliminates that candidate.  The remaining
-directions form two planes, each giving only the cosine law
-\eqref{low:line-bound}.  Their explicit classification is given in
-Appendix~\ref{low:app-lines}.
+The straight-path bound follows by expanding the component-equality conditions at the reference point. First-order conditions restrict the fifteen-dimensional space of real phase directions to a four-dimensional subspace. Requiring the same straight path to satisfy the second- and third-order conditions reduces the admissible directions to two two-dimensional subspaces. Substitution into the full formulas then gives the cosine law~\eqref{low:line-bound} on both. Appendix~\ref{low:app-lines} provides the classification and verification. This restricts paths with a fixed direction, while allowing curved paths whose direction varies with the parameter.
 
-To construct a path that can leave these planes, allow two independent
-real parameters $b,\delta$ and set $\theta_z=bu_z+\delta v_z$, using the
-two fixed integer masks $u,v$ in Eq.~\eqref{low:masks}.
+To construct such a curved path, first introduce two independent real parameters $b,\delta$ and set $\theta_z=bu_z+\delta v_z$, using the two fixed integer phase directions $u,v$ in Eq.~\eqref{low:masks}.
 For these phases, the signed physical Pauli components of the seed take
 only two values: ten components equal $T/8$, whereas the components of
 $X_1$ and $-Y_4$ equal $H/8$, where
@@ -116,9 +100,6 @@ Eq.~\eqref{low:curve} is to increase the radius through the specified
 $f_0$ measurement and explain the required curvature.  The parameter
 segment of that earlier family contains no measurement equivalent to
 this specified point under local unitaries, qubit permutations, and
-outcome relabeling.  Appendix~\ref{low:app-invariant} gives a short
-certificate using the one-qubit spectrum and the sum of the three
+outcome relabeling.  Appendix~\ref{low:app-invariant} proves this inequivalence using the one-qubit spectrum and the sum of the three
 $2|2$ purities.  Whether a larger regular-tetrahedral solution manifold
 connects the two families remains open.
-
-Table~\ref{tab:summary} compares the Boolean-line radius bounds and the additional deformation structures across system sizes.

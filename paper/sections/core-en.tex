@@ -1,13 +1,13 @@
 \section{Phase framework and local geometry}
 \label{core:framework}
 
-To deform the local geometry while preserving an orthonormal measurement, we put the tunable parameters in a diagonal phase. For $n\ge2$, we use the computational basis $\ket{z_1\cdots z_n}$, with $z_j\in\mathbb F_2$, and the circuit convention of Ref.~\cite{PauwelsGisin2026}. Products act from right to left. Write
+This section develops a phase framework that preserves measurement orthonormality and reduces the local geometry of all columns to the signed components of a seed state. The tunable parameters enter through a diagonal phase matrix. For $n\ge2$, we use the computational basis $\ket{z_1\cdots z_n}$, with $z_j\in\mathbb F_2$, and the circuit convention of Ref.~\cite{PauwelsGisin2026}. Products act from right to left. Write
 \begin{align}
  C_n&=S(n)H_n,\qquad M[D]=C_nDH^{\otimes n},\nonumber\\
  S(n)&=\mathrm{CNOT}_{2\to1}\cdots\mathrm{CNOT}_{n\to n-1},
  \label{core:phase-family}
 \end{align}
-where $H_n$ acts only on the last qubit and $D$ is diagonal with unit-modulus entries. By unitarity, the columns $\ket{\psi_k}=M[D]\ket{k}$ form a complete orthonormal measurement for every such $D$. Their local geometry is determined by the seed $\ket{\psi_0}$: writing $k=(e_1,\ldots,e_{n-1},\sigma)$ with $e\in\mathbb F_2^{n-1}$ and $\sigma\in\mathbb F_2$, the columns obey the exact Pauli orbit identity
+where $H_n$ acts only on the last qubit and $D$ is diagonal with unit-modulus entries. By unitarity, the columns $\ket{\psi_k}=M[D]\ket{k}$ form a complete orthonormal measurement for every such $D$. Their local geometry is determined by the seed $\ket{\psi_0}$: writing $k=(e_1,\ldots,e_{n-1},\sigma)$ with $e\in\mathbb F_2^{n-1}$ and $\sigma\in\mathbb F_2$, the columns obey the Pauli orbit identity
 \begin{equation}
  \ket{\psi_{e,\sigma}}=
  \left[\prod_{h=1}^{n-1}(Z_hZ_{h+1})^{e_h}\right]
@@ -38,7 +38,7 @@ To compute the seed's signed components, we separate a background state from a c
  \end{cases}
  \label{core:background}
 \end{align}
-The seed is exactly
+The seed state satisfies
 \begin{equation}
  \ket{\psi_0}=-iC_n\left[\ket{\chi_\Theta}
  +2^{-n/2}\big(i-e^{i\Theta(0)}\big)\ket{0^n}\right].
@@ -54,7 +54,7 @@ For a signed local Pauli operator, write
  h=a\oplus b,\quad\Gamma=i^{k-|a|},
  \label{core:pauli-notation}
 \end{equation}
-and $B_R=\bra{\chi_\Theta}R\ket{\chi_\Theta}$. Then
+and denote the background term by $B_R=\bra{\chi_\Theta}R\ket{\chi_\Theta}$. Then
 \begin{equation}
  \langle\widetilde P\rangle
  =B_R+c_n\operatorname{Re}\!\left[
@@ -80,7 +80,7 @@ where $e_0=e_n=0$, $\kappa_j=e_{j-1}\oplus e_j$, and
 For each $j$, these four unit vectors form a regular tetrahedron, and each label $(q,s)$ occurs $2^{n-2}$ times.
 \end{lemma}
 
-All pullbacks have $a\ne0$, so the correction in Eq.~\eqref{core:defect-state} has no diagonal contribution to a local expectation. Its two cross terms give Eq.~\eqref{core:signal}. Conjugation by the orbit operators in Eq.~\eqref{core:orbit} gives the tetrahedral signs in Eq.~\eqref{core:vertices}. Appendix~\ref{core:appendix} gives the pullbacks and the reduced-state derivation.
+Every operator $R=C_n^\dagger\widetilde P C_n$ that pulls a local output observable $\widetilde P$ back to the input of $C_n$ has $a\ne0$, so the correction in Eq.~\eqref{core:defect-state} has no diagonal contribution to a local expectation. Its two cross terms give Eq.~\eqref{core:signal}. Conjugation by the orbit operators in Eq.~\eqref{core:orbit} gives the tetrahedral signs in Eq.~\eqref{core:vertices}. Appendix~\ref{core:appendix} computes these operators by conjugating successively through the circuit gates and derives the reduced states.
 
 For the Boolean phase $\Theta=tq$, $q(0)=1$, the pullbacks fall into two classes: class I has $\Gamma=-i$ and $h\cdot a=1$, while class II has $\Gamma=-1$ and $h\cdot a=0$. With normalized Walsh coefficients
 \begin{equation}
@@ -90,7 +90,7 @@ For the Boolean phase $\Theta=tq$, $q(0)=1$, the pullbacks fall into two classes
  \end{aligned}
  \label{core:walsh-def}
 \end{equation}
-the background is
+the background term is
 \begin{equation}
  B_R(t)=\begin{cases}
  -\sin t\,W_q(h),&\text{class I},\\
@@ -98,12 +98,12 @@ the background is
  \end{cases}
  \label{core:boolean-background}
 \end{equation}
-These formulas express the background in terms of Walsh coefficients of the phase function and its derivatives.
+These formulas express the background terms in terms of Walsh coefficients of the phase function and its derivatives.
 
 \section{A unified family for all \texorpdfstring{$n\ge5$}{n >= 5}}
 \label{core:unified}
 
-Equation~\eqref{core:signal} suggests two design requirements: cancel every background term $B_R(t)$, and make the remaining cross terms equal. For Boolean phases, the first requirement gives the Walsh cancellations in Eq.~\eqref{core:boolean-background}, while the second fixes the values $q(a)$ at the local flips. For every integer $n\ge5$, four linear features reduce these requirements to conditions on one fixed four-bit kernel. Define the two internal parity blocks
+We now construct a radius-increasing family for every integer $n\ge5$. Equation~\eqref{core:signal} suggests two design requirements: cancel every background term $B_R(t)$, and make the remaining cross terms equal. For Boolean phases, the first requirement gives the Walsh cancellations in Eq.~\eqref{core:boolean-background}, while the second fixes the values $q(a)$ at the local flips. For every integer $n\ge5$, four linear features reduce these requirements to conditions on one fixed four-bit kernel. Define the two internal parity blocks
 \begin{equation}
  \begin{aligned}
  E_n&=\{2,4,\ldots\}\cap[2,n-2],\\
@@ -134,7 +134,7 @@ Here the subtraction is in the integers. Since $F(0)=1$, $d_n$ is still Boolean.
 
 Figure~\ref{fig:unified}(a) shows how the same four-feature kernel determines the phase at every $n\ge5$; panel (b) displays the resulting radius in units of $r_E(n)$.
 \input{sections/figure-unified}
-\begin{theorem}[Unified enhanced family]
+\begin{theorem}[Unified radius-increasing family]
 \label{core:unified-theorem}
 For every integer $n\ge5$, let
 \begin{equation}
@@ -177,18 +177,13 @@ Third, every class-I flip satisfies $F(\mathcal L_na)=0$, and every class-II fli
  c_n\operatorname{Re}[-i(i-e^{it})]&=c_n(1-\sin t),\nonumber\\
  c_n\operatorname{Re}[-e^{-it}(i-e^{it})]&=c_n(1-\sin t).
 \end{align}
-Lemma~\ref{core:mechanism} transfers this seed identity to all measurement columns. The endpoint, base-point, and image statements follow from the diagonal phase and the strict monotonicity of $\sin t$ on $J$.
+Lemma~\ref{core:mechanism} transfers this seed identity to all measurement columns. The endpoint, reference-point, and image statements follow from the diagonal phase and the strict monotonicity of $\sin t$ on $J$.
 \end{proof}
 
-The enhancement has a direct one-qubit entanglement interpretation. All outcomes and all $1|(n-1)$ cuts share the spectrum
+The increase in radius has a direct interpretation in terms of entanglement between one qubit and the remaining system. All outcomes and all $1|(n-1)$ cuts share the spectrum
 \begin{equation}
  \lambda_\pm=\frac{1\pm r_n(t)}2,
  \qquad \operatorname{Tr}\rho_j^2=\frac{1+r_n(t)^2}{2}.
  \label{core:spectrum}
 \end{equation}
-Their entropy is $h_2((1+r_n(t))/2)$, where $h_2(p)=-p\log_2p-(1-p)\log_2(1-p)$ with its continuous endpoint values. Increasing the Bloch radius decreases this bipartite entanglement. At $t=\pi/2$, the point correction in Eq.~\eqref{core:defect-state} vanishes; at $t=-\pi/2$, its interference produces twice the reference local signal. Four linear features suffice to express the phase for all $n$, while the feature extraction itself still depends on the physical register size.
-
-
-
-
-
+Their entanglement entropy is $h_2((1+r_n(t))/2)$, where $h_2(p)=-p\log_2p-(1-p)\log_2(1-p)$. Increasing the Bloch radius decreases this bipartite entanglement entropy. At $t=\pi/2$, the point correction in Eq.~\eqref{core:defect-state} vanishes; at $t=-\pi/2$, its interference produces twice the reference local signal. Thus four linear features suffice to express the phase for every $n\ge5$.

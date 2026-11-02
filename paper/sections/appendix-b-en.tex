@@ -1,10 +1,10 @@
-\section{Proof of the sharp bounds for Boolean phase lines}
+\section{Proof of the sharp bounds for Boolean straight phase paths}
 \label{bound:appendix}
 
 This appendix proves Theorem~\ref{bound:theorem}: tetrahedral regularity fixes the signed local components, coefficient comparison gives the four radius laws, and low-dimensional character identities determine which laws are possible.
 
 \subsection{From tetrahedral regularity to equal signed components}
-The local action of the Pauli orbit sends a seed Bloch vector $(x,y,z)$
+This section proves that local tetrahedral regularity near the reference point is equivalent to equality of the signed components along the entire Boolean straight phase path. The local action of the Pauli orbit sends a seed Bloch vector $(x,y,z)$
 to the four vectors
 \begin{equation}
  (x,y,z),\quad(-x,-y,z),\quad(x,-y,-z),\quad(-x,y,-z).
@@ -15,7 +15,7 @@ off-diagonal inner products are
 $-x^2-y^2+z^2$, $x^2-y^2-z^2$, and $-x^2+y^2-z^2$.
 They are equal precisely when $x^2=y^2=z^2$.
 A common radius at all sites then makes the squares of all $3n$
-signed components equal.  At the specified base point each signed
+signed components equal.  At the specified reference point each signed
 component equals $c_n>0$.  By continuity their signs remain positive
 on a sufficiently small interval, and the components themselves are
 equal there.
@@ -32,7 +32,7 @@ $\sqrt3\,|m_d|$.  This proves the local-to-global step used in
 Theorem~\ref{bound:theorem}.
 
 \subsection{Background terms and coefficient comparison}
-Write $N=2^n$, $c=2/N$, and $q=d+\delta_0$.
+This section compares the coefficients of the local components to derive the necessary and sufficient conditions and the four radius laws. Write $N=2^n$, $c=2/N$, and $q=d+\delta_0$.
 Then $q$ is Boolean with $q(0)=1$, and Eq.~\eqref{core:defect-state}
 applies with $\Theta=tq$. Combining the local formula
 \eqref{core:signal} with the Boolean backgrounds in
@@ -58,28 +58,31 @@ For $n\ge3$, both classes occur.  The cosine coefficient in
 Eq.~\eqref{bound:component-i} forces all class-I flip values to equal
 some $s\in\{0,1\}$.  The sine coefficient in
 Eq.~\eqref{bound:component-ii} forces all class-II flip values to
-equal some $k\in\{0,1\}$.  Comparing the sine coefficients across
-the classes gives $W_q(h)=c(s+k-1)$, while comparing the constants
-gives $W_{D_aq}(h)=2c(s+k-1)$.  The cosine coefficients then also
-agree.  Substitution proves both directions of
-Eq.~\eqref{bound:conditions} and yields the four laws.
+equal some $k\in\{0,1\}$.  Write $W=W_q(h)$ for each class-I row and $V=W_{D_aq}(h)$ for each class-II row. Table~\ref{bound:coefficient-table} displays the coefficients to be compared.
+\input{sections/table-coefficients}
+Equality of the sine and constant coefficients, respectively, gives
+\begin{equation}
+ W=c(s+k-1),\qquad V=2c(s+k-1).
+ \label{bound:coefficient-equalities}
+\end{equation}
+The cosine coefficients then agree as well. Substitution proves both directions of Eq.~\eqref{bound:conditions} and yields the four allowed radius laws.
 Their maximum absolute values prove the general upper bound.
 
 \subsection{Analytic exclusions at \texorpdfstring{$n=2,3,4$}{n=2,3,4}}
-Use binary integers with $z_1$ the most significant bit.
-For $n\ge3$ and every class-I character, the Walsh condition is equivalently
-\begin{equation}
- \sum_z q(z)(-1)^{h\cdot z}=1-s-k.
- \label{bound:linear-character}
-\end{equation}
-Indeed, $W_q(h)=-2N^{-1}\sum_zq(z)(-1)^{h\cdot z}$ for $h\ne0$.
-
+This section excludes radius increase for $n=2,3,4$ and identifies measurements attaining the bounds in every dimension. Use binary integers with $z_1$ the most significant bit.
 For $n=2$, only class I occurs and its flip masks cover all three
 nonzero strings.  Equality of the cosine coefficients forces
 $q(z)=s$ for every $z\ne0$.  The choices $s=0$ and $s=1$
 give $q=\delta_0$ and $q\equiv1$, respectively.
 Their common components are $c$ and $c\cos t$, so neither exceeds
 the base radius in absolute value.
+
+For $n\ge3$ and every class-I character, the Walsh condition is equivalently
+\begin{equation}
+ \sum_z q(z)(-1)^{h\cdot z}=1-s-k.
+ \label{bound:linear-character}
+\end{equation}
+Indeed, $W_q(h)=-2N^{-1}\sum_zq(z)(-1)^{h\cdot z}$ for $h\ne0$.
 
 For $n=3$, the class-I flip masks are $\{1,2,3,4,5\}$ and
 the class-II flip masks are $\{6,7\}$.

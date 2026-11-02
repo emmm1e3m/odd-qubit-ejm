@@ -3,10 +3,7 @@
 
 This appendix supplies the rigidity and curved-path proofs for Sec.~\ref{low:section}, followed by the invariant that distinguishes the specified four-qubit reference measurement from the known larger-radius segment.
 
-\subsection{An exact rigidity certificate at \texorpdfstring{$n=3$}{n=3}}
-\label{low:app-rigidity}
-
-Write $b_z=i^{f_0(z)}$ and let $\theta_0=0$.  For a signed physical
+We first fix the phase-expectation formulas used throughout the local calculations. Write $b_z=i^{f_0(z)}$ and let $\theta_0=0$.  For a signed physical
 Pauli operator $\widetilde P$, define the fixed matrix coefficients
 \begin{equation}
  K_P(z,w)=\overline{b_w}b_z
@@ -27,6 +24,11 @@ In particular,
 \end{equation}
 These formulas use the original circuit and therefore keep its signs and
 normalization explicit.
+
+\subsection{Local rigidity at \texorpdfstring{$n=3$}{n=3}}
+\label{low:app-rigidity}
+
+This section proves local uniqueness of the three-qubit reference measurement by an invertible Jacobian minor.
 
 For $n=3$, let $\mathcal F$ contain the eight differences $m_P-m_{X_1}$,
 in the order
@@ -59,15 +61,18 @@ positive there, so equality of their squares implies equality of the
 components themselves.  This proves Proposition~\ref{low:rigidity} in
 the full seven-dimensional phase space.
 
-\subsection{All real phase lines at \texorpdfstring{$n=4$}{n=4}}
+\subsection{All straight phase paths with real generators at \texorpdfstring{$n=4$}{n=4}}
 \label{low:app-lines}
 
+This section classifies the real directions whose straight phase paths satisfy the tetrahedral constraints, first by necessary derivative conditions and then by substitution into the full equations.
+
+\paragraph{Linearization.}
 Let $\mathcal F$ now contain the eleven differences from $X_1$, with the
 remaining signed operators ordered as
 \begin{equation*}
  Y_1,Z_1,X_2,Y_2,Z_2,X_3,Y_3,Z_3,X_4,-Y_4,Z_4.
 \end{equation*}
-For a line $\theta=td$, Eq.~\eqref{low:finite-sum} gives the exact
+For a line $\theta=td$, Eq.~\eqref{low:finite-sum} gives the
 derivative rule
 \begin{equation}
  16\frac{d^k}{dt^k}m_P(td)\bigg|_{t=0}
@@ -86,12 +91,13 @@ solution, where $a,b_*,c,\kappa$ are arbitrary real numbers:
  \end{aligned}
  \label{low:kernel-four}
 \end{equation}
-For completeness, this is an exact linear-algebra reduction of
+This follows from a linear-algebra reduction of
 Eq.~\eqref{low:jacobian-formula}: all four displayed directions annihilate
 $D\mathcal F(0)$, and the minor of $16D\mathcal F(0)$ with columns
 $(1,2,3,4,5,6,7,8,10,12,14)$ has determinant $65536$.
 Thus its rank is $11$ and the displayed kernel is exhaustive.
 
+\paragraph{Higher-order necessary conditions.}
 Put $G_P(t)=16[m_P(td)-m_{X_1}(td)]$.  The second-order conditions from
 Eq.~\eqref{low:line-derivative} include
 \begin{align}
@@ -114,6 +120,7 @@ Consequently $c=0$.  The remaining necessary second-order condition is
  G''_{X_2}(0)=-8(a-b_*)(a-b_*-\kappa)=0.
  \label{low:two-planes}
 \end{equation}
+\paragraph{Sufficiency.}
 Define the three subsets of the integer input labels
 \begin{align}
  \mathcal A&=\{1,2,3,8,9,10,11\},\nonumber\\
@@ -131,8 +138,7 @@ either branch,
  16m_P(td)=e^{iat}+e^{-iat}.
  \label{low:planes-sufficient}
 \end{equation}
-This checks sufficiency for all real parameters, rather than merely to
-finite order.  Hence all allowable directions are exactly
+This verifies the full constraints for all real parameters and completes the sufficiency proof.  Hence all allowable directions are exactly
 \begin{equation}
  \operatorname{span}_{\mathbb R}
  \{\mathbf1_{\mathcal A},\mathbf1_{\mathcal C}\}
@@ -142,16 +148,21 @@ finite order.  Hence all allowable directions are exactly
  \label{low:line-classification}
 \end{equation}
 Local regularity implies the signed equations used above by positivity at
-the base point.  Their differences along any real direction are finite
+the reference point.  Their differences along any real direction are finite
 exponential sums, so equality on an open interval extends to the whole
 line.  Equations~\eqref{low:planes-sufficient} and
 \eqref{low:line-classification} establish the first part of
 Theorem~\ref{low:theorem} without a restriction on the number of values
 taken by $d$.
 
+There are fifteen phase variables after removal of the global phase, and the eleven component differences have Jacobian rank eleven at the reference point. The implicit function theorem therefore makes their local zero set a four-dimensional smooth manifold. Positivity of the signed components identifies it with the nearby common-radius tetrahedral measurements. The directions that extend to admissible straight lines form only the two planes in Eq.~\eqref{low:line-classification}; the next section constructs a nonlinear phase path.
+
 \subsection{The curved branch and its full monotonic interval}
 \label{low:app-curve}
 
+This section verifies three properties: the chosen phases reduce the local constraints to $H=T$; this equation has a unique target root branch through the origin on the stated interval; and the common radius increases strictly along that branch.
+
+\paragraph{Reduction to the scalar constraint.}
 Equation~\eqref{low:masks} specifies all phases in Eq.~\eqref{low:curve}.
 Its entries are indexed by $z=0,\ldots,15$, with the most significant
 bit first.  Inserting $\theta_z=bu_z+\delta v_z$ into
@@ -171,74 +182,73 @@ hold for independent real $b,\delta$, before any branch is selected.
  \label{low:masks}
 \end{equation}
 
-Set $q=-\delta$ and $z=\tan(q/2)$; the letter $z$ denotes a real
-variable only in the following branch calculation.  The half-angle
-identities give
+\paragraph{Existence and identification of the root branch.}
+Set $\eta=-\delta$, $y=\tan(\eta/2)$, and $x=\tan(b/2)$. The half-angle identities give
 \begin{equation}
- H-T=\frac{2(Az^2-Bz+C)}{1+z^2}.
+ H-T=\frac{2(Ay^2-By+C)}{1+y^2}.
  \label{low:quadratic-identity}
 \end{equation}
 We now verify the root in Eq.~\eqref{low:delta}, including its entire
-domain.  Put $x=\tan(b/2)$ and $k=\sqrt2-1$.  Then
+domain.  Put $k=\sqrt2-1$.  Then
 \begin{equation}
- Az^2-Bz+C=\frac{x+1}{(1+x^2)^2}F(x,z),
+ Ay^2-By+C=\frac{x+1}{(1+x^2)^2}\mathcal P(x,y),
  \label{low:halfangle-polynomial}
 \end{equation}
 where
 \begin{align}
- F(x,z)={}&-x^3z^2+x^3z-3x^2z^2-3x^2z-4x^2\nonumber\\
- &+3xz^2+xz+4x+z^2-3z.
+ \mathcal P(x,y)={}&-x^3y^2+x^3y-3x^2y^2-3x^2y-4x^2\nonumber\\
+ &+3xy^2+xy+4x+y^2-3y.
  \label{low:polynomial}
 \end{align}
-On the square $0\le x,z\le k$, one has
+To control the root as $b$ varies, first estimate the derivative in $x$. On the square $0\le x,y\le k$, one has
 \begin{equation}
- F_{xx}=6z[x(1-z)-(1+z)]-8<0.
+ \mathcal P_{xx}=6y[x(1-y)-(1+y)]-8<0.
 \end{equation}
 Using $k^2+2k-1=0$ and $4-12k<0$, it follows that
 \begin{align}
- F_x(x,z)&\ge F_x(k,z)
- =4-8k+(4-12k)z\nonumber\\
+ \mathcal P_x(x,y)&\ge \mathcal P_x(k,y)
+ =4-8k+(4-12k)y\nonumber\\
  &\ge20k-8=20\sqrt2-28>0.
  \label{low:fx-positive}
 \end{align}
-The other derivative satisfies
+Uniqueness of the root follows from strict decrease in $y$. The other derivative satisfies
 \begin{align}
- F_z&=2z(1+3x-3x^2-x^3)+x^3-3x^2+x-3\nonumber\\
+ \mathcal P_y&=2y(1+3x-3x^2-x^3)+x^3-3x^2+x-3\nonumber\\
  &\le2k(1+3k)+k^3+k-3
  =5-4\sqrt2<0.
  \label{low:fz-negative}
 \end{align}
-The boundary values obey
+Existence and endpoint values follow from the boundary signs:
 \begin{align}
- F(x,x)&=-x(1+x^2)(x^2+2x-1)\ge0,\nonumber\\
- F(x,k)&\le F(k,k)=0.
+ \mathcal P(x,x)&=-x(1+x^2)(x^2+2x-1)\ge0,\nonumber\\
+ \mathcal P(x,k)&\le \mathcal P(k,k)=0.
  \label{low:boundary}
 \end{align}
-Thus each $x\in[0,k]$ has a unique root $z(x)\in[x,k]$;
-$z(0)=0$, $z(k)=k$, and $x<z(x)<k$ in the interior.
-At the root, $F_z<0$.  Since $A>0$, the corresponding quadratic has
+Thus each $x\in[0,k]$ has a unique root $y(x)\in[x,k]$;
+$y(0)=0$, $y(k)=k$, and $x<y(x)<k$ in the interior.
+At the root, $\mathcal P_y<0$.  Since $A>0$, the corresponding quadratic has
 positive discriminant and this is its smaller root.  Rationalizing that
 root gives
 \begin{equation}
- z(x)=\frac{2C}{B+\sqrt{B^2-4AC}},
+ y(x)=\frac{2C}{B+\sqrt{B^2-4AC}},
  \label{low:root-identified}
 \end{equation}
-which is well defined also at $x=0$.  This proves the stated closed
-formula rather than defining the path by an implicit existence argument.
+which is well defined also at $x=0$.  This identifies the root with the stated closed formula throughout the interval.
 
-Differentiating the now-identified simple root gives
-$z'(x)=-F_x/F_z>0$.  Consequently $q'(b)>0$ and
-$b\le q(b)\le\pi/4$.  With $T=\cos(b-q)+\sin q$,
+\paragraph{Strict increase of the common radius.}
+The derivative signs above also determine the motion of the simple root. Differentiation gives
+$y'(x)=-\mathcal P_x/\mathcal P_y>0$.  Consequently $\eta'(b)>0$ and
+$b\le \eta(b)\le\pi/4$.  With $T=\cos(b-\eta)+\sin \eta$,
 \begin{equation}
- T'(b)=\sin(q-b)+q'(b)\,[\cos q-\sin(q-b)]>0.
+ T'(b)=\sin(\eta-b)+\eta'(b)\,[\cos \eta-\sin(\eta-b)]>0.
  \label{low:monotone}
 \end{equation}
 The bracket is strictly positive: equality would require both
-$q=\pi/4$ and $b=0$, inconsistent with the determined endpoint values.
+$\eta=\pi/4$ and $b=0$, inconsistent with the determined endpoint values.
 The first term is nonnegative.  Finally,
-$T(0)=1$ and $T(\pi/4)=1+1/\sqrt2$ prove the exact image
+$T(0)=1$ and $T(\pi/4)=1+1/\sqrt2$ give the image
 \eqref{low:curve-range}.  At the origin,
-$z'(0)=4/3$, $q'(0)=4/3$, and $r'_4(0)=\sqrt3/6$.
+$y'(0)=4/3$, $\eta'(0)=4/3$, and $r'_4(0)=\sqrt3/6$.
 
 Setting $n=4$ and $m=T/8$ in Eq.~\eqref{core:bloch-orbit} gives all
 reduced states, with each fixed tetrahedral direction occurring four times.
@@ -249,7 +259,20 @@ orthonormal measurement, and $b=0$ recovers the specified $D_{f_0}$.
 \label{low:app-invariant}
 
 We show that the specified reference measurement is not equivalent, under local unitaries, qubit permutations, or outcome relabeling, to any measurement on the $n=4$ segment in Appendix C of Ref.~\cite{PauwelsGisin2026}.
-With $a\in[0,\pi/3]$, let $x=e^{ia}$ and write its input phases as
+Equivalent measurements must have the same one-qubit spectra and the same sum of the three $2|2$ purities. For a pure state at $n=4$ define
+\begin{equation}
+ S(\psi)=\operatorname{Tr}(\rho_{12}^{2})
+ +\operatorname{Tr}(\rho_{13}^{2})
+ +\operatorname{Tr}(\rho_{14}^{2}).
+ \label{low:purity-invariant}
+\end{equation}
+The sum is invariant under local unitaries and qubit permutations:
+complementary subsystems of a pure state have identical nonzero spectra,
+so a permutation only permutes the three unordered $2|2$ terms.
+Each column of a Pauli-orbit measurement shares these invariants with
+its seed.  Outcome relabeling therefore cannot change the comparison.
+
+To test these necessary conditions, we write the earlier family explicitly. With $a\in[0,\pi/3]$, let $x=e^{ia}$ and write its input phases as
 $i^{f_z}x^{k_z}$.  In order $z=0,\ldots,15$, the two fixed vectors are
 \begin{align}
  f={}&(0,0,0,3,0,0,1,0,\nonumber\\
@@ -269,24 +292,10 @@ $(1\pm\sqrt3\,c(x))/2$, where
 This is nonnegative on the stated segment, decreases from $3/8$ to
 zero, and gives the already known endpoint $3r_E(4)$.
 
-For a pure state at $n=4$ define
-\begin{equation}
- S(\psi)=\operatorname{Tr}(\rho_{12}^{2})
- +\operatorname{Tr}(\rho_{13}^{2})
- +\operatorname{Tr}(\rho_{14}^{2}).
- \label{low:purity-invariant}
-\end{equation}
-The sum is invariant under local unitaries and qubit permutations:
-complementary subsystems of a pure state have identical nonzero spectra,
-so a permutation only permutes the three unordered $2|2$ terms.
-Each column of a Pauli-orbit measurement shares these invariants with
-its seed.  Outcome relabeling therefore cannot change the comparison.
 At the specified $f_0$ point the three purities are
 $(63,39,39)/128$, and hence $S_0=141/128$.
 
-An equivalent measurement must have both the same one-qubit spectrum
-and the same $S$.  On this segment these conditions require $c=1/8$
-and $S=141/128$, respectively. Evaluating the reduced-state purities
+On this segment, equality of the one-qubit spectrum and of $S$ requires $c=1/8$ and $S=141/128$, respectively. Evaluating the reduced-state purities
 from the amplitudes in Eq.~\eqref{low:f159-data} and clearing
 denominators, with $x\ne0$, gives the necessary equations
 $P(x)=Q(x)=0$, with
@@ -306,8 +315,3 @@ The Euclidean algorithm excludes a common root. Its first remainder is
 whose gcd with $P$ is $1$.  Thus the original parameter segment
 contains no measurement equivalent to the specified $f_0$ measurement
 under the allowed operations.
-
-
-
-
-

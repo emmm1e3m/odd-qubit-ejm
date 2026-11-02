@@ -1,10 +1,10 @@
 # Verification record
 
-Version: November 1, 2026. The appendix condensation changes presentation only. The packaged Lean sources are identical to the sources used for the isolated audit below; that audit was not rerun for the editorial revision. The seven exact recomputation groups were rerun successfully from this publication package.
+Version: November 2, 2026. The bilingual manuscripts incorporate the authors' annotations, expanded literature context, revised proof organization, and clearer terminology. The packaged Lean sources are unchanged from the isolated audit below; that audit was not rerun for these editorial revisions. The seven exact recomputation groups passed in the preceding verification run.
 
 | Check | Result |
 |---|---|
-| Current manuscripts | English 15 pages; Chinese 16 pages. Both recompiled after condensing Appendices B and D. Nine repeated display blocks were removed; the remaining 107 display blocks and the main results are unchanged. Rendered pages were inspected; 130 labels and 7 references agree. |
+| Current manuscripts | English 17 pages; Chinese 18 pages. Both recompiled after incorporating annotations and revising terminology. The original 107 display blocks are retained, with local variable renaming in Appendix D; three explanatory displays were added. The subsequent terminology revision preserves all 110 display blocks. Rendered pages were inspected; 132 labels and 15 references agree. No undefined references, missing characters, overfull boxes, or stuck floats. |
 | Lean source package | 78 UnifiedEJM modules and 29 required foundation modules, plus the unified entry, recompiled from source in an isolated directory. Original project build directories were excluded from the import path. Lean 4.35.0 and pinned mathlib v4.35.0 dependency caches were retained. |
 | Key declaration audit | 77 declarations passed. |
 | Complete local declaration audit | 3050 declarations, including 2592 theorem declarations, private helpers and generated declarations. No nonstandard axiom dependencies. |

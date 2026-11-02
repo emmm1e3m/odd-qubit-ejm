@@ -1,7 +1,7 @@
 \section{Mixed backgrounds and the exception at \texorpdfstring{$n=6$}{n=6}}
 \label{embed:appendix}
 
-This appendix proves Theorem~\ref{embed:theorem} and Proposition~\ref{embed:six-proposition}. It evaluates the mixed backgrounds for even $n\ge8$ and solves the four-color phase equations near the reference measurement at $n=6$.
+This appendix proves Theorem~\ref{embed:theorem} and the local $n=6$ branch statement in Sec.~\ref{embed:section}. It evaluates the mixed backgrounds for even $n\ge8$ and solves the phase equations for the four input groups near the reference measurement at $n=6$.
 
 \subsection{Reduction to six finite identities}
 
@@ -39,7 +39,7 @@ $h=e_{j-1}\oplus\bigoplus_{k=j+1}^n e_k$. At $j=2,4$, its restriction to $O_n$ i
 \end{equation}
 remain after character pairing.
 
-Here is an explicit finite certificate for these six terms, using only the four-feature kernel $F$ of Eq.~\eqref{core:kernel}. For $w=(w_1,w_2,w_3,w_4)$ define
+We evaluate these six terms by finite counting, using only the four-feature kernel $F$ of Eq.~\eqref{core:kernel}. For $w=(w_1,w_2,w_3,w_4)$ define
 \begin{equation}
  T_\varepsilon(w)=F(w_1\oplus w_3,\varepsilon,w_2,w_1\oplus w_4),
  \qquad\varepsilon\in\{0,1\}.
@@ -51,13 +51,18 @@ Let $A$ encode the flip induced by $a$ on $w$ and let $H$ encode the remaining c
  (-1)^{H\cdot w}v^{T_0(w)-T_1(w\oplus A)}.
  \label{embed:finite-sector-sum}
 \end{equation}
-For $k=-1,0,1$, let $N_k^\pm$ count the inputs with exponent $k$ and character sign $\pm1$. Table~\ref{embed:sector-table} gives the complete counts obtained by substituting the two branches of $F$.
+For $k=-1,0,1$, let $N_k^\pm$ count the inputs with exponent $k$ and character sign $\pm1$. Grouping Eq.~\eqref{embed:finite-sector-sum} by exponent gives
+\begin{equation}
+ K_+(v)=2^{|O_n|-1}\sum_{k=-1}^{1}(N_k^+-N_k^-)v^k.
+ \label{embed:sector-counts}
+\end{equation}
+Table~\ref{embed:sector-table} gives the complete counts obtained by substituting the two branches of $F$.
 \input{sections/table-sectors}
-Thus every coefficient in Eq.~\eqref{embed:finite-sector-sum} vanishes. Equations~\eqref{embed:sectors} and \eqref{embed:defect} give the common signed component $2^{1-n}(\cos\alpha-\sin\beta)$ for all even $n\ge8$. Unitarity and the orbit transfer in Eq.~\eqref{core:bloch-orbit} then establish the full measurement statement.
+In every row $N_k^+=N_k^-$ for each $k$, so Eq.~\eqref{embed:sector-counts} vanishes for every $v$. Equations~\eqref{embed:sectors} and \eqref{embed:defect} give the common signed component $2^{1-n}(\cos\alpha-\sin\beta)$ for all even $n\ge8$. Unitarity and the orbit transfer in Eq.~\eqref{core:bloch-orbit} then establish the full measurement statement.
 
 \subsection{The direct superposition at \texorpdfstring{$n=6$}{n=6}}
 
-For $n=6$, $O_n=\{3\}$. The two additional terms $X_3,X_4$ both have $(A,H)=(4,4)$ in Eq.~\eqref{embed:finite-sector-sum}. Their counts for $k=-1,0,1$ are $(4,2),(4,4),(0,2)$, giving
+This section determines why direct superposition leaves a mixed background at $n=6$. Here $O_n=\{3\}$. The two additional terms $X_3,X_4$ both have $(A,H)=(4,4)$ in Eq.~\eqref{embed:finite-sector-sum}. Their counts for $k=-1,0,1$ are $(4,2),(4,4),(0,2)$; Eq.~\eqref{embed:sector-counts} therefore gives
 \begin{align}
  K_+(v)&=2v^{-1}-2v,\notag\\
  K_-(v)&=-K_+(v),\qquad K_0(v)=0.
@@ -69,11 +74,13 @@ Since $\Gamma=-1$, the unnormalized backgrounds are
  =2(u-u^{-1})(v-v^{-1})=-8\sin\alpha\sin\beta.
  \label{embed:six-mixed}
 \end{equation}
-The other sixteen backgrounds vanish. All eighteen defect contributions still equal $2(\cos\alpha-\sin\beta)$, so equal signed components are equivalent to $\sin\alpha\sin\beta=0$ for all real parameters. In a neighborhood of the base point, these are exactly the two coordinate axes. Changing only the zero-string phase cannot remove their difference: $X_2$ and $X_3$ belong to the same class and have identical defect terms.
+The other sixteen backgrounds vanish. All eighteen defect contributions still equal $2(\cos\alpha-\sin\beta)$, so equal signed components are equivalent to $\sin\alpha\sin\beta=0$ for all real parameters. In a neighborhood of the reference point, these are exactly the two coordinate axes. Changing only the zero-string phase cannot remove their difference: $X_2$ and $X_3$ belong to the same class and have identical defect terms.
 
-\subsection{Four colors with an independent zero-string phase}
+\subsection{Phases of four input groups and an independent zero-string phase}
 
-For a stronger local statement, allow arbitrary phases on the four values of $(q_A,q_B)$. After removing a global phase, write
+This section classifies all regular measurements near the reference point when each of the four input groups has an independent phase and the physical zero-string phase can be adjusted separately. All signed components are positive at the reference point. By Appendix~\ref{bound:appendix}, in a sufficiently small neighborhood the common-radius tetrahedral conditions are therefore equivalent to equality of these components.
+
+For this stronger local statement, allow arbitrary phases on the four values of $(q_A,q_B)$. After removing a global phase, write
 \begin{equation}
  \lambda_{00}=1,\quad\lambda_{10}=e^{i\alpha},\quad
  \lambda_{01}=e^{i\beta},\quad\lambda_{11}=e^{i\gamma}.
@@ -85,7 +92,7 @@ The seed is
  +(e^{i\phi}-e^{i\gamma})\ket{0^6}\right].
  \label{embed:color-seed}
 \end{equation}
-The base point is $(\alpha,\beta,\gamma,\phi)=(0,0,0,\pi/2)$. The direct superposition has $\gamma=\alpha+\beta$ and $\phi=\pi/2$.
+The reference point is $(\alpha,\beta,\gamma,\phi)=(0,0,0,\pi/2)$. The direct superposition has $\gamma=\alpha+\beta$ and $\phi=\pi/2$.
 
 The defect contributions before the factor $2/64$ are
 \begin{align}
@@ -119,11 +126,16 @@ In particular, $X_1$ and $X_2$ have zero background and belong to classes I and 
  \cos\gamma&=\cos(\alpha-\beta).
  \label{embed:color-equations}
 \end{align}
-Near the origin, the last equation gives $\gamma=\alpha-\beta$ or $\gamma=\beta-\alpha$. In the first case, the first equation gives $\sin\beta=-\sin\beta$, hence $\beta=0$ and $\gamma=\alpha$. In the second case, it gives $2\cos(\beta-\alpha)\sin\alpha=0$, hence $\alpha=0$ and $\gamma=\beta$. Both branches satisfy the middle equation.
+Near the origin, the first equation gives $\gamma=\alpha+\beta$, because sine is injective near zero. Substitution into the last equation gives
+\[
+ \cos(\alpha+\beta)-\cos(\alpha-\beta)
+ =-2\sin\alpha\sin\beta=0.
+\]
+Hence either $\beta=0$ and $\gamma=\alpha$, or $\alpha=0$ and $\gamma=\beta$. Both branches satisfy the middle equation.
 
-Finally, let $G=F_I-F_{II}$. At the base point, $\partial_\phi G=-1$, and $\phi=\pi/2$ solves $G=0$ along both branches. The implicit function theorem makes this solution unique nearby. The complete local solution set is therefore
+Finally, let $G=F_I-F_{II}$. At the reference point, $\partial_\phi G=-1$, and $\phi=\pi/2$ solves $G=0$ along both branches. The implicit function theorem makes this solution unique nearby. The complete local solution set is therefore
 \begin{equation}
  (\alpha,0,\alpha,\pi/2)\quad\text{or}\quad(0,\beta,\beta,\pi/2).
  \label{embed:color-crossing}
 \end{equation}
-All signed components are positive at the base point. In a sufficiently small neighborhood, the fixed-orbit tetrahedral conditions with a common radius are consequently equivalent to equal signed components, as in Appendix B. Equation~\eqref{embed:color-crossing} therefore classifies the local regular measurements in the stated color model and proves Proposition~\ref{embed:six-proposition}.
+Equation~\eqref{embed:color-crossing} therefore classifies the local regular measurements in the stated four-group phase model and proves the local $n=6$ branch statement in Sec.~\ref{embed:section}.

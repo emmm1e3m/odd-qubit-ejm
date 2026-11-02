@@ -3,8 +3,32 @@
 
 This appendix derives the local phase formula in Lemma~\ref{core:mechanism} and proves the all-$n$ cancellations and orbit statements used in Theorem~\ref{core:unified-theorem}.
 
-\subsection{Gate pullbacks and the physical point correction}
+\subsection{Complete measurement, reduced states, and multiplicity}
+\label{core:full-measurement}
+
+This section proves that the seed's signed local components determine the reduced states and tetrahedral multiplicities of the complete measurement. The circuit obeys
+\begin{equation}
+ \begin{aligned}
+ C_n^\dagger(Z_hZ_{h+1})C_n&=Z_h\quad(h<n),\\
+ C_n^\dagger X^{\otimes n}C_n&=Z_n.
+ \end{aligned}
+\end{equation}
+Since $D$ is diagonal and $H^{\otimes n}\ket{k}=Z^k\ket{+}^{\otimes n}$, these identities prove Eq.~\eqref{core:orbit} with the original column ordering $k=(e_1,\ldots,e_{n-1},\sigma)$. No parameter-dependent relabeling or column phase is needed. At site $j$, Pauli conjugation by the orbit element multiplies the physical $X,Y,Z$ expectations by $(-1)^{\kappa_j},(-1)^{\kappa_j+\sigma},(-1)^\sigma$, respectively. With the seed's orientation $\epsilon_j$, this gives Eq.~\eqref{core:vertices}.
+
+For the actual partial trace $\rho_j=\operatorname{Tr}_{\bar j}\ket\psi\!\bra\psi$, one has $\operatorname{Tr}(\rho_j\sigma_\alpha)=\langle\psi|\sigma_{j\alpha}|\psi\rangle$. Normalization and the three Pauli components determine a $2\times2$ Hermitian matrix uniquely, proving Eq.~\eqref{core:bloch-orbit}. Each vector in Eq.~\eqref{core:vertices} has norm one. Two distinct labels change exactly two coordinate signs, so their dot product is $-1/3$.
+
+For fixed $j$, $\kappa_j=e_{j-1}\oplus e_j$ is a nonzero linear functional of $e$, including $j=1,n$. It is independent of the column bit $\sigma$. Consequently each pair $(\kappa_j,\sigma)$ has exactly $2^{n-2}$ preimages. At positive radius these are four distinct reduced states; at zero radius they all equal $I/2$. Finally, unitarity of $M[D]$ proves both orthonormality and $\sum_k\ket{\psi_k}\!\bra{\psi_k}=I$. Thus the local geometry of the full measurement reduces to the signed components of its seed.
+
+\subsection{Reference phases, operator pullbacks, and the physical point correction}
 \label{core:pullbacks}
+
+This section derives the seed decomposition and separates each local expectation into a background term and the interference with the physical zero-string correction.
+
+The reference-phase identity follows from
+\begin{equation}
+ \sum_{\ell=0}^{w}(-1)^\ell\binom w\ell=0\quad(w>0).
+\end{equation}
+Removing the $\ell=0,1$ terms gives $f_0=w-1$ for $w>0$. At $z=0$, the bracket in Eq.~\eqref{core:defect-state} has amplitude $2^{-n/2}i$; multiplication by $-i$ restores the reference amplitude $2^{-n/2}$. At every other input it has amplitude $2^{-n/2}i^{f_0(z)}e^{i\Theta(z)}$. This proves the decomposition at the level of the actual input amplitudes.
 
 Let $\mathbf e_j$ denote a binary unit vector and $T_j=\mathbf e_j\oplus\cdots\oplus\mathbf e_n$. Direct conjugation through the CNOT chain gives
 \begin{align}
@@ -31,16 +55,10 @@ Indeed, $i^{|z|-|z\oplus a|}=i^{-|a|}(-1)^{a\cdot z}$. Also,
 \end{equation}
 Expanding Eq.~\eqref{core:defect-state} therefore proves Eq.~\eqref{core:signal}, including its normalization and its background term.
 
-For completeness, the reference-phase identity follows from
-\begin{equation}
- \sum_{\ell=0}^{w}(-1)^\ell\binom w\ell=0\quad(w>0).
-\end{equation}
-Removing the $\ell=0,1$ terms gives $f_0=w-1$ for $w>0$. At $z=0$, the bracket in Eq.~\eqref{core:defect-state} has amplitude $2^{-n/2}i$; multiplication by $-i$ restores the reference amplitude $2^{-n/2}$. At every other input it has amplitude $2^{-n/2}i^{f_0(z)}e^{i\Theta(z)}$. This proves the decomposition at the level of the actual input amplitudes.
-
 \subsection{Boolean backgrounds and character pairing}
 \label{core:pairing}
 
-Put $\xi_z=2^{-n/2}i^{|z|}$ and $\eta_z=(-1)^{q(z)}\xi_z$. Since $q$ is Boolean,
+This section evaluates the Boolean background terms and reduces their character sums to the features on which the phase depends. Put $\xi_z=2^{-n/2}i^{|z|}$ and $\eta_z=(-1)^{q(z)}\xi_z$. Since $q$ is Boolean,
 \begin{equation}
  \ket{\chi_{tq}}=e^{it/2}
  \left[\cos(t/2)\ket\xi-i\sin(t/2)\ket\eta\right].
@@ -61,9 +79,12 @@ More generally, let $L:\mathbb F_2^n\to\mathbb F_2^k$ have rank $k$. If $h\notin
 \end{equation}
 because every fiber has $2^{n-k}$ elements. This elementary pairing is the only general linear-encoding fact needed here.
 
-\subsection{Exhaustive character classification for every \texorpdfstring{$n\ge5$}{n >= 5}}
+\subsection{Verification of the four-feature kernel for every \texorpdfstring{$n\ge5$}{n >= 5}}
 \label{core:alln-classification}
 
+This section verifies background cancellation and the interference terms for the four-feature kernel at every $n\ge5$.
+
+\paragraph{Classification of characters not canceled by pairing.}
 For the four-feature map in Eq.~\eqref{core:features}, a physical character $h$ lies in its row space exactly when
 \begin{equation}
  \begin{gathered}
@@ -86,9 +107,10 @@ The classification follows directly from the supports of the characters. For cla
 
 For class-II $X_j$, the endpoint cases $j=2,n-1$ fail the endpoint relation. Otherwise its character selects two neighboring internal coordinates. Both parity blocks can be fully selected only when each has one member, which gives $n=5,j=3$. For class-II $Y_j$, the support is $\{j-1\}\cup\{j+1,\ldots,n\}$. Again $j=2,n-1$ fail the endpoint relation. At $j=3$, the odd block must consist only of $3$, giving $n=5,6$. At $j=4$, the even block can contain no $6$, giving $n=6,7$. For $j\ge5$, the selected coordinate $j-1$ and the omitted first coordinate of the same parity violate block constancy. This proves the table for unbounded $n$.
 
-The kernel also has the cubic Boolean expansion $F=1\oplus x\oplus b\oplus s\oplus xs\oplus xc\oplus bc\oplus bcs$. It equals one at six inputs with $s=0$ and four with $s=1$; because each feature fiber has size $2^{n-4}$, $d_n$ has support size $10\,2^{n-4}-1$.
+\paragraph{Cancellation of the six background coefficients.}
+The kernel has the cubic Boolean expansion $F=1\oplus x\oplus b\oplus s\oplus xs\oplus xc\oplus bc\oplus bcs$.
 
-To evaluate the surviving terms, the coefficient of $x$ in $F$ is $1\oplus s\oplus c$. All three characters $9,11,15$ have $x$ coefficient one, so summing over $x$ leaves only $c=s$. On the slices $c=s=0$ and $c=s=1$, respectively,
+To evaluate the terms not canceled by pairing, the coefficient of $x$ in $F$ is $1\oplus s\oplus c$. All three characters $9,11,15$ have $x$ coefficient one, so summing over $x$ leaves only $c=s$. On the slices $c=s=0$ and $c=s=1$, respectively,
 \begin{equation}
  F=1\oplus x\oplus b,\qquad F=x\oplus b.
 \end{equation}
@@ -100,7 +122,8 @@ Characters $9$ and $11$ omit $b$, so their sums cancel over $b$. Character $15$ 
 \end{align}
 In the first line, $x$ occurs only in the derivative; in the second, it occurs only in characters $13$ and $11$. Pairing over $x$ proves the remaining three identities. Thus all backgrounds vanish for all real $t$.
 
-It remains to check the flips even when their characters have canceled. From Table~\ref{core:pullback-table}, class-I flips map into $\{1,8,9\}$, while class-II flips map into $\{6,7,10,11,12,13\}$. Direct substitution in the two branches of Eq.~\eqref{core:kernel} gives
+\paragraph{Values at every local flip.}
+The character classification concerns the background terms; the interference contribution still requires the kernel value at every flip, including rows whose characters have already canceled. From Table~\ref{core:pullback-table}, class-I flips map into $\{1,8,9\}$, while class-II flips map into $\{6,7,10,11,12,13\}$. Direct substitution in the two branches of Eq.~\eqref{core:kernel} gives
 \begin{equation}
  \begin{aligned}
  F(A)&=0\quad(A\in\{1,8,9\}),\\
@@ -110,21 +133,5 @@ It remains to check the flips even when their characters have canceled. From Tab
 \end{equation}
 These sets include both parities of the final internal coordinate. They prove the cross-term identities used in Theorem~\ref{core:unified-theorem}.
 
-\subsection{Complete measurement, reduced states, and multiplicity}
-\label{core:full-measurement}
 
-The circuit obeys
-\begin{equation}
- \begin{aligned}
- C_n^\dagger(Z_hZ_{h+1})C_n&=Z_h\quad(h<n),\\
- C_n^\dagger X^{\otimes n}C_n&=Z_n.
- \end{aligned}
-\end{equation}
-Since $D$ is diagonal and $H^{\otimes n}\ket{k}=Z^k\ket{+}^{\otimes n}$, these identities prove Eq.~\eqref{core:orbit} with the original column ordering $k=(e_1,\ldots,e_{n-1},\sigma)$. No parameter-dependent relabeling or column phase is needed. At site $j$, Pauli conjugation by the orbit element multiplies the physical $X,Y,Z$ expectations by $(-1)^{\kappa_j},(-1)^{\kappa_j+\sigma},(-1)^\sigma$, respectively. With the seed's orientation $\epsilon_j$, this gives Eq.~\eqref{core:vertices}.
-
-For the actual partial trace $\rho_j=\operatorname{Tr}_{\bar j}\ket\psi\!\bra\psi$, one has $\operatorname{Tr}(\rho_j\sigma_\alpha)=\langle\psi|\sigma_{j\alpha}|\psi\rangle$. Normalization and the three Pauli components determine a $2\times2$ Hermitian matrix uniquely, proving Eq.~\eqref{core:bloch-orbit}. Each vector in Eq.~\eqref{core:vertices} has norm one. Two distinct labels change exactly two coordinate signs, so their dot product is $-1/3$.
-
-For fixed $j$, $\kappa_j=e_{j-1}\oplus e_j$ is a nonzero linear functional of $e$, including $j=1,n$. It is independent of the column bit $\sigma$. Consequently each pair $(\kappa_j,\sigma)$ has exactly $2^{n-2}$ preimages. At positive radius these are four distinct reduced states; at zero radius they all equal $I/2$. Finally, unitarity of $M[D]$ proves both orthonormality and $\sum_k\ket{\psi_k}\!\bra{\psi_k}=I$. This closes the link from the phase kernel to a complete projective measurement.
-
-
-
+As supplementary information, the kernel equals one at six inputs with $s=0$ and four with $s=1$. Each feature fiber has size $2^{n-4}$, and the physical zero string is removed from $d_n$, so $|\operatorname{supp}d_n|=10\cdot2^{n-4}-1$.

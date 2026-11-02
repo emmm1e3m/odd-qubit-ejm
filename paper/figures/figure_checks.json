@@ -1,0 +1,19 @@
+{
+  "sample_count": 801,
+  "b_interval": [
+    0.0,
+    0.7853981633974483
+  ],
+  "q_endpoints": [
+    0.0,
+    0.7853981633974484
+  ],
+  "radius_ratio_endpoints": [
+    1.0,
+    1.7071067811865475
+  ],
+  "endpoint_target": 1.7071067811865475,
+  "min_discriminant_sampled": 2.914213562373096,
+  "minimum_radius_increment": 0.00012076802607152715,
+  "max_H_minus_T_sampled": 6.661338147750939e-16
+}

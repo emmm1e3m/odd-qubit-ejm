@@ -97,7 +97,7 @@ def figure_unified():
     ax.scatter([-np.pi/2, 0, np.pi/2], [2, 1, 0], s=22, color=BLUE, zorder=4)
     ax.axvline(0, color="0.78", lw=0.65, ls=(0, (3, 3)), zorder=0)
     ax.axhline(1, color="0.78", lw=0.65, ls=(0, (3, 3)), zorder=0)
-    ax.annotate("base point", xy=(0, 1), xytext=(0.34, 1.22), fontsize=8,
+    ax.annotate("reference point", xy=(0, 1), xytext=(0.20, 1.22), fontsize=8,
                 arrowprops={"arrowstyle": "-", "color": GRAY, "lw": 0.6})
     ax.text(-0.80, 1.78, r"$1-\sin t$", fontsize=10, color=BLUE)
     ax.set(xlim=(-1.68, 1.68), ylim=(-0.09, 2.12), xlabel=r"$t$", ylabel=r"$r_n/r_E(n)$")
@@ -156,7 +156,7 @@ def figure_embedding():
     inset.text(0.11, 1.02, r"$\beta$", ha="left", va="bottom")
     inset.set_title(r"$n=6$", pad=7)
     panel(inset, "(b)")
-    inset.text(0.5, -0.19, "Four-color model", ha="center", transform=inset.transAxes, fontsize=9)
+    inset.text(0.5, -0.19, "Four-group phase model", ha="center", transform=inset.transAxes, fontsize=9)
     inset.text(0.5, -0.34, "Local solution set (schematic)", ha="center", transform=inset.transAxes, fontsize=8)
     save(fig, "fig2_embedding")
 
@@ -178,9 +178,9 @@ def figure_curved():
     q, r, discr = curved_family(b)
     ax.plot(b, r, color=BLUE, label="Curved phase path")
     ax.axhline(1, color=GRAY, ls=(0, (4, 3)), lw=1.1,
-               label="Real phase-line bound")
+               label="Real straight-path bound")
     ax.scatter([0, np.pi/4], [1, 1+1/np.sqrt(2)], s=21, color=BLUE, zorder=4)
-    ax.text(0.035, 0.947, "base point", fontsize=8, ha="left", va="center")
+    ax.text(0.035, 0.947, "reference point", fontsize=8, ha="left", va="center")
     ax.annotate(r"$1+1/\sqrt{2}$", xy=(np.pi/4, 1+1/np.sqrt(2)),
                 xytext=(0.46, 1.42), fontsize=9,
                 arrowprops={"arrowstyle": "-", "color": GRAY, "lw": 0.6})
