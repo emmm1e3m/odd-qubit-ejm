@@ -2,7 +2,7 @@
 
 本工程对应 [PRA 双语初稿](../paper/README.md)。使用新四特征核，覆盖全部整数 `n ≥ 5`，并形式化 Boolean 相位直线的模型最优值、偶数母族、低维刚性和曲线，以及谱熵和四比特测量不等价性。各结论的条件、真实物理对象和声明入口见 [COVERAGE.md](COVERAGE.md)。
 
-主入口为 [UnifiedEJM.lean](UnifiedEJM.lean)。新版复用相邻 [基础库](../lean/README.md) 的通用门电路、有限位串及线性代数基础；旧奇数核没有被当作新版任意维构造。复制工程时请保留 `lean/` 和 `lean-unified/` 两个相邻目录。
+主入口为 [UnifiedEJM.lean](UnifiedEJM.lean)。本工程复用相邻 [基础依赖](../lean/README.md) 的通用门电路、有限位串及线性代数定义。复制工程时请保留 `lean` 和 `lean-unified` 两个相邻目录。
 
 ## 版本与复现
 
@@ -23,6 +23,13 @@ lake env lean AllAxioms.lean
 
 ## 验证记录
 
-2026-11-01已完成78个新版模块、29个基础模块及总入口的隔离重编，并复核前提、物理定义与论文推导。六比特一般几何桥和逐CNOT门序桥已补齐。审计入口为 [Audit.lean](Audit.lean)，实际类型与公理输出为 [axioms.txt](axioms.txt)。源码中没有 `sorry`、自定义公理或 `native_decide`。
+当前包包含186个UnifiedEJM模块及29个基础依赖模块。已有2026-11-04验证及收尾复核记录包括77个有限划分证书、统一入口编译和4944项声明（4271项定理）的公理检查，非标准公理依赖为零。
 
-构建及精确复算结果见 [验证说明](../VERIFICATION.md)。有限维计算用于交叉核验；任意维数由 Lean 中带自然数变量的证明处理。
+- [当前源码清单](../verification/141/physics_sources.json)与[整合记录](../verification/141/finite_integration.json)。
+- [收尾源码核对](../verification/163/delivery_check.json)、[编译结果](../verification/163/compile_results.json)及[4944项声明审计](../verification/163/all_axioms.txt)。
+- [27项最终接口检查](../verification/164/FinalDeliveryCheck.lean)及[输出](../verification/164/final_delivery_check.txt)。
+- [验证汇总](verification.json)与[发布验证说明](../VERIFICATION.md)。
+
+`axioms.txt`和`all_axioms.txt`保留2026-11-01的历史审计；后者的3050项计数对应当时版本。最新已有收尾输出为上方4944项声明审计。
+
+论文的精确复算入口见[说明](../paper/reproduce/README.md)，全n GME整数证书见[独立复现包](../paper/reproduce/all_n_gme/README.md)。

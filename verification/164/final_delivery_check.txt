@@ -1,0 +1,122 @@
+UnifiedEJM.PhysicsFinite.cut5_enumeration (S : Finset (Fin 5)) :
+  S ∈ UnifiedEJM.Multipartite.cuts 5 →
+    ∃ k, S = UnifiedEJM.PhysicsFinite.canonicalCut5 k ∨ S = (UnifiedEJM.PhysicsFinite.canonicalCut5 k)ᶜ
+'UnifiedEJM.PhysicsFinite.cut5_enumeration' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsFinite.cut6_enumeration (S : Finset (Fin 6)) :
+  S ∈ UnifiedEJM.Multipartite.cuts 6 →
+    ∃ k, S = UnifiedEJM.PhysicsFinite.canonicalCut6 k ∨ S = (UnifiedEJM.PhysicsFinite.canonicalCut6 k)ᶜ
+'UnifiedEJM.PhysicsFinite.cut6_enumeration' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsFinite.new5_coefficients_checked (k : Fin 15) :
+  UnifiedEJM.PhysicsFinite.gCoefficients
+      (UnifiedEJM.PhysicsFinite.fastMix 5 (UnifiedEJM.PhysicsFinite.canonicalMask5 k)) UnifiedEJM.PhysicsFinite.new5A
+      UnifiedEJM.PhysicsFinite.new5B =
+    UnifiedEJM.PhysicsFinite.new5Coeff k
+'UnifiedEJM.PhysicsFinite.new5_coefficients_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsFinite.new6_coefficients_checked (k : Fin 31) :
+  UnifiedEJM.PhysicsFinite.gCoefficients
+      (UnifiedEJM.PhysicsFinite.fastMix 6 (UnifiedEJM.PhysicsFinite.canonicalMask6 k)) UnifiedEJM.PhysicsFinite.new6A
+      UnifiedEJM.PhysicsFinite.new6B =
+    UnifiedEJM.PhysicsFinite.new6Coeff k
+'UnifiedEJM.PhysicsFinite.new6_coefficients_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsFinite.pg6_coefficients_checked (k : Fin 31) :
+  UnifiedEJM.PhysicsFinite.gCoefficients
+      (UnifiedEJM.PhysicsFinite.fastMix 6 (UnifiedEJM.PhysicsFinite.canonicalMask6 k)) UnifiedEJM.PhysicsFinite.pg6A
+      UnifiedEJM.PhysicsFinite.pg6B =
+    UnifiedEJM.PhysicsFinite.pg6Coeff k
+'UnifiedEJM.PhysicsFinite.pg6_coefficients_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsFinite.new5_twoBody_laurent (t : ℝ) :
+  UnifiedEJM.Multipartite.twoBodyPurity (UnifiedEJM.seed 5 t) =
+    4096⁻¹ * UnifiedEJM.PhysicsFinite.laurentEval UnifiedEJM.PhysicsFinite.new5PairCoeff (OddEJM.anglePhase t)
+'UnifiedEJM.PhysicsFinite.new5_twoBody_laurent' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsFinite.new6_twoBody_laurent (t : ℝ) :
+  UnifiedEJM.Multipartite.twoBodyPurity (UnifiedEJM.seed 6 t) =
+    16384⁻¹ * UnifiedEJM.PhysicsFinite.laurentEval UnifiedEJM.PhysicsFinite.new6PairCoeff (OddEJM.anglePhase t)
+'UnifiedEJM.PhysicsFinite.new6_twoBody_laurent' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsFinite.pg6_twoBody_laurent (t : ℝ) :
+  UnifiedEJM.Multipartite.twoBodyPurity (UnifiedEJM.EvenFamily.seed 6 t 0) =
+    16384⁻¹ * UnifiedEJM.PhysicsFinite.laurentEval UnifiedEJM.PhysicsFinite.pg6PairCoeff (OddEJM.anglePhase t)
+'UnifiedEJM.PhysicsFinite.pg6_twoBody_laurent' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsEntanglement.new5_measurement_gme (t : ℝ) (label : OddEJM.Bits 5) :
+  UnifiedEJM.Multipartite.gme ⋯ (UnifiedEJM.measurement 5 t label) = √(1 - OddEJM.radius 5 t ^ 2)
+'UnifiedEJM.PhysicsEntanglement.new5_measurement_gme' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsEntanglement.new6_measurement_gme (t : ℝ) (label : OddEJM.Bits 6) :
+  UnifiedEJM.Multipartite.gme ⋯ (UnifiedEJM.measurement 6 t label) = √(1 - OddEJM.radius 6 t ^ 2)
+'UnifiedEJM.PhysicsEntanglement.new6_measurement_gme' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsEntanglement.new5_measurement_gme_pos (t : ℝ) (label : OddEJM.Bits 5) :
+  0 < UnifiedEJM.Multipartite.gme ⋯ (UnifiedEJM.measurement 5 t label)
+'UnifiedEJM.PhysicsEntanglement.new5_measurement_gme_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsEntanglement.new6_measurement_gme_pos (t : ℝ) (label : OddEJM.Bits 6) :
+  0 < UnifiedEJM.Multipartite.gme ⋯ (UnifiedEJM.measurement 6 t label)
+'UnifiedEJM.PhysicsEntanglement.new6_measurement_gme_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsEntanglement.new5_measurement_minimizers (t : ℝ) (label : OddEJM.Bits 5) (S : Finset (Fin 5))
+  (hS : S ∈ UnifiedEJM.Multipartite.cuts 5) :
+  √(2 * (1 - (UnifiedEJM.Multipartite.cutPurity S (UnifiedEJM.measurement 5 t label)).re)) =
+      UnifiedEJM.Multipartite.gme ⋯ (UnifiedEJM.measurement 5 t label) ↔
+    UnifiedEJM.PhysicsEntanglement.SingleCut S
+'UnifiedEJM.PhysicsEntanglement.new5_measurement_minimizers' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsEntanglement.new6_measurement_minimizers (t : ℝ) (label : OddEJM.Bits 6) (S : Finset (Fin 6))
+  (hS : S ∈ UnifiedEJM.Multipartite.cuts 6) :
+  √(2 * (1 - (UnifiedEJM.Multipartite.cutPurity S (UnifiedEJM.measurement 6 t label)).re)) =
+      UnifiedEJM.Multipartite.gme ⋯ (UnifiedEJM.measurement 6 t label) ↔
+    UnifiedEJM.PhysicsEntanglement.SingleCut S
+'UnifiedEJM.PhysicsEntanglement.new6_measurement_minimizers' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsEntanglement.new5_measurement_entangled (t : ℝ) (label : OddEJM.Bits 5) (S : Finset (Fin 5))
+  (hS : S ∈ UnifiedEJM.Multipartite.cuts 5) :
+  ¬UnifiedEJM.Multipartite.ProductAcross S (UnifiedEJM.measurement 5 t label)
+'UnifiedEJM.PhysicsEntanglement.new5_measurement_entangled' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsEntanglement.new6_measurement_entangled (t : ℝ) (label : OddEJM.Bits 6) (S : Finset (Fin 6))
+  (hS : S ∈ UnifiedEJM.Multipartite.cuts 6) :
+  ¬UnifiedEJM.Multipartite.ProductAcross S (UnifiedEJM.measurement 6 t label)
+'UnifiedEJM.PhysicsEntanglement.new6_measurement_entangled' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsEntanglement.pg6_zero_measurement_gme (label : OddEJM.Bits 6) :
+  UnifiedEJM.Multipartite.gme ⋯ (UnifiedEJM.EvenFamily.measurement 6 (Real.pi / 2) 0 label) = √3 / 2
+'UnifiedEJM.PhysicsEntanglement.pg6_zero_measurement_gme' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsEntanglement.new5_twoBody_formula (t : ℝ) :
+  (UnifiedEJM.Multipartite.twoBodyPurity (UnifiedEJM.seed 5 t)).re =
+    751 / 256 + 7 / 32 * Real.cos t - 51 / 256 * Real.sin t - 5 / 64 * Real.cos (2 * t) - 1 / 64 * Real.sin (2 * t)
+'UnifiedEJM.PhysicsEntanglement.new5_twoBody_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsEntanglement.new6_twoBody_formula (t : ℝ) :
+  (UnifiedEJM.Multipartite.twoBodyPurity (UnifiedEJM.seed 6 t)).re =
+    16793 / 4096 + 23 / 128 * Real.cos t - 5 / 64 * Real.sin t - 39 / 4096 * Real.cos (2 * t) -
+      1 / 128 * Real.sin (2 * t)
+'UnifiedEJM.PhysicsEntanglement.new6_twoBody_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsEntanglement.pg6_twoBody_formula (t : ℝ) :
+  (UnifiedEJM.Multipartite.twoBodyPurity (UnifiedEJM.EvenFamily.seed 6 t 0)).re =
+    18977 / 4096 - 15 / 128 * Real.cos t + 15 / 256 * Real.sin t - 1007 / 4096 * Real.cos (2 * t)
+'UnifiedEJM.PhysicsEntanglement.pg6_twoBody_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsEntanglement.equal_single_reductions_positive (label : OddEJM.Bits 6) (j : Fin 6) :
+  OddEJM.reduced (UnifiedEJM.measurement 6 (Real.pi / 6) label) j =
+    OddEJM.reduced (UnifiedEJM.EvenFamily.measurement 6 (Real.pi / 3) 0 label) j
+'UnifiedEJM.PhysicsEntanglement.equal_single_reductions_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UnifiedEJM.PhysicsEntanglement.equal_single_reductions_negative (label : OddEJM.Bits 6) (j : Fin 6) :
+  OddEJM.reduced (UnifiedEJM.measurement 6 (Real.pi / 6) label) j =
+    OddEJM.reduced (UnifiedEJM.EvenFamily.measurement 6 (-(Real.pi / 3)) 0 label) j
+'UnifiedEJM.PhysicsEntanglement.equal_single_reductions_negative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UnifiedEJM.PhysicsEntanglement.equal_radius_positive :
+  OddEJM.radius 6 (Real.pi / 6) = UnifiedEJM.EvenEmbedding.radius 6 (Real.pi / 3) 0
+'UnifiedEJM.PhysicsEntanglement.equal_radius_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsEntanglement.equal_radius_negative :
+  OddEJM.radius 6 (Real.pi / 6) = UnifiedEJM.EvenEmbedding.radius 6 (-(Real.pi / 3)) 0
+'UnifiedEJM.PhysicsEntanglement.equal_radius_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+UnifiedEJM.PhysicsEntanglement.equal_radius_measurements_inequivalent_positive :
+  ¬UnifiedEJM.Multipartite.EquivalentMeasurements (UnifiedEJM.rawPhase (OddEJM.anglePhase (Real.pi / 6)))
+      (UnifiedEJM.EvenFamily.diagonal 6 (Real.pi / 3) 0)
+'UnifiedEJM.PhysicsEntanglement.equal_radius_measurements_inequivalent_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UnifiedEJM.PhysicsEntanglement.equal_radius_measurements_inequivalent_negative :
+  ¬UnifiedEJM.Multipartite.EquivalentMeasurements (UnifiedEJM.rawPhase (OddEJM.anglePhase (Real.pi / 6)))
+      (UnifiedEJM.EvenFamily.diagonal 6 (-(Real.pi / 3)) 0)
+'UnifiedEJM.PhysicsEntanglement.equal_radius_measurements_inequivalent_negative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+UnifiedEJM.PhysicsEntanglement.zero_radius_measurements_inequivalent :
+  ¬UnifiedEJM.Multipartite.EquivalentMeasurements (UnifiedEJM.rawPhase (OddEJM.anglePhase (Real.pi / 2)))
+      (UnifiedEJM.EvenFamily.diagonal 6 (Real.pi / 2) 0)
+'UnifiedEJM.PhysicsEntanglement.zero_radius_measurements_inequivalent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

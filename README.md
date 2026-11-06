@@ -5,9 +5,9 @@
 **Tingyu Zhang、Yan Cen（通讯作者）**<br>
 Department of Physics, Fudan University, Shanghai, China<br>
 邮箱：[23300190021@m.fudan.edu.cn](mailto:23300190021@m.fudan.edu.cn) · [cenyan@fudan.edu.cn](mailto:cenyan@fudan.edu.cn)<br>
-**版本：2026-11-02，PRA 格式双语校阅稿**
+**版本：2026-11-06，PRA 格式双语校阅稿**
 
-- 论文 PDF：[英文，17 页](paper/main.pdf) · [中文，18 页](paper/main-zh.pdf)
+- 论文 PDF：[英文，21 页](paper/main.pdf) · [中文，22 页](paper/main-zh.pdf)
 - LaTeX 源码：[英文](paper/main.tex) · [中文](paper/main-zh.tex)
 - 复现：[精确计算](paper/reproduce/README.md) · [Lean 工程](lean-unified/README.md) · [论文与形式化对应](lean-unified/COVERAGE.md)
 
@@ -23,6 +23,7 @@ Department of Physics, Fudan University, Shanghai, China<br>
 2. **Boolean 直线相位路径的精确最优值。** 对固定相位表示中经过该基准点、在基准点邻域保持规则几何的全部 Boolean 生成元和所有实参数取最大值，结果为 $r_E(n)$（$n=2,3,4$）或 $2r_E(n)$（$n\ge5$），且均可达到。结论也适用于去除整体相位并重标参数后的两值实生成元。
 3. **偶数比特的二维包含。** 对所有偶数 $n\ge8$，前作偶数族与统一半径增加族是同一完整测量族的两个坐标截面。在论文给定域 $\Omega$ 上，$r_n(\alpha,\beta)=r_E(n)(\cos\alpha-\sin\beta)$，精确像为 $[0,2r_E(n)]$；两轴逐列恢复对应测量，两个方向在有序测量投影层面独立。
 4. **四比特直线障碍与弯曲路径增加半径。** 固定相位表示中经过该基准点的任意实直线相位路径，若在邻域保持规则几何，其半径始终不超过 $r_E(4)$。一条显式弯曲路径则从同一基准点出发，在整个 $[0,\pi/4]$ 上严格增加半径，精确达到 $(1+1/\sqrt2)r_E(4)$。
+5. **全路径真正多体纠缠与实现。** 对每个$n\ge5$、任意实参数及全部测量列，精确并发度为$C_{\rm GME}=\sqrt{1-r_n(t)^2}>0$，最弱划分恰为单比特对其余系统的划分。零半径端点在局域酉及比特置换下均不与稳定子纯态等价；完整测量酉在$t=0,-\pi/2,\pi/2$处的精确Clifford层级依次为$n+1,n,4$。
 
 论文还证明指定三比特基准点在固定 Pauli 轨道表示中的局部刚性。六比特直接叠加的**带符号局部分量相等**当且仅当 $\sin\alpha\sin\beta=0$；在论文的四组相位模型（含独立全零串相位）内，基准点附近的规则解恰为两条相交分支。
 
@@ -34,4 +35,4 @@ Department of Physics, Fudan University, Shanghai, China<br>
 
 [精确复算程序](paper/reproduce/README.md) 使用 Python 与 SymPy，独立核对原相位、电路、有限字符和、导数证书、曲线恒等式及多项式不等价证书，并提供运行结果。有限维复算与任意维数的 Lean 证明分别承担交叉核验和普遍结论。
 
-论文包含独立讨论与结论，两版共用三张英文图和五张英文表。致谢已按作者说明填写，结论说明主要数学结果已在 Lean 中完成形式化证明。证明源码、依赖配置和复现说明已在 [Zenodo](https://doi.org/10.5281/zenodo.23882488) 归档，版本 1.0.0，采用 MIT 许可；详见[校阅说明](paper/README.md)。
+论文包含独立讨论与结论，两版共用四张英文图和五张英文表。致谢已按作者说明填写，结论说明主要数学结果已在 Lean 中完成形式化证明。证明源码、依赖配置和复现说明已在 [Zenodo](https://doi.org/10.5281/zenodo.23882488) 归档，版本 1.0.0，采用 MIT 许可；详见[校阅说明](paper/README.md)。

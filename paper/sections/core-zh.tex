@@ -132,7 +132,7 @@
 \end{equation}
 这里的减法取整数意义。因为$F(0)=1$，$d_n$仍为Boolean函数。被移除的只有物理全零串而非整个纤维$\mathcal L_nz=0$。
 
-图~\ref{fig:unified}(a)展示同一四特征核如何确定每个$n\ge5$的相位；图(b)给出本构造中以$r_E(n)$归一化的半径变化。
+图~\ref{fig:unified}(a)表明，对每个$n\ge5$，同一四特征核在从支撑中去掉物理零串后生成相位形变。图(b)给出统一的半径规律$r_n(t)/r_E(n)=1-\sin t$：当$t$从$-\pi/2$变到$\pi/2$时，共同半径从$2r_E(n)$严格递减，经$t=0$处的参考值降到零，此时全部单比特约化态均为最大混合态。因此，同一构造在保持四面体方向不变的同时，连接了半径增强端点与局部最大混合端点。
 \input{sections/figure-unified}
 \begin{theorem}[统一半径增加族]
 \label{core:unified-theorem}
@@ -186,4 +186,4 @@
  \qquad \operatorname{Tr}\rho_j^2=\frac{1+r_n(t)^2}{2}.
  \label{core:spectrum}
 \end{equation}
-相应的纠缠熵为$h_2((1+r_n(t))/2)$，其中$h_2(p)=-p\log_2p-(1-p)\log_2(1-p)$。Bloch半径增加时，这一二分纠缠熵下降。$t=\pi/2$时，式\eqref{core:defect-state}的单点修正消失；$t=-\pi/2$时，其干涉产生基准点两倍的局部信号。可以看出，四个线性特征足以表示全部$n\ge5$的相位。
+相应的纠缠熵为$h_2((1+r_n(t))/2)$，其中$h_2(p)=-p\log_2p-(1-p)\log_2(1-p)$。Bloch半径增加时，这一二分纠缠熵下降。$t=\pi/2$时，式\eqref{core:defect-state}的单点修正消失；$t=-\pi/2$时，其干涉产生基准点两倍的局部信号。四个线性特征由此确定全部$n\ge5$的背景核；完整相位还保留零串修正，其实现见第~\ref{physics:implementation}~节。

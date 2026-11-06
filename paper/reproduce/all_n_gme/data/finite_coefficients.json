@@ -1,0 +1,6922 @@
+{
+  "basis": [
+    "1",
+    "cos(t)",
+    "sin(t)",
+    "cos(2t)",
+    "sin(2t)"
+  ],
+  "sizes": {
+    "5": {
+      "cuts": [
+        {
+          "qubits": [
+            1,
+            2
+          ],
+          "trig_numerator": [
+            1516,
+            448,
+            -96,
+            12,
+            -16
+          ],
+          "denominator": 4096
+        },
+        {
+          "qubits": [
+            1,
+            3
+          ],
+          "trig_numerator": [
+            1132,
+            0,
+            -96,
+            -52,
+            0
+          ],
+          "denominator": 4096
+        },
+        {
+          "qubits": [
+            1,
+            4
+          ],
+          "trig_numerator": [
+            1148,
+            0,
+            -64,
+            -68,
+            0
+          ],
+          "denominator": 4096
+        },
+        {
+          "qubits": [
+            1,
+            5
+          ],
+          "trig_numerator": [
+            1084,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 4096
+        },
+        {
+          "qubits": [
+            2,
+            3
+          ],
+          "trig_numerator": [
+            1124,
+            0,
+            -80,
+            -44,
+            -16
+          ],
+          "denominator": 4096
+        },
+        {
+          "qubits": [
+            2,
+            4
+          ],
+          "trig_numerator": [
+            1092,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 4096
+        },
+        {
+          "qubits": [
+            2,
+            5
+          ],
+          "trig_numerator": [
+            1148,
+            0,
+            -64,
+            -68,
+            0
+          ],
+          "denominator": 4096
+        },
+        {
+          "qubits": [
+            3,
+            4
+          ],
+          "trig_numerator": [
+            1124,
+            0,
+            -80,
+            -44,
+            -16
+          ],
+          "denominator": 4096
+        },
+        {
+          "qubits": [
+            3,
+            5
+          ],
+          "trig_numerator": [
+            1132,
+            0,
+            -96,
+            -52,
+            0
+          ],
+          "denominator": 4096
+        },
+        {
+          "qubits": [
+            4,
+            5
+          ],
+          "trig_numerator": [
+            1516,
+            448,
+            -96,
+            12,
+            -16
+          ],
+          "denominator": 4096
+        }
+      ]
+    },
+    "6": {
+      "cuts": [
+        {
+          "qubits": [
+            1,
+            2
+          ],
+          "trig_numerator": [
+            5628,
+            1920,
+            -64,
+            444,
+            0
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            1,
+            3
+          ],
+          "trig_numerator": [
+            4316,
+            0,
+            -128,
+            -164,
+            0
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            1,
+            4
+          ],
+          "trig_numerator": [
+            4316,
+            0,
+            -128,
+            -164,
+            0
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            1,
+            5
+          ],
+          "trig_numerator": [
+            4156,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            1,
+            6
+          ],
+          "trig_numerator": [
+            4156,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            2,
+            3
+          ],
+          "trig_numerator": [
+            4292,
+            0,
+            -80,
+            -140,
+            -32
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            2,
+            4
+          ],
+          "trig_numerator": [
+            4292,
+            0,
+            -80,
+            -140,
+            -32
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            2,
+            5
+          ],
+          "trig_numerator": [
+            4860,
+            -896,
+            -64,
+            188,
+            0
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            2,
+            6
+          ],
+          "trig_numerator": [
+            4156,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            3,
+            4
+          ],
+          "trig_numerator": [
+            4156,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            3,
+            5
+          ],
+          "trig_numerator": [
+            4292,
+            0,
+            -80,
+            -140,
+            -32
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            3,
+            6
+          ],
+          "trig_numerator": [
+            4316,
+            0,
+            -128,
+            -164,
+            0
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            4,
+            5
+          ],
+          "trig_numerator": [
+            4292,
+            0,
+            -80,
+            -140,
+            -32
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            4,
+            6
+          ],
+          "trig_numerator": [
+            4316,
+            0,
+            -128,
+            -164,
+            0
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            5,
+            6
+          ],
+          "trig_numerator": [
+            5628,
+            1920,
+            -64,
+            444,
+            0
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            3
+          ],
+          "trig_numerator": [
+            5404,
+            2144,
+            -32,
+            380,
+            16
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            4
+          ],
+          "trig_numerator": [
+            3740,
+            224,
+            -160,
+            124,
+            -48
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            5
+          ],
+          "trig_numerator": [
+            3396,
+            512,
+            -144,
+            180,
+            0
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            6
+          ],
+          "trig_numerator": [
+            3236,
+            960,
+            -16,
+            -108,
+            0
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            4
+          ],
+          "trig_numerator": [
+            3396,
+            512,
+            -144,
+            180,
+            0
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            5
+          ],
+          "trig_numerator": [
+            3228,
+            -736,
+            -96,
+            -324,
+            16
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            6
+          ],
+          "trig_numerator": [
+            2660,
+            -448,
+            -144,
+            -44,
+            -32
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            5
+          ],
+          "trig_numerator": [
+            2972,
+            -736,
+            -96,
+            -68,
+            -48
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            6
+          ],
+          "trig_numerator": [
+            2660,
+            -448,
+            -144,
+            -44,
+            -32
+          ],
+          "denominator": 16384
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            3236,
+            960,
+            -16,
+            -108,
+            0
+          ],
+          "denominator": 16384
+        }
+      ]
+    },
+    "7": {
+      "cuts": [
+        {
+          "qubits": [
+            1,
+            2
+          ],
+          "trig_numerator": [
+            22460,
+            7936,
+            -64,
+            1916,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            3
+          ],
+          "trig_numerator": [
+            16444,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            4
+          ],
+          "trig_numerator": [
+            17020,
+            0,
+            -192,
+            -580,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            5
+          ],
+          "trig_numerator": [
+            16444,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            6
+          ],
+          "trig_numerator": [
+            16444,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            7
+          ],
+          "trig_numerator": [
+            16444,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            2,
+            3
+          ],
+          "trig_numerator": [
+            16452,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            2,
+            4
+          ],
+          "trig_numerator": [
+            16964,
+            0,
+            -80,
+            -524,
+            -64
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            2,
+            5
+          ],
+          "trig_numerator": [
+            16452,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            2,
+            6
+          ],
+          "trig_numerator": [
+            16452,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            2,
+            7
+          ],
+          "trig_numerator": [
+            16444,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            3,
+            4
+          ],
+          "trig_numerator": [
+            16444,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            3,
+            5
+          ],
+          "trig_numerator": [
+            17468,
+            0,
+            -64,
+            -1028,
+            -128
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            3,
+            6
+          ],
+          "trig_numerator": [
+            16452,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            3,
+            7
+          ],
+          "trig_numerator": [
+            16444,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            4,
+            5
+          ],
+          "trig_numerator": [
+            16444,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            4,
+            6
+          ],
+          "trig_numerator": [
+            16964,
+            0,
+            -80,
+            -524,
+            -64
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            4,
+            7
+          ],
+          "trig_numerator": [
+            17020,
+            0,
+            -192,
+            -580,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            5,
+            6
+          ],
+          "trig_numerator": [
+            16452,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            5,
+            7
+          ],
+          "trig_numerator": [
+            16444,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            6,
+            7
+          ],
+          "trig_numerator": [
+            22460,
+            7936,
+            -64,
+            1916,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            3
+          ],
+          "trig_numerator": [
+            17820,
+            9856,
+            -64,
+            4444,
+            96
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            4
+          ],
+          "trig_numerator": [
+            12700,
+            2880,
+            -256,
+            668,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            5
+          ],
+          "trig_numerator": [
+            13820,
+            3968,
+            0,
+            -1540,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            6
+          ],
+          "trig_numerator": [
+            11324,
+            3968,
+            -128,
+            956,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            7
+          ],
+          "trig_numerator": [
+            12740,
+            3968,
+            112,
+            -460,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            4
+          ],
+          "trig_numerator": [
+            11332,
+            3008,
+            -208,
+            1908,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            5
+          ],
+          "trig_numerator": [
+            10372,
+            -2048,
+            -144,
+            -12,
+            -64
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            6
+          ],
+          "trig_numerator": [
+            8796,
+            0,
+            -64,
+            -484,
+            -32
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            7
+          ],
+          "trig_numerator": [
+            8324,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            5
+          ],
+          "trig_numerator": [
+            10308,
+            -960,
+            -80,
+            -1036,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            6
+          ],
+          "trig_numerator": [
+            9564,
+            -960,
+            -128,
+            -292,
+            -64
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            7
+          ],
+          "trig_numerator": [
+            10308,
+            -1920,
+            -144,
+            -76,
+            -64
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            9724,
+            -1920,
+            0,
+            508,
+            -64
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            8324,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            1,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            12740,
+            3968,
+            112,
+            -460,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            4
+          ],
+          "trig_numerator": [
+            11524,
+            3968,
+            -16,
+            756,
+            32
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            5
+          ],
+          "trig_numerator": [
+            8836,
+            0,
+            -144,
+            -524,
+            -64
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            6
+          ],
+          "trig_numerator": [
+            9788,
+            -1920,
+            -128,
+            444,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            7
+          ],
+          "trig_numerator": [
+            9724,
+            -1920,
+            0,
+            508,
+            -64
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            5
+          ],
+          "trig_numerator": [
+            9540,
+            0,
+            -16,
+            -1228,
+            -32
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            6
+          ],
+          "trig_numerator": [
+            10876,
+            -2048,
+            -128,
+            -516,
+            -64
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            7
+          ],
+          "trig_numerator": [
+            9564,
+            -960,
+            -128,
+            -292,
+            -64
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            2,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            9788,
+            -1920,
+            -128,
+            444,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            2,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            8796,
+            0,
+            -64,
+            -484,
+            -32
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            2,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            11324,
+            3968,
+            -128,
+            956,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            5
+          ],
+          "trig_numerator": [
+            12740,
+            3968,
+            112,
+            -460,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            6
+          ],
+          "trig_numerator": [
+            9540,
+            0,
+            -16,
+            -1228,
+            -32
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            7
+          ],
+          "trig_numerator": [
+            10308,
+            -960,
+            -80,
+            -1036,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            3,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            8836,
+            0,
+            -144,
+            -524,
+            -64
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            3,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            10372,
+            -2048,
+            -144,
+            -12,
+            -64
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            3,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            13820,
+            3968,
+            0,
+            -1540,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            4,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            11524,
+            3968,
+            -16,
+            756,
+            32
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            4,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            11332,
+            3008,
+            -208,
+            1908,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            4,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            12700,
+            2880,
+            -256,
+            668,
+            0
+          ],
+          "denominator": 65536
+        },
+        {
+          "qubits": [
+            5,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            17820,
+            9856,
+            -64,
+            4444,
+            96
+          ],
+          "denominator": 65536
+        }
+      ]
+    },
+    "8": {
+      "cuts": [
+        {
+          "qubits": [
+            1,
+            2
+          ],
+          "trig_numerator": [
+            89916,
+            32256,
+            -64,
+            7932,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            3
+          ],
+          "trig_numerator": [
+            65596,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            4
+          ],
+          "trig_numerator": [
+            65596,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            5
+          ],
+          "trig_numerator": [
+            65596,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            6
+          ],
+          "trig_numerator": [
+            65596,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            7
+          ],
+          "trig_numerator": [
+            65596,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            8
+          ],
+          "trig_numerator": [
+            65596,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            3
+          ],
+          "trig_numerator": [
+            65604,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            4
+          ],
+          "trig_numerator": [
+            65604,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            5
+          ],
+          "trig_numerator": [
+            65604,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            6
+          ],
+          "trig_numerator": [
+            65604,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            7
+          ],
+          "trig_numerator": [
+            65596,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            8
+          ],
+          "trig_numerator": [
+            65596,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            3,
+            4
+          ],
+          "trig_numerator": [
+            65596,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            3,
+            5
+          ],
+          "trig_numerator": [
+            67644,
+            0,
+            -64,
+            -2052,
+            -128
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            3,
+            6
+          ],
+          "trig_numerator": [
+            65596,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            3,
+            7
+          ],
+          "trig_numerator": [
+            65604,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            3,
+            8
+          ],
+          "trig_numerator": [
+            65596,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            4,
+            5
+          ],
+          "trig_numerator": [
+            65596,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            4,
+            6
+          ],
+          "trig_numerator": [
+            67644,
+            0,
+            -64,
+            -2052,
+            -128
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            4,
+            7
+          ],
+          "trig_numerator": [
+            65604,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            4,
+            8
+          ],
+          "trig_numerator": [
+            65596,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            5,
+            6
+          ],
+          "trig_numerator": [
+            65596,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            5,
+            7
+          ],
+          "trig_numerator": [
+            65604,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            5,
+            8
+          ],
+          "trig_numerator": [
+            65596,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            6,
+            7
+          ],
+          "trig_numerator": [
+            65604,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            6,
+            8
+          ],
+          "trig_numerator": [
+            65596,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            7,
+            8
+          ],
+          "trig_numerator": [
+            89916,
+            32256,
+            -64,
+            7932,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            3
+          ],
+          "trig_numerator": [
+            71356,
+            40192,
+            0,
+            18108,
+            192
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            4
+          ],
+          "trig_numerator": [
+            45052,
+            16128,
+            -128,
+            3964,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            5
+          ],
+          "trig_numerator": [
+            55164,
+            16128,
+            128,
+            -6148,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            6
+          ],
+          "trig_numerator": [
+            45052,
+            16128,
+            -128,
+            3964,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            7
+          ],
+          "trig_numerator": [
+            45060,
+            16128,
+            -144,
+            3956,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            8
+          ],
+          "trig_numerator": [
+            50948,
+            16128,
+            368,
+            -1932,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            4
+          ],
+          "trig_numerator": [
+            43972,
+            12160,
+            -144,
+            9012,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            5
+          ],
+          "trig_numerator": [
+            36868,
+            -3968,
+            -16,
+            -12,
+            -128
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            6
+          ],
+          "trig_numerator": [
+            32900,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            7
+          ],
+          "trig_numerator": [
+            32892,
+            0,
+            -128,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            8
+          ],
+          "trig_numerator": [
+            32900,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            5
+          ],
+          "trig_numerator": [
+            36868,
+            0,
+            112,
+            -3980,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            6
+          ],
+          "trig_numerator": [
+            36868,
+            -3968,
+            -16,
+            -12,
+            -128
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            7
+          ],
+          "trig_numerator": [
+            34940,
+            0,
+            -128,
+            -2052,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            8
+          ],
+          "trig_numerator": [
+            32900,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            35908,
+            -3968,
+            -144,
+            948,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            32892,
+            0,
+            -128,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            8
+          ],
+          "trig_numerator": [
+            32900,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            38972,
+            -8192,
+            0,
+            2108,
+            -64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            32900,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            50948,
+            16128,
+            368,
+            -1932,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            4
+          ],
+          "trig_numerator": [
+            44932,
+            16128,
+            112,
+            4084,
+            128
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            5
+          ],
+          "trig_numerator": [
+            33924,
+            0,
+            -144,
+            -1036,
+            -64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            6
+          ],
+          "trig_numerator": [
+            32900,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            7
+          ],
+          "trig_numerator": [
+            32900,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            8
+          ],
+          "trig_numerator": [
+            38780,
+            -7936,
+            128,
+            2044,
+            -128
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            5
+          ],
+          "trig_numerator": [
+            36868,
+            0,
+            112,
+            -3980,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            6
+          ],
+          "trig_numerator": [
+            33924,
+            0,
+            -144,
+            -1036,
+            -64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            7
+          ],
+          "trig_numerator": [
+            32900,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            8
+          ],
+          "trig_numerator": [
+            32892,
+            0,
+            -128,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            32900,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            32900,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            5,
+            8
+          ],
+          "trig_numerator": [
+            34876,
+            0,
+            0,
+            -1988,
+            -64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            32900,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            32892,
+            0,
+            -128,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            2,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            45060,
+            16128,
+            -144,
+            3956,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            5
+          ],
+          "trig_numerator": [
+            49924,
+            16128,
+            368,
+            -908,
+            64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            6
+          ],
+          "trig_numerator": [
+            37892,
+            0,
+            112,
+            -5004,
+            -64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            7
+          ],
+          "trig_numerator": [
+            32900,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            8
+          ],
+          "trig_numerator": [
+            35908,
+            -3968,
+            -144,
+            948,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            3,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            33924,
+            0,
+            -144,
+            -1036,
+            -64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            3,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            33924,
+            0,
+            -144,
+            -1036,
+            -64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            3,
+            5,
+            8
+          ],
+          "trig_numerator": [
+            37124,
+            -4224,
+            -272,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            3,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            36868,
+            0,
+            112,
+            -3980,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            3,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            36868,
+            0,
+            112,
+            -3980,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            3,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            45052,
+            16128,
+            -128,
+            3964,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            4,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            45956,
+            16128,
+            112,
+            3060,
+            64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            4,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            32900,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            4,
+            5,
+            8
+          ],
+          "trig_numerator": [
+            32900,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            4,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            33924,
+            0,
+            -144,
+            -1036,
+            -64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            4,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            37124,
+            -4224,
+            -272,
+            -12,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            4,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            47164,
+            16128,
+            -256,
+            1852,
+            -64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            5,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            44932,
+            16128,
+            112,
+            4084,
+            128
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            5,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            43972,
+            12160,
+            -144,
+            9012,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            5,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            45052,
+            16128,
+            -128,
+            3964,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            6,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            79100,
+            40448,
+            640,
+            10108,
+            128
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "trig_numerator": [
+            64444,
+            46400,
+            320,
+            18684,
+            224
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "trig_numerator": [
+            43452,
+            18112,
+            -64,
+            3452,
+            32
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            3,
+            6
+          ],
+          "trig_numerator": [
+            36924,
+            20096,
+            -256,
+            7996,
+            64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            3,
+            7
+          ],
+          "trig_numerator": [
+            36924,
+            20096,
+            -256,
+            7996,
+            64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            3,
+            8
+          ],
+          "trig_numerator": [
+            45828,
+            16128,
+            240,
+            3060,
+            64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            4,
+            5
+          ],
+          "trig_numerator": [
+            48764,
+            20224,
+            512,
+            -3972,
+            64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            4,
+            6
+          ],
+          "trig_numerator": [
+            29372,
+            1984,
+            -320,
+            1404,
+            -96
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "trig_numerator": [
+            26812,
+            3968,
+            -256,
+            1980,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            4,
+            8
+          ],
+          "trig_numerator": [
+            25668,
+            8064,
+            -16,
+            -972,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            30332,
+            6080,
+            -192,
+            -3652,
+            -32
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            30844,
+            3968,
+            -128,
+            -2052,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            5,
+            8
+          ],
+          "trig_numerator": [
+            37764,
+            0,
+            240,
+            -5004,
+            -64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            28796,
+            3968,
+            -128,
+            -4,
+            64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            25668,
+            8064,
+            -16,
+            -972,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            50812,
+            16128,
+            512,
+            -1924,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            4,
+            5
+          ],
+          "trig_numerator": [
+            40764,
+            20224,
+            128,
+            4028,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            4,
+            6
+          ],
+          "trig_numerator": [
+            26684,
+            4096,
+            -128,
+            1980,
+            -64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            4,
+            7
+          ],
+          "trig_numerator": [
+            24188,
+            6080,
+            -192,
+            2492,
+            -32
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            4,
+            8
+          ],
+          "trig_numerator": [
+            26684,
+            4096,
+            -128,
+            1980,
+            64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            26748,
+            4096,
+            -256,
+            1916,
+            -64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            25276,
+            -6080,
+            -192,
+            -2564,
+            32
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            5,
+            8
+          ],
+          "trig_numerator": [
+            21756,
+            -4096,
+            -256,
+            -1028,
+            -64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            22652,
+            -4096,
+            0,
+            -1924,
+            -64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            24700,
+            -8064,
+            -128,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            25668,
+            8064,
+            -16,
+            -972,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            28668,
+            4096,
+            0,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            22588,
+            -3968,
+            0,
+            -1988,
+            -64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            5,
+            8
+          ],
+          "trig_numerator": [
+            24700,
+            -8064,
+            -128,
+            -4,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            23228,
+            -6080,
+            -192,
+            -516,
+            -96
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            21756,
+            -4096,
+            -256,
+            -1028,
+            -64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            33796,
+            0,
+            -16,
+            -1036,
+            -64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            30140,
+            -1984,
+            64,
+            4604,
+            -32
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            26684,
+            4096,
+            -128,
+            1980,
+            64
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            25668,
+            8064,
+            -16,
+            -972,
+            0
+          ],
+          "denominator": 262144
+        },
+        {
+          "qubits": [
+            1,
+            6,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            49796,
+            16128,
+            496,
+            -908,
+            64
+          ],
+          "denominator": 262144
+        }
+      ]
+    },
+    "9": {
+      "cuts": [
+        {
+          "qubits": [
+            1,
+            2
+          ],
+          "trig_numerator": [
+            359996,
+            130048,
+            -64,
+            32252,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            4
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            5
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            6
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            7
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            8
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            9
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3
+          ],
+          "trig_numerator": [
+            262212,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            4
+          ],
+          "trig_numerator": [
+            262212,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            5
+          ],
+          "trig_numerator": [
+            262212,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            6
+          ],
+          "trig_numerator": [
+            262212,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            7
+          ],
+          "trig_numerator": [
+            262212,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            8
+          ],
+          "trig_numerator": [
+            262212,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            9
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            4
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            5
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            6
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            7
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            8
+          ],
+          "trig_numerator": [
+            262212,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            9
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            5
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            6
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            7
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            8
+          ],
+          "trig_numerator": [
+            262212,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            9
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            5,
+            6
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            5,
+            7
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            5,
+            8
+          ],
+          "trig_numerator": [
+            262212,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            5,
+            9
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            6,
+            7
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            6,
+            8
+          ],
+          "trig_numerator": [
+            262212,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            6,
+            9
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            7,
+            8
+          ],
+          "trig_numerator": [
+            262212,
+            0,
+            -80,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            7,
+            9
+          ],
+          "trig_numerator": [
+            262204,
+            0,
+            -64,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            8,
+            9
+          ],
+          "trig_numerator": [
+            359996,
+            130048,
+            -64,
+            32252,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            3
+          ],
+          "trig_numerator": [
+            285948,
+            162304,
+            128,
+            73084,
+            384
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            4
+          ],
+          "trig_numerator": [
+            180092,
+            65024,
+            -128,
+            16124,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            5
+          ],
+          "trig_numerator": [
+            180092,
+            65024,
+            -128,
+            16124,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            6
+          ],
+          "trig_numerator": [
+            180092,
+            65024,
+            -128,
+            16124,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            7
+          ],
+          "trig_numerator": [
+            180092,
+            65024,
+            -128,
+            16124,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            8
+          ],
+          "trig_numerator": [
+            180092,
+            65024,
+            -128,
+            16124,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            9
+          ],
+          "trig_numerator": [
+            204164,
+            65024,
+            880,
+            -7948,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            4
+          ],
+          "trig_numerator": [
+            175876,
+            48896,
+            -144,
+            36468,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            5
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            6
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            7
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            8
+          ],
+          "trig_numerator": [
+            131196,
+            0,
+            -128,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            9
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            5
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            6
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            7
+          ],
+          "trig_numerator": [
+            147332,
+            0,
+            368,
+            -16140,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            8
+          ],
+          "trig_numerator": [
+            131196,
+            0,
+            -128,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            9
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            8
+          ],
+          "trig_numerator": [
+            131196,
+            0,
+            -128,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            9
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            143364,
+            -16128,
+            -144,
+            3956,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            131196,
+            0,
+            -128,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            6,
+            9
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            155260,
+            -32256,
+            384,
+            8188,
+            -256
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            204164,
+            65024,
+            880,
+            -7948,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            4
+          ],
+          "trig_numerator": [
+            179844,
+            65024,
+            368,
+            16372,
+            256
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            5
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            6
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            7
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            8
+          ],
+          "trig_numerator": [
+            131196,
+            0,
+            -128,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            9
+          ],
+          "trig_numerator": [
+            155260,
+            -32256,
+            384,
+            8188,
+            -256
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            5
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            6
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            7
+          ],
+          "trig_numerator": [
+            147332,
+            0,
+            368,
+            -16140,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            8
+          ],
+          "trig_numerator": [
+            131196,
+            0,
+            -128,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            9
+          ],
+          "trig_numerator": [
+            131196,
+            0,
+            -128,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            5,
+            8
+          ],
+          "trig_numerator": [
+            155516,
+            -32256,
+            -128,
+            7932,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            5,
+            9
+          ],
+          "trig_numerator": [
+            131196,
+            0,
+            -128,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            131196,
+            0,
+            -128,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            6,
+            9
+          ],
+          "trig_numerator": [
+            131196,
+            0,
+            -128,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            131196,
+            0,
+            -128,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            131196,
+            0,
+            -128,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            180092,
+            65024,
+            -128,
+            16124,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            5
+          ],
+          "trig_numerator": [
+            179844,
+            65024,
+            368,
+            16372,
+            256
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            6
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            7
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            8
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            9
+          ],
+          "trig_numerator": [
+            143364,
+            -16128,
+            -144,
+            3956,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            147332,
+            0,
+            368,
+            -16140,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            5,
+            8
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            5,
+            9
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            147332,
+            0,
+            368,
+            -16140,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            6,
+            9
+          ],
+          "trig_numerator": [
+            147332,
+            0,
+            368,
+            -16140,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            180092,
+            65024,
+            -128,
+            16124,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            179844,
+            65024,
+            368,
+            16372,
+            256
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            5,
+            8
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            5,
+            9
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            6,
+            9
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            180092,
+            65024,
+            -128,
+            16124,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            5,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            179844,
+            65024,
+            368,
+            16372,
+            256
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            5,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            5,
+            6,
+            9
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            5,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            5,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            131204,
+            0,
+            -144,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            5,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            180092,
+            65024,
+            -128,
+            16124,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            6,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            179844,
+            65024,
+            368,
+            16372,
+            256
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            6,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            175876,
+            48896,
+            -144,
+            36468,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            6,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            180092,
+            65024,
+            -128,
+            16124,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            7,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            285948,
+            162304,
+            128,
+            73084,
+            384
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "trig_numerator": [
+            258684,
+            187008,
+            896,
+            75260,
+            448
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "trig_numerator": [
+            143164,
+            81152,
+            -128,
+            36540,
+            192
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            3,
+            6
+          ],
+          "trig_numerator": [
+            147324,
+            81152,
+            -256,
+            32380,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            3,
+            7
+          ],
+          "trig_numerator": [
+            143164,
+            81152,
+            -128,
+            36540,
+            192
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            3,
+            8
+          ],
+          "trig_numerator": [
+            147332,
+            81152,
+            -272,
+            32372,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            3,
+            9
+          ],
+          "trig_numerator": [
+            183556,
+            65024,
+            752,
+            12276,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            4,
+            5
+          ],
+          "trig_numerator": [
+            159100,
+            81408,
+            512,
+            20348,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            4,
+            6
+          ],
+          "trig_numerator": [
+            102524,
+            16128,
+            -256,
+            12156,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "trig_numerator": [
+            106364,
+            32512,
+            256,
+            -8068,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            4,
+            8
+          ],
+          "trig_numerator": [
+            90244,
+            32512,
+            -272,
+            8052,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            4,
+            9
+          ],
+          "trig_numerator": [
+            102276,
+            32512,
+            240,
+            -3980,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            94396,
+            32512,
+            -384,
+            3900,
+            -64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            102524,
+            16128,
+            -256,
+            12156,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            5,
+            8
+          ],
+          "trig_numerator": [
+            106500,
+            16384,
+            -272,
+            7924,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            5,
+            9
+          ],
+          "trig_numerator": [
+            102276,
+            32512,
+            240,
+            -3980,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            96316,
+            24448,
+            -256,
+            10044,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            90244,
+            32512,
+            -272,
+            8052,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            6,
+            9
+          ],
+          "trig_numerator": [
+            102276,
+            32512,
+            240,
+            -3980,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            114436,
+            16384,
+            240,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            102276,
+            32512,
+            240,
+            -3980,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            2,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            203780,
+            65024,
+            1264,
+            -7948,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            4,
+            5
+          ],
+          "trig_numerator": [
+            136892,
+            89472,
+            0,
+            34492,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            4,
+            6
+          ],
+          "trig_numerator": [
+            90236,
+            24448,
+            -384,
+            16124,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            4,
+            7
+          ],
+          "trig_numerator": [
+            98300,
+            24448,
+            -128,
+            8060,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            4,
+            8
+          ],
+          "trig_numerator": [
+            88124,
+            24448,
+            -256,
+            18236,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            4,
+            9
+          ],
+          "trig_numerator": [
+            106364,
+            16384,
+            0,
+            8060,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            90236,
+            32512,
+            -256,
+            8060,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            75964,
+            0,
+            -128,
+            -10180,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            5,
+            8
+          ],
+          "trig_numerator": [
+            77884,
+            -16128,
+            -128,
+            4028,
+            -64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            5,
+            9
+          ],
+          "trig_numerator": [
+            65788,
+            0,
+            -256,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            73980,
+            -8064,
+            -384,
+            -132,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            73852,
+            0,
+            0,
+            -8068,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            6,
+            9
+          ],
+          "trig_numerator": [
+            98300,
+            -32512,
+            0,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            77820,
+            -16128,
+            0,
+            4092,
+            -128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            65788,
+            0,
+            -256,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            3,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            102276,
+            32512,
+            240,
+            -3980,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            92220,
+            32512,
+            -128,
+            6076,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            73852,
+            0,
+            0,
+            -8068,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            5,
+            8
+          ],
+          "trig_numerator": [
+            69884,
+            0,
+            -256,
+            -4100,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            5,
+            9
+          ],
+          "trig_numerator": [
+            65788,
+            0,
+            -256,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            82044,
+            -8064,
+            -128,
+            -8196,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            77884,
+            -16128,
+            -128,
+            4028,
+            -64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            6,
+            9
+          ],
+          "trig_numerator": [
+            65788,
+            0,
+            -256,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            89980,
+            -16128,
+            256,
+            -8068,
+            -128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            98300,
+            -32512,
+            0,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            4,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            102276,
+            32512,
+            240,
+            -3980,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            96188,
+            24448,
+            0,
+            10172,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            78012,
+            -16384,
+            -128,
+            4156,
+            -64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            6,
+            9
+          ],
+          "trig_numerator": [
+            65788,
+            0,
+            -256,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            77820,
+            -16128,
+            0,
+            4092,
+            -128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            65788,
+            0,
+            -256,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            5,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            102276,
+            32512,
+            240,
+            -3980,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            6,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            120444,
+            -8064,
+            384,
+            18428,
+            -64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            6,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            106364,
+            16384,
+            0,
+            8060,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            6,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            102276,
+            32512,
+            240,
+            -3980,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            1,
+            7,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            183556,
+            65024,
+            752,
+            12276,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "trig_numerator": [
+            179460,
+            65024,
+            752,
+            16372,
+            256
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            4,
+            6
+          ],
+          "trig_numerator": [
+            92164,
+            32512,
+            -16,
+            6132,
+            64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            4,
+            7
+          ],
+          "trig_numerator": [
+            100228,
+            32512,
+            240,
+            -1932,
+            64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            4,
+            8
+          ],
+          "trig_numerator": [
+            90116,
+            32512,
+            -16,
+            8180,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            4,
+            9
+          ],
+          "trig_numerator": [
+            120444,
+            -8064,
+            384,
+            18428,
+            -64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            130820,
+            0,
+            240,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            75908,
+            0,
+            -16,
+            -10124,
+            -64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            5,
+            8
+          ],
+          "trig_numerator": [
+            77956,
+            -16128,
+            -272,
+            3956,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            5,
+            9
+          ],
+          "trig_numerator": [
+            77820,
+            -16128,
+            0,
+            4092,
+            -128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            67844,
+            0,
+            -272,
+            -2060,
+            -64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            73860,
+            0,
+            -16,
+            -8076,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            6,
+            9
+          ],
+          "trig_numerator": [
+            89980,
+            -16128,
+            256,
+            -8068,
+            -128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            65796,
+            0,
+            -272,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            77820,
+            -16128,
+            0,
+            4092,
+            -128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            3,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            114436,
+            16384,
+            240,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            92164,
+            32512,
+            -16,
+            6132,
+            64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            73860,
+            0,
+            -16,
+            -8076,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            5,
+            8
+          ],
+          "trig_numerator": [
+            77956,
+            -16128,
+            -272,
+            3956,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            5,
+            9
+          ],
+          "trig_numerator": [
+            78012,
+            -16384,
+            -128,
+            4156,
+            -64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            75908,
+            0,
+            -16,
+            -10124,
+            -64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            65796,
+            0,
+            -272,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            6,
+            9
+          ],
+          "trig_numerator": [
+            77884,
+            -16128,
+            -128,
+            4028,
+            -64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            73860,
+            0,
+            -16,
+            -8076,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            73852,
+            0,
+            0,
+            -8068,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            4,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            90244,
+            32512,
+            -272,
+            8052,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            5,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            90116,
+            32512,
+            -16,
+            8180,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            5,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            77956,
+            -16128,
+            -272,
+            3956,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            5,
+            6,
+            9
+          ],
+          "trig_numerator": [
+            69884,
+            0,
+            -256,
+            -4100,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            5,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            77956,
+            -16128,
+            -272,
+            3956,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            5,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            77884,
+            -16128,
+            -128,
+            4028,
+            -64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            5,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            106500,
+            16384,
+            -272,
+            7924,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            6,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            90116,
+            32512,
+            -16,
+            8180,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            6,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            88124,
+            24448,
+            -256,
+            18236,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            6,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            90244,
+            32512,
+            -272,
+            8052,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            2,
+            7,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            147332,
+            81152,
+            -272,
+            32372,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "trig_numerator": [
+            183548,
+            65024,
+            768,
+            12284,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            5,
+            7
+          ],
+          "trig_numerator": [
+            102268,
+            32512,
+            256,
+            -3972,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            5,
+            8
+          ],
+          "trig_numerator": [
+            90116,
+            32512,
+            -16,
+            8180,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            5,
+            9
+          ],
+          "trig_numerator": [
+            96188,
+            24448,
+            0,
+            10172,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            130812,
+            0,
+            256,
+            -4,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            75908,
+            0,
+            -16,
+            -10124,
+            -64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            6,
+            9
+          ],
+          "trig_numerator": [
+            82044,
+            -8064,
+            -128,
+            -8196,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            67844,
+            0,
+            -272,
+            -2060,
+            -64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            73980,
+            -8064,
+            -384,
+            -132,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            4,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            96316,
+            24448,
+            -256,
+            10044,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            5,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            102268,
+            32512,
+            256,
+            -3972,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            5,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            73860,
+            0,
+            -16,
+            -8076,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            5,
+            6,
+            9
+          ],
+          "trig_numerator": [
+            73852,
+            0,
+            0,
+            -8068,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            5,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            75908,
+            0,
+            -16,
+            -10124,
+            -64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            5,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            75964,
+            0,
+            -128,
+            -10180,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            5,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            102524,
+            16128,
+            -256,
+            12156,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            6,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            100228,
+            32512,
+            240,
+            -1932,
+            64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            6,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            98300,
+            24448,
+            -128,
+            8060,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            6,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            106364,
+            32512,
+            256,
+            -8068,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            3,
+            7,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            143164,
+            81152,
+            -128,
+            36540,
+            192
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "trig_numerator": [
+            183548,
+            65024,
+            768,
+            12284,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            5,
+            6,
+            8
+          ],
+          "trig_numerator": [
+            92164,
+            32512,
+            -16,
+            6132,
+            64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            5,
+            6,
+            9
+          ],
+          "trig_numerator": [
+            92220,
+            32512,
+            -128,
+            6076,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            5,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            130820,
+            0,
+            240,
+            -12,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            5,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            90236,
+            32512,
+            -256,
+            8060,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            5,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            94396,
+            32512,
+            -384,
+            3900,
+            -64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            6,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            92164,
+            32512,
+            -16,
+            6132,
+            64
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            6,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            90236,
+            24448,
+            -384,
+            16124,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            6,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            102524,
+            16128,
+            -256,
+            12156,
+            0
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            4,
+            7,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            147324,
+            81152,
+            -256,
+            32380,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "trig_numerator": [
+            179460,
+            65024,
+            752,
+            16372,
+            256
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            5,
+            6,
+            7,
+            9
+          ],
+          "trig_numerator": [
+            136892,
+            89472,
+            0,
+            34492,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            5,
+            6,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            159100,
+            81408,
+            512,
+            20348,
+            128
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            5,
+            7,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            143164,
+            81152,
+            -128,
+            36540,
+            192
+          ],
+          "denominator": 1048576
+        },
+        {
+          "qubits": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "trig_numerator": [
+            258684,
+            187008,
+            896,
+            75260,
+            448
+          ],
+          "denominator": 1048576
+        }
+      ]
+    }
+  }
+}

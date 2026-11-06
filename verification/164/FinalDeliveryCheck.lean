@@ -1,0 +1,56 @@
+import UnifiedEJM
+
+#check UnifiedEJM.PhysicsFinite.cut5_enumeration
+#print axioms UnifiedEJM.PhysicsFinite.cut5_enumeration
+#check UnifiedEJM.PhysicsFinite.cut6_enumeration
+#print axioms UnifiedEJM.PhysicsFinite.cut6_enumeration
+#check UnifiedEJM.PhysicsFinite.new5_coefficients_checked
+#print axioms UnifiedEJM.PhysicsFinite.new5_coefficients_checked
+#check UnifiedEJM.PhysicsFinite.new6_coefficients_checked
+#print axioms UnifiedEJM.PhysicsFinite.new6_coefficients_checked
+#check UnifiedEJM.PhysicsFinite.pg6_coefficients_checked
+#print axioms UnifiedEJM.PhysicsFinite.pg6_coefficients_checked
+#check UnifiedEJM.PhysicsFinite.new5_twoBody_laurent
+#print axioms UnifiedEJM.PhysicsFinite.new5_twoBody_laurent
+#check UnifiedEJM.PhysicsFinite.new6_twoBody_laurent
+#print axioms UnifiedEJM.PhysicsFinite.new6_twoBody_laurent
+#check UnifiedEJM.PhysicsFinite.pg6_twoBody_laurent
+#print axioms UnifiedEJM.PhysicsFinite.pg6_twoBody_laurent
+#check UnifiedEJM.PhysicsEntanglement.new5_measurement_gme
+#print axioms UnifiedEJM.PhysicsEntanglement.new5_measurement_gme
+#check UnifiedEJM.PhysicsEntanglement.new6_measurement_gme
+#print axioms UnifiedEJM.PhysicsEntanglement.new6_measurement_gme
+#check UnifiedEJM.PhysicsEntanglement.new5_measurement_gme_pos
+#print axioms UnifiedEJM.PhysicsEntanglement.new5_measurement_gme_pos
+#check UnifiedEJM.PhysicsEntanglement.new6_measurement_gme_pos
+#print axioms UnifiedEJM.PhysicsEntanglement.new6_measurement_gme_pos
+#check UnifiedEJM.PhysicsEntanglement.new5_measurement_minimizers
+#print axioms UnifiedEJM.PhysicsEntanglement.new5_measurement_minimizers
+#check UnifiedEJM.PhysicsEntanglement.new6_measurement_minimizers
+#print axioms UnifiedEJM.PhysicsEntanglement.new6_measurement_minimizers
+#check UnifiedEJM.PhysicsEntanglement.new5_measurement_entangled
+#print axioms UnifiedEJM.PhysicsEntanglement.new5_measurement_entangled
+#check UnifiedEJM.PhysicsEntanglement.new6_measurement_entangled
+#print axioms UnifiedEJM.PhysicsEntanglement.new6_measurement_entangled
+#check UnifiedEJM.PhysicsEntanglement.pg6_zero_measurement_gme
+#print axioms UnifiedEJM.PhysicsEntanglement.pg6_zero_measurement_gme
+#check UnifiedEJM.PhysicsEntanglement.new5_twoBody_formula
+#print axioms UnifiedEJM.PhysicsEntanglement.new5_twoBody_formula
+#check UnifiedEJM.PhysicsEntanglement.new6_twoBody_formula
+#print axioms UnifiedEJM.PhysicsEntanglement.new6_twoBody_formula
+#check UnifiedEJM.PhysicsEntanglement.pg6_twoBody_formula
+#print axioms UnifiedEJM.PhysicsEntanglement.pg6_twoBody_formula
+#check UnifiedEJM.PhysicsEntanglement.equal_single_reductions_positive
+#print axioms UnifiedEJM.PhysicsEntanglement.equal_single_reductions_positive
+#check UnifiedEJM.PhysicsEntanglement.equal_single_reductions_negative
+#print axioms UnifiedEJM.PhysicsEntanglement.equal_single_reductions_negative
+#check UnifiedEJM.PhysicsEntanglement.equal_radius_positive
+#print axioms UnifiedEJM.PhysicsEntanglement.equal_radius_positive
+#check UnifiedEJM.PhysicsEntanglement.equal_radius_negative
+#print axioms UnifiedEJM.PhysicsEntanglement.equal_radius_negative
+#check UnifiedEJM.PhysicsEntanglement.equal_radius_measurements_inequivalent_positive
+#print axioms UnifiedEJM.PhysicsEntanglement.equal_radius_measurements_inequivalent_positive
+#check UnifiedEJM.PhysicsEntanglement.equal_radius_measurements_inequivalent_negative
+#print axioms UnifiedEJM.PhysicsEntanglement.equal_radius_measurements_inequivalent_negative
+#check UnifiedEJM.PhysicsEntanglement.zero_radius_measurements_inequivalent
+#print axioms UnifiedEJM.PhysicsEntanglement.zero_radius_measurements_inequivalent

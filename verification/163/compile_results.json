@@ -1,0 +1,37 @@
+[
+  {
+    "module": "CliffordGroup",
+    "exit_code": 0,
+    "seconds": 16.84
+  },
+  {
+    "module": "CliffordFoundation",
+    "exit_code": 0,
+    "seconds": 17.09
+  },
+  {
+    "module": "DiagonalDifference",
+    "exit_code": 0,
+    "seconds": 22.38
+  },
+  {
+    "module": "DiagonalExact",
+    "exit_code": 0,
+    "seconds": 25.86
+  },
+  {
+    "module": "PhaseImplementation",
+    "exit_code": 0,
+    "seconds": 20.53
+  },
+  {
+    "module": "UnifiedEJM",
+    "exit_code": 0,
+    "seconds": 22.27
+  },
+  {
+    "module": "AllAxioms",
+    "exit_code": 0,
+    "seconds": 90.08
+  }
+]

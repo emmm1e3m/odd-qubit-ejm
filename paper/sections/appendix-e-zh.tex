@@ -1,0 +1,127 @@
+\section{纠缠与实现性质的证明}
+\label{physics:appendix}
+
+本附录证明第~\ref{physics:section}~节的并发度规律、零半径端点性质及实现结论，沿用正文的相位函数与测量记号。
+
+\subsection{约化纯度与并发度}
+\label{physics:app-purity}
+
+本节证明：对所有 $n\ge5$ 和实数 $t$，两侧均至少包含两个比特的划分，其纯度都严格小于 $1/2$。令 $D(z;u)=i^{f_0(z)}u^{d_n(z)}$、$u=e^{it}$。对输出位串 $y$，取 $w_j=y_j\oplus y_{j+1}$（$j<n$）、$w_n=y_n$，将末位替换为 $b$ 得到 $w^{(b)}$。包括末位 Hadamard 门的真实种子振幅为
+\begin{equation}
+ \psi_0(y;t)=\frac{D(w^{(0)};u)+(-1)^{w_n}D(w^{(1)};u)}{\sqrt{2^{n+1}}}.
+ \label{physics:amplitudes}
+\end{equation}
+其分子关于 $u$ 仿射，系数为高斯整数。将振幅排成划分矩阵 $V_A$，得到
+\begin{equation}
+ \rho_A=V_AV_A^\dagger,\qquad
+ p_A=\sum_{x,x'}\left|\sum_zV_A(x,z)\overline{V_A(x',z)}\right|^2,
+ \label{physics:finite-purity}
+\end{equation}
+因此具有精确的有理系数表达式
+\begin{equation}
+ p_A(t)=a_0+a_1\cos t+b_1\sin t+a_2\cos2t+b_2\sin2t.
+ \label{physics:fourier-purity}
+\end{equation}
+令 $\kappa=\operatorname{rank}_{\mathbb F_2}\Gamma_{AB}$，其中 $\Gamma$ 为物理路径 $1-2-\cdots-n$ 的邻接矩阵。跨割边组成互不相交的交替路径；含 $\ell$ 条边的分量对 $\kappa$ 贡献 $\lceil\ell/2\rceil$，可由其双对角邻接矩阵消元得到。
+
+式~\eqref{physics:amplitudes} 中的任意长度依赖可以直接分离。记 $(a,b,c,d)=(y_1,y_2,y_{n-1},y_n)$、$P=\bigoplus_{j=3}^{n-2}y_j$、$\nu=n\bmod2$。对 $x,s,B,C$ 使用二进制运算，定义
+\begin{equation}
+ \begin{gathered}
+ x=a\oplus b\oplus c\oplus d,\qquad s=a\oplus b,\\
+ B=b\oplus P\oplus(1-\nu)c,\qquad C=P\oplus\nu c,\\
+ h_\nu(y;u)=u^{F(x,B,C,s)}+i(-1)^d u^{F(x,B,C,s\oplus1)}.
+ \end{gathered}
+ \label{physics:boundary-amplitude}
+\end{equation}
+最后一行仅依赖四个边界位与 $P$。完整振幅为 $2^{-(n+1)/2}Q(y)[h_\nu(y;u)+(i-u)\Delta(y)]$，其中 $Q(y)=-i\,i^{\sum_{j<n}(y_j\oplus y_{j+1})}$、$\Delta(y)=\mathbf1_{y=0^n}+\mathbf1_{y=1^n}$。
+对纯度求和中的四个位串 $y,v,v_Ay_B,y_Av_B$，$Q$ 因子仅留下跨割边符号 $(-1)^{\sum_{j\in E_\times}(y_j\oplus v_j)(y_{j+1}\oplus v_{j+1})}$，其中 $E_\times$ 表示跨割边的索引。
+
+$\kappa=1$ 时，非单比特划分必为长度 $k$ 的前缀与长度 $l=n-k$ 的后缀。保留边界位及跨割边端点后，其余长度为 $L\ge1$ 的同侧位串仅通过奇偶性 $\epsilon$ 及是否为常量串进入振幅，精确计数为
+\begin{equation}
+ \begin{aligned}
+ N_L(0,\epsilon)&=\mathbf1_{\epsilon=0},\qquad
+ N_L(1,\epsilon)=\mathbf1_{\epsilon=L\bmod2},\\
+ N_L({\rm mixed},\epsilon)&=2^{L-1}-N_L(0,\epsilon)-N_L(1,\epsilon).
+ \end{aligned}
+ \label{physics:length-counts}
+\end{equation}
+空组仅贡献一个奇偶性为偶的空串。分别对 $y$ 与 $v$ 使用这些计数，并提出共同归一化分母 $2^{2n+2}$ 后，各 Fourier 系数的分子关于每个长度变量 $2^{k-4}$、$2^{l-4}$ 至多二次；长度为二和三的情形分别计算。随文精确系数证书覆盖了两种长度奇偶及空组分支。由相应系数界得到
+\begin{equation}
+ p_A(t)\le\frac12-2^{-n-2}<\frac12
+ \qquad(\kappa=1,\ 2\le k\le n-2).
+ \label{physics:rank-one-gaps}
+\end{equation}
+证书提供了相应长度多项式及严格为正的间隙界，包括 $n=5$ 与 $3|3$ 情形。
+
+对 $\kappa\ge2$，先考虑归一化背景 $\ket g=-iC_n\ket\chi$，其中 $\ket\chi=2^{-n/2}\sum_z i^{|z|}u^{q_n(z)}\ket z$。去掉单比特相位与同侧路径边后，其振幅化为
+\begin{equation}
+ \widetilde g_y=2^{-(n+1)/2}
+ (-1)^{\sum_{j\in E_\times}y_jy_{j+1}}h_\nu(y;u).
+ \label{physics:background-compression}
+\end{equation}
+保留四个边界位置与全部跨割边端点，其余位置按所属一侧组成两个自由组，每组仅通过总奇偶性进入振幅。非空组的归一化奇偶态
+\begin{equation}
+ \ket{p;L}=2^{-(L-1)/2}\sum_{\oplus_jz_j=p}\ket z
+ \label{physics:parity-isometry}
+\end{equation}
+相互正交；在这组态中展开后，相应振幅的长度依赖恰好消去。因此，每个非空组可以等距替换为一位，必要时再保留一位以保持 $n$ 的奇偶性。此过程不删除或新增跨割边。由 $\ell+1\le3\lceil\ell/2\rceil$，跨割边端点至多有 $3\kappa$ 个，故每个背景划分都有长度 $5\le n'\le3\kappa+7$ 的等价代表，且两侧仍至少各有两个位置。
+
+对 $\kappa=2,3,4$，枚举已经证明的长度上界 $13,16,19$ 内的每个划分并实施上述压缩，得到 $259,1332,6291$ 个代表，其精确 Fourier 上界分别为 $3/8,33/128,33/256$。这些界由 $a_0+|a_1|+|b_1|+|a_2|+|b_2|$ 得到，全部系数及代表重数均随验证程序提供。
+
+对更大的 $\kappa$，符号函数 $(-1)^F$ 的归一化 Walsh 系数绝对值之和为 $3$。$t=0$ 的背景与路径图态局域等价，其非零 Schmidt 概率均为 $2^{-\kappa}$，每个 Walsh 字符均给出该态的局域 Pauli 像。对划分矩阵使用三角不等式，得到
+\begin{equation}
+ \begin{aligned}
+ \|V_A^{\rm bg}\|_{\rm op}
+ &\le2^{-\kappa/2}(|\cos(t/2)|+3|\sin(t/2)|),\\
+ p_A^{\rm bg}&\le\|V_A^{\rm bg}\|_{\rm op}^2
+ \le10\,2^{-\kappa}\le5/16\quad(\kappa\ge5).
+ \end{aligned}
+ \label{physics:walsh-purity-bound}
+\end{equation}
+所以每个 $\kappa\ge2$ 的划分均满足 $p_A^{\rm bg}\le3/8$。
+
+完整态保留了零串修正，$C_n$ 将其映到 GHZ 方向。令 $a=2^{-n}$，完整态与背景的精确重叠为
+\begin{equation}
+ \begin{aligned}
+ \braket{g}{\psi_0}&=1-a+iau^{-1},\\
+ |\braket{g}{\psi_0}|^2&=1-2a(1-a)(1-\sin t).
+ \end{aligned}
+ \label{physics:background-overlap}
+\end{equation}
+偏迹使迹范数收缩，而密度矩阵满足 $|\Tr\rho^2-\Tr\sigma^2|\le\|\rho-\sigma\|_1$：在 $\rho+\sigma$ 中减去 $I$，再用 $\Tr(\rho-\sigma)=0$ 即得。因此
+\begin{equation}
+ p_A(t)\le\frac38+4\sqrt{2^{-n}(1-2^{-n})}<\frac12
+ \quad(n\ge10,\ \kappa\ge2).
+ \label{physics:complete-purity-bound}
+\end{equation}
+
+对 $n=5,\ldots,9$，直接计算式~\eqref{physics:finite-purity}，覆盖不计补集重复的全部 $456$ 个非单比特划分。对每个整数系数组 $(a,b,c,d,e)/D$，上界 $[a+\lceil\sqrt{b^2+c^2}\rceil+\lceil\sqrt{d^2+e^2}\rceil]/D$ 至多为 $522297/1048576<1/2$。随文验证程序从原门序重新构造每个系数。
+
+上述情形穷尽全部划分，因而 $\max_Ap_A=p_{\{j\}}=(1+r_n^2)/2$，恰由单比特与其余系统的划分取得等号。由此得到式~\eqref{physics:gme-law}；$r_n\le2r_E(n)<1$ 保证正性，Pauli 轨道将结论传递至每个测量列。
+
+\subsection{零半径端点}
+\label{physics:app-invariants}
+
+本节使用一个两比特纯度刻画零半径端点。将附录~\ref{physics:app-purity} 的精确长度计数用于 $A=\{1,2\}$，并在 $t=\pi/2$ 处求值，得到
+\begin{equation}
+ p_{12}=\begin{cases}11/32,&n=5,\\5/16,&n\ge6.\end{cases}
+ \label{physics:endpoint-pair-purity}
+\end{equation}
+两个值均大于 $1/4$，而 $2$-uniform 性要求每个两比特约化态均为 $I/4$，因此该端点不是 $2$-uniform 态。
+
+为检验稳定子等价性，将 $\rho_{ij}$ 展开为 $\tfrac14\sum_{a,b=0}^3m_{ab}\sigma_a\otimes\sigma_b$，其中 $\sigma_0=I$，于是 $4p_{ij}=\sum_{a,b}m_{ab}^2$。稳定子纯态的每个 Pauli 期望均属于 $\{0,\pm1\}$~\cite{Gottesman1997}，故任意比特对的 $4p_{ij}$ 都是整数；式~\eqref{physics:endpoint-pair-purity} 则给出 $4p_{12}=11/8$ 或 $5/4$。约化纯度是局域酉不变量~\cite{Grassl1998}：单比特酉的乘积仅以 $U_i\otimes U_j$ 共轭 $\rho_{ij}$，保持其谱；比特置换也仅重标记比特对。因此，这一非整数值对每个 $n\ge5$ 均排除了与任何稳定子纯态在上述变换下的等价性。Pauli 轨道将两个结论传递至每个测量列。
+
+\subsection{完整相位与 Clifford 层级}
+\label{physics:app-hierarchy}
+
+本节将核相位与物理零串处的修正分开处理，建立分解式~\eqref{physics:factorization} 并确定式~\eqref{physics:levels} 的 Clifford 层级。代入 $f_0(z)=|z|-1+\delta_{z,0}\pmod4$ 和 $d_n=q_n-\delta_{z,0}$ 即得式~\eqref{physics:factorization}。可逆编码 $\ket z\ket a\mapsto\ket z\ket{a\oplus\mathcal L_nz}$ 以 $O(n)$ 个 CNOT 门计算四个线性奇偶值。从 $a=0$ 出发，在编码与解码之间施加 $e^{itF}$，即可实现 $e^{itq_n}$ 并复原辅助位；零串相位仍为独立因子。
+
+对角 Clifford 判据~\cite{Cui2017} 将支撑在 $S$ 上的非常数模四单项式赋予加权次数：奇系数对应 $|S|+1$，系数 $2$ 对应 $|S|$；最大次数即精确层级。此处
+\begin{equation}
+ \begin{aligned}
+ F={}&1+3x+3b+2xb+xc+bc+2xbc\\
+ &+3s+xs+2bs+2xbs+3bcs\pmod4.
+ \end{aligned}
+ \label{physics:kernel-mod-four}
+\end{equation}
+奇系数三次项给出四层。对 $n\ge5$，$\mathcal L_n$ 为满射，其四个奇偶坐标可补成可逆的二进制坐标系；这一 Clifford 变量变换使拉回后的层级保持不变。局部门 $P^{\otimes n}$ 仅贡献二层。端点指数为 $f_+=|z|-1+q_n$ 和 $f_-=|z|-1-q_n+2\delta_{z,0}$，其中 $\delta_{z,0}=\prod_j(1-z_j)$。最高次项在基准点为奇系数，在负端点为奇数的两倍，分别给出 $n+1$ 层和 $n$ 层；$n\ge5$ 时四层核无法抵消这些项。正端点的零串项消失，留下精确四层。左右乘 Clifford 算符 $C_n$ 和 $H^{\otimes n}$ 保持这些层级，因而完整测量酉满足式~\eqref{physics:levels}。

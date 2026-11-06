@@ -1,7 +1,7 @@
 \section{Boolean 直线相位路径最优界的证明}
 \label{bound:appendix}
 
-本附录证明定理~\ref{bound:theorem}：先由正四面体条件确定带符号局部分量，再比较系数得到四种半径规律，最后由低维字符恒等式确定可实现的规律。
+本附录证明定理~\ref{bound:theorem}：先由正四面体条件确定带符号局部分量，再比较系数得到四种半径规律，最后由低维限制确定可实现的规律。
 
 \subsection{由四面体规则性到带符号分量相等}
 本节证明基准点附近的正四面体条件等价于整条Boolean直线相位路径上带符号分量相等。Pauli 轨道的局部作用将种子态 Bloch 向量 $(x,y,z)$ 变为四个向量
@@ -45,32 +45,8 @@
 四者绝对值的最大值给出一般上界。
 
 \subsection{\texorpdfstring{$n=2,3,4$}{n=2,3,4} 时的解析排除}
-本节排除$n=2,3,4$时的半径增加，并说明各维数的界均可达到。以下采用 $z_1$ 为最高位的二进制整数编码。当 $n=2$ 时只有 I 类，且其翻转掩码覆盖全部三个非零串。余弦系数相等要求所有 $z\ne0$ 均满足 $q(z)=s$。$s=0$ 与 $s=1$ 分别给出 $q=\delta_0$ 和 $q\equiv1$，共同分量分别为 $c$ 与 $c\cos t$；二者的绝对值均不超过基准点值。
+本节排除$n=2,3,4$时的半径增加，并说明各维数的界均可达到。当 $n=2$ 时只有 I 类，且其翻转掩码覆盖全部三个非零串。余弦系数相等要求所有 $z\ne0$ 均满足 $q(z)=s$。$s=0$ 与 $s=1$ 分别给出 $q=\delta_0$ 和 $q\equiv1$，共同分量分别为 $c$ 与 $c\cos t$；二者的绝对值均不超过基准点值。
 
-对 $n\ge3$ 及每个 I 类字符，Walsh 条件等价于
-\begin{equation}
- \sum_z q(z)(-1)^{h\cdot z}=1-s-k,
- \label{bound:linear-character}
-\end{equation}
-因为 $h\ne0$ 时有 $W_q(h)=-2N^{-1}\sum_zq(z)(-1)^{h\cdot z}$。
-
-当 $n=3$ 时，I 类翻转掩码为 $\{1,2,3,4,5\}$，II 类为 $\{6,7\}$。于是 $q(0)=1$，第一组的函数值均为 $s$，第二组均为 $k$，没有其它未知量。取 $h=1$，式~\eqref{bound:linear-character} 的左端为 $1-s$，得到 $k=0$；取 $h=4$，左端为 $1+s-2k$，得到 $2s-k=0$。故 $s=k=0$，从而 $d=0$。
-
-当 $n=4$ 时，I 类翻转掩码为 $\{1,2,3,8,9\}$，II 类为 $\{6,7,12,13\}$。记
-\begin{equation}
- (A,B,C,D,E,F)=(q_4,q_5,q_{10},q_{11},q_{14},q_{15}),
- \label{bound:unknown-values}
-\end{equation}
-其中 $q_j=q(j)$。四个 I 类字符 $h=1,3,7,15$ 分别给出
-\begin{equation}
- \begin{aligned}
- A-B+C-D+E-F+k&=0,\\
- A-B-C+D-E+F+k&=0,\\
- -A+B-C+D+E-F+k&=0,\\
- -A+B+C-D-E+F+k&=0.
- \end{aligned}
- \label{bound:four-boundary-equations}
-\end{equation}
-四式相加得到 $4k=0$，因此 $k=0$。式~\eqref{bound:four-laws} 只剩 $m=c$ 或 $m=c\cos t$。这一排除涵盖$n=4$ 时的全部 Boolean 函数，未使用任何支持结构假设。它已足以证明半径上界，无需逐一列出可容许支持。
+当 $n=3$ 时，命题~\ref{low:rigidity} 的局部刚性使每条可容许直线的相位向量在基准点邻域恒定。规范 $d(0)=0$ 因而迫使 $d=0$，从而 $s=k=0$。当 $n=4$ 时，定理~\ref{low:theorem} 对任意实生成元给出半径上界 $r_E(4)$；结合式~\eqref{bound:four-laws}，排除 $k=1$ 的两种规律，只余常值与余弦规律。这两个更强的低维结论分别在附录~\ref{low:app-rigidity} 和~\ref{low:app-lines} 中证明。
 
 低维上界在 $t=0$ 达到。对每个 $n\ge5$，显式统一生成元满足可容许条件，并给出 $m(-\pi/2)=2c_n$。这两点完成了式~\eqref{bound:sharp-max} 的证明；所得为可达到的最大值，而非仅有上确界。

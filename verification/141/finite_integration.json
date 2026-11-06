@@ -1,0 +1,560 @@
+[
+  {
+    "module": "PhysicsFinite",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": false
+  },
+  {
+    "module": "PhysicsFiniteTables",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": false
+  },
+  {
+    "module": "PhysicsLaurent",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": false
+  },
+  {
+    "module": "PhysicsIndexed",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": false
+  },
+  {
+    "module": "PhysicsEndpointPairs",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": false
+  },
+  {
+    "module": "PhysicsPGIndexed",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": false
+  },
+  {
+    "module": "PhysicsFastTables",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": false
+  },
+  {
+    "module": "PhysicsCoefficientTables",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsPairTables",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew5M1",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew5M2",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew5M3",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew5M4",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew5M5",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew5M6",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew5M7",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew5M8",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew5M9",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew5M10",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew5M11",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew5M12",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew5M13",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew5M14",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew5M15",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M1",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M2",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M3",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M4",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M5",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M6",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M7",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M8",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M9",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M10",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M11",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M12",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M13",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M14",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M15",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M16",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M17",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M18",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M19",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M20",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M21",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M22",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M23",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M24",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M25",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M26",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M27",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M28",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M29",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M30",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffNew6M31",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M1",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M2",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M3",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M4",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M5",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M6",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M7",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M8",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M9",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M10",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M11",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M12",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M13",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M14",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M15",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M16",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M17",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M18",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M19",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M20",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M21",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M22",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M23",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M24",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M25",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M26",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M27",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M28",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M29",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M30",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoeffPG6M31",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoefficientsNew5",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoefficientsNew6",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoefficientsPG6",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsCoefficients",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsPairs",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsPairsNew5",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  },
+  {
+    "module": "PhysicsEntanglement",
+    "source_matches": true,
+    "compiled_after_source": true,
+    "reused_verified_object": true
+  }
+]

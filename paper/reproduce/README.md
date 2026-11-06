@@ -1,5 +1,7 @@
 # 精确复现材料
 
+第 VII 节全 $n\ge5$ 精确 GME 定理及附录 E 的整数证书见 [all_n_gme/README.md](all_n_gme/README.md)。该独立目录包含长度归约、有限系数证书、完整原门核对和全 $n$ 端点纯度验证；运行 `python -B all_n_gme/verify.py`。以下原有复算入口保持不变。
+
 `verify_exact.py` 从原始相位、末位 Hadamard 门和 CNOT 链重新计算，不读取本目录之外的研究文件。使用 Python 3.11 以上及 SymPy；已运行版本为 Python 3.12.10、SymPy 1.14.0。
 
 ```text

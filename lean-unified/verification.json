@@ -28,5 +28,49 @@
   "bilingual_references_match": 7,
   "method": "Every project module recompiled from source in an isolated import directory; pinned mathlib/toolchain dependency caches retained. Interrupted modules were resumed only after checking unchanged sources and dependencies.",
   "scope_note": "The maximum theorem quantifies normalized Boolean generators. Pointwise two-rate normalization is formalized; the arbitrary-real-generator radius-set wrapper is not separately stated.",
-  "manuscript_revision_note": "These are the current manuscript statistics after condensing Appendices B and D. The remaining 107 display blocks and the main results are unchanged. Lean sources are identical to those used for the isolated audit; the Lean audit was not rerun for this editorial revision."
+  "manuscript_revision_note": "These are the current manuscript statistics after condensing Appendices B and D. The remaining 107 display blocks and the main results are unchanged. Lean sources are identical to those used for the isolated audit; the Lean audit was not rerun for this editorial revision.",
+  "physics_verification_2026_11_04": {
+    "additional_modules": 108,
+    "current_unified_modules": 186,
+    "foundation_modules": 29,
+    "new_finite_cut_certificates": 77,
+    "production_entry_compile_exit": 0,
+    "production_all_axioms_exit": 0,
+    "all_declarations_audited": 4944,
+    "theorem_declarations_audited": 4271,
+    "nonstandard_axiom_dependencies": 0,
+    "independent_final_finite_theorems_audited": 190,
+    "independent_semantic_review": "../VERIFICATION.md",
+    "source_manifest": "../verification/141/physics_sources.json",
+    "integration_record": "../verification/141/finite_integration.json",
+    "entry_log": "../verification/141/entry.txt",
+    "axioms_log": "../verification/141/all_axioms.txt",
+    "method": "New sources compiled in task or production environments; unchanged kernel-checked finite certificate objects reused only after source equality and compilation-order checks. Aggregate production entry recompiled and all project declarations audited. No Lake traces fabricated.",
+    "final_recheck": {
+      "source_modules_matched": 108,
+      "finite_cut_certificates": 77,
+      "reused_objects_identical": 86,
+      "foundation_modules_recompiled": 5,
+      "entry_compile_exit": 0,
+      "all_axioms_exit": 0,
+      "all_declarations_audited": 4944,
+      "theorems_audited": 4271,
+      "nonstandard_axioms": 0,
+      "independent_final_interfaces_checked": 27,
+      "record": "../verification/163/delivery_check.json",
+      "independent_record": "../verification/164/final_delivery_check.txt",
+      "all_axioms_log": "../verification/163/all_axioms.txt"
+    }
+  },
+  "release_2026_11_06": {
+    "paper_pages": {
+      "en": 21,
+      "zh": 22
+    },
+    "bilingual_labels": 156,
+    "bilingual_references": 22,
+    "unified_modules": 186,
+    "foundation_modules": 29,
+    "all_n_exact_certificates": "../paper/reproduce/all_n_gme/verification_results.json"
+  }
 }

@@ -1,0 +1,86 @@
+{
+  "rank_one": {
+    "long_parity_cases": 4,
+    "empty_group_cases": 5,
+    "two_bit_cases": 4,
+    "endpoint_p12": {
+      "n=5": "11/32",
+      "n>=6": "5/16"
+    },
+    "tail_n10": true
+  },
+  "closure": {
+    "states": 1405,
+    "signatures": 1313,
+    "maxima": {
+      "0": "1",
+      "1": "1/2",
+      "2": "3/8",
+      "3": "33/128",
+      "4": "33/256"
+    },
+    "max_s": [
+      1024,
+      1024
+    ],
+    "max_p": [
+      1048576,
+      1048576
+    ],
+    "exponent_range": [
+      0,
+      9
+    ],
+    "independent_method": "explicit GF2 element sets and unbounded Python integer Gaussian arithmetic"
+  },
+  "graph_bridge": {
+    "n_range": [
+      5,
+      10
+    ],
+    "exact_affine_coefficient_checks": 4032
+  },
+  "finite": {
+    "5": {
+      "cuts": 10,
+      "upper_bound": "1995/4096",
+      "all_exact_coefficients_match": true
+    },
+    "6": {
+      "cuts": 25,
+      "upper_bound": "3997/8192",
+      "all_exact_coefficients_match": true
+    },
+    "7": {
+      "cuts": 56,
+      "upper_bound": "32313/65536",
+      "all_exact_coefficients_match": true
+    },
+    "8": {
+      "cuts": 119,
+      "upper_bound": "130105/262144",
+      "all_exact_coefficients_match": true
+    },
+    "9": {
+      "cuts": 246,
+      "upper_bound": "522297/1048576",
+      "all_exact_coefficients_match": true
+    }
+  },
+  "compression": {
+    "representatives": 7882,
+    "fourier_classes": 121,
+    "rank_counts": {
+      "4": 6291,
+      "2": 259,
+      "3": 1332
+    },
+    "maxima": {
+      "4": "33/256",
+      "2": "3/8",
+      "3": "33/128"
+    },
+    "all_class_coefficients_and_multiplicities_match": true
+  },
+  "seconds": 3.9463212490081787
+}

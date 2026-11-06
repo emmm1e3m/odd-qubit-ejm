@@ -1,0 +1,1825 @@
+{
+  "representatives": 7882,
+  "max_bound": "3/8",
+  "worst_word": "010010",
+  "failures": [],
+  "classes": [
+    {
+      "coefficients": [
+        "127/4096",
+        "23/1024",
+        "0",
+        "37/4096",
+        "0"
+      ],
+      "count": 678,
+      "bound": "1/16",
+      "representative": "00001010101111",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "39/1024",
+        "5/256",
+        "0",
+        "5/1024",
+        "0"
+      ],
+      "count": 168,
+      "bound": "1/16",
+      "representative": "0000101011011",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "67/2048",
+        "11/512",
+        "0",
+        "17/2048",
+        "0"
+      ],
+      "count": 404,
+      "bound": "1/16",
+      "representative": "0000101011101",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "11/256",
+        "1/64",
+        "0",
+        "1/256",
+        "0"
+      ],
+      "count": 1836,
+      "bound": "1/16",
+      "representative": "00010101011",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "21/512",
+        "1/64",
+        "0",
+        "3/512",
+        "0"
+      ],
+      "count": 3,
+      "bound": "1/16",
+      "representative": "000101010111",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "47/1024",
+        "1/128",
+        "0",
+        "9/1024",
+        "0"
+      ],
+      "count": 6,
+      "bound": "1/16",
+      "representative": "00010101101",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "81/2048",
+        "7/512",
+        "0",
+        "19/2048",
+        "0"
+      ],
+      "count": 11,
+      "bound": "1/16",
+      "representative": "000101011011",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "45/1024",
+        "1/64",
+        "0",
+        "3/1024",
+        "0"
+      ],
+      "count": 225,
+      "bound": "1/16",
+      "representative": "00010101110",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "9/256",
+        "5/256",
+        "0",
+        "1/128",
+        "0"
+      ],
+      "count": 95,
+      "bound": "1/16",
+      "representative": "000101011101",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "23/512",
+        "1/64",
+        "0",
+        "1/512",
+        "0"
+      ],
+      "count": 8,
+      "bound": "1/16",
+      "representative": "00010110011",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "85/2048",
+        "9/512",
+        "0",
+        "7/2048",
+        "0"
+      ],
+      "count": 11,
+      "bound": "1/16",
+      "representative": "000101100111",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "75/2048",
+        "9/512",
+        "0",
+        "17/2048",
+        "0"
+      ],
+      "count": 20,
+      "bound": "1/16",
+      "representative": "000101110011",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "49/1024",
+        "3/256",
+        "0",
+        "3/1024",
+        "0"
+      ],
+      "count": 12,
+      "bound": "1/16",
+      "representative": "00011001011",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "11/256",
+        "3/256",
+        "0",
+        "1/128",
+        "0"
+      ],
+      "count": 12,
+      "bound": "1/16",
+      "representative": "00011001101",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "3/64",
+        "3/256",
+        "0",
+        "1/256",
+        "0"
+      ],
+      "count": 14,
+      "bound": "1/16",
+      "representative": "00011100101",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "89/2048",
+        "7/512",
+        "0",
+        "11/2048",
+        "0"
+      ],
+      "count": 3,
+      "bound": "1/16",
+      "representative": "001001010111",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "5/128",
+        "5/256",
+        "0",
+        "1/256",
+        "0"
+      ],
+      "count": 41,
+      "bound": "1/16",
+      "representative": "001001011101",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "13/256",
+        "3/256",
+        "0",
+        "0",
+        "0"
+      ],
+      "count": 8,
+      "bound": "1/16",
+      "representative": "00100111001",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "3/64",
+        "1/64",
+        "0",
+        "0",
+        "0"
+      ],
+      "count": 7,
+      "bound": "1/16",
+      "representative": "0010011100100",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "83/2048",
+        "9/512",
+        "0",
+        "9/2048",
+        "0"
+      ],
+      "count": 10,
+      "bound": "1/16",
+      "representative": "001001110011",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "29/512",
+        "0",
+        "0",
+        "3/512",
+        "0"
+      ],
+      "count": 4,
+      "bound": "1/16",
+      "representative": "0010101101",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "35/1024",
+        "5/256",
+        "0",
+        "9/1024",
+        "0"
+      ],
+      "count": 380,
+      "bound": "1/16",
+      "representative": "001011100011",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "7/128",
+        "1/128",
+        "0",
+        "0",
+        "0"
+      ],
+      "count": 26,
+      "bound": "1/16",
+      "representative": "0010111001",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "23/512",
+        "1/128",
+        "0",
+        "5/512",
+        "0"
+      ],
+      "count": 4,
+      "bound": "1/16",
+      "representative": "00110001101",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "13/256",
+        "1/128",
+        "0",
+        "1/256",
+        "0"
+      ],
+      "count": 35,
+      "bound": "1/16",
+      "representative": "0011001011",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "43/1024",
+        "3/256",
+        "0",
+        "9/1024",
+        "0"
+      ],
+      "count": 120,
+      "bound": "1/16",
+      "representative": "01000101101",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "47/1024",
+        "3/256",
+        "0",
+        "5/1024",
+        "0"
+      ],
+      "count": 85,
+      "bound": "1/16",
+      "representative": "0100101101",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "55/1024",
+        "1/256",
+        "0",
+        "5/1024",
+        "0"
+      ],
+      "count": 4,
+      "bound": "1/16",
+      "representative": "0100111001",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "1/16",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "count": 1593,
+      "bound": "1/16",
+      "representative": "010101010",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "25/512",
+        "1/128",
+        "0",
+        "3/512",
+        "0"
+      ],
+      "count": 17,
+      "bound": "1/16",
+      "representative": "0110001110",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "49/1024",
+        "1/64",
+        "0",
+        "-1/1024",
+        "0"
+      ],
+      "count": 85,
+      "bound": "33/512",
+      "representative": "00100101110",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "25/512",
+        "1/64",
+        "0",
+        "-1/512",
+        "0"
+      ],
+      "count": 116,
+      "bound": "17/256",
+      "representative": "0010101110",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "33/512",
+        "0",
+        "0",
+        "-1/512",
+        "0"
+      ],
+      "count": 78,
+      "bound": "17/256",
+      "representative": "001100110",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "3/64",
+        "5/256",
+        "0",
+        "-1/256",
+        "0"
+      ],
+      "count": 6,
+      "bound": "9/128",
+      "representative": "001001100111",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "15/256",
+        "1/128",
+        "0",
+        "-1/256",
+        "0"
+      ],
+      "count": 1,
+      "bound": "9/128",
+      "representative": "0010110011",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "13/256",
+        "1/64",
+        "0",
+        "-1/256",
+        "0"
+      ],
+      "count": 2,
+      "bound": "9/128",
+      "representative": "0010110101",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "17/256",
+        "0",
+        "0",
+        "-1/256",
+        "0"
+      ],
+      "count": 8,
+      "bound": "9/128",
+      "representative": "010011001",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "59/1024",
+        "-1/256",
+        "0",
+        "9/1024",
+        "0"
+      ],
+      "count": 23,
+      "bound": "9/128",
+      "representative": "0101110001",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "27/512",
+        "1/64",
+        "0",
+        "-3/512",
+        "0"
+      ],
+      "count": 8,
+      "bound": "19/256",
+      "representative": "00100110011",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "59/1024",
+        "3/256",
+        "0",
+        "-7/1024",
+        "0"
+      ],
+      "count": 3,
+      "bound": "39/512",
+      "representative": "0011010011",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "7/128",
+        "1/64",
+        "0",
+        "-1/128",
+        "0"
+      ],
+      "count": 1,
+      "bound": "5/64",
+      "representative": "0010101011",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "9/128",
+        "0",
+        "0",
+        "-1/128",
+        "0"
+      ],
+      "count": 26,
+      "bound": "5/64",
+      "representative": "001011001",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "35/512",
+        "-1/128",
+        "0",
+        "1/512",
+        "0"
+      ],
+      "count": 22,
+      "bound": "5/64",
+      "representative": "0011000101",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "9/128",
+        "-1/128",
+        "0",
+        "0",
+        "0"
+      ],
+      "count": 4,
+      "bound": "5/64",
+      "representative": "001100101",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "37/512",
+        "0",
+        "0",
+        "-5/512",
+        "0"
+      ],
+      "count": 8,
+      "bound": "21/256",
+      "representative": "001010101",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "19/256",
+        "0",
+        "0",
+        "-3/256",
+        "0"
+      ],
+      "count": 2,
+      "bound": "11/128",
+      "representative": "0010101100",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "5/64",
+        "-1/128",
+        "0",
+        "-1/128",
+        "0"
+      ],
+      "count": 4,
+      "bound": "3/32",
+      "representative": "001101001",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "19/256",
+        "-1/64",
+        "0",
+        "1/256",
+        "0"
+      ],
+      "count": 41,
+      "bound": "3/32",
+      "representative": "010010101",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "21/256",
+        "-1/64",
+        "0",
+        "-1/256",
+        "0"
+      ],
+      "count": 2,
+      "bound": "13/128",
+      "representative": "01010110",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "11/128",
+        "-1/64",
+        "0",
+        "-1/128",
+        "0"
+      ],
+      "count": 4,
+      "bound": "7/64",
+      "representative": "01011001",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "45/512",
+        "-3/128",
+        "0",
+        "-1/512",
+        "0"
+      ],
+      "count": 1,
+      "bound": "29/256",
+      "representative": "01101001",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "127/2048",
+        "23/512",
+        "0",
+        "37/2048",
+        "0"
+      ],
+      "count": 134,
+      "bound": "1/8",
+      "representative": "000010101111",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "39/512",
+        "5/128",
+        "0",
+        "5/512",
+        "0"
+      ],
+      "count": 42,
+      "bound": "1/8",
+      "representative": "00001011011",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "67/1024",
+        "11/256",
+        "0",
+        "17/1024",
+        "0"
+      ],
+      "count": 60,
+      "bound": "1/8",
+      "representative": "00001011101",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "25/256",
+        "1/64",
+        "0",
+        "3/256",
+        "0"
+      ],
+      "count": 4,
+      "bound": "1/8",
+      "representative": "000101011",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "21/256",
+        "1/32",
+        "0",
+        "3/256",
+        "0"
+      ],
+      "count": 3,
+      "bound": "1/8",
+      "representative": "0001010111",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "11/128",
+        "3/128",
+        "0",
+        "1/64",
+        "0"
+      ],
+      "count": 4,
+      "bound": "1/8",
+      "representative": "000101101",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "9/128",
+        "5/128",
+        "0",
+        "1/64",
+        "0"
+      ],
+      "count": 20,
+      "bound": "1/8",
+      "representative": "0001011011",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "45/512",
+        "1/32",
+        "0",
+        "3/512",
+        "0"
+      ],
+      "count": 45,
+      "bound": "1/8",
+      "representative": "000101110",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "23/256",
+        "1/32",
+        "0",
+        "1/256",
+        "0"
+      ],
+      "count": 5,
+      "bound": "1/8",
+      "representative": "000110011",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "85/1024",
+        "9/256",
+        "0",
+        "7/1024",
+        "0"
+      ],
+      "count": 9,
+      "bound": "1/8",
+      "representative": "0001100111",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "11/128",
+        "1/32",
+        "0",
+        "1/128",
+        "0"
+      ],
+      "count": 313,
+      "bound": "1/8",
+      "representative": "000110101",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "75/1024",
+        "9/256",
+        "0",
+        "17/1024",
+        "0"
+      ],
+      "count": 3,
+      "bound": "1/8",
+      "representative": "0001110011",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "3/32",
+        "3/128",
+        "0",
+        "1/128",
+        "0"
+      ],
+      "count": 5,
+      "bound": "1/8",
+      "representative": "001001101",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "5/64",
+        "5/128",
+        "0",
+        "1/128",
+        "0"
+      ],
+      "count": 9,
+      "bound": "1/8",
+      "representative": "0010011101",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "3/32",
+        "1/32",
+        "0",
+        "0",
+        "0"
+      ],
+      "count": 1,
+      "bound": "1/8",
+      "representative": "001001111000",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "57/512",
+        "1/128",
+        "0",
+        "3/512",
+        "0"
+      ],
+      "count": 1,
+      "bound": "1/8",
+      "representative": "00101011",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "13/128",
+        "1/64",
+        "0",
+        "1/128",
+        "0"
+      ],
+      "count": 9,
+      "bound": "1/8",
+      "representative": "00101101",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "83/1024",
+        "9/256",
+        "0",
+        "9/1024",
+        "0"
+      ],
+      "count": 1,
+      "bound": "1/8",
+      "representative": "0011000111",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "35/512",
+        "5/128",
+        "0",
+        "9/512",
+        "0"
+      ],
+      "count": 84,
+      "bound": "1/8",
+      "representative": "0011100011",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "7/64",
+        "1/64",
+        "0",
+        "0",
+        "0"
+      ],
+      "count": 4,
+      "bound": "1/8",
+      "representative": "00111001",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "43/512",
+        "3/128",
+        "0",
+        "9/512",
+        "0"
+      ],
+      "count": 26,
+      "bound": "1/8",
+      "representative": "010001101",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "47/512",
+        "3/128",
+        "0",
+        "5/512",
+        "0"
+      ],
+      "count": 11,
+      "bound": "1/8",
+      "representative": "01001101",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "3/32",
+        "-1/32",
+        "0",
+        "0",
+        "0"
+      ],
+      "count": 5,
+      "bound": "1/8",
+      "representative": "01011010",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "1/8",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "count": 428,
+      "bound": "1/8",
+      "representative": "0101110",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "13/128",
+        "3/128",
+        "0",
+        "0",
+        "0"
+      ],
+      "count": 1,
+      "bound": "1/8",
+      "representative": "0110000111",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "49/512",
+        "1/32",
+        "0",
+        "-1/512",
+        "0"
+      ],
+      "count": 17,
+      "bound": "33/256",
+      "representative": "001001110",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "49/512",
+        "-3/128",
+        "0",
+        "-5/512",
+        "0"
+      ],
+      "count": 1,
+      "bound": "33/256",
+      "representative": "01010101",
+      "ranks": [
+        4
+      ]
+    },
+    {
+      "coefficients": [
+        "33/256",
+        "0",
+        "0",
+        "-1/256",
+        "0"
+      ],
+      "count": 6,
+      "bound": "17/128",
+      "representative": "00010110",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "25/256",
+        "1/32",
+        "0",
+        "-1/256",
+        "0"
+      ],
+      "count": 27,
+      "bound": "17/128",
+      "representative": "00101110",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "13/128",
+        "1/32",
+        "0",
+        "-1/128",
+        "0"
+      ],
+      "count": 3,
+      "bound": "9/64",
+      "representative": "001001011",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "3/32",
+        "5/128",
+        "0",
+        "-1/128",
+        "0"
+      ],
+      "count": 1,
+      "bound": "9/64",
+      "representative": "0010010111",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "17/128",
+        "0",
+        "0",
+        "-1/128",
+        "0"
+      ],
+      "count": 6,
+      "bound": "9/64",
+      "representative": "0010110",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "15/128",
+        "1/64",
+        "0",
+        "-1/128",
+        "0"
+      ],
+      "count": 1,
+      "bound": "9/64",
+      "representative": "00110101",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "59/512",
+        "-1/128",
+        "0",
+        "9/512",
+        "0"
+      ],
+      "count": 3,
+      "bound": "9/64",
+      "representative": "01110001",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "27/256",
+        "1/32",
+        "0",
+        "-3/256",
+        "0"
+      ],
+      "count": 1,
+      "bound": "19/128",
+      "representative": "0010010011",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "59/512",
+        "3/128",
+        "0",
+        "-7/512",
+        "0"
+      ],
+      "count": 1,
+      "bound": "39/256",
+      "representative": "00110011",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "9/64",
+        "-1/64",
+        "0",
+        "0",
+        "0"
+      ],
+      "count": 4,
+      "bound": "5/32",
+      "representative": "00010101",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "9/64",
+        "0",
+        "0",
+        "-1/64",
+        "0"
+      ],
+      "count": 13,
+      "bound": "5/32",
+      "representative": "00100101",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "35/256",
+        "-1/64",
+        "0",
+        "1/256",
+        "0"
+      ],
+      "count": 4,
+      "bound": "5/32",
+      "representative": "00110001",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "37/256",
+        "0",
+        "0",
+        "-5/256",
+        "0"
+      ],
+      "count": 4,
+      "bound": "21/128",
+      "representative": "0011010",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "37/256",
+        "-1/64",
+        "0",
+        "-1/256",
+        "0"
+      ],
+      "count": 2,
+      "bound": "21/128",
+      "representative": "0101001",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "5/32",
+        "-1/64",
+        "0",
+        "-1/64",
+        "0"
+      ],
+      "count": 2,
+      "bound": "3/16",
+      "representative": "0011001",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "19/128",
+        "-1/32",
+        "0",
+        "1/128",
+        "0"
+      ],
+      "count": 7,
+      "bound": "3/16",
+      "representative": "0100110",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "5/32",
+        "-1/32",
+        "0",
+        "0",
+        "0"
+      ],
+      "count": 5,
+      "bound": "3/16",
+      "representative": "010110",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "21/128",
+        "-1/32",
+        "0",
+        "-1/128",
+        "0"
+      ],
+      "count": 1,
+      "bound": "13/64",
+      "representative": "0101010",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "45/256",
+        "-3/64",
+        "0",
+        "-1/256",
+        "0"
+      ],
+      "count": 1,
+      "bound": "29/128",
+      "representative": "011001",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "35/256",
+        "5/64",
+        "0",
+        "9/256",
+        "0"
+      ],
+      "count": 18,
+      "bound": "1/4",
+      "representative": "000010111",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "127/1024",
+        "23/256",
+        "0",
+        "37/1024",
+        "0"
+      ],
+      "count": 23,
+      "bound": "1/4",
+      "representative": "0000101111",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "43/256",
+        "3/64",
+        "0",
+        "9/256",
+        "0"
+      ],
+      "count": 4,
+      "bound": "1/4",
+      "representative": "00001101",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "39/256",
+        "5/64",
+        "0",
+        "5/256",
+        "0"
+      ],
+      "count": 8,
+      "bound": "1/4",
+      "representative": "000011011",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "67/512",
+        "11/128",
+        "0",
+        "17/512",
+        "0"
+      ],
+      "count": 6,
+      "bound": "1/4",
+      "representative": "000011101",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "23/128",
+        "1/16",
+        "0",
+        "1/128",
+        "0"
+      ],
+      "count": 1,
+      "bound": "1/4",
+      "representative": "00010011",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "49/256",
+        "3/64",
+        "0",
+        "3/256",
+        "0"
+      ],
+      "count": 2,
+      "bound": "1/4",
+      "representative": "0001011",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "85/512",
+        "9/128",
+        "0",
+        "7/512",
+        "0"
+      ],
+      "count": 1,
+      "bound": "1/4",
+      "representative": "00010111",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "11/64",
+        "3/64",
+        "0",
+        "1/32",
+        "0"
+      ],
+      "count": 2,
+      "bound": "1/4",
+      "representative": "0001101",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "9/64",
+        "5/64",
+        "0",
+        "1/32",
+        "0"
+      ],
+      "count": 6,
+      "bound": "1/4",
+      "representative": "00011011",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "45/256",
+        "1/16",
+        "0",
+        "3/256",
+        "0"
+      ],
+      "count": 7,
+      "bound": "1/4",
+      "representative": "0001110",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "57/256",
+        "1/64",
+        "0",
+        "3/256",
+        "0"
+      ],
+      "count": 1,
+      "bound": "1/4",
+      "representative": "001011",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "13/64",
+        "1/32",
+        "0",
+        "1/64",
+        "0"
+      ],
+      "count": 2,
+      "bound": "1/4",
+      "representative": "001101",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "11/64",
+        "1/16",
+        "0",
+        "1/64",
+        "0"
+      ],
+      "count": 42,
+      "bound": "1/4",
+      "representative": "0011101",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "5/32",
+        "5/64",
+        "0",
+        "1/64",
+        "0"
+      ],
+      "count": 1,
+      "bound": "1/4",
+      "representative": "01000111",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "1/4",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "count": 101,
+      "bound": "1/4",
+      "representative": "01010",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "49/256",
+        "1/16",
+        "0",
+        "-1/256",
+        "0"
+      ],
+      "count": 2,
+      "bound": "33/128",
+      "representative": "00111000",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "49/256",
+        "-3/64",
+        "0",
+        "-5/256",
+        "0"
+      ],
+      "count": 1,
+      "bound": "33/128",
+      "representative": "010101",
+      "ranks": [
+        3
+      ]
+    },
+    {
+      "coefficients": [
+        "33/128",
+        "0",
+        "0",
+        "-1/128",
+        "0"
+      ],
+      "count": 18,
+      "bound": "17/64",
+      "representative": "00101",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "25/128",
+        "1/16",
+        "0",
+        "-1/128",
+        "0"
+      ],
+      "count": 6,
+      "bound": "17/64",
+      "representative": "001110",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "3/16",
+        "5/64",
+        "0",
+        "-1/64",
+        "0"
+      ],
+      "count": 1,
+      "bound": "9/32",
+      "representative": "00100111",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "17/64",
+        "0",
+        "0",
+        "-1/64",
+        "0"
+      ],
+      "count": 3,
+      "bound": "9/32",
+      "representative": "01001",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "27/128",
+        "1/16",
+        "0",
+        "-3/128",
+        "0"
+      ],
+      "count": 3,
+      "bound": "19/64",
+      "representative": "0010011",
+      "ranks": [
+        2
+      ]
+    },
+    {
+      "coefficients": [
+        "19/64",
+        "-1/16",
+        "0",
+        "1/64",
+        "0"
+      ],
+      "count": 1,
+      "bound": "3/8",
+      "representative": "010010",
+      "ranks": [
+        2
+      ]
+    }
+  ],
+  "seconds": 99.95693707466125,
+  "method": "Exact rational Fourier coefficients; constant plus sum absolute oscillatory coefficients; finite coverage supplied by the proven compression lemma."
+}

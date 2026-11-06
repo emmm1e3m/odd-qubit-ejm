@@ -132,7 +132,7 @@ Define
 \end{equation}
 Here the subtraction is in the integers. Since $F(0)=1$, $d_n$ is still Boolean. Only the physical zero string is removed, not the whole fiber $\mathcal L_nz=0$.
 
-Figure~\ref{fig:unified}(a) shows how the same four-feature kernel determines the phase at every $n\ge5$; panel (b) displays the resulting radius in units of $r_E(n)$.
+Figure~\ref{fig:unified}(a) shows that the same four-feature kernel generates the deformation for every $n\ge5$, with the physical zero string removed from its support. Panel (b) gives the resulting universal radius law $r_n(t)/r_E(n)=1-\sin t$: as $t$ runs from $-\pi/2$ to $\pi/2$, the common radius decreases strictly from $2r_E(n)$ through the reference value at $t=0$ to zero, where all one-qubit marginals are maximally mixed. Thus a single construction connects radius enhancement to locally maximally mixed states while keeping the tetrahedral directions fixed.
 \input{sections/figure-unified}
 \begin{theorem}[Unified radius-increasing family]
 \label{core:unified-theorem}
@@ -186,4 +186,4 @@ The increase in radius has a direct interpretation in terms of entanglement betw
  \qquad \operatorname{Tr}\rho_j^2=\frac{1+r_n(t)^2}{2}.
  \label{core:spectrum}
 \end{equation}
-Their entanglement entropy is $h_2((1+r_n(t))/2)$, where $h_2(p)=-p\log_2p-(1-p)\log_2(1-p)$. Increasing the Bloch radius decreases this bipartite entanglement entropy. At $t=\pi/2$, the point correction in Eq.~\eqref{core:defect-state} vanishes; at $t=-\pi/2$, its interference produces twice the reference local signal. Thus four linear features suffice to express the phase for every $n\ge5$.
+Their entanglement entropy is $h_2((1+r_n(t))/2)$, where $h_2(p)=-p\log_2p-(1-p)\log_2(1-p)$. Increasing the Bloch radius decreases this bipartite entanglement entropy. At $t=\pi/2$, the point correction in Eq.~\eqref{core:defect-state} vanishes; at $t=-\pi/2$, its interference produces twice the reference local signal. Thus four linear features specify the background kernel for every $n\ge5$; the complete phase also retains the zero-string correction, as discussed in Sec.~\ref{physics:implementation}.

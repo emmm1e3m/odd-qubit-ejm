@@ -1,7 +1,7 @@
 \section{Proof of the sharp bounds for Boolean straight phase paths}
 \label{bound:appendix}
 
-This appendix proves Theorem~\ref{bound:theorem}: tetrahedral regularity fixes the signed local components, coefficient comparison gives the four radius laws, and low-dimensional character identities determine which laws are possible.
+This appendix proves Theorem~\ref{bound:theorem}: tetrahedral regularity fixes the signed local components, coefficient comparison gives the four radius laws, and low-dimensional restrictions determine which laws are possible.
 
 \subsection{From tetrahedral regularity to equal signed components}
 This section proves that local tetrahedral regularity near the reference point is equivalent to equality of the signed components along the entire Boolean straight phase path. The local action of the Pauli orbit sends a seed Bloch vector $(x,y,z)$
@@ -69,7 +69,7 @@ The cosine coefficients then agree as well. Substitution proves both directions 
 Their maximum absolute values prove the general upper bound.
 
 \subsection{Analytic exclusions at \texorpdfstring{$n=2,3,4$}{n=2,3,4}}
-This section excludes radius increase for $n=2,3,4$ and identifies measurements attaining the bounds in every dimension. Use binary integers with $z_1$ the most significant bit.
+This section excludes radius increase for $n=2,3,4$ and identifies measurements attaining the bounds in every dimension.
 For $n=2$, only class I occurs and its flip masks cover all three
 nonzero strings.  Equality of the cosine coefficients forces
 $q(z)=s$ for every $z\ne0$.  The choices $s=0$ and $s=1$
@@ -77,44 +77,7 @@ give $q=\delta_0$ and $q\equiv1$, respectively.
 Their common components are $c$ and $c\cos t$, so neither exceeds
 the base radius in absolute value.
 
-For $n\ge3$ and every class-I character, the Walsh condition is equivalently
-\begin{equation}
- \sum_z q(z)(-1)^{h\cdot z}=1-s-k.
- \label{bound:linear-character}
-\end{equation}
-Indeed, $W_q(h)=-2N^{-1}\sum_zq(z)(-1)^{h\cdot z}$ for $h\ne0$.
-
-For $n=3$, the class-I flip masks are $\{1,2,3,4,5\}$ and
-the class-II flip masks are $\{6,7\}$.
-Thus $q(0)=1$, the first set has value $s$, and the second set
-has value $k$; there are no further unknowns.
-For $h=1$, the left side of Eq.~\eqref{bound:linear-character}
-is $1-s$, which gives $k=0$.
-For $h=4$, it is $1+s-2k$, which gives $2s-k=0$.
-Hence $s=k=0$ and $d=0$.
-
-For $n=4$, the class-I flip masks are $\{1,2,3,8,9\}$ and
-the class-II masks are $\{6,7,12,13\}$.  Put
-\begin{equation}
- (A,B,C,D,E,F)=(q_4,q_5,q_{10},q_{11},q_{14},q_{15}),
- \label{bound:unknown-values}
-\end{equation}
-where $q_j=q(j)$.  The four class-I characters $h=1,3,7,15$
-give, respectively,
-\begin{equation}
- \begin{aligned}
- A-B+C-D+E-F+k&=0,\\
- A-B-C+D-E+F+k&=0,\\
- -A+B-C+D+E-F+k&=0,\\
- -A+B+C-D-E+F+k&=0.
- \end{aligned}
- \label{bound:four-boundary-equations}
-\end{equation}
-Adding these equations gives $4k=0$ and therefore $k=0$.
-Equation~\eqref{bound:four-laws} now leaves only $m=c$ or
-$m=c\cos t$.  This exclusion covers every Boolean function at $n=4$; no ansatz for its support was used.
-It is sufficient for the radius bound, so a list of individual
-admissible supports is unnecessary.
+For $n=3$, the local rigidity in Proposition~\ref{low:rigidity} makes the phase vector of every admissible line locally constant. The normalization $d(0)=0$ therefore forces $d=0$, hence $s=k=0$. For $n=4$, Theorem~\ref{low:theorem} bounds the radius by $r_E(4)$ for arbitrary real generators. Combined with Eq.~\eqref{bound:four-laws}, this excludes both laws with $k=1$, leaving only the constant and cosine laws. These stronger low-dimensional results are proved in Appendixes~\ref{low:app-rigidity} and \ref{low:app-lines}, respectively.
 
 The low-dimensional upper bounds are attained at $t=0$.
 For every $n\ge5$, the explicit unified generator satisfies the

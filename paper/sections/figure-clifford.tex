@@ -1,0 +1,11 @@
+\begin{figure*}[tbp]
+  \centering
+  \includegraphics[width=\textwidth]{figures/fig4_clifford.pdf}
+  \caption{Circuit structure of the measurement unitary and its complete diagonal phase.
+  (a) Five-qubit seed preparation: the gates act from left to right as $H^{\otimes5}$, $D_{5,t}$, $H_5$, and the CNOT sequence $5\to4$, $4\to3$, $3\to2$, $2\to1$.
+  (b) Decomposition of $D_{n,t}$ for every $n\ge5$, with the global phase $-i$ omitted.
+  The top wire carries the $n$ data qubits, $P=\operatorname{diag}(1,i)$, and $R_0(\theta)=\exp(i\theta|0^n\rangle\langle0^n|)$ with $\theta=\pi/2-t$.
+  The reversible parity encoding $U_{\mathcal L_n}:|z\rangle|a\rangle\mapsto|z\rangle|a\oplus\mathcal L_nz\rangle$, the four-qubit gate $F_t$, and the inverse encoding implement $e^{itq_n}$ while restoring all four auxiliary qubits to $|0\rangle$.
+  At $t=\pi/2$, $R_0$ becomes the identity; the exact Clifford-hierarchy levels of the complete measurement unitary at $t=0,-\pi/2,\pi/2$ are $n+1,n,4$, respectively.}
+  \label{fig:clifford}
+\end{figure*}

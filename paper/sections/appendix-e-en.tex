@@ -1,0 +1,127 @@
+\section{Entanglement and implementation proofs}
+\label{physics:appendix}
+
+This appendix proves the concurrence law, zero-radius endpoint properties, and implementation statements of Sec.~\ref{physics:section}. We use the phase functions and measurement conventions of the main text.
+
+\subsection{Reduced purities and concurrence}
+\label{physics:app-purity}
+
+This section proves that every cut with at least two qubits on each side has purity strictly below $1/2$, for all $n\ge5$ and real $t$. Write $D(z;u)=i^{f_0(z)}u^{d_n(z)}$ and $u=e^{it}$. For an output string $y$, set $w_j=y_j\oplus y_{j+1}$ for $j<n$ and $w_n=y_n$, and replace its last bit by $b$ to obtain $w^{(b)}$. The physical seed amplitude, including the last-qubit Hadamard, is
+\begin{equation}
+ \psi_0(y;t)=\frac{D(w^{(0)};u)+(-1)^{w_n}D(w^{(1)};u)}{\sqrt{2^{n+1}}}.
+ \label{physics:amplitudes}
+\end{equation}
+Its numerator is affine in $u$, with Gaussian-integer coefficients. Arranging the amplitudes as the cut matrix $V_A$ gives
+\begin{equation}
+ \rho_A=V_AV_A^\dagger,\qquad
+ p_A=\sum_{x,x'}\left|\sum_zV_A(x,z)\overline{V_A(x',z)}\right|^2,
+ \label{physics:finite-purity}
+\end{equation}
+and hence the exact rational-coefficient expression
+\begin{equation}
+ p_A(t)=a_0+a_1\cos t+b_1\sin t+a_2\cos2t+b_2\sin2t.
+ \label{physics:fourier-purity}
+\end{equation}
+Let $\kappa=\operatorname{rank}_{\mathbb F_2}\Gamma_{AB}$, where $\Gamma$ is the adjacency matrix of the physical path $1-2-\cdots-n$. Its crossing edges form disjoint alternating paths; a component with $\ell$ edges contributes $\lceil\ell/2\rceil$ to $\kappa$, by elimination of its two-diagonal adjacency matrix.
+
+The dependence on arbitrary lengths can be isolated directly in Eq.~\eqref{physics:amplitudes}. Set $(a,b,c,d)=(y_1,y_2,y_{n-1},y_n)$, $P=\bigoplus_{j=3}^{n-2}y_j$, and $\nu=n\bmod2$. Using binary arithmetic for $x,s,B,C$, define
+\begin{equation}
+ \begin{gathered}
+ x=a\oplus b\oplus c\oplus d,\qquad s=a\oplus b,\\
+ B=b\oplus P\oplus(1-\nu)c,\qquad C=P\oplus\nu c,\\
+ h_\nu(y;u)=u^{F(x,B,C,s)}+i(-1)^d u^{F(x,B,C,s\oplus1)}.
+ \end{gathered}
+ \label{physics:boundary-amplitude}
+\end{equation}
+The last line depends only on the four boundary bits and $P$. The full amplitude is $2^{-(n+1)/2}Q(y)[h_\nu(y;u)+(i-u)\Delta(y)]$, where $Q(y)=-i\,i^{\sum_{j<n}(y_j\oplus y_{j+1})}$ and $\Delta(y)=\mathbf1_{y=0^n}+\mathbf1_{y=1^n}$.
+For the four strings $y,v,v_Ay_B,y_Av_B$ in the purity sum, the $Q$ factors leave only the crossing-edge sign $(-1)^{\sum_{j\in E_\times}(y_j\oplus v_j)(y_{j+1}\oplus v_{j+1})}$; here $E_\times$ indexes the crossing edges.
+
+If $\kappa=1$, a nonsingle-qubit cut is a prefix of length $k$ and a suffix of length $l=n-k$. Retain the boundary and crossing-edge endpoints. Each remaining same-side string of length $L\ge1$ enters only through its parity $\epsilon$ and whether it is constant, with exact counts
+\begin{equation}
+ \begin{aligned}
+ N_L(0,\epsilon)&=\mathbf1_{\epsilon=0},\qquad
+ N_L(1,\epsilon)=\mathbf1_{\epsilon=L\bmod2},\\
+ N_L({\rm mixed},\epsilon)&=2^{L-1}-N_L(0,\epsilon)-N_L(1,\epsilon).
+ \end{aligned}
+ \label{physics:length-counts}
+\end{equation}
+An empty group contributes one empty string of even parity. Applying these counts independently to $y$ and $v$, and removing the common normalization denominator $2^{2n+2}$, gives Fourier numerators of degree at most two in each length variable $2^{k-4}$ and $2^{l-4}$; lengths two and three are evaluated separately. The accompanying exact coefficient certificate covers both length parities and empty groups. The resulting coefficient bounds give
+\begin{equation}
+ p_A(t)\le\frac12-2^{-n-2}<\frac12
+ \qquad(\kappa=1,\ 2\le k\le n-2).
+ \label{physics:rank-one-gaps}
+\end{equation}
+The certificate supplies the length polynomials and their positive gap bounds, including the $n=5$ and $3|3$ cases.
+
+For $\kappa\ge2$, first consider the normalized background $\ket g=-iC_n\ket\chi$, where $\ket\chi=2^{-n/2}\sum_z i^{|z|}u^{q_n(z)}\ket z$. Removing single-qubit phases and same-side path edges puts its amplitudes in the form
+\begin{equation}
+ \widetilde g_y=2^{-(n+1)/2}
+ (-1)^{\sum_{j\in E_\times}y_jy_{j+1}}h_\nu(y;u).
+ \label{physics:background-compression}
+\end{equation}
+Retain the four boundary sites and all crossing-edge endpoints. The other sites form two free groups according to their side of the cut, each visible only through its total parity. For a nonempty group, the normalized parity states
+\begin{equation}
+ \ket{p;L}=2^{-(L-1)/2}\sum_{\oplus_jz_j=p}\ket z
+ \label{physics:parity-isometry}
+\end{equation}
+are orthonormal. Expanding in these states cancels the length dependence of the corresponding amplitudes. Each nonempty group may therefore be replaced isometrically by one bit, with at most one additional bit to preserve $n$'s parity. No crossing edge is removed or created. Since $\ell+1\le3\lceil\ell/2\rceil$, at most $3\kappa$ crossing-edge endpoints are retained, and every background cut has an equivalent representative of length $5\le n'\le3\kappa+7$, still with at least two sites on each side.
+
+For $\kappa=2,3,4$, enumerate every cut through the proved length bounds $13,16,19$ and apply this compression. The resulting $259,1332,6291$ representatives have exact Fourier bounds $3/8,33/128,33/256$, respectively. These follow from $a_0+|a_1|+|b_1|+|a_2|+|b_2|$; all coefficients and representative multiplicities are supplied with the verification code.
+
+For larger $\kappa$, the normalized Walsh coefficients of the sign function $(-1)^F$ have absolute sum $3$. The background at $t=0$ is locally equivalent to the path graph state, whose nonzero Schmidt probabilities are $2^{-\kappa}$. Each Walsh character gives a local Pauli image of this state. The triangle inequality for the cut matrix therefore yields
+\begin{equation}
+ \begin{aligned}
+ \|V_A^{\rm bg}\|_{\rm op}
+ &\le2^{-\kappa/2}(|\cos(t/2)|+3|\sin(t/2)|),\\
+ p_A^{\rm bg}&\le\|V_A^{\rm bg}\|_{\rm op}^2
+ \le10\,2^{-\kappa}\le5/16\quad(\kappa\ge5).
+ \end{aligned}
+ \label{physics:walsh-purity-bound}
+\end{equation}
+Consequently $p_A^{\rm bg}\le3/8$ for every $\kappa\ge2$.
+
+The complete state retains the zero-string correction, which $C_n$ maps to the GHZ direction. For $a=2^{-n}$ its exact overlap with the background is
+\begin{equation}
+ \begin{aligned}
+ \braket{g}{\psi_0}&=1-a+iau^{-1},\\
+ |\braket{g}{\psi_0}|^2&=1-2a(1-a)(1-\sin t).
+ \end{aligned}
+ \label{physics:background-overlap}
+\end{equation}
+Partial trace contracts the trace norm, while density matrices satisfy $|\Tr\rho^2-\Tr\sigma^2|\le\|\rho-\sigma\|_1$: subtract $I$ from $\rho+\sigma$ and use $\Tr(\rho-\sigma)=0$. Hence
+\begin{equation}
+ p_A(t)\le\frac38+4\sqrt{2^{-n}(1-2^{-n})}<\frac12
+ \quad(n\ge10,\ \kappa\ge2).
+ \label{physics:complete-purity-bound}
+\end{equation}
+
+For $n=5,\ldots,9$, direct evaluation of Eq.~\eqref{physics:finite-purity} covers all $456$ nonsingle-qubit cuts, distinct up to complementation. For each integer coefficient tuple $(a,b,c,d,e)/D$, the bound $[a+\lceil\sqrt{b^2+c^2}\rceil+\lceil\sqrt{d^2+e^2}\rceil]/D$ is at most $522297/1048576<1/2$. The supplied verification reconstructs every coefficient from the original gates.
+
+Together these cases exhaust all cuts and give $\max_Ap_A=p_{\{j\}}=(1+r_n^2)/2$, with equality precisely at the single-qubit-versus-rest cuts. Equation~\eqref{physics:gme-law} follows; $r_n\le2r_E(n)<1$ gives positivity, and the Pauli orbit transfers the result to every column.
+
+\subsection{The zero-radius endpoint}
+\label{physics:app-invariants}
+
+This section uses a two-qubit purity to characterize the zero-radius endpoint. Evaluating the exact length counts of Appendix~\ref{physics:app-purity} for $A=\{1,2\}$ at $t=\pi/2$ gives
+\begin{equation}
+ p_{12}=\begin{cases}11/32,&n=5,\\5/16,&n\ge6.\end{cases}
+ \label{physics:endpoint-pair-purity}
+\end{equation}
+Both values exceed $1/4$, whereas $2$-uniformity requires every two-qubit reduction to equal $I/4$. Thus the endpoint is not $2$-uniform.
+
+To test stabilizer equivalence, expand $\rho_{ij}=\tfrac14\sum_{a,b=0}^3m_{ab}\sigma_a\otimes\sigma_b$, with $\sigma_0=I$. Then $4p_{ij}=\sum_{a,b}m_{ab}^2$. For a stabilizer pure state, every Pauli expectation belongs to $\{0,\pm1\}$~\cite{Gottesman1997}, so $4p_{ij}$ is an integer for every pair. Equation~\eqref{physics:endpoint-pair-purity} instead gives $4p_{12}=11/8$ or $5/4$. Reduced purities are local-unitary invariants~\cite{Grassl1998}: a product of single-qubit unitaries conjugates $\rho_{ij}$ by $U_i\otimes U_j$, preserving its spectrum. Qubit permutations only relabel the pairs. The noninteger value therefore excludes equivalence to any stabilizer pure state under these operations for every $n\ge5$. The Pauli orbit transfers both conclusions to every measurement column.
+
+\subsection{The complete phase and Clifford levels}
+\label{physics:app-hierarchy}
+
+This section separates the kernel phase from the correction at the physical zero string to establish the factorization~\eqref{physics:factorization} and Clifford levels~\eqref{physics:levels}. Substituting $f_0(z)=|z|-1+\delta_{z,0}\pmod4$ and $d_n=q_n-\delta_{z,0}$ gives Eq.~\eqref{physics:factorization}. The reversible encoding $\ket z\ket a\mapsto\ket z\ket{a\oplus\mathcal L_nz}$ computes four linear parities with $O(n)$ CNOTs. Applying $e^{itF}$ between encoding and decoding, starting from $a=0$, implements $e^{itq_n}$ and restores the auxiliaries. The zero-string phase remains an additional factor.
+
+The diagonal Clifford criterion~\cite{Cui2017} assigns a nonconstant mod-four monomial on $S$ weighted degree $|S|+1$ for odd coefficient and $|S|$ for coefficient $2$; the largest degree is the exact level. Here
+\begin{equation}
+ \begin{aligned}
+ F={}&1+3x+3b+2xb+xc+bc+2xbc\\
+ &+3s+xs+2bs+2xbs+3bcs\pmod4.
+ \end{aligned}
+ \label{physics:kernel-mod-four}
+\end{equation}
+The odd cubic term gives level four. For $n\ge5$, $\mathcal L_n$ is surjective, so its four parity coordinates can be completed to an invertible binary coordinate system; this Clifford change of variables preserves the level under pullback. The local factor $P^{\otimes n}$ contributes only level two. The endpoint exponents are $f_+=|z|-1+q_n$ and $f_-=|z|-1-q_n+2\delta_{z,0}$, with $\delta_{z,0}=\prod_j(1-z_j)$. Its highest coefficient is odd at the reference point and twice an odd integer at the negative endpoint, giving levels $n+1$ and $n$. For $n\ge5$ these terms cannot be canceled by the level-four kernel. At the positive endpoint the zero-string term disappears, leaving exact level four. The Clifford factors $C_n$ and $H^{\otimes n}$ preserve these levels on multiplication, yielding Eq.~\eqref{physics:levels} for the complete measurement unitary.

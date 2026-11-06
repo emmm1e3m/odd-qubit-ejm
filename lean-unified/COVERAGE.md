@@ -1,6 +1,6 @@
 # 论文与形式化逐项对应
 
-对应 [`paper/main.tex`](../paper/main.tex) 与 [`paper/main-zh.tex`](../paper/main-zh.tex) 的同一组数学结果。下表的声明名均以 `UnifiedEJM.` 为前缀；点击模块可查看完整量词和定义。Lean 使用零起始位索引，论文使用一开始位索引。
+对应 `pra-draft/main.tex` 与 `main-zh.tex` 的同一组数学结果。下表的声明名均以 `UnifiedEJM.` 为前缀；点击模块可查看完整量词和定义。Lean 使用零起始位索引，论文使用一开始位索引。
 
 | 论文位置 | 正式声明入口 | 覆盖内容 |
 |---|---|---|
