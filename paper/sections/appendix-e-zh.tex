@@ -97,7 +97,7 @@ $\kappa=1$ 时，非单比特划分必为长度 $k$ 的前缀与长度 $l=n-k$ �
 
 对 $n=5,\ldots,9$，直接计算式~\eqref{physics:finite-purity}，覆盖不计补集重复的全部 $456$ 个非单比特划分。对每个整数系数组 $(a,b,c,d,e)/D$，上界 $[a+\lceil\sqrt{b^2+c^2}\rceil+\lceil\sqrt{d^2+e^2}\rceil]/D$ 至多为 $522297/1048576<1/2$。随文验证程序从原门序重新构造每个系数。
 
-上述情形穷尽全部划分，因而 $\max_Ap_A=p_{\{j\}}=(1+r_n^2)/2$，恰由单比特与其余系统的划分取得等号。由此得到式~\eqref{physics:gme-law}；$r_n\le2r_E(n)<1$ 保证正性，Pauli 轨道将结论传递至每个测量列。
+上述情形穷尽全部划分，因而 $\max_Ap_A=p_{\{j\}}=(1+r_n^2)/2$，恰由单比特与其余系统的划分取得等号。由此得到式~\eqref{physics:gme-law}；$r_n\le2r_E(n)<1$ 保证正性，Pauli 轨道将结论传递至每个测量列。有限枚举与系数证书由随文提供的精确算术程序独立复算，归约到有限情形的步骤与解析界则已在上文证明。
 
 \subsection{零半径端点}
 \label{physics:app-invariants}
@@ -110,6 +110,17 @@ $\kappa=1$ 时，非单比特划分必为长度 $k$ 的前缀与长度 $l=n-k$ �
 两个值均大于 $1/4$，而 $2$-uniform 性要求每个两比特约化态均为 $I/4$，因此该端点不是 $2$-uniform 态。
 
 为检验稳定子等价性，将 $\rho_{ij}$ 展开为 $\tfrac14\sum_{a,b=0}^3m_{ab}\sigma_a\otimes\sigma_b$，其中 $\sigma_0=I$，于是 $4p_{ij}=\sum_{a,b}m_{ab}^2$。稳定子纯态的每个 Pauli 期望均属于 $\{0,\pm1\}$~\cite{Gottesman1997}，故任意比特对的 $4p_{ij}$ 都是整数；式~\eqref{physics:endpoint-pair-purity} 则给出 $4p_{12}=11/8$ 或 $5/4$。约化纯度是局域酉不变量~\cite{Grassl1998}：单比特酉的乘积仅以 $U_i\otimes U_j$ 共轭 $\rho_{ij}$，保持其谱；比特置换也仅重标记比特对。因此，这一非整数值对每个 $n\ge5$ 均排除了与任何稳定子纯态在上述变换下的等价性。Pauli 轨道将两个结论传递至每个测量列。
+
+对偶数 $n\ge4$ 的余弦端点 $\alpha=\pi/2$，由 $q_A(0)=1$，完整对角相位为 $-i\,i^{|z|+q_A(z)}$。由于 $q_A(z)=\prod_{j\in E_n}(1-z_j)$ 不依赖 $z_1$ 或 $z_n$，忽略全局相位后，$C_n$ 的输入态分解为 $P\ket{+}\otimes\ket{\phi}\otimes P\ket{+}$，其中 $P\ket{+}$ 是 $Y$ 的 $+1$ 本征态。共轭给出 $C_n^\dagger(Y_1Z_2)C_n=Y_1$、$C_n^\dagger(Z_1Y_2)C_n=Y_1X_2$ 和 $C_n^\dagger(X_1X_2)C_n=X_2$。因此 $\langle Y_1Z_2\rangle=1$，且 $\langle Z_1Y_2\rangle=\langle X_1X_2\rangle=a$，其中 $a=\langle X_2\rangle_\phi$。固定其余坐标时，若 $E_n$ 中另有一位为一，则相位 $i^{z_2+q_A(z)}$ 给出 $\langle X_2\rangle=0$；若其余 $n/2-2$ 位全部为零，则给出 $\langle X_2\rangle=1$。这些坐标均匀分布，故 $a=2^{2-n/2}$。
+
+输出态是 $Y_1Z_2$ 的 $+1$ 本征态，因此与它反对易的 Pauli 算符期望均为零。在其余项中，零局部半径给出 $\langle Y_1\rangle=\langle Z_2\rangle=0$；而 $C_n^\dagger(X_1Y_2)C_n=Y_2Z_3\cdots Z_{n-1}X_n$ 的期望也为零，因为输入态的末位因子满足 $\langle X_n\rangle=0$。恒等式 $(Y_1Z_2)(X_1Y_2)=-Z_1X_2$ 进一步给出 $\langle Z_1X_2\rangle=0$。因此
+\[
+ \begin{aligned}
+ \rho_{12}&=\tfrac14[I+Y_1Z_2+a(X_1X_2+Z_1Y_2)],\\
+ p_{12}&=\tfrac14(2+2a^2)=\tfrac12+2^{3-n}.
+ \end{aligned}
+\]
+从而 $C_{\rm GME}\le\sqrt{2(1-p_{12})}=\sqrt{1-2^{4-n}}<1$。由于 $C_{\rm GME}$ 在局域酉与比特置换下不变，对每个偶数 $n\ge6$，这一端点均与统一族的零半径端点不等价。Pauli 轨道将这一比较传递至全部测量列。
 
 \subsection{完整相位与 Clifford 层级}
 \label{physics:app-hierarchy}

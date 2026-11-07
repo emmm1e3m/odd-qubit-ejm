@@ -39,8 +39,6 @@ Let $\mathbf e_j$ denote a binary unit vector and $T_j=\mathbf e_j\oplus\cdots\o
 \end{align}
 Conjugating by the final-qubit Hadamard and using $Y=iXZ$ gives Table~\ref{core:pullback-table}. In $R=i^kX^aZ^b$, the $Z$ factors act first. For example, $Y_n$ pulls back to $-iX_{n-1}X_nZ_n$; the signed observable $-Y_n$ therefore has $\Gamma=-i$, as do the other class-I rows. Every row has $a\ne0$ and $h\ne0$.
 
-\input{sections/table-pullbacks}
-
 For any real $\Theta$, direct summation yields
 \begin{equation}
  B_R=2^{-n}\Gamma\sum_z(-1)^{h\cdot z}
@@ -54,6 +52,8 @@ Indeed, $i^{|z|-|z\oplus a|}=i^{-|a|}(-1)^{a\cdot z}$. Also,
  \bra0R\ket0=0.
 \end{equation}
 Expanding Eq.~\eqref{core:defect-state} therefore proves Eq.~\eqref{core:signal}, including its normalization and its background term.
+
+\input{sections/table-pullbacks}
 
 \subsection{Boolean backgrounds and character pairing}
 \label{core:pairing}

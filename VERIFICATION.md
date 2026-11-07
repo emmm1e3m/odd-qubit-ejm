@@ -1,15 +1,21 @@
 # Verification record
 
-Release: November 6, 2026. This package includes the current bilingual manuscript, reproduction data, production Lean sources, and existing verification records.
+Release: November 7, 2026. This package includes the current bilingual manuscript, reproduction data, production Lean sources, and existing verification records.
 
 | Material | Included verification |
 |---|---|
-| Manuscripts | English 21 pages; Chinese 22 pages. Both compile successfully. All 156 cross-reference labels and 22 bibliography entries agree. No undefined references, missing characters, overfull boxes, or blocked floats. Relevant rendered pages were inspected. |
+| Manuscripts | English 21 pages; Chinese 23 pages. Both compile successfully. All 156 cross-reference labels and 23 bibliography entries agree. No undefined references, missing characters, overfull boxes, or blocked floats. Relevant rendered pages were inspected. |
 | Paper dependencies | LaTeX sections, four vector figures and their generators, references, and both reproduction entry points are included. |
 | Production Lean sources | 186 UnifiedEJM modules and their 29 foundation modules; all local imports resolve within the package. |
 | Existing November 4 source and proof checks | 108 added production modules and 77 finite-cut certificates checked; aggregate entry compiled. The final declaration audit reports 4944 declarations, including 4271 theorems, and zero nonstandard axiom dependencies. |
 | Existing independent final interface check | 27 final interfaces checked through the production entry. |
 | Exact all-n GME certificates | Rank-one length formulas, 7882 compressed representatives, 1405 closure states, 456 small-size complete-state cuts, and endpoint purity checks. The analytic arbitrary-n coverage is given in Appendix E. |
+
+## Verification archive 1.1.0
+
+The [downloadable archive](archives/multiqubit-ejm-verification-1.1.0.zip) packages the production Lean sources and the complete Appendix E1 exact-arithmetic reproduction directory together. It includes 186 UnifiedEJM modules, 29 foundation modules, pinned project configuration, and 14 E1 reproduction files. Packaging checks covered 648 local import edges, relative dependency paths, certificate completeness, and extraction of all 241 files.
+
+This archive extends the earlier Zenodo 1.0.0 package. The Lean sources and E1 scripts/certificates were already present in the November 6 GitHub version; this update adds the downloadable package and its instructions. The Lean build, axiom audit, and full E1 computation were not rerun for this release. The new cosine-endpoint comparison is proved analytically in Appendix E2.
 
 ## Evidence
 

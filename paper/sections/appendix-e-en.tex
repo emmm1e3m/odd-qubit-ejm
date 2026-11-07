@@ -97,7 +97,7 @@ Partial trace contracts the trace norm, while density matrices satisfy $|\Tr\rho
 
 For $n=5,\ldots,9$, direct evaluation of Eq.~\eqref{physics:finite-purity} covers all $456$ nonsingle-qubit cuts, distinct up to complementation. For each integer coefficient tuple $(a,b,c,d,e)/D$, the bound $[a+\lceil\sqrt{b^2+c^2}\rceil+\lceil\sqrt{d^2+e^2}\rceil]/D$ is at most $522297/1048576<1/2$. The supplied verification reconstructs every coefficient from the original gates.
 
-Together these cases exhaust all cuts and give $\max_Ap_A=p_{\{j\}}=(1+r_n^2)/2$, with equality precisely at the single-qubit-versus-rest cuts. Equation~\eqref{physics:gme-law} follows; $r_n\le2r_E(n)<1$ gives positivity, and the Pauli orbit transfers the result to every column.
+Together these cases exhaust all cuts and give $\max_Ap_A=p_{\{j\}}=(1+r_n^2)/2$, with equality precisely at the single-qubit-versus-rest cuts. Equation~\eqref{physics:gme-law} follows; $r_n\le2r_E(n)<1$ gives positivity, and the Pauli orbit transfers the result to every column. The finite enumerations and coefficient certificates are independently reproduced by the supplied exact-arithmetic scripts; the reductions to finite cases and the analytic bounds are proved above.
 
 \subsection{The zero-radius endpoint}
 \label{physics:app-invariants}
@@ -110,6 +110,17 @@ This section uses a two-qubit purity to characterize the zero-radius endpoint. E
 Both values exceed $1/4$, whereas $2$-uniformity requires every two-qubit reduction to equal $I/4$. Thus the endpoint is not $2$-uniform.
 
 To test stabilizer equivalence, expand $\rho_{ij}=\tfrac14\sum_{a,b=0}^3m_{ab}\sigma_a\otimes\sigma_b$, with $\sigma_0=I$. Then $4p_{ij}=\sum_{a,b}m_{ab}^2$. For a stabilizer pure state, every Pauli expectation belongs to $\{0,\pm1\}$~\cite{Gottesman1997}, so $4p_{ij}$ is an integer for every pair. Equation~\eqref{physics:endpoint-pair-purity} instead gives $4p_{12}=11/8$ or $5/4$. Reduced purities are local-unitary invariants~\cite{Grassl1998}: a product of single-qubit unitaries conjugates $\rho_{ij}$ by $U_i\otimes U_j$, preserving its spectrum. Qubit permutations only relabel the pairs. The noninteger value therefore excludes equivalence to any stabilizer pure state under these operations for every $n\ge5$. The Pauli orbit transfers both conclusions to every measurement column.
+
+For the cosine endpoint $\alpha=\pi/2$ at even $n\ge4$, the complete diagonal phase is $-i\,i^{|z|+q_A(z)}$, since $q_A(0)=1$. Because $q_A(z)=\prod_{j\in E_n}(1-z_j)$ does not depend on $z_1$ or $z_n$, the input to $C_n$ factorizes, up to a global phase, as $P\ket{+}\otimes\ket{\phi}\otimes P\ket{+}$, where $P\ket{+}$ is the $+1$ eigenstate of $Y$. Conjugation gives $C_n^\dagger(Y_1Z_2)C_n=Y_1$, $C_n^\dagger(Z_1Y_2)C_n=Y_1X_2$, and $C_n^\dagger(X_1X_2)C_n=X_2$. Hence $\langle Y_1Z_2\rangle=1$ and $\langle Z_1Y_2\rangle=\langle X_1X_2\rangle=a$, where $a=\langle X_2\rangle_\phi$. For fixed remaining coordinates, the phase $i^{z_2+q_A(z)}$ gives $\langle X_2\rangle=0$ if another coordinate of $E_n$ equals one, and $\langle X_2\rangle=1$ if all $n/2-2$ other coordinates vanish. Their uniform weights give $a=2^{2-n/2}$.
+
+The output is a $+1$ eigenstate of $Y_1Z_2$, so every Pauli operator anticommuting with it has zero expectation. Among the remaining terms, $\langle Y_1\rangle=\langle Z_2\rangle=0$ by the zero local radius, while $C_n^\dagger(X_1Y_2)C_n=Y_2Z_3\cdots Z_{n-1}X_n$ has zero expectation because the last input factor has $\langle X_n\rangle=0$. The identity $(Y_1Z_2)(X_1Y_2)=-Z_1X_2$ also gives $\langle Z_1X_2\rangle=0$. Thus
+\[
+ \begin{aligned}
+ \rho_{12}&=\tfrac14[I+Y_1Z_2+a(X_1X_2+Z_1Y_2)],\\
+ p_{12}&=\tfrac14(2+2a^2)=\tfrac12+2^{3-n}.
+ \end{aligned}
+\]
+Hence $C_{\rm GME}\le\sqrt{2(1-p_{12})}=\sqrt{1-2^{4-n}}<1$. Since $C_{\rm GME}$ is invariant under local unitaries and qubit permutations, this endpoint is inequivalent to the unified zero-radius endpoint for every even $n\ge6$. The Pauli orbit extends the comparison to all measurement columns.
 
 \subsection{The complete phase and Clifford levels}
 \label{physics:app-hierarchy}

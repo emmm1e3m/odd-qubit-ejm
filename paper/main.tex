@@ -1,7 +1,9 @@
-\documentclass[aps,pra,reprint,superscriptaddress,amsmath,amssymb,longbibliography,floatfix]{revtex4-2}
+\documentclass[aps,pra,reprint,superscriptaddress,amsmath,amssymb,longbibliography,floatfix,raggedbottom]{revtex4-2}
 \usepackage{amsthm}
 \usepackage{bm,graphicx,booktabs}
 \usepackage{capt-of}
+\usepackage[section]{placeins}
+\AddToHook{cmd/subsection/before}{\FloatBarrier}
 \usepackage{xcolor}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black,

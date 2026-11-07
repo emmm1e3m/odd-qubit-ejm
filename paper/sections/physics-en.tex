@@ -3,8 +3,6 @@
 
 The preceding construction controls the common one-qubit geometry. We now determine the multipartite entanglement of the measurement states and then examine the phase factorization and Clifford hierarchy of the measurement unitary.
 
-\input{sections/figure-clifford}
-
 \subsection{Genuine multipartite entanglement}
 \label{physics:entanglement}
 \label{physics:endpoints}
@@ -39,9 +37,11 @@ This minimum measures entanglement across the weakest bipartition. For every $n\
  C_{\rm GME}(\psi_k(t))=\sqrt{1-r_n(t)^2}>0.
  \label{physics:gme-law}
 \end{equation}
-Determining this value requires comparing all cut purities. Appendix~\ref{physics:app-purity} proves that every cut with at least two qubits on each side has purity strictly below $1/2$, whereas every one-qubit reduction has purity $(1+r_n(t)^2)/2\ge1/2$. The minimizing cuts are therefore precisely the $1|(n-1)$ cuts. Within this family, the common local radius thus determines the genuine multipartite concurrence.
+Determining this value requires comparing all cut purities. Appendix~\ref{physics:app-purity} proves that every cut with at least two qubits on each side has purity strictly below $1/2$, whereas every one-qubit reduction has purity $(1+r_n(t)^2)/2\ge1/2$. The minimizing cuts are therefore precisely the $1|(n-1)$ cuts. Within this family, the common local radius thus determines the genuine multipartite concurrence. In particular, the enhanced endpoint, whose radius equals $r_E(n-1)$, is genuinely multipartite entangled and therefore not a product extension of a smaller EJM.
 
 At $t=\pi/2$, every column has $C_{\rm GME}=1$ and is $1$-uniform~\cite{Scott2004}: all one-qubit reductions are $I/2$. Equation~\eqref{physics:endpoint-pair-purity} gives $p_{12}=11/32$ for $n=5$ and $p_{12}=5/16$ for every $n\ge6$. Both exceed $1/4$, so the endpoint is not $2$-uniform. Moreover, every two-qubit reduction of a stabilizer pure state has integer $4p_{ij}$, whereas these values give $11/8$ and $5/4$. Local unitaries preserve reduced purities and permutations only relabel the pairs. Thus, for every $n\ge5$, even allowing qubit permutations, no column at this endpoint is locally unitarily equivalent to a stabilizer pure state; see Appendix~\ref{physics:app-invariants} for the proof.
+
+The zero-radius endpoints also distinguish the unified family from the even-qubit cosine family~\cite{PauwelsGisin2026}. For the cosine endpoint $\alpha=\pi/2$ at even $n\ge4$, $p_{12}=1/2+2^{3-n}$ and hence $C_{\rm GME}\le\sqrt{1-2^{4-n}}<1$, recovering the two-Bell-pair factorization at $n=4$. Thus, for every even $n\ge6$, the two endpoints have identical one-qubit reductions but are inequivalent under local unitaries and qubit permutations; see Appendix~\ref{physics:app-invariants}.
 
 \subsection{Phase factorization and Clifford hierarchy}
 \label{physics:implementation}
@@ -51,7 +51,7 @@ The complete phase separates into the four-feature kernel and a correction at th
  D_{n,t}=-iP^{\otimes n}e^{itq_n}e^{i(\pi/2-t)Z_0},
  \label{physics:factorization}
 \end{equation}
-where $P=\operatorname{diag}(1,i)$, $Z_0=\ket{0^n}\bra{0^n}$, and $q_n$ denotes the diagonal operator of the Boolean kernel. Figure~\ref{fig:clifford}(a) gives the five-qubit seed preparation sequence, while panel (b) separates the complete diagonal phase for any $n\ge5$ into local $P$ gates, the four-feature kernel phase, and the zero-string conditional phase. The kernel phase is implemented by computing four parity checks into four clean auxiliaries, applying $e^{itF}$, and uncomputing the checks; computation and uncomputation use $O(n)$ CNOTs and restore the auxiliaries to zero. The zero-string conditional phase has angle $\pi/2-t$: at the reference point $t=0$ and the enhanced endpoint $t=-\pi/2$, it gives the complete measurement unitary exact Clifford-hierarchy levels $n+1$ and $n$, respectively. At the zero-radius endpoint $t=\pi/2$, this conditional phase disappears and the level drops to four, independently of $n$.
+where $P=\operatorname{diag}(1,i)$, $Z_0=\ket{0^n}\bra{0^n}$, and $q_n$ denotes the diagonal operator of the Boolean kernel. Figure~\ref{fig:clifford}(a) gives the five-qubit seed preparation sequence, while panel (b) separates the complete diagonal phase for any $n\ge5$ into local $P$ gates, the four-feature kernel phase, and the zero-string conditional phase. The kernel phase is implemented by computing four parity checks into four clean auxiliaries, applying $e^{itF}$, and uncomputing the checks; computation and uncomputation use $O(n)$ CNOTs and restore the auxiliaries to zero. The additional gate $R_0(\theta)=e^{i\theta Z_0}$ is an $n$-qubit controlled phase, implementable with one clean ancilla and $O(n)$ elementary gates~\cite{Barenco1995}. The zero-string conditional phase has angle $\pi/2-t$: at the reference point $t=0$ and the enhanced endpoint $t=-\pi/2$, it gives the complete measurement unitary exact Clifford-hierarchy levels $n+1$ and $n$, respectively. At the zero-radius endpoint $t=\pi/2$, this conditional phase disappears and the level drops to four, independently of $n$.
 
 For a diagonal gate $i^{f(z)}$, the Clifford-hierarchy criterion assigns a nonconstant mod-four monomial on $S$ weighted degree $|S|+1$ for an odd coefficient and $|S|$ for coefficient $2$; the largest weighted degree gives the exact level~\cite{GottesmanChuang1999,Cui2017}. At $t=0$, $\delta_{z,0}=\prod_j(1-z_j)$ contributes a degree-$n$ monomial with odd coefficient, giving level $n+1$. At $t=-\pi/2$, its coefficient is doubled, giving level $n$. At $t=\pi/2$, the zero-string correction vanishes. The mod-four polynomial of $F$ has degree three with an odd cubic coefficient, so its exact level is four. The four independent parity coordinates extend to an invertible binary change of variables, implemented by Clifford gates, which preserves this level when $F$ is pulled back to $q_n$. For $n\ge5$, the level-four kernel cannot cancel the higher-level zero-string term at the enhanced endpoint. The local factor $P^{\otimes n}$ and the Clifford factors $C_n,H^{\otimes n}$ also preserve these levels. Consequently the complete measurement unitary satisfies
 \begin{equation}
@@ -62,4 +62,6 @@ For a diagonal gate $i^{f(z)}$, the Clifford-hierarchy criterion assigns a nonco
  \end{aligned}
  \label{physics:levels}
 \end{equation}
+\input{sections/figure-clifford}
+
 Appendix~\ref{physics:app-hierarchy} gives the full mod-four polynomial and derivation. In the localization framework of Refs.~\cite{PauwelsLocalization2025,PauwelsGisin2026}, these levels give upper bounds on the required resources.
