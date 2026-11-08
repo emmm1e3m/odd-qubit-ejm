@@ -1,6 +1,6 @@
 # Verification record
 
-Formalization update: November 8, 2026. The manuscript text and PDFs retain the November 7 author-reviewed version.
+Formalization update: November 8, 2026. A subsequent targeted bilingual manuscript revision clarified prior-work attribution, model scope, and the interference explanation, with the final author-requested wording edits included. Both versions compiled successfully (English 22 pages, Chinese 23 pages); all 156 cross-reference labels and 23 citation numbers were preserved, and the rendered pages were checked. The mathematical proofs and Lean sources were unchanged.
 
 | Material | Verification |
 |---|---|
@@ -25,7 +25,7 @@ The [1.2.0 archive](archives/multiqubit-ejm-verification-1.2.0.zip) packages the
 
 ## Earlier verification
 
-The November 7 manuscript checks remain applicable: English 21 pages, Chinese 23 pages; 156 matching cross-reference labels and 23 bibliography entries; successful bilingual compilation and rendered-page checks. No manuscript recompilation was needed for this source-only formalization update.
+The November 7 manuscript checks recorded: English 21 pages, Chinese 23 pages; 156 matching cross-reference labels and 23 bibliography entries; successful bilingual compilation and rendered-page checks. No manuscript recompilation was needed for this source-only formalization update.
 
 The November 4 proof checks covered 186 UnifiedEJM modules, 77 finite-cut certificates, and 4944 declarations. See the [earlier source check](verification/163/delivery_check.json), [compilation results](verification/163/compile_results.json), [axiom audit](verification/163/all_axioms.txt), and [independent interface check](verification/164/final_delivery_check.txt). The November 1 audit files in `lean-unified/` retain their historical counts.
 

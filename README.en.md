@@ -5,9 +5,9 @@
 **Tingyu Zhang and Yan Cen (corresponding author)**<br>
 Department of Physics, Fudan University, Shanghai, China<br>
 Email: [23300190021@m.fudan.edu.cn](mailto:23300190021@m.fudan.edu.cn) · [cenyan@fudan.edu.cn](mailto:cenyan@fudan.edu.cn)<br>
-**Version: November 7, 2026; bilingual author-review manuscript in PRA format**
+**Version: November 8, 2026; bilingual author-review manuscript in PRA format**
 
-- Paper PDFs: [English, 21 pages](paper/main.pdf) · [Chinese, 23 pages](paper/main-zh.pdf)
+- Paper PDFs: [English, 22 pages](paper/main.pdf) · [Chinese, 23 pages](paper/main-zh.pdf)
 - LaTeX sources: [English](paper/main.tex) · [Chinese](paper/main-zh.tex)
 - Reproduction: [exact computations](paper/reproduce/README.md) · [Lean project](lean-unified/README.md) · [formal coverage](lean-unified/COVERAGE.md)
 - [Complete verification archive 1.2.0](archives/multiqubit-ejm-verification-1.2.0.zip) · [Version notes](archives/README.md)
@@ -32,7 +32,7 @@ These optima concern the specified phase models. An earlier four-qubit parameter
 
 ## Formalization and reproduction
 
-The November 8, 2026 update completes the Lean proofs of exact GME and minimizing cuts for every n≥5, every real parameter, and every measurement column, the endpoint inequivalence results, and the extension to arbitrary at-most-two-valued real generators. The final entry and all local declaration axioms were checked; see the [verification record](VERIFICATION.md). The manuscript text and PDFs are unchanged.
+The November 8, 2026 update completes the Lean proofs of exact GME and minimizing cuts for every n≥5, every real parameter, and every measurement column, the endpoint inequivalence results, and the extension to arbitrary at-most-two-valued real generators. The final entry and all local declaration axioms were checked; see the [verification record](VERIFICATION.md). That formalization update left the manuscript text and PDFs unchanged; the subsequent bilingual text revision is described in the [author-review notes](paper/README.md).
 
 The [Lean 4.35.0 / mathlib v4.35.0 project](lean-unified/README.md) formalizes these constructions, model optima, low-dimensional results, and inequivalence from the actual circuit columns and reduced matrices. Coverage also includes the actual reduced spectrum $\lambda_\pm=(1\pm r)/2$, the von Neumann entropy identity $S=h_2((1+r)/2)$, and strict entropy monotonicity and endpoints along the unified path. See [COVERAGE.md](lean-unified/COVERAGE.md) for precise assumptions and declaration names. The adjacent `lean/` directory supplies the required common foundations.
 

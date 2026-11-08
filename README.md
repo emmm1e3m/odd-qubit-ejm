@@ -5,9 +5,9 @@
 **Tingyu Zhang、Yan Cen（通讯作者）**<br>
 Department of Physics, Fudan University, Shanghai, China<br>
 邮箱：[23300190021@m.fudan.edu.cn](mailto:23300190021@m.fudan.edu.cn) · [cenyan@fudan.edu.cn](mailto:cenyan@fudan.edu.cn)<br>
-**版本：2026-11-07，PRA 格式双语校阅稿**
+**版本：2026-11-08，PRA 格式双语校阅稿**
 
-- 论文 PDF：[英文，21 页](paper/main.pdf) · [中文，23 页](paper/main-zh.pdf)
+- 论文 PDF：[英文，22 页](paper/main.pdf) · [中文，23 页](paper/main-zh.pdf)
 - LaTeX 源码：[英文](paper/main.tex) · [中文](paper/main-zh.tex)
 - 复现：[精确计算](paper/reproduce/README.md) · [Lean 工程](lean-unified/README.md) · [论文与形式化对应](lean-unified/COVERAGE.md)
 - [完整复现归档 1.2.0](archives/multiqubit-ejm-verification-1.2.0.zip) · [版本说明](archives/README.md)
@@ -32,7 +32,7 @@ Department of Physics, Fudan University, Shanghai, China<br>
 
 ## 形式化与复现
 
-2026-11-08已补齐任意n≥5、全实参数、全部测量列的精确GME和极小割证明，以及两类零半径端点的不等价性与任意至多两值实生成元的扩展。最终入口和全部本地声明公理检查通过；新证据见[验证记录](VERIFICATION.md)。论文正文与PDF未改。
+2026-11-08已补齐任意n≥5、全实参数、全部测量列的精确GME和极小割证明，以及两类零半径端点的不等价性与任意至多两值实生成元的扩展。最终入口和全部本地声明公理检查通过；新证据见[验证记录](VERIFICATION.md)。该次形式化更新未修改论文正文与PDF；随后完成的双语文字修订见[校阅说明](paper/README.md)。
 
 [Lean 4.35.0 / mathlib v4.35.0 工程](lean-unified/README.md) 从实际电路的全部测量列和真实约化矩阵出发，形式化上述构造、模型最优界、低维结论与不等价性。覆盖还包括实际约化谱 $\lambda_\pm=(1\pm r)/2$、von Neumann 熵等于二元熵 $h_2((1+r)/2)$，以及统一路径上熵的严格单调性和端点。完整条件与声明入口见 [COVERAGE.md](lean-unified/COVERAGE.md)。相邻的 `lean/` 目录保留所需的通用基础依赖。
 
