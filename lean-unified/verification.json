@@ -72,5 +72,42 @@
     "unified_modules": 186,
     "foundation_modules": 29,
     "all_n_exact_certificates": "../paper/reproduce/all_n_gme/verification_results.json"
+  },
+  "all_n_formalization_2026_11_08": {
+    "date": "2026-11-08",
+    "archive_version": "1.2.0",
+    "lean_version": "4.35.0",
+    "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "unified_modules": 735,
+    "foundation_modules": 29,
+    "newly_checked_sources": 549,
+    "production_entry_compile_exit": 0,
+    "final_theorem_audit_exit": 0,
+    "all_axioms_exit": 0,
+    "all_declarations_audited": 105633,
+    "theorem_declarations_audited": 89376,
+    "nonstandard_axiom_dependencies": 0,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "scope": [
+      "All n >= 5, all real parameters and actual measurement columns: exact GME, positivity, and precisely the single-qubit minimizing cuts",
+      "Unified zero-radius endpoint: actual pair purity and exclusion of every stabilizer LU/permutation orbit",
+      "Even-qubit cosine endpoint: exact actual pair purity and strict GME bound; inequivalence to the unified zero-radius endpoint for every even n >= 6",
+      "Arbitrary at-most-two-valued real generators, including constants: actual projector normalization, radius-set equality, and attained optimum"
+    ],
+    "all_n_proof_route": "Kernel-checked finite sizes n=5,...,8 plus a stronger perturbation tail valid for n>=9, arbitrary-length background induction, and exact prefix-cut coefficient proofs.",
+    "python_certificates": "The independent Appendix E1 scripts and previous exact results are preserved. The full Python computation was not rerun, and its 456 n=5,...,9 cut checks were not all individually ported to Lean.",
+    "verification_method": "New production sources were compiled incrementally with the pinned toolchain; unchanged previously verified foundations were retained. Final source/object correspondence, the aggregate entry, final theorem types, and all imported local declaration axioms were checked. No Lake traces were fabricated.",
+    "resources": {
+      "maximum_lean_processes": 3,
+      "threads_per_process": 2,
+      "per_process_memory_limit": null,
+      "minimum_system_headroom_GiB": 6
+    },
+    "manuscript_changed": false,
+    "zenodo_updated": false
   }
 }

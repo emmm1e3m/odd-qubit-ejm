@@ -1,0 +1,22 @@
+import UnifiedEJM.PhysicsAllN
+import UnifiedEJM.RealGenerators
+import UnifiedEJM.EndpointAllN
+
+-- 核对最终声明的完整前提及实际物理对象。
+#check UnifiedEJM.AllNEntanglement.larger_cut_lt_half
+#check UnifiedEJM.AllNEntanglement.measurement_gme
+#check UnifiedEJM.AllNEntanglement.measurement_minimizers
+#check UnifiedEJM.AllNEntanglement.measurement_entangled
+#check UnifiedEJM.AllNEntanglement.zero_endpoints_not_LU
+
+-- 递归检查最终结论实际使用的全部公理。
+#print axioms UnifiedEJM.BooleanLines.actual_two_valued_real_model_exact_maximum
+#print axioms UnifiedEJM.EndpointAllN.measurement_not_LU_stabilizer
+#print axioms UnifiedEJM.CosineEndpoint.measurement_purity_exact
+#print axioms UnifiedEJM.CosineEndpoint.measurement_gme_exact_bound
+#print axioms UnifiedEJM.PurityTail.actual_cutPurity_lt_half_nine
+#print axioms UnifiedEJM.AllNEntanglement.larger_cut_lt_half
+#print axioms UnifiedEJM.AllNEntanglement.measurement_gme
+#print axioms UnifiedEJM.AllNEntanglement.measurement_minimizers
+#print axioms UnifiedEJM.AllNEntanglement.measurement_entangled
+#print axioms UnifiedEJM.AllNEntanglement.zero_endpoints_not_LU

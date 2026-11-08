@@ -37,7 +37,7 @@ python figures/make_clifford_figure.py
 
 ## 验证与复现
 
-[完整复现归档1.1.0](../archives/multiqubit-ejm-verification-1.1.0.zip)将当前Lean工程、依赖配置与附录E1精确脚本和证书放在一个可下载包中；版本区别见[归档说明](../archives/README.md)。
+[完整复现归档1.2.0](../archives/multiqubit-ejm-verification-1.2.0.zip)将当前Lean工程、依赖配置与附录E1精确脚本和证书放在一个可下载包中；版本区别见[归档说明](../archives/README.md)。
 
 双语编译、交叉引用与页面排版检查均通过，图表位于所属章/节的相关论述附近。现有证明与计算记录见[验证说明](../VERIFICATION.md)。论文保留主要数学结果已在Lean中完成形式化证明的声明。
 

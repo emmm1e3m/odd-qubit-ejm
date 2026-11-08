@@ -1,0 +1,3832 @@
+{
+  "unified_modules": 735,
+  "foundation_modules": 29,
+  "newly_checked_sources": 549,
+  "sources": [
+    {
+      "module": "OddEJM.Bloch",
+      "source": "output/lean/OddEJM/Bloch.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.CNOT",
+      "source": "output/lean/OddEJM/CNOT.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Chain",
+      "source": "output/lean/OddEJM/Chain.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Character",
+      "source": "output/lean/OddEJM/Character.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Completeness",
+      "source": "output/lean/OddEJM/Completeness.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Compress",
+      "source": "output/lean/OddEJM/Compress.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Core",
+      "source": "output/lean/OddEJM/Core.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Counting",
+      "source": "output/lean/OddEJM/Counting.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Defect",
+      "source": "output/lean/OddEJM/Defect.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Density",
+      "source": "output/lean/OddEJM/Density.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.DensityMultiplicity",
+      "source": "output/lean/OddEJM/DensityMultiplicity.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.FamilyGeometry",
+      "source": "output/lean/OddEJM/FamilyGeometry.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Finite",
+      "source": "output/lean/OddEJM/Finite.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.FourWalsh",
+      "source": "output/lean/OddEJM/FourWalsh.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Geometry",
+      "source": "output/lean/OddEJM/Geometry.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Labels",
+      "source": "output/lean/OddEJM/Labels.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.LocalExpectation",
+      "source": "output/lean/OddEJM/LocalExpectation.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Masks",
+      "source": "output/lean/OddEJM/Masks.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.MeasurementBridge",
+      "source": "output/lean/OddEJM/MeasurementBridge.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.OriginalPhase",
+      "source": "output/lean/OddEJM/OriginalPhase.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Orthonormal",
+      "source": "output/lean/OddEJM/Orthonormal.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Pauli",
+      "source": "output/lean/OddEJM/Pauli.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Phase",
+      "source": "output/lean/OddEJM/Phase.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Quantum",
+      "source": "output/lean/OddEJM/Quantum.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Spectrum",
+      "source": "output/lean/OddEJM/Spectrum.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Split",
+      "source": "output/lean/OddEJM/Split.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Tensor",
+      "source": "output/lean/OddEJM/Tensor.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.Walsh",
+      "source": "output/lean/OddEJM/Walsh.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "OddEJM.WeightPhase",
+      "source": "output/lean/OddEJM/WeightPhase.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM",
+      "source": "output/lean-unified/UnifiedEJM.lean",
+      "verification": "output/lean-unified/UnifiedEJM.check.json"
+    },
+    {
+      "module": "UnifiedEJM.Analytic",
+      "source": "output/lean-unified/UnifiedEJM/Analytic.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.Background",
+      "source": "output/lean-unified/UnifiedEJM/Background.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.BasepointInvariants",
+      "source": "output/lean-unified/UnifiedEJM/BasepointInvariants.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.BipartiteInvariant",
+      "source": "output/lean-unified/UnifiedEJM/BipartiteInvariant.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.BooleanDelta",
+      "source": "output/lean-unified/UnifiedEJM/BooleanDelta.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.BooleanLines",
+      "source": "output/lean-unified/UnifiedEJM/BooleanLines.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.BooleanMaximum",
+      "source": "output/lean-unified/UnifiedEJM/BooleanMaximum.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.BooleanMeasurement",
+      "source": "output/lean-unified/UnifiedEJM/BooleanMeasurement.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.BooleanNormal",
+      "source": "output/lean-unified/UnifiedEJM/BooleanNormal.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.BooleanOriginal",
+      "source": "output/lean-unified/UnifiedEJM/BooleanOriginal.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.BoundaryAmplitude",
+      "source": "output/lean-unified/UnifiedEJM/BoundaryAmplitude.lean",
+      "verification": "work/209/UnifiedEJM/BoundaryAmplitude.check.json"
+    },
+    {
+      "module": "UnifiedEJM.BoundaryFeatures",
+      "source": "output/lean-unified/UnifiedEJM/BoundaryFeatures.lean",
+      "verification": "work/209/UnifiedEJM/BoundaryFeatures.check.json"
+    },
+    {
+      "module": "UnifiedEJM.BoundaryKernel",
+      "source": "output/lean-unified/UnifiedEJM/BoundaryKernel.lean",
+      "verification": "work/209/UnifiedEJM/BoundaryKernel.check.json"
+    },
+    {
+      "module": "UnifiedEJM.BoundaryPhase",
+      "source": "output/lean-unified/UnifiedEJM/BoundaryPhase.lean",
+      "verification": "work/209/UnifiedEJM/BoundaryPhase.check.json"
+    },
+    {
+      "module": "UnifiedEJM.BoundaryPrefix",
+      "source": "output/lean-unified/UnifiedEJM/BoundaryPrefix.lean",
+      "verification": "work/209/UnifiedEJM/BoundaryPrefix.check.json"
+    },
+    {
+      "module": "UnifiedEJM.BoundaryPurity",
+      "source": "output/lean-unified/UnifiedEJM/BoundaryPurity.lean",
+      "verification": "work/209/UnifiedEJM/BoundaryPurity.check.json"
+    },
+    {
+      "module": "UnifiedEJM.CliffordDepth",
+      "source": "output/lean-unified/UnifiedEJM/CliffordDepth.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.CliffordFoundation",
+      "source": "output/lean-unified/UnifiedEJM/CliffordFoundation.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.CliffordGroup",
+      "source": "output/lean-unified/UnifiedEJM/CliffordGroup.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.Continuity",
+      "source": "output/lean-unified/UnifiedEJM/Continuity.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.Core",
+      "source": "output/lean-unified/UnifiedEJM/Core.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.CosineCount",
+      "source": "output/lean-unified/UnifiedEJM/CosineCount.lean",
+      "verification": "work/209/UnifiedEJM/CosineCount.check.json"
+    },
+    {
+      "module": "UnifiedEJM.CosineEndpoint",
+      "source": "output/lean-unified/UnifiedEJM/CosineEndpoint.lean",
+      "verification": "work/209/UnifiedEJM/CosineEndpoint.check.json"
+    },
+    {
+      "module": "UnifiedEJM.CosineFinal",
+      "source": "output/lean-unified/UnifiedEJM/CosineFinal.lean",
+      "verification": "work/209/UnifiedEJM/CosineFinal.check.json"
+    },
+    {
+      "module": "UnifiedEJM.CosinePair",
+      "source": "output/lean-unified/UnifiedEJM/CosinePair.lean",
+      "verification": "work/209/UnifiedEJM/CosinePair.check.json"
+    },
+    {
+      "module": "UnifiedEJM.CosineReduced",
+      "source": "output/lean-unified/UnifiedEJM/CosineReduced.lean",
+      "verification": "work/209/UnifiedEJM/CosineReduced.check.json"
+    },
+    {
+      "module": "UnifiedEJM.CurvedFamily",
+      "source": "output/lean-unified/UnifiedEJM/CurvedFamily.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.CurvedMain",
+      "source": "output/lean-unified/UnifiedEJM/CurvedMain.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.CurvedPhysical",
+      "source": "output/lean-unified/UnifiedEJM/CurvedPhysical.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.CurvedSlope",
+      "source": "output/lean-unified/UnifiedEJM/CurvedSlope.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.CutPauliParseval",
+      "source": "output/lean-unified/UnifiedEJM/CutPauliParseval.lean",
+      "verification": "work/209/UnifiedEJM/CutPauliParseval.check.json"
+    },
+    {
+      "module": "UnifiedEJM.DiagonalDifference",
+      "source": "output/lean-unified/UnifiedEJM/DiagonalDifference.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.DiagonalExact",
+      "source": "output/lean-unified/UnifiedEJM/DiagonalExact.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.EndpointAllN",
+      "source": "output/lean-unified/UnifiedEJM/EndpointAllN.lean",
+      "verification": "output/lean-unified/UnifiedEJM/EndpointAllN.check.json"
+    },
+    {
+      "module": "UnifiedEJM.EndpointDepth",
+      "source": "output/lean-unified/UnifiedEJM/EndpointDepth.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.EndpointHierarchy",
+      "source": "output/lean-unified/UnifiedEJM/EndpointHierarchy.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.Entropy",
+      "source": "output/lean-unified/UnifiedEJM/Entropy.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.EntropyFamily",
+      "source": "output/lean-unified/UnifiedEJM/EntropyFamily.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.EvenAxes",
+      "source": "output/lean-unified/UnifiedEJM/EvenAxes.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.EvenCertificate",
+      "source": "output/lean-unified/UnifiedEJM/EvenCertificate.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.EvenGeometry",
+      "source": "output/lean-unified/UnifiedEJM/EvenGeometry.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.EvenLow",
+      "source": "output/lean-unified/UnifiedEJM/EvenLow.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.EvenRaw",
+      "source": "output/lean-unified/UnifiedEJM/EvenRaw.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.EvenSeed",
+      "source": "output/lean-unified/UnifiedEJM/EvenSeed.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.EvenWalsh",
+      "source": "output/lean-unified/UnifiedEJM/EvenWalsh.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.Features",
+      "source": "output/lean-unified/UnifiedEJM/Features.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.FiniteInvariants",
+      "source": "output/lean-unified/UnifiedEJM/FiniteInvariants.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.FourQubit",
+      "source": "output/lean-unified/UnifiedEJM/FourQubit.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.FourQubitMarginal",
+      "source": "output/lean-unified/UnifiedEJM/FourQubitMarginal.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.FourQubitPauli",
+      "source": "output/lean-unified/UnifiedEJM/FourQubitPauli.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.GMEInvariance",
+      "source": "output/lean-unified/UnifiedEJM/GMEInvariance.lean",
+      "verification": "output/lean-unified/UnifiedEJM/GMEInvariance.check.json"
+    },
+    {
+      "module": "UnifiedEJM.GraphBackground",
+      "source": "output/lean-unified/UnifiedEJM/GraphBackground.lean",
+      "verification": "work/209/UnifiedEJM/GraphBackground.check.json"
+    },
+    {
+      "module": "UnifiedEJM.GraphCoefficients",
+      "source": "output/lean-unified/UnifiedEJM/GraphCoefficients.lean",
+      "verification": "work/209/UnifiedEJM/GraphCoefficients.check.json"
+    },
+    {
+      "module": "UnifiedEJM.GraphCorrelation",
+      "source": "output/lean-unified/UnifiedEJM/GraphCorrelation.lean",
+      "verification": "work/209/UnifiedEJM/GraphCorrelation.check.json"
+    },
+    {
+      "module": "UnifiedEJM.GraphCutWord",
+      "source": "output/lean-unified/UnifiedEJM/GraphCutWord.lean",
+      "verification": "work/209/UnifiedEJM/GraphCutWord.check.json"
+    },
+    {
+      "module": "UnifiedEJM.GraphLocalConstraints",
+      "source": "output/lean-unified/UnifiedEJM/GraphLocalConstraints.lean",
+      "verification": "work/209/UnifiedEJM/GraphLocalConstraints.check.json"
+    },
+    {
+      "module": "UnifiedEJM.GraphNormalization",
+      "source": "output/lean-unified/UnifiedEJM/GraphNormalization.lean",
+      "verification": "work/209/UnifiedEJM/GraphNormalization.check.json"
+    },
+    {
+      "module": "UnifiedEJM.GraphPauli",
+      "source": "output/lean-unified/UnifiedEJM/GraphPauli.lean",
+      "verification": "work/209/UnifiedEJM/GraphPauli.check.json"
+    },
+    {
+      "module": "UnifiedEJM.GraphPurity",
+      "source": "output/lean-unified/UnifiedEJM/GraphPurity.lean",
+      "verification": "work/209/UnifiedEJM/GraphPurity.check.json"
+    },
+    {
+      "module": "UnifiedEJM.GraphScoreBounds",
+      "source": "output/lean-unified/UnifiedEJM/GraphScoreBounds.lean",
+      "verification": "work/209/UnifiedEJM/GraphScoreBounds.check.json"
+    },
+    {
+      "module": "UnifiedEJM.GraphTailBridge",
+      "source": "output/lean-unified/UnifiedEJM/GraphTailBridge.lean",
+      "verification": "work/209/UnifiedEJM/GraphTailBridge.check.json"
+    },
+    {
+      "module": "UnifiedEJM.GraphTransferBridge",
+      "source": "output/lean-unified/UnifiedEJM/GraphTransferBridge.lean",
+      "verification": "work/209/UnifiedEJM/GraphTransferBridge.check.json"
+    },
+    {
+      "module": "UnifiedEJM.GraphTransferWeight",
+      "source": "output/lean-unified/UnifiedEJM/GraphTransferWeight.lean",
+      "verification": "work/209/UnifiedEJM/GraphTransferWeight.check.json"
+    },
+    {
+      "module": "UnifiedEJM.GraphWords",
+      "source": "output/lean-unified/UnifiedEJM/GraphWords.lean",
+      "verification": "work/209/UnifiedEJM/GraphWords.check.json"
+    },
+    {
+      "module": "UnifiedEJM.Inequivalence",
+      "source": "output/lean-unified/UnifiedEJM/Inequivalence.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.JointWalsh",
+      "source": "output/lean-unified/UnifiedEJM/JointWalsh.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.Kernel",
+      "source": "output/lean-unified/UnifiedEJM/Kernel.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.LinePhase",
+      "source": "output/lean-unified/UnifiedEJM/LinePhase.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.LocalExpectation",
+      "source": "output/lean-unified/UnifiedEJM/LocalExpectation.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.LongCase00",
+      "source": "output/lean-unified/UnifiedEJM/LongCase00.lean",
+      "verification": "work/209/UnifiedEJM/LongCase00.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongCase01",
+      "source": "output/lean-unified/UnifiedEJM/LongCase01.lean",
+      "verification": "work/209/UnifiedEJM/LongCase01.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongCase02",
+      "source": "output/lean-unified/UnifiedEJM/LongCase02.lean",
+      "verification": "work/209/UnifiedEJM/LongCase02.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongCase10",
+      "source": "output/lean-unified/UnifiedEJM/LongCase10.lean",
+      "verification": "work/209/UnifiedEJM/LongCase10.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongCase11",
+      "source": "output/lean-unified/UnifiedEJM/LongCase11.lean",
+      "verification": "work/209/UnifiedEJM/LongCase11.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongCase12",
+      "source": "output/lean-unified/UnifiedEJM/LongCase12.lean",
+      "verification": "work/209/UnifiedEJM/LongCase12.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongCase20",
+      "source": "output/lean-unified/UnifiedEJM/LongCase20.lean",
+      "verification": "work/209/UnifiedEJM/LongCase20.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongCase21",
+      "source": "output/lean-unified/UnifiedEJM/LongCase21.lean",
+      "verification": "work/209/UnifiedEJM/LongCase21.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongCase22",
+      "source": "output/lean-unified/UnifiedEJM/LongCase22.lean",
+      "verification": "work/209/UnifiedEJM/LongCase22.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext000",
+      "source": "output/lean-unified/UnifiedEJM/LongContext000.lean",
+      "verification": "work/209/UnifiedEJM/LongContext000.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext001",
+      "source": "output/lean-unified/UnifiedEJM/LongContext001.lean",
+      "verification": "work/209/UnifiedEJM/LongContext001.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext002",
+      "source": "output/lean-unified/UnifiedEJM/LongContext002.lean",
+      "verification": "work/209/UnifiedEJM/LongContext002.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext003",
+      "source": "output/lean-unified/UnifiedEJM/LongContext003.lean",
+      "verification": "work/209/UnifiedEJM/LongContext003.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext010",
+      "source": "output/lean-unified/UnifiedEJM/LongContext010.lean",
+      "verification": "work/209/UnifiedEJM/LongContext010.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext011",
+      "source": "output/lean-unified/UnifiedEJM/LongContext011.lean",
+      "verification": "work/209/UnifiedEJM/LongContext011.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext012",
+      "source": "output/lean-unified/UnifiedEJM/LongContext012.lean",
+      "verification": "work/209/UnifiedEJM/LongContext012.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext013",
+      "source": "output/lean-unified/UnifiedEJM/LongContext013.lean",
+      "verification": "work/209/UnifiedEJM/LongContext013.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext020",
+      "source": "output/lean-unified/UnifiedEJM/LongContext020.lean",
+      "verification": "work/209/UnifiedEJM/LongContext020.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext021",
+      "source": "output/lean-unified/UnifiedEJM/LongContext021.lean",
+      "verification": "work/209/UnifiedEJM/LongContext021.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext022",
+      "source": "output/lean-unified/UnifiedEJM/LongContext022.lean",
+      "verification": "work/209/UnifiedEJM/LongContext022.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext023",
+      "source": "output/lean-unified/UnifiedEJM/LongContext023.lean",
+      "verification": "work/209/UnifiedEJM/LongContext023.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext100",
+      "source": "output/lean-unified/UnifiedEJM/LongContext100.lean",
+      "verification": "work/209/UnifiedEJM/LongContext100.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext101",
+      "source": "output/lean-unified/UnifiedEJM/LongContext101.lean",
+      "verification": "work/209/UnifiedEJM/LongContext101.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext102",
+      "source": "output/lean-unified/UnifiedEJM/LongContext102.lean",
+      "verification": "work/209/UnifiedEJM/LongContext102.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext103",
+      "source": "output/lean-unified/UnifiedEJM/LongContext103.lean",
+      "verification": "work/209/UnifiedEJM/LongContext103.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext110",
+      "source": "output/lean-unified/UnifiedEJM/LongContext110.lean",
+      "verification": "work/209/UnifiedEJM/LongContext110.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext111",
+      "source": "output/lean-unified/UnifiedEJM/LongContext111.lean",
+      "verification": "work/209/UnifiedEJM/LongContext111.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext112",
+      "source": "output/lean-unified/UnifiedEJM/LongContext112.lean",
+      "verification": "work/209/UnifiedEJM/LongContext112.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext113",
+      "source": "output/lean-unified/UnifiedEJM/LongContext113.lean",
+      "verification": "work/209/UnifiedEJM/LongContext113.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext120",
+      "source": "output/lean-unified/UnifiedEJM/LongContext120.lean",
+      "verification": "work/209/UnifiedEJM/LongContext120.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext121",
+      "source": "output/lean-unified/UnifiedEJM/LongContext121.lean",
+      "verification": "work/209/UnifiedEJM/LongContext121.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext122",
+      "source": "output/lean-unified/UnifiedEJM/LongContext122.lean",
+      "verification": "work/209/UnifiedEJM/LongContext122.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext123",
+      "source": "output/lean-unified/UnifiedEJM/LongContext123.lean",
+      "verification": "work/209/UnifiedEJM/LongContext123.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext200",
+      "source": "output/lean-unified/UnifiedEJM/LongContext200.lean",
+      "verification": "work/209/UnifiedEJM/LongContext200.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext201",
+      "source": "output/lean-unified/UnifiedEJM/LongContext201.lean",
+      "verification": "work/209/UnifiedEJM/LongContext201.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext202",
+      "source": "output/lean-unified/UnifiedEJM/LongContext202.lean",
+      "verification": "work/209/UnifiedEJM/LongContext202.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext203",
+      "source": "output/lean-unified/UnifiedEJM/LongContext203.lean",
+      "verification": "work/209/UnifiedEJM/LongContext203.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext210",
+      "source": "output/lean-unified/UnifiedEJM/LongContext210.lean",
+      "verification": "work/209/UnifiedEJM/LongContext210.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext211",
+      "source": "output/lean-unified/UnifiedEJM/LongContext211.lean",
+      "verification": "work/209/UnifiedEJM/LongContext211.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext212",
+      "source": "output/lean-unified/UnifiedEJM/LongContext212.lean",
+      "verification": "work/209/UnifiedEJM/LongContext212.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext213",
+      "source": "output/lean-unified/UnifiedEJM/LongContext213.lean",
+      "verification": "work/209/UnifiedEJM/LongContext213.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext220",
+      "source": "output/lean-unified/UnifiedEJM/LongContext220.lean",
+      "verification": "work/209/UnifiedEJM/LongContext220.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext221",
+      "source": "output/lean-unified/UnifiedEJM/LongContext221.lean",
+      "verification": "work/209/UnifiedEJM/LongContext221.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext222",
+      "source": "output/lean-unified/UnifiedEJM/LongContext222.lean",
+      "verification": "work/209/UnifiedEJM/LongContext222.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LongContext223",
+      "source": "output/lean-unified/UnifiedEJM/LongContext223.lean",
+      "verification": "work/209/UnifiedEJM/LongContext223.check.json"
+    },
+    {
+      "module": "UnifiedEJM.LowBoolean",
+      "source": "output/lean-unified/UnifiedEJM/LowBoolean.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.LowBooleanPhysical",
+      "source": "output/lean-unified/UnifiedEJM/LowBooleanPhysical.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.LowDimensional",
+      "source": "output/lean-unified/UnifiedEJM/LowDimensional.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.LowDimensionalDefs",
+      "source": "output/lean-unified/UnifiedEJM/LowDimensionalDefs.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.LowDimensionalGeometry",
+      "source": "output/lean-unified/UnifiedEJM/LowDimensionalGeometry.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.LowDimensionalMain",
+      "source": "output/lean-unified/UnifiedEJM/LowDimensionalMain.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.LowDimensionalPhysical",
+      "source": "output/lean-unified/UnifiedEJM/LowDimensionalPhysical.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.Main",
+      "source": "output/lean-unified/UnifiedEJM/Main.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.Masks",
+      "source": "output/lean-unified/UnifiedEJM/Masks.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.MeasurementInequivalence",
+      "source": "output/lean-unified/UnifiedEJM/MeasurementInequivalence.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.MeasurementInvariants",
+      "source": "output/lean-unified/UnifiedEJM/MeasurementInvariants.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.MonomialInvariant",
+      "source": "output/lean-unified/UnifiedEJM/MonomialInvariant.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.Multipartite",
+      "source": "output/lean-unified/UnifiedEJM/Multipartite.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.NormalizedInvariants",
+      "source": "output/lean-unified/UnifiedEJM/NormalizedInvariants.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0000",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0000.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0000.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0001",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0001.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0001.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0002",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0002.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0002.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0003",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0003.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0003.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0010",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0010.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0010.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0011",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0011.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0011.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0012",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0012.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0012.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0013",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0013.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0013.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0020",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0020.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0020.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0021",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0021.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0021.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0022",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0022.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0022.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0023",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0023.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0023.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0030",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0030.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0030.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0031",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0031.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0031.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0032",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0032.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0032.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0033",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0033.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0033.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0100",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0100.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0100.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0101",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0101.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0101.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0102",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0102.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0102.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0103",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0103.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0103.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0110",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0110.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0110.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0111",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0111.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0111.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0112",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0112.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0112.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0113",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0113.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0113.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0120",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0120.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0120.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0121",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0121.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0121.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0122",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0122.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0122.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0123",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0123.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0123.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0130",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0130.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0130.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0131",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0131.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0131.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0132",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0132.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0132.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block0133",
+      "source": "output/lean-unified/UnifiedEJM/P12Block0133.lean",
+      "verification": "work/209/UnifiedEJM/P12Block0133.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1000",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1000.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1000.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1001",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1001.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1001.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1002",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1002.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1002.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1003",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1003.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1003.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1010",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1010.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1010.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1011",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1011.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1011.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1012",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1012.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1012.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1013",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1013.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1013.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1020",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1020.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1020.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1021",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1021.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1021.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1022",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1022.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1022.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1023",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1023.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1023.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1030",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1030.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1030.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1031",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1031.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1031.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1032",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1032.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1032.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1033",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1033.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1033.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1100",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1100.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1100.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1101",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1101.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1101.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1102",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1102.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1102.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1103",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1103.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1103.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1110",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1110.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1110.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1111",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1111.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1111.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1112",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1112.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1112.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1113",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1113.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1113.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1120",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1120.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1120.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1121",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1121.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1121.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1122",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1122.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1122.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1123",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1123.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1123.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1130",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1130.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1130.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1131",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1131.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1131.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1132",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1132.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1132.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Block1133",
+      "source": "output/lean-unified/UnifiedEJM/P12Block1133.lean",
+      "verification": "work/209/UnifiedEJM/P12Block1133.check.json"
+    },
+    {
+      "module": "UnifiedEJM.P12Certificates",
+      "source": "output/lean-unified/UnifiedEJM/P12Certificates.lean",
+      "verification": "work/209/UnifiedEJM/P12Certificates.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PathCutScore",
+      "source": "output/lean-unified/UnifiedEJM/PathCutScore.lean",
+      "verification": "work/209/UnifiedEJM/PathCutScore.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PathCutScoreFold",
+      "source": "output/lean-unified/UnifiedEJM/PathCutScoreFold.lean",
+      "verification": "work/209/UnifiedEJM/PathCutScoreFold.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PauliTensor",
+      "source": "output/lean-unified/UnifiedEJM/PauliTensor.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PermutationCore",
+      "source": "output/lean-unified/UnifiedEJM/PermutationCore.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PermutationInvariant",
+      "source": "output/lean-unified/UnifiedEJM/PermutationInvariant.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.Phase",
+      "source": "output/lean-unified/UnifiedEJM/Phase.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhaseImplementation",
+      "source": "output/lean-unified/UnifiedEJM/PhaseImplementation.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.Physical",
+      "source": "output/lean-unified/UnifiedEJM/Physical.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicalInequivalence",
+      "source": "output/lean-unified/UnifiedEJM/PhysicalInequivalence.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsAllN",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsAllN.lean",
+      "verification": "work/209/UnifiedEJM/PhysicsAllN.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundCoeff0",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundCoeff0.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundCoeff0.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundCoeff1",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundCoeff1.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundCoeff1.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundLaurent",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundLaurent.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundLaurent.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundOverlap",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundOverlap.lean",
+      "verification": "work/209/UnifiedEJM/PhysicsBackgroundOverlap.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundTableData",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundTableData.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundTableData.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundTablePoints00",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundTablePoints00.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundTablePoints00.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundTablePoints01",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundTablePoints01.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundTablePoints01.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundTablePoints02",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundTablePoints02.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundTablePoints02.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundTablePoints03",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundTablePoints03.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundTablePoints03.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundTablePoints04",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundTablePoints04.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundTablePoints04.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundTablePoints05",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundTablePoints05.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundTablePoints05.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundTablePoints06",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundTablePoints06.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundTablePoints06.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundTablePoints07",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundTablePoints07.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundTablePoints07.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundTablePoints08",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundTablePoints08.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundTablePoints08.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundTablePoints09",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundTablePoints09.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundTablePoints09.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundTablePoints10",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundTablePoints10.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundTablePoints10.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundTablePoints11",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundTablePoints11.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundTablePoints11.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundTablePoints12",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundTablePoints12.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundTablePoints12.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundTablePoints13",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundTablePoints13.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundTablePoints13.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundTablePoints14",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundTablePoints14.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundTablePoints14.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundTablePoints15",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundTablePoints15.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundTablePoints15.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsBackgroundTables",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsBackgroundTables.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsBackgroundTables.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCircuit",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCircuit.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureAggregation",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureAggregation.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureAggregation.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureAllLengths",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureAllLengths.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureAllLengths.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges000",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges000.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges000.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges001",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges001.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges001.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges002",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges002.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges002.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges003",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges003.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges003.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges004",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges004.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges004.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges005",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges005.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges005.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges006",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges006.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges006.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges007",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges007.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges007.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges008",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges008.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges008.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges009",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges009.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges009.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges010",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges010.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges010.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges011",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges011.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges011.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges012",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges012.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges012.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges013",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges013.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges013.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges014",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges014.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges014.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges015",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges015.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges015.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges016",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges016.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges016.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges017",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges017.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges017.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges018",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges018.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges018.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges019",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges019.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges019.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges020",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges020.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges020.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges021",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges021.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges021.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges022",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges022.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges022.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges023",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges023.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges023.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges024",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges024.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges024.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges025",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges025.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges025.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges026",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges026.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges026.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges027",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges027.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges027.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges028",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges028.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges028.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges029",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges029.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges029.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges030",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges030.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges030.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges031",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges031.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges031.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges032",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges032.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges032.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges033",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges033.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges033.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges034",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges034.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges034.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges035",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges035.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges035.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges036",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges036.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges036.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges037",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges037.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges037.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges038",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges038.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges038.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges039",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges039.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges039.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges040",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges040.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges040.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges041",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges041.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges041.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges042",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges042.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges042.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges043",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges043.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges043.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges044",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges044.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges044.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges045",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges045.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges045.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges046",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges046.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges046.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges047",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges047.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges047.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges048",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges048.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges048.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges049",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges049.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges049.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges050",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges050.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges050.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges051",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges051.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges051.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges052",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges052.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges052.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges053",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges053.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges053.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges054",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges054.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges054.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges055",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges055.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges055.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges056",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges056.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges056.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges057",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges057.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges057.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges058",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges058.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges058.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges059",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges059.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges059.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges060",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges060.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges060.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges061",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges061.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges061.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges062",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges062.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges062.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges063",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges063.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges063.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges064",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges064.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges064.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges065",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges065.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges065.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges066",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges066.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges066.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges067",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges067.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges067.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges068",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges068.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges068.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges069",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges069.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges069.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges070",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges070.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges070.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges071",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges071.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges071.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges072",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges072.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges072.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges073",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges073.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges073.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges074",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges074.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges074.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges075",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges075.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges075.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges076",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges076.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges076.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges077",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges077.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges077.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges078",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges078.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges078.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges079",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges079.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges079.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges080",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges080.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges080.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges081",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges081.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges081.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges082",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges082.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges082.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges083",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges083.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges083.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges084",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges084.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges084.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges085",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges085.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges085.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges086",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges086.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges086.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges087",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges087.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges087.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges088",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges088.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges088.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges089",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges089.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges089.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges090",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges090.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges090.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges091",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges091.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges091.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges092",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges092.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges092.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges093",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges093.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges093.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges094",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges094.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges094.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges095",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges095.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges095.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges096",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges096.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges096.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges097",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges097.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges097.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges098",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges098.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges098.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges099",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges099.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges099.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges100",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges100.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges100.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges101",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges101.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges101.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges102",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges102.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges102.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges103",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges103.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges103.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges104",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges104.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges104.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges105",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges105.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges105.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges106",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges106.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges106.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges107",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges107.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges107.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges108",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges108.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges108.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges109",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges109.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges109.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges110",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges110.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges110.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges111",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges111.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges111.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges112",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges112.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges112.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges113",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges113.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges113.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges114",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges114.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges114.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges115",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges115.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges115.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges116",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges116.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges116.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges117",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges117.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges117.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges118",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges118.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges118.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges119",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges119.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges119.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges120",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges120.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges120.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges121",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges121.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges121.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges122",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges122.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges122.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges123",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges123.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges123.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges124",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges124.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges124.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges125",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges125.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges125.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges126",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges126.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges126.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges127",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges127.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges127.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges128",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges128.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges128.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges129",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges129.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges129.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges130",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges130.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges130.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges131",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges131.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges131.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges132",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges132.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges132.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges133",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges133.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges133.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges134",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges134.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges134.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges135",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges135.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges135.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges136",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges136.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges136.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges137",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges137.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges137.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges138",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges138.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges138.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges139",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges139.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges139.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges140",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges140.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges140.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges141",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges141.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges141.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges142",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges142.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges142.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges143",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges143.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges143.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges144",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges144.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges144.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges145",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges145.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges145.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges146",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges146.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges146.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges147",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges147.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges147.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges148",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges148.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges148.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges149",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges149.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges149.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges150",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges150.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges150.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges151",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges151.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges151.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges152",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges152.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges152.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges153",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges153.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges153.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges154",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges154.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges154.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges155",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges155.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges155.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges156",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges156.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges156.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges157",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges157.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges157.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges158",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges158.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges158.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges159",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges159.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges159.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges160",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges160.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges160.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges161",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges161.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges161.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges162",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges162.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges162.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges163",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges163.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges163.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges164",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges164.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges164.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges165",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges165.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges165.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges166",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges166.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges166.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges167",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges167.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges167.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges168",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges168.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges168.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges169",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges169.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges169.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges170",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges170.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges170.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges171",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges171.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges171.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges172",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges172.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges172.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges173",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges173.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges173.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges174",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges174.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges174.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges175",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges175.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges175.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges176",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges176.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges176.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges177",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges177.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges177.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges178",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges178.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges178.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges179",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges179.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges179.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges180",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges180.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges180.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges181",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges181.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges181.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges182",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges182.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges182.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges183",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges183.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges183.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges184",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges184.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges184.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges185",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges185.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges185.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges186",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges186.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges186.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges187",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges187.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges187.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges188",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges188.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges188.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges189",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges189.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges189.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges190",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges190.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges190.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges191",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges191.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges191.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges192",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges192.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges192.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges193",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges193.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges193.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges194",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges194.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges194.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges195",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges195.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges195.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges196",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges196.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges196.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges197",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges197.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges197.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges198",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges198.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges198.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges199",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges199.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges199.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges200",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges200.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges200.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges201",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges201.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges201.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges202",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges202.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges202.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges203",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges203.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges203.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges204",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges204.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges204.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges205",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges205.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges205.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges206",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges206.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges206.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges207",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges207.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges207.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges208",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges208.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges208.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges209",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges209.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges209.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges210",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges210.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges210.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges211",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges211.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges211.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges212",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges212.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges212.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges213",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges213.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges213.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges214",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges214.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges214.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges215",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges215.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges215.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureEdges216",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureEdges216.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureEdges216.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureInduction",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureInduction.lean",
+      "verification": "work/211/UnifiedEJM/PhysicsClosureInduction.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureInitialFacts",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureInitialFacts.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureInitialFacts.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureMetadata000",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureMetadata000.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureMetadata000.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureMetadata001",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureMetadata001.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureMetadata001.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureMetadata002",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureMetadata002.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureMetadata002.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureMetadata003",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureMetadata003.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureMetadata003.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureMetadata004",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureMetadata004.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureMetadata004.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureMetadata005",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureMetadata005.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureMetadata005.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureMetadata006",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureMetadata006.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureMetadata006.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureMetadataDefinition",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureMetadataDefinition.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureMetadataDefinition.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeFacts",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeFacts.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeFacts.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs000",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs000.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs000.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs001",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs001.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs001.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs002",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs002.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs002.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs003",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs003.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs003.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs004",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs004.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs004.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs005",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs005.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs005.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs006",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs006.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs006.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs007",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs007.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs007.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs008",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs008.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs008.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs009",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs009.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs009.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs010",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs010.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs010.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs011",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs011.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs011.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs012",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs012.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs012.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs013",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs013.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs013.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs014",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs014.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs014.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs015",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs015.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs015.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs016",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs016.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs016.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs017",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs017.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs017.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs018",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs018.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs018.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs019",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs019.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs019.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs020",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs020.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs020.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs021",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs021.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs021.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs022",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs022.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs022.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs023",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs023.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs023.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs024",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs024.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs024.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs025",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs025.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs025.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs026",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs026.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs026.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodeProofs027",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodeProofs027.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodeProofs027.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureNodes",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureNodes.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureNodes.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosurePhysical",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosurePhysical.lean",
+      "verification": "work/209/UnifiedEJM/PhysicsClosurePhysical.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureSupports",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureSupports.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureSupports.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTailBounds000",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTailBounds000.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTailBounds000.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTailBounds001",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTailBounds001.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTailBounds001.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTailBounds002",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTailBounds002.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTailBounds002.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTailBounds003",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTailBounds003.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTailBounds003.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTailBounds004",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTailBounds004.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTailBounds004.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTailBounds005",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTailBounds005.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTailBounds005.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTailBounds006",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTailBounds006.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTailBounds006.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTailBounds007",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTailBounds007.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTailBounds007.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTailBounds008",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTailBounds008.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTailBounds008.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTailBounds009",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTailBounds009.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTailBounds009.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTailBounds010",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTailBounds010.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTailBounds010.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTailBounds011",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTailBounds011.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTailBounds011.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTailBounds012",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTailBounds012.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTailBounds012.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTailBounds013",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTailBounds013.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTailBounds013.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal000",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal000.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal000.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal001",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal001.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal001.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal002",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal002.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal002.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal003",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal003.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal003.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal004",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal004.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal004.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal005",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal005.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal005.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal006",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal006.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal006.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal007",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal007.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal007.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal008",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal008.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal008.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal009",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal009.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal009.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal010",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal010.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal010.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal011",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal011.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal011.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal012",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal012.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal012.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal013",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal013.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal013.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal014",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal014.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal014.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal015",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal015.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal015.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal016",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal016.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal016.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal017",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal017.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal017.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminal018",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminal018.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminal018.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsClosureTerminalFacts",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsClosureTerminalFacts.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsClosureTerminalFacts.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew5M1",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew5M1.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew5M10",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew5M10.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew5M11",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew5M11.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew5M12",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew5M12.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew5M13",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew5M13.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew5M14",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew5M14.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew5M15",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew5M15.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew5M2",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew5M2.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew5M3",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew5M3.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew5M4",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew5M4.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew5M5",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew5M5.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew5M6",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew5M6.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew5M7",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew5M7.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew5M8",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew5M8.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew5M9",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew5M9.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M1",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M1.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M10",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M10.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M11",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M11.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M12",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M12.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M13",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M13.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M14",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M14.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M15",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M15.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M16",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M16.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M17",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M17.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M18",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M18.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M19",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M19.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M2",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M2.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M20",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M20.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M21",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M21.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M22",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M22.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M23",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M23.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M24",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M24.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M25",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M25.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M26",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M26.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M27",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M27.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M28",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M28.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M29",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M29.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M3",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M3.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M30",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M30.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M31",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M31.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M4",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M4.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M5",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M5.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M6",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M6.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M7",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M7.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M8",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M8.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffNew6M9",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffNew6M9.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M1",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M1.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M10",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M10.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M11",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M11.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M12",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M12.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M13",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M13.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M14",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M14.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M15",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M15.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M16",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M16.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M17",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M17.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M18",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M18.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M19",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M19.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M2",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M2.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M20",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M20.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M21",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M21.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M22",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M22.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M23",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M23.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M24",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M24.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M25",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M25.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M26",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M26.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M27",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M27.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M28",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M28.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M29",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M29.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M3",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M3.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M30",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M30.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M31",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M31.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M4",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M4.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M5",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M5.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M6",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M6.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M7",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M7.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M8",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M8.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoeffPG6M9",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoeffPG6M9.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoefficientTables",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoefficientTables.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoefficients",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoefficients.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoefficientsNew5",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoefficientsNew5.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoefficientsNew6",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoefficientsNew6.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCoefficientsPG6",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCoefficientsPG6.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsCorrelationBound",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsCorrelationBound.lean",
+      "verification": "work/211/UnifiedEJM/PhysicsCorrelationBound.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsEndpoint",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsEndpoint.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsEndpointPairs",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsEndpointPairs.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsEndpointStabilizer",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsEndpointStabilizer.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsEntanglement",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsEntanglement.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsFastTables",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsFastTables.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsFinite",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsFinite.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsFiniteTables",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsFiniteTables.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsIndexed",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsIndexed.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsLaurent",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsLaurent.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsPGIndexed",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsPGIndexed.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsPairTables",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsPairTables.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsPairs",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsPairs.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsPairsNew5",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsPairsNew5.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsPurityNine",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsPurityNine.lean",
+      "verification": "work/229/UnifiedEJM/PhysicsPurityNine.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsPurityPerturbation",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsPurityPerturbation.lean",
+      "verification": "work/209/UnifiedEJM/PhysicsPurityPerturbation.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsPuritySqrtPerturbation",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsPuritySqrtPerturbation.lean",
+      "verification": "work/229/UnifiedEJM/PhysicsPuritySqrtPerturbation.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsPuritySqrtSpectral",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsPuritySqrtSpectral.lean",
+      "verification": "work/229/UnifiedEJM/PhysicsPuritySqrtSpectral.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsPurityTail",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsPurityTail.lean",
+      "verification": "work/209/UnifiedEJM/PhysicsPurityTail.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallAll7",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallAll7.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallAll7.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallAll8",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallAll8.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallAll8.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch7B0",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch7B0.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch7B0.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch7B12",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch7B12.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch7B12.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch7B16",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch7B16.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch7B16.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch7B20",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch7B20.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch7B20.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch7B24",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch7B24.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch7B24.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch7B28",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch7B28.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch7B28.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch7B32",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch7B32.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch7B32.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch7B36",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch7B36.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch7B36.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch7B4",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch7B4.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch7B4.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch7B40",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch7B40.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch7B40.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch7B44",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch7B44.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch7B44.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch7B48",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch7B48.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch7B48.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch7B52",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch7B52.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch7B52.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch7B8",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch7B8.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch7B8.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B0",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B0.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B0.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B100",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B100.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B100.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B104",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B104.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B104.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B108",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B108.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B108.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B112",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B112.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B112.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B116",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B116.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B116.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B12",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B12.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B12.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B16",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B16.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B16.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B20",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B20.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B20.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B24",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B24.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B24.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B28",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B28.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B28.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B32",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B32.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B32.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B36",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B36.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B36.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B4",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B4.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B4.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B40",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B40.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B40.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B44",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B44.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B44.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B48",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B48.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B48.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B52",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B52.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B52.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B56",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B56.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B56.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B60",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B60.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B60.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B64",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B64.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B64.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B68",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B68.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B68.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B72",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B72.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B72.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B76",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B76.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B76.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B8",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B8.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B8.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B80",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B80.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B80.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B84",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B84.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B84.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B88",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B88.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B88.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B92",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B92.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B92.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBatch8B96",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBatch8B96.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBatch8B96.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBounds",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBounds.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBounds.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallBridge",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallBridge.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallBridge.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallCut7M96",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallCut7M96.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallCut7M96.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallLayout",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallLayout.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallLayout.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallTables7",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallTables7.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallTables7.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSmallTables8",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSmallTables8.lean",
+      "verification": "work/217/UnifiedEJM/PhysicsSmallTables8.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSparseCertificate",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSparseCertificate.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsSparseCertificate.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSparseEncoding",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSparseEncoding.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsSparseEncoding.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSparseFinish",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSparseFinish.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsSparseFinish.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSparseInitial",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSparseInitial.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsSparseInitial.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSparseNumbers",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSparseNumbers.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsSparseNumbers.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSparseTerminal",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSparseTerminal.lean",
+      "verification": "work/220/UnifiedEJM/PhysicsSparseTerminal.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsSpectra",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsSpectra.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsTransferStatic",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsTransferStatic.lean",
+      "verification": "work/209/UnifiedEJM/PhysicsTransferStatic.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsWeightedOrder",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsWeightedOrder.lean",
+      "verification": "work/211/UnifiedEJM/PhysicsWeightedOrder.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PhysicsWeightedTransfer",
+      "source": "output/lean-unified/UnifiedEJM/PhysicsWeightedTransfer.lean",
+      "verification": "work/211/UnifiedEJM/PhysicsWeightedTransfer.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixAnalytic",
+      "source": "output/lean-unified/UnifiedEJM/PrefixAnalytic.lean",
+      "verification": "work/209/UnifiedEJM/PrefixAnalytic.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixCertifiedBounds",
+      "source": "output/lean-unified/UnifiedEJM/PrefixCertifiedBounds.lean",
+      "verification": "work/209/UnifiedEJM/PrefixCertifiedBounds.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixClassBridge",
+      "source": "output/lean-unified/UnifiedEJM/PrefixClassBridge.lean",
+      "verification": "work/209/UnifiedEJM/PrefixClassBridge.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixCodedKernel",
+      "source": "output/lean-unified/UnifiedEJM/PrefixCodedKernel.lean",
+      "verification": "work/209/UnifiedEJM/PrefixCodedKernel.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixCollect",
+      "source": "output/lean-unified/UnifiedEJM/PrefixCollect.lean",
+      "verification": "work/209/UnifiedEJM/PrefixCollect.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixCounts",
+      "source": "output/lean-unified/UnifiedEJM/PrefixCounts.lean",
+      "verification": "work/209/UnifiedEJM/PrefixCounts.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixDataKernel",
+      "source": "output/lean-unified/UnifiedEJM/PrefixDataKernel.lean",
+      "verification": "work/209/UnifiedEJM/PrefixDataKernel.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixEndpointContext",
+      "source": "output/lean-unified/UnifiedEJM/PrefixEndpointContext.lean",
+      "verification": "work/209/UnifiedEJM/PrefixEndpointContext.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixExpansion",
+      "source": "output/lean-unified/UnifiedEJM/PrefixExpansion.lean",
+      "verification": "work/209/UnifiedEJM/PrefixExpansion.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixFastWeights",
+      "source": "output/lean-unified/UnifiedEJM/PrefixFastWeights.lean",
+      "verification": "work/209/UnifiedEJM/PrefixFastWeights.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixGroupedKernel",
+      "source": "output/lean-unified/UnifiedEJM/PrefixGroupedKernel.lean",
+      "verification": "work/209/UnifiedEJM/PrefixGroupedKernel.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixKernel",
+      "source": "output/lean-unified/UnifiedEJM/PrefixKernel.lean",
+      "verification": "work/209/UnifiedEJM/PrefixKernel.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixKernelBlocks",
+      "source": "output/lean-unified/UnifiedEJM/PrefixKernelBlocks.lean",
+      "verification": "work/209/UnifiedEJM/PrefixKernelBlocks.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixLongBridge",
+      "source": "output/lean-unified/UnifiedEJM/PrefixLongBridge.lean",
+      "verification": "work/209/UnifiedEJM/PrefixLongBridge.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixLongCrossBlocks",
+      "source": "output/lean-unified/UnifiedEJM/PrefixLongCrossBlocks.lean",
+      "verification": "work/209/UnifiedEJM/PrefixLongCrossBlocks.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixP12Bridge",
+      "source": "output/lean-unified/UnifiedEJM/PrefixP12Bridge.lean",
+      "verification": "work/209/UnifiedEJM/PrefixP12Bridge.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixPacking",
+      "source": "output/lean-unified/UnifiedEJM/PrefixPacking.lean",
+      "verification": "work/209/UnifiedEJM/PrefixPacking.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixPairPacking",
+      "source": "output/lean-unified/UnifiedEJM/PrefixPairPacking.lean",
+      "verification": "work/209/UnifiedEJM/PrefixPairPacking.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixPairReindex",
+      "source": "output/lean-unified/UnifiedEJM/PrefixPairReindex.lean",
+      "verification": "work/209/UnifiedEJM/PrefixPairReindex.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixRealBridge",
+      "source": "output/lean-unified/UnifiedEJM/PrefixRealBridge.lean",
+      "verification": "work/209/UnifiedEJM/PrefixRealBridge.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixReindex",
+      "source": "output/lean-unified/UnifiedEJM/PrefixReindex.lean",
+      "verification": "work/209/UnifiedEJM/PrefixReindex.check.json"
+    },
+    {
+      "module": "UnifiedEJM.PrefixWholeGroupedKernel",
+      "source": "output/lean-unified/UnifiedEJM/PrefixWholeGroupedKernel.lean",
+      "verification": "work/209/UnifiedEJM/PrefixWholeGroupedKernel.check.json"
+    },
+    {
+      "module": "UnifiedEJM.Projective",
+      "source": "output/lean-unified/UnifiedEJM/Projective.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.PurityInvariant",
+      "source": "output/lean-unified/UnifiedEJM/PurityInvariant.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.RealGenerators",
+      "source": "output/lean-unified/UnifiedEJM/RealGenerators.lean",
+      "verification": "output/lean-unified/UnifiedEJM/RealGenerators.check.json"
+    },
+    {
+      "module": "UnifiedEJM.Regularity",
+      "source": "output/lean-unified/UnifiedEJM/Regularity.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.ResultantCertificate",
+      "source": "output/lean-unified/UnifiedEJM/ResultantCertificate.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.Seed",
+      "source": "output/lean-unified/UnifiedEJM/Seed.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.SingleInvariant",
+      "source": "output/lean-unified/UnifiedEJM/SingleInvariant.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.SingleInvariants",
+      "source": "output/lean-unified/UnifiedEJM/SingleInvariants.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.SinglePermutation",
+      "source": "output/lean-unified/UnifiedEJM/SinglePermutation.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.SixAnalytic",
+      "source": "output/lean-unified/UnifiedEJM/SixAnalytic.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.SixCertificate",
+      "source": "output/lean-unified/UnifiedEJM/SixCertificate.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.SixCoefficients",
+      "source": "output/lean-unified/UnifiedEJM/SixCoefficients.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.SixDirect",
+      "source": "output/lean-unified/UnifiedEJM/SixDirect.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.SixFamily",
+      "source": "output/lean-unified/UnifiedEJM/SixFamily.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.SixGeometry",
+      "source": "output/lean-unified/UnifiedEJM/SixGeometry.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.SixLocal",
+      "source": "output/lean-unified/UnifiedEJM/SixLocal.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.SixMeasurement",
+      "source": "output/lean-unified/UnifiedEJM/SixMeasurement.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.SixPhysical",
+      "source": "output/lean-unified/UnifiedEJM/SixPhysical.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.StabilizerMarginal",
+      "source": "output/lean-unified/UnifiedEJM/StabilizerMarginal.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.ThreeQubit",
+      "source": "output/lean-unified/UnifiedEJM/ThreeQubit.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.ThreeQubitCircuit",
+      "source": "output/lean-unified/UnifiedEJM/ThreeQubitCircuit.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.ThreeQubitDeterminant",
+      "source": "output/lean-unified/UnifiedEJM/ThreeQubitDeterminant.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.ThreeQubitGeometry",
+      "source": "output/lean-unified/UnifiedEJM/ThreeQubitGeometry.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.ThreeQubitModel",
+      "source": "output/lean-unified/UnifiedEJM/ThreeQubitModel.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.ThreeQubitPhysical",
+      "source": "output/lean-unified/UnifiedEJM/ThreeQubitPhysical.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.UnitaryPhase",
+      "source": "output/lean-unified/UnifiedEJM/UnitaryPhase.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    },
+    {
+      "module": "UnifiedEJM.Walsh",
+      "source": "output/lean-unified/UnifiedEJM/Walsh.lean",
+      "verification": "unchanged published source; prior kernel verification retained"
+    }
+  ]
+}

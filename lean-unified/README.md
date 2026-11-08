@@ -1,16 +1,12 @@
-# 新版 EJM 论文的 Lean 形式化
+# EJM 论文的 Lean 形式化
 
-本工程对应 [PRA 双语初稿](../paper/README.md)。使用新四特征核，覆盖全部整数 `n ≥ 5`，并形式化 Boolean 相位直线的模型最优值、偶数母族、低维刚性和曲线，以及谱熵和四比特测量不等价性。各结论的条件、真实物理对象和声明入口见 [COVERAGE.md](COVERAGE.md)。
+本工程对应当前双语论文，从实际测量列和约化矩阵证明统一构造、模型最优值、偶数母族、低维结果，以及全 n 的真正多体纠缠和端点不等价性。精确条件和声明入口见 [COVERAGE.md](COVERAGE.md)。
 
-主入口为 [UnifiedEJM.lean](UnifiedEJM.lean)。本工程复用相邻 [基础依赖](../lean/README.md) 的通用门电路、有限位串及线性代数定义。复制工程时请保留 `lean` 和 `lean-unified` 两个相邻目录。
+主入口为 [UnifiedEJM.lean](UnifiedEJM.lean)。复制工程时请保留 `lean/` 与 `lean-unified/` 两个相邻目录，前者提供通用门电路、位串和线性代数基础。
 
-## 版本与复现
+## 复现
 
-- Lean：`leanprover/lean4:v4.35.0`。
-- mathlib：`v4.35.0`，锁定提交见 `lake-manifest.json`。
-- 新增生产源码均位于 `UnifiedEJM/`；个人任务目录和开发缓存不是构建所需输入。
-
-已安装对应 Lean 工具链后，在本目录执行：
+工具链为 Lean **4.35.0**，mathlib **v4.35.0** 的精确提交由 `lake-manifest.json` 锁定。在本目录执行：
 
 ```text
 lake exe cache get
@@ -19,17 +15,14 @@ lake env lean Audit.lean
 lake env lean AllAxioms.lean
 ```
 
-已有依赖缓存时直接执行构建与审计命令即可。`Audit.lean` 打印关键声明的类型与传递公理依赖；预期仅出现 Lean/mathlib 的标准基础 `propext`、`Classical.choice`、`Quot.sound`（部分声明所需更少）。
+`Audit.lean` 打印关键声明的完整类型与公理依赖；`AllAxioms.lean` 检查全部导入的本地声明，包括私有辅助证明和自动生成声明，仅允许 `propext`、`Classical.choice`、`Quot.sound`。
 
-## 验证记录
+## 当前覆盖与验证
 
-当前包包含186个UnifiedEJM模块及29个基础依赖模块。已有2026-11-04验证及收尾复核记录包括77个有限划分证书、统一入口编译和4944项声明（4271项定理）的公理检查，非标准公理依赖为零。
+2026-11-08 完成此前待补的全 n GME、统一端点与稳定子轨道不等价、余弦端点纯度及两族端点不等价，以及任意至多两值实生成元的规范化和模型最优值。
 
-- [当前源码清单](../verification/141/physics_sources.json)与[整合记录](../verification/141/finite_integration.json)。
-- [收尾源码核对](../verification/163/delivery_check.json)、[编译结果](../verification/163/compile_results.json)及[4944项声明审计](../verification/163/all_axioms.txt)。
-- [27项最终接口检查](../verification/164/FinalDeliveryCheck.lean)及[输出](../verification/164/final_delivery_check.txt)。
-- [验证汇总](verification.json)与[发布验证说明](../VERIFICATION.md)。
+全 n GME 定理覆盖任意整数 n≥5、任意实参数及全部原始测量列，给出 GME=√(1−r²)>0，并证明极小割恰为单体割及其补割。Lean 采用 n=5…8 的有限核验和 n≥9 的更紧解析尾界，结合任意长度背景归纳与精确前缀系数证明。论文附录 E1 的原有 Python 证书作为独立复现路径保留，其中456项有限切分未全部逐项移植到Lean。
 
-`axioms.txt`和`all_axioms.txt`保留2026-11-01的历史审计；后者的3050项计数对应当时版本。最新已有收尾输出为上方4944项声明审计。
+当前生产入口导入 **735** 个 UnifiedEJM 模块和 **29** 个基础模块。新增源码经过逐模块检查，未修改的既有证明保留已核验结果；统一入口重新编译，最终定理类型及全部 **105633** 项声明（其中 **89376** 项定理）的公理审计通过，非标准公理依赖为 **0**。本轮使用最多三个 Lean 检查进程并监测系统剩余内存，不设单进程内存上限。
 
-论文的精确复算入口见[说明](../paper/reproduce/README.md)，全n GME整数证书见[独立复现包](../paper/reproduce/all_n_gme/README.md)。
+详细结果见 [verification.json](verification.json)。其中较早日期的条目保留历史检查范围；本轮记录为 `all_n_formalization_2026_11_08`。独立精确复现程序的完整计算沿用此前结果，本轮没有重跑。

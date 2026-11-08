@@ -184,3 +184,6 @@ import UnifiedEJM.ThreeQubitModel
 import UnifiedEJM.ThreeQubitPhysical
 import UnifiedEJM.UnitaryPhase
 import UnifiedEJM.Walsh
+import UnifiedEJM.RealGenerators
+import UnifiedEJM.EndpointAllN
+import UnifiedEJM.PhysicsAllN

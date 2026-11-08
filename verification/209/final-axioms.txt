@@ -1,0 +1,32 @@
+UnifiedEJM.AllNEntanglement.larger_cut_lt_half {n : ℕ} (hn : 5 ≤ n) (t : ℝ) (S : Finset (Fin n))
+  (hS : S ∈ UnifiedEJM.Multipartite.cuts n) (hns : ¬UnifiedEJM.PhysicsEntanglement.SingleCut S) :
+  (UnifiedEJM.Multipartite.cutPurity S (UnifiedEJM.seed n t)).re < 1 / 2
+UnifiedEJM.AllNEntanglement.measurement_gme {n : ℕ} (hn : 5 ≤ n) (t : ℝ) (label : OddEJM.Bits n) :
+  UnifiedEJM.Multipartite.gme ⋯ (UnifiedEJM.measurement n t label) = √(1 - OddEJM.radius n t ^ 2)
+UnifiedEJM.AllNEntanglement.measurement_minimizers {n : ℕ} (hn : 5 ≤ n) (t : ℝ) (label : OddEJM.Bits n)
+  (S : Finset (Fin n)) (hS : S ∈ UnifiedEJM.Multipartite.cuts n) :
+  √(2 * (1 - (UnifiedEJM.Multipartite.cutPurity S (UnifiedEJM.measurement n t label)).re)) =
+      UnifiedEJM.Multipartite.gme ⋯ (UnifiedEJM.measurement n t label) ↔
+    UnifiedEJM.PhysicsEntanglement.SingleCut S
+UnifiedEJM.AllNEntanglement.measurement_entangled {n : ℕ} (hn : 5 ≤ n) (t : ℝ) (label : OddEJM.Bits n)
+  (S : Finset (Fin n)) (hS : S ∈ UnifiedEJM.Multipartite.cuts n) :
+  ¬UnifiedEJM.Multipartite.ProductAcross S (UnifiedEJM.measurement n t label)
+UnifiedEJM.AllNEntanglement.zero_endpoints_not_LU {n : ℕ} (hn : 6 ≤ n) (hev : Even n) (label label' : OddEJM.Bits n)
+  (U : Fin n → Matrix OddEJM.Bit OddEJM.Bit ℂ) (hU : ∀ (j : Fin n), (U j).conjTranspose * U j = 1)
+  (p : Equiv.Perm (Fin n)) (c : ℂ) (hc : star c * c = 1) :
+  UnifiedEJM.measurement n (Real.pi / 2) label ≠
+    c •
+      UnifiedEJM.Multipartite.localAction U
+        (UnifiedEJM.Multipartite.permute p (UnifiedEJM.EvenFamily.measurement n (Real.pi / 2) 0 label'))
+'UnifiedEJM.BooleanLines.actual_two_valued_real_model_exact_maximum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'UnifiedEJM.EndpointAllN.measurement_not_LU_stabilizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnifiedEJM.CosineEndpoint.measurement_purity_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnifiedEJM.CosineEndpoint.measurement_gme_exact_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnifiedEJM.PurityTail.actual_cutPurity_lt_half_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnifiedEJM.AllNEntanglement.larger_cut_lt_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnifiedEJM.AllNEntanglement.measurement_gme' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnifiedEJM.AllNEntanglement.measurement_minimizers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnifiedEJM.AllNEntanglement.measurement_entangled' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnifiedEJM.AllNEntanglement.zero_endpoints_not_LU' depends on axioms: [propext, Classical.choice, Quot.sound]

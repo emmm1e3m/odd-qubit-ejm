@@ -1,42 +1,34 @@
 # Verification record
 
-Release: November 7, 2026. This package includes the current bilingual manuscript, reproduction data, production Lean sources, and existing verification records.
+Formalization update: November 8, 2026. The manuscript text and PDFs retain the November 7 author-reviewed version.
 
-| Material | Included verification |
+| Material | Verification |
 |---|---|
-| Manuscripts | English 21 pages; Chinese 23 pages. Both compile successfully. All 156 cross-reference labels and 23 bibliography entries agree. No undefined references, missing characters, overfull boxes, or blocked floats. Relevant rendered pages were inspected. |
-| Paper dependencies | LaTeX sections, four vector figures and their generators, references, and both reproduction entry points are included. |
-| Production Lean sources | 186 UnifiedEJM modules and their 29 foundation modules; all local imports resolve within the package. |
-| Existing November 4 source and proof checks | 108 added production modules and 77 finite-cut certificates checked; aggregate entry compiled. The final declaration audit reports 4944 declarations, including 4271 theorems, and zero nonstandard axiom dependencies. |
-| Existing independent final interface check | 27 final interfaces checked through the production entry. |
-| Exact all-n GME certificates | Rank-one length formulas, 7882 compressed representatives, 1405 closure states, 456 small-size complete-state cuts, and endpoint purity checks. The analytic arbitrary-n coverage is given in Appendix E. |
+| Production Lean sources | 735 UnifiedEJM modules and 29 foundation modules; local imports and the source/object correspondence of new proofs checked. Unchanged previously verified foundations retained. |
+| Final proof entry | Recompiled successfully; final theorem types and axiom dependencies checked. |
+| All local declarations | 105633 declarations, including 89376 theorems; zero dependencies outside propext, Classical.choice, and Quot.sound. Private and generated declarations included. |
+| All-size GME | Every n≥5, every real parameter and actual measurement column: exact GME, positivity, and precisely the single-qubit minimizing cuts. |
+| Endpoint comparisons | Unified endpoint pair purity and exclusion of stabilizer LU/permutation orbits; cosine endpoint pair purity and strict GME bound; inequivalence of the two zero-radius endpoints for every even n≥6. |
+| Real generators | At-most-two-valued real generators, including constants: actual projector normalization, equal attainable radius sets, and the attained model optimum. |
 
-## Verification archive 1.1.0
+The all-size Lean proof uses finite sizes n=5…8 and a stronger perturbation bound valid from n=9, combined with arbitrary-length background induction and exact prefix-cut coefficient proofs. The original Appendix E1 scripts independently cover n=5…9 and the paper's representative certificates. Their previous exact results are preserved; the full Python computation was not rerun, and its 456 cut checks were not all individually ported to Lean.
 
-The [downloadable archive](archives/multiqubit-ejm-verification-1.1.0.zip) packages the production Lean sources and the complete Appendix E1 exact-arithmetic reproduction directory together. It includes 186 UnifiedEJM modules, 29 foundation modules, pinned project configuration, and 14 E1 reproduction files. Packaging checks covered 648 local import edges, relative dependency paths, certificate completeness, and extraction of all 241 files.
+## Current evidence
 
-This archive extends the earlier Zenodo 1.0.0 package. The Lean sources and E1 scripts/certificates were already present in the November 6 GitHub version; this update adds the downloadable package and its instructions. The Lean build, axiom audit, and full E1 computation were not rerun for this release. The new cosine-endpoint comparison is proved analytically in Appendix E2.
+- [Final theorem types and axiom audit](verification/209/final-axioms.txt), with [the audit source](verification/209/AllNFinalAudit.lean).
+- [All-declaration audit](verification/209/all-axioms.txt).
+- [Source correspondence](verification/209/final-source-check.json) and [verification summary](verification/209/final-verification.json).
+- [Formal coverage](lean-unified/COVERAGE.md) and [machine-readable verification history](lean-unified/verification.json).
+- [Original exact computations](paper/reproduce/verification_results.json) and [Appendix E1 results](paper/reproduce/all_n_gme/verification_results.json).
 
-## Evidence
+The [1.2.0 archive](archives/multiqubit-ejm-verification-1.2.0.zip) packages the proof sources, pinned dependencies, audit outputs, and 14 Appendix E1 reproduction files. Packaging checks covered 2062 local import edges and extraction of all 795 files.
 
-- [Production source manifest](verification/141/physics_sources.json) and [integration record](verification/141/finite_integration.json).
-- [Final source check](verification/163/delivery_check.json), [compilation results](verification/163/compile_results.json), and [4944-declaration audit](verification/163/all_axioms.txt).
-- [Independent final interface check](verification/164/FinalDeliveryCheck.lean) and [output](verification/164/final_delivery_check.txt).
-- [Machine-readable history](lean-unified/verification.json) and [formal coverage](lean-unified/COVERAGE.md).
-- [Original exact computations](paper/reproduce/verification_results.json) and [all-n GME certificate results](paper/reproduce/all_n_gme/verification_results.json).
+## Earlier verification
 
-The November 1 key audit and 3050-declaration audit remain in `lean-unified/axioms.txt` and `lean-unified/all_axioms.txt` as historical records. The November 4 integration and final checks are linked separately above. This upload packages those completed checks; it does not relabel them as a newly run Lean audit.
+The November 7 manuscript checks remain applicable: English 21 pages, Chinese 23 pages; 156 matching cross-reference labels and 23 bibliography entries; successful bilingual compilation and rendered-page checks. No manuscript recompilation was needed for this source-only formalization update.
+
+The November 4 proof checks covered 186 UnifiedEJM modules, 77 finite-cut certificates, and 4944 declarations. See the [earlier source check](verification/163/delivery_check.json), [compilation results](verification/163/compile_results.json), [axiom audit](verification/163/all_axioms.txt), and [independent interface check](verification/164/final_delivery_check.txt). The November 1 audit files in `lean-unified/` retain their historical counts.
 
 ## Reproduction
 
-From `lean-unified/`, use Lean 4.35.0 with the pinned mathlib v4.35.0 dependency:
-
-```text
-lake exe cache get
-lake build
-lake env lean Audit.lean
-lake env lean AllAxioms.lean
-lake env lean ../verification/164/FinalDeliveryCheck.lean
-```
-
-For exact computations, see [the reproduction instructions](paper/reproduce/README.md) and [the self-contained all-n certificate package](paper/reproduce/all_n_gme/README.md).
+See the [Lean instructions](lean-unified/README.md) and [exact-computation instructions](paper/reproduce/README.md). The pinned toolchain is Lean 4.35.0 with mathlib v4.35.0. The current proof update does not modify the earlier Zenodo archive.
