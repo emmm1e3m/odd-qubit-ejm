@@ -132,6 +132,9 @@ def figure_embedding():
     ax.plot([0, 0], [-1, 1], color=INK, lw=1.4,
             path_effects=halo, label=r"$\alpha=0$: unified family")
     ax.plot(0, 0, marker="o", markersize=4.4, mfc="white", mec=INK, mew=0.8, zorder=6)
+    ax.annotate("reference point", xy=(0, 0), xytext=(7, 7),
+                textcoords="offset points", fontsize=8, ha="left", va="bottom",
+                color="white", zorder=7)
     ax.set(xlim=(-1.05, 1.05), ylim=(-1.06, 1.08), xlabel=r"$\alpha/(\pi/2)$", ylabel=r"$\beta/(\pi/2)$")
     ax.set_xticks([-1, 0, 1])
     ax.set_yticks([-1, 0, 1])
