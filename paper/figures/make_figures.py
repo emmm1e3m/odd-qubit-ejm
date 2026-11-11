@@ -97,8 +97,8 @@ def figure_unified():
     ax.scatter([-np.pi/2, 0, np.pi/2], [2, 1, 0], s=22, color=BLUE, zorder=4)
     ax.axvline(0, color="0.78", lw=0.65, ls=(0, (3, 3)), zorder=0)
     ax.axhline(1, color="0.78", lw=0.65, ls=(0, (3, 3)), zorder=0)
-    ax.annotate("reference point", xy=(0, 1), xytext=(0.20, 1.22), fontsize=8,
-                arrowprops={"arrowstyle": "-", "color": GRAY, "lw": 0.6})
+    ax.annotate("reference point", xy=(0, 1), xytext=(7, 7),
+                textcoords="offset points", fontsize=8, ha="left", va="bottom")
     ax.text(-0.80, 1.78, r"$1-\sin t$", fontsize=10, color=BLUE)
     ax.set(xlim=(-1.68, 1.68), ylim=(-0.09, 2.12), xlabel=r"$t$", ylabel=r"$r_n/r_E(n)$")
     ax.set_xticks([-np.pi/2, 0, np.pi/2], [r"$-\pi/2$", r"$0$", r"$\pi/2$"])
@@ -147,6 +147,8 @@ def figure_embedding():
     inset.plot([-1, 1], [0, 0], color=INK, lw=1.4, ls=(0, (4, 2)))
     inset.plot([0, 0], [-1, 1], color=INK, lw=1.4)
     inset.plot(0, 0, marker="o", markersize=4.4, mfc="white", mec=INK, mew=0.8)
+    inset.annotate("reference point", xy=(0, 0), xytext=(7, 7),
+                   textcoords="offset points", fontsize=8, ha="left", va="bottom")
     inset.set(xlim=(-1.15, 1.15), ylim=(-1.15, 1.15))
     inset.set_xticks([])
     inset.set_yticks([])
@@ -182,8 +184,8 @@ def figure_curved():
     ax.scatter([0, np.pi/4], [1, 1+1/np.sqrt(2)], s=21, color=BLUE, zorder=4)
     ax.text(0.035, 0.947, "reference point", fontsize=8, ha="left", va="center")
     ax.annotate(r"$1+1/\sqrt{2}$", xy=(np.pi/4, 1+1/np.sqrt(2)),
-                xytext=(0.46, 1.42), fontsize=9,
-                arrowprops={"arrowstyle": "-", "color": GRAY, "lw": 0.6})
+                xytext=(0, 7), textcoords="offset points", fontsize=9,
+                ha="center", va="bottom")
     ax.set(xlim=(-0.025, np.pi/4+0.028), ylim=(0.90, 1.84), xlabel=r"$b$", ylabel=r"$r_4/r_E(4)$")
     ax.set_xticks([0, np.pi/8, np.pi/4], [r"$0$", r"$\pi/8$", r"$\pi/4$"])
     ax.set_yticks([1, 1.25, 1.5, 1.75], [r"$1$", r"$1.25$", r"$1.5$", r"$1.75$"])
