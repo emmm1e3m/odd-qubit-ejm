@@ -4,14 +4,14 @@
 \noindent\begin{minipage}{\textwidth}
   \centering
   \includegraphics[width=\textwidth]{figures/fig4_clifford.pdf}
-  \captionof{figure}{Circuit structure of the measurement unitary and its complete diagonal phase.
-  (a) Seed preparation in the normal form of Ref.~\cite{PauwelsGisin2026} ($n=5$): the gates act from left to right as $H^{\otimes5}$, $D_{5,t}$, $H_5$, and the CNOT sequence $5\to4$, $4\to3$, $3\to2$, $2\to1$.
+  \captionof{figure}{Circuit structure of the measurement unitary. Gates act from left to right.
+  (a) Five-qubit seed preparation in the normal form of Ref.~\cite{PauwelsGisin2026}.
   (b) Decomposition of $D_{n,t}$ for every $n\ge5$, with the global phase $-i$ omitted.
   The top wire carries the $n$ data qubits, $P=\operatorname{diag}(1,i)$, and $R_0(\theta)=\exp(i\theta|0^n\rangle\langle0^n|)$ with $\theta=\pi/2-t$.
-  $R_0(\theta)$ is shown as an undecomposed $n$-qubit gate; its elementary-gate implementation uses one clean ancilla, which can be reused from the four auxiliaries shown.
-  The reversible parity encoding $U_{\mathcal L_n}:|z\rangle|a\rangle\mapsto|z\rangle|a\oplus\mathcal L_nz\rangle$, the four-qubit gate $F_t$, and the inverse encoding implement $e^{itq_n}$ while restoring all four auxiliary qubits to $|0\rangle$.
-  At $t=0$, $F_t$ is the identity and the parity encoding cancels with its inverse; $R_0(\pi/2)$ is the $X$-conjugated multi-controlled $P$ gate of Ref.~\cite{PauwelsGisin2026}, so panel (b) reduces to their decomposition.
-  At $t=\pi/2$, $R_0$ becomes the identity; the exact Clifford-hierarchy levels of the complete measurement unitary at $t=0,-\pi/2,\pi/2$ are $n+1,n,4$, respectively; the reference level $n+1$ was established in Ref.~\cite{PauwelsGisin2026}.}
+  $R_0$ is shown as an undecomposed $n$-qubit gate. Its implementation uses one clean ancilla; any of the four auxiliaries, still in $|0\rangle$ at that stage, can serve this role.
+  The parity encoding $U_{\mathcal L_n}:|z\rangle|a\rangle\mapsto|z\rangle|a\oplus\mathcal L_nz\rangle$, the four-qubit gate $F_t$, and the inverse encoding implement $e^{itq_n}$ and restore the auxiliaries to $|0\rangle$.
+  At $t=0$, $F_t=I$ and the encoding cancels with its inverse; $R_0(\pi/2)$ is the $X$-conjugated multi-controlled $P$ gate, recovering the decomposition of Ref.~\cite{PauwelsGisin2026}.
+  At $t=\pi/2$, $R_0=I$.}
   \label{fig:clifford}
 \end{minipage}
 \par\medskip

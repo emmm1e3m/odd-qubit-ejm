@@ -57,6 +57,8 @@ def panel(ax, text):
             ha="left", va="bottom", color=INK, fontsize=10)
 
 
+# 图1的数学字形与图4的TikZ电路采用同一Computer Modern系列。
+@plt.rc_context({"mathtext.fontset": "cm"})
 def figure_unified():
     fig = plt.figure(figsize=(7.0, 2.45))
     gs = fig.add_gridspec(1, 2, width_ratios=(1.1, 1), wspace=0.24,
