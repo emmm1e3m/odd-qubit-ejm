@@ -18,6 +18,7 @@
 \end{equation}
 其中 $P=\operatorname{diag}(1,i)$、$Z_0=\ket{0^n}\bra{0^n}$，$q_n$ 表示 Boolean 核的对角算符。在 $t=0$ 处，该式恢复文献~\cite{PauwelsGisin2026} 给出的分解，该文也已证明基准点的层级为 $n+1$；本文新增的是核相位，以及增强和零半径端点处分别为 $n$ 和 $4$ 的层级。
 
+\input{sections/figure-clifford}
 图~\ref{fig:clifford}(a) 给出五比特种子态的制备顺序，图 (b) 将任意 $n\ge5$ 的完整对角相位分解为局域 $P$ 门、四特征核相位与零串条件相位。核相位的实现先将四个奇偶校验计算到四个干净辅助比特上，施加 $e^{itF}$，再反算这些校验；计算与反算共需 $O(n)$ 个 CNOT 门，并将辅助比特恢复为零。额外的 $R_0(\theta)=e^{i\theta Z_0}$ 是 $n$ 比特受控相位门，可用一个干净辅助比特和 $O(n)$ 个基本门实现~\cite{Barenco1995}。零串条件相位的角度为 $\pi/2-t$：在参考点 $t=0$ 和增强端点 $t=-\pi/2$，它使完整测量酉的精确 Clifford 层级分别为 $n+1$ 和 $n$；在零半径端点 $t=\pi/2$，这一条件相位消失，完整测量酉的层级降为与 $n$ 无关的四。
 
 对角门 $i^{f(z)}$ 的 Clifford 层级判据为：模四多项式中，支撑于 $S$ 的非恒定单项式在系数为奇数时具有加权次数 $|S|+1$，系数为 $2$ 时具有加权次数 $|S|$；最大加权次数给出精确层级~\cite{GottesmanChuang1999,Cui2017}。在 $t=0$ 处，$\delta_{z,0}=\prod_j(1-z_j)$ 提供奇数系数的 $n$ 次项，给出层级 $n+1$。在 $t=-\pi/2$ 处，其系数加倍，给出层级 $n$。
@@ -32,4 +33,3 @@
  \label{physics:levels}
 \end{equation}
 附录~\ref{physics:app-hierarchy} 给出完整模四多项式及推导。在文献~\cite{PauwelsLocalization2025,PauwelsGisin2026} 的局域化框架中，这些层级给出所需资源的上界。
-\input{sections/figure-clifford}

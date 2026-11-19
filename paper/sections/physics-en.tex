@@ -18,6 +18,7 @@ The complete phase separates into the four-feature kernel and a correction at th
 \end{equation}
 where $P=\operatorname{diag}(1,i)$, $Z_0=\ket{0^n}\bra{0^n}$, and $q_n$ denotes the diagonal operator of the Boolean kernel. At $t=0$, this recovers the decomposition of Ref.~\cite{PauwelsGisin2026}, which also established the reference level $n+1$; the kernel phase and the levels $n$ and $4$ at the enhanced and zero-radius endpoints are obtained here.
 
+\input{sections/figure-clifford}
 Figure~\ref{fig:clifford}(a) gives the five-qubit seed preparation sequence, while panel (b) separates the complete diagonal phase for any $n\ge5$ into local $P$ gates, the four-feature kernel phase, and the zero-string conditional phase. The kernel phase is implemented by computing four parity checks into four clean auxiliaries, applying $e^{itF}$, and uncomputing the checks; computation and uncomputation use $O(n)$ CNOTs and restore the auxiliaries to zero. The additional gate $R_0(\theta)=e^{i\theta Z_0}$ is an $n$-qubit controlled phase, implementable with one clean ancilla and $O(n)$ elementary gates~\cite{Barenco1995}. The zero-string conditional phase has angle $\pi/2-t$: at the reference point $t=0$ and the enhanced endpoint $t=-\pi/2$, it gives the complete measurement unitary exact Clifford-hierarchy levels $n+1$ and $n$, respectively. At the zero-radius endpoint $t=\pi/2$, this conditional phase disappears and the level drops to four, independently of $n$.
 
 For a diagonal gate $i^{f(z)}$, the Clifford-hierarchy criterion assigns a nonconstant mod-four monomial on $S$ weighted degree $|S|+1$ for an odd coefficient and $|S|$ for coefficient $2$; the largest weighted degree gives the exact level~\cite{GottesmanChuang1999,Cui2017}. At $t=0$, $\delta_{z,0}=\prod_j(1-z_j)$ contributes a degree-$n$ monomial with odd coefficient, giving level $n+1$. At $t=-\pi/2$, its coefficient is doubled, giving level $n$.
@@ -32,4 +33,3 @@ At $t=\pi/2$, the zero-string correction vanishes. The mod-four polynomial of $F
  \label{physics:levels}
 \end{equation}
 Appendix~\ref{physics:app-hierarchy} gives the full mod-four polynomial and derivation. In the localization framework of Refs.~\cite{PauwelsLocalization2025,PauwelsGisin2026}, these levels give upper bounds on the required resources.
-\input{sections/figure-clifford}
