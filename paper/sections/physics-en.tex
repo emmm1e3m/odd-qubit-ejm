@@ -7,7 +7,20 @@ The preceding construction controls the common one-qubit geometry. We now determ
 \label{physics:entanglement}
 \label{physics:endpoints}
 
-We first show directly that every measurement column is genuinely multipartite entangled for every $n\ge5$ and every real $t$. Write $\psi(y)=\braket{y}{\psi_0(t)}$ and $u=e^{it}$. Undoing the CNOT chain in Eq.~\eqref{core:phase-family} gives $w_j=y_j\oplus y_{j+1}$ for $j<n$; set $w^{(b)}=(w_1,\ldots,w_{n-1},b)$. The Hadamard on the last qubit then gives
+For the unified family, write $p_A=\Tr\rho_A^2$ for a nonempty proper subsystem $A$. The genuine multipartite concurrence is~\cite{Ma2011}
+\begin{equation}
+ C_{\rm GME}(\psi)=\min_{\varnothing\ne A\subsetneq[n]}
+ \sqrt{2(1-p_A)}.
+ \label{physics:gme}
+\end{equation}
+This minimum measures entanglement across the weakest bipartition. For every $n\ge5$, every real $t$, and every column $k$, its exact value is
+\begin{equation}
+ C_{\rm GME}(\psi_k(t))=\sqrt{1-r_n(t)^2}>0.
+ \label{physics:gme-law}
+\end{equation}
+Determining this value requires comparing all cut purities. Appendix~\ref{physics:app-purity} proves that every cut with at least two qubits on each side has purity strictly below $1/2$, whereas every one-qubit reduction has purity $(1+r_n(t)^2)/2\ge1/2$. The minimizing cuts are therefore precisely the $1|(n-1)$ cuts. Within this family, the common local radius thus determines the genuine multipartite concurrence. In particular, the enhanced endpoint, whose radius equals $r_E(n-1)$, is genuinely multipartite entangled and therefore not a product extension of a smaller EJM.
+
+The amplitudes also give a direct proof that every measurement column is genuinely multipartite entangled for every $n\ge5$ and every real $t$. Write $\psi(y)=\braket{y}{\psi_0(t)}$ and $u=e^{it}$. Undoing the CNOT chain in Eq.~\eqref{core:phase-family} gives $w_j=y_j\oplus y_{j+1}$ for $j<n$; set $w^{(b)}=(w_1,\ldots,w_{n-1},b)$. The Hadamard on the last qubit then gives
 \[
  \sqrt{2^{n+1}}\,\psi(y)
  =D_{n,t}(w^{(0)})+(-1)^{y_n}D_{n,t}(w^{(1)}).
@@ -26,24 +39,13 @@ For any nontrivial cut $A|B$, arrange the amplitudes as a matrix $V_A$, with $A$
 \]
 Its modulus is $2^{-n}>0$, so $V_A$ has rank at least two and the seed is entangled across every cut. The local Pauli orbit~\eqref{core:orbit} preserves the Schmidt spectra and transfers this conclusion to every column.
 
-To quantify this entanglement, write $p_A=\Tr\rho_A^2$ for a nonempty proper subsystem $A$. The genuine multipartite concurrence is~\cite{Ma2011}
-\begin{equation}
- C_{\rm GME}(\psi)=\min_{\varnothing\ne A\subsetneq[n]}
- \sqrt{2(1-p_A)}.
- \label{physics:gme}
-\end{equation}
-This minimum measures entanglement across the weakest bipartition. For every $n\ge5$, every real $t$, and every column $k$, its exact value is
-\begin{equation}
- C_{\rm GME}(\psi_k(t))=\sqrt{1-r_n(t)^2}>0.
- \label{physics:gme-law}
-\end{equation}
-Determining this value requires comparing all cut purities. Appendix~\ref{physics:app-purity} proves that every cut with at least two qubits on each side has purity strictly below $1/2$, whereas every one-qubit reduction has purity $(1+r_n(t)^2)/2\ge1/2$. The minimizing cuts are therefore precisely the $1|(n-1)$ cuts. Within this family, the common local radius thus determines the genuine multipartite concurrence. In particular, the enhanced endpoint, whose radius equals $r_E(n-1)$, is genuinely multipartite entangled and therefore not a product extension of a smaller EJM.
-
 For the four-qubit cosine family, Ref.~\cite{PauwelsGisin2026} computed the genuine multipartite concurrence along the entire path: its weakest cut changes from a one-versus-three cut near the reference point to a two-versus-two cut, and the concurrence vanishes at the Bell-pair endpoint. In the unified family, the single-qubit minimum in Eq.~\eqref{physics:gme-law} persists along the entire path for every $n\ge5$.
 
-At $t=\pi/2$, every column has $C_{\rm GME}=1$ and is $1$-uniform~\cite{Scott2004}: all one-qubit reductions are $I/2$. Equation~\eqref{physics:endpoint-pair-purity} gives $p_{12}=11/32$ for $n=5$ and $p_{12}=5/16$ for every $n\ge6$. Both exceed $1/4$, so the endpoint is not $2$-uniform. Moreover, every two-qubit reduction of a stabilizer pure state has integer $4p_{ij}$, whereas these values give $11/8$ and $5/4$. Local unitaries preserve reduced purities and permutations only relabel the pairs. Thus, for every $n\ge5$, even allowing qubit permutations, no column at this endpoint is locally unitarily equivalent to a stabilizer pure state; see Appendix~\ref{physics:app-invariants} for the proof.
+At $t=\pi/2$, every column has $C_{\rm GME}=1$ and is $1$-uniform~\cite{Scott2004}: all one-qubit reductions are $I/2$. The zero-radius endpoints also distinguish the unified family from the even-qubit cosine family~\cite{PauwelsGisin2026}. For the cosine endpoint $\alpha=\pi/2$ at even $n\ge4$, $p_{12}=1/2+2^{3-n}$ and hence $C_{\rm GME}\le\sqrt{1-2^{4-n}}<1$, recovering the two-Bell-pair factorization at $n=4$. Thus, for every even $n\ge6$, the two endpoints have identical one-qubit reductions but are inequivalent under local unitaries and qubit permutations; see Appendix~\ref{physics:app-invariants}.
 
-The zero-radius endpoints also distinguish the unified family from the even-qubit cosine family~\cite{PauwelsGisin2026}. For the cosine endpoint $\alpha=\pi/2$ at even $n\ge4$, $p_{12}=1/2+2^{3-n}$ and hence $C_{\rm GME}\le\sqrt{1-2^{4-n}}<1$, recovering the two-Bell-pair factorization at $n=4$. Thus, for every even $n\ge6$, the two endpoints have identical one-qubit reductions but are inequivalent under local unitaries and qubit permutations; see Appendix~\ref{physics:app-invariants}.
+For each fixed even $n\ge6$, this strict concurrence gap persists at sufficiently small positive radii. On their contracting branches both bases vary continuously with the common radius $r$, and corresponding outcomes have the same one-qubit marginals at each site by Eq.~\eqref{core:bloch-orbit}. Since $C_{\rm GME}$ is the minimum of finitely many continuous cut concurrences, it remains strictly larger on the unified branch for all $0<r<\varepsilon_n$ for some $\varepsilon_n>0$.
+
+At this endpoint of the unified family, Eq.~\eqref{physics:endpoint-pair-purity} gives $p_{12}=11/32$ for $n=5$ and $p_{12}=5/16$ for every $n\ge6$. Both exceed $1/4$, so the endpoint is not $2$-uniform. Moreover, every two-qubit reduction of a stabilizer pure state has integer $4p_{ij}$, whereas these values give $11/8$ and $5/4$. Local unitaries preserve reduced purities and permutations only relabel the pairs. Thus, for every $n\ge5$, even allowing qubit permutations, no column at this endpoint is locally unitarily equivalent to a stabilizer pure state; see Appendix~\ref{physics:app-invariants} for the proof.
 
 \subsection{Phase factorization and Clifford hierarchy}
 \label{physics:implementation}

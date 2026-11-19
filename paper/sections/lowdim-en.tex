@@ -9,12 +9,15 @@ In the fixed Pauli-orbit representation, the specified EJM at $n=3$ is
 isolated in a neighborhood of its phase vector, after removing the overall
 phase.
 \end{proposition}
+
+\begin{proof}
 For $n=3$, removing the overall phase leaves seven independent phase variables. The three qubits have nine signed local components; subtracting the $X_1$ component from each of the other eight gives eight equality constraints. The Jacobian of seven of these constraints with respect to the seven phase variables has determinant $1/4096$ at the reference point.  The inverse function theorem therefore
 isolates the zero of these seven equations.  Since every signed component
 equals $1/4$ at that point, the squared regularity conditions are equivalent
 to signed equality in a neighborhood.  The Jacobian given in
 Appendix~\ref{low:app-rigidity} turns the numerical rank reported in
 Ref.~\cite{PauwelsGisin2026} into an analytic local statement.
+\end{proof}
 
 At $n=4$, straight Boolean phase paths cannot increase the radius. We next ask whether arbitrary real generators can overcome this restriction, writing a general straight phase path as
 \begin{equation}
@@ -45,6 +48,7 @@ path through the same measurement for which
 and the radius is strictly increasing along the path.
 \end{theorem}
 
+\begin{proof}[Proof sketch]
 The straight-path bound follows by expanding the component-equality conditions at the reference point. First-order conditions restrict the fifteen-dimensional space of real phase directions to a four-dimensional subspace. Requiring the same straight path to satisfy the second- and third-order conditions reduces the admissible directions to two two-dimensional subspaces. Substitution into the full formulas then gives the cosine law~\eqref{low:line-bound} on both. Appendix~\ref{low:app-lines} provides the classification and verification. This restricts paths with a fixed direction, while allowing curved paths whose direction varies with the parameter.
 
 To construct such a curved path, first introduce two independent real parameters $b,\delta$ and set $\theta_z=bu_z+\delta v_z$, using the two fixed integer phase directions $u,v$ in Eq.~\eqref{low:masks}.
@@ -94,6 +98,7 @@ column by column.  At the other endpoint $\delta(\pi/4)=-\pi/4$, giving
 the upper endpoint in Eq.~\eqref{low:curve-range}.
 The curved path leaves the two planes of admissible line directions and
 has $r'_4(0)=\sqrt3/6>0$.
+\end{proof}
 
 The larger value $3r_E(4)$ already occurs at a different measurement at $n=4$ in Ref.~\cite{PauwelsGisin2026}.  The purpose of
 Eq.~\eqref{low:curve} is to increase the radius through the specified

@@ -5,7 +5,7 @@
 **Tingyu Zhang、Yan Cen（通讯作者）**<br>
 Department of Physics, Fudan University, Shanghai, China<br>
 邮箱：[23300190021@m.fudan.edu.cn](mailto:23300190021@m.fudan.edu.cn) · [cenyan@fudan.edu.cn](mailto:cenyan@fudan.edu.cn)<br>
-**版本：2026-11-08，PRA 格式双语校阅稿**
+**2026-11-19 双语修订稿**
 
 - 论文 PDF：[英文，22 页](paper/main.pdf) · [中文，23 页](paper/main-zh.pdf)
 - LaTeX 源码：[英文](paper/main.tex) · [中文](paper/main-zh.tex)
@@ -32,10 +32,10 @@ Department of Physics, Fudan University, Shanghai, China<br>
 
 ## 形式化与复现
 
-2026-11-08已补齐任意n≥5、全实参数、全部测量列的精确GME和极小割证明，以及两类零半径端点的不等价性与任意至多两值实生成元的扩展。最终入口和全部本地声明公理检查通过；新证据见[验证记录](VERIFICATION.md)。该次形式化更新未修改论文正文与PDF；随后完成的双语文字修订见[校阅说明](paper/README.md)。
+2026-11-08已补齐任意n≥5、全实参数、全部测量列的精确GME和极小割证明，以及两类零半径端点的不等价性与任意至多两值实生成元的扩展。最终入口和全部本地声明公理检查通过；新证据见[验证记录](VERIFICATION.md)。
 
 [Lean 4.35.0 / mathlib v4.35.0 工程](lean-unified/README.md) 从实际电路的全部测量列和真实约化矩阵出发，形式化上述构造、模型最优界、低维结论与不等价性。覆盖还包括实际约化谱 $\lambda_\pm=(1\pm r)/2$、von Neumann 熵等于二元熵 $h_2((1+r)/2)$，以及统一路径上熵的严格单调性和端点。完整条件与声明入口见 [COVERAGE.md](lean-unified/COVERAGE.md)。相邻的 `lean/` 目录保留所需的通用基础依赖。
 
 [精确复算程序](paper/reproduce/README.md) 使用 Python 与 SymPy，独立核对原相位、电路、有限字符和、导数证书、曲线恒等式及多项式不等价证书，并提供运行结果。有限维复算与任意维数的 Lean 证明分别承担交叉核验和普遍结论。
 
-论文包含独立讨论与结论，两版共用四张英文图和五张英文表。致谢已按作者说明填写，结论说明主要数学结果已在 Lean 中完成形式化证明。当前复现材料提供为 [1.2.0 归档包](archives/multiqubit-ejm-verification-1.2.0.zip)，采用 MIT 许可；[Zenodo 1.0.0](https://doi.org/10.5281/zenodo.23882488) 保留先前版本。详见[校阅说明](paper/README.md)。
+当前复现材料提供为 [1.2.0 归档包](archives/multiqubit-ejm-verification-1.2.0.zip)，采用 MIT 许可；[Zenodo 1.0.0](https://doi.org/10.5281/zenodo.23882488) 保留先前版本。编译步骤见[论文目录](paper/README.md)。

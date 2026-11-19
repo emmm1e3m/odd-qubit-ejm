@@ -14,7 +14,7 @@
  (X^{\otimes n})^\sigma\ket{\psi_0}.
  \label{core:orbit}
 \end{equation}
-这一轨道将种子态的局部Bloch向量传递到全部测量列。要得到共同半径的正四面体，只需使种子态的带符号局部分量相等。本文固定局部坐标，仅对末位比特的$Y$分量作符号调整：$\widetilde Y_n=-Y_n$；其余$\widetilde P$均等于相应的物理Pauli算符。因此，共同带符号分量$m\ge0$对应的种子态Bloch向量为：$j<n$时$m(1,1,1)$，$j=n$时$m(1,-1,1)$。
+这一轨道将种子态的局部Bloch向量传递到全部测量列。它给出了通过局部酉变换将一个态扩展为一组基的具体构造~\cite{Pimpel2023}；两比特等纠缠基的分类见文献~\cite{DelSanto2024}。要得到共同半径的正四面体，只需使种子态的带符号局部分量相等。本文固定局部坐标，仅对末位比特的$Y$分量作符号调整：$\widetilde Y_n=-Y_n$；其余$\widetilde P$均等于相应的物理Pauli算符。因此，共同带符号分量$m\ge0$对应的种子态Bloch向量为：$j<n$时$m(1,1,1)$，$j=n$时$m(1,-1,1)$。
 
 相位变形从指定基准点出发，其相位为
 \begin{equation}
@@ -80,7 +80,10 @@
 对每个$j$，这四个单位向量构成正四面体，每个标签$(q,s)$恰出现$2^{n-2}$次。
 \end{lemma}
 
-所有将输出端局部算符$\widetilde P$拉回至$C_n$输入端的算符$R=C_n^\dagger\widetilde P C_n$均满足$a\ne0$，所以式\eqref{core:defect-state}中的修正对局部期望没有对角贡献；两个交叉项给出式\eqref{core:signal}。由式\eqref{core:orbit}中的轨道算符作共轭，即得式\eqref{core:vertices}的四面体符号。附录\ref{core:appendix}沿电路中的各个门依次作共轭，计算这些拉回算符，并推导约化态公式。
+\begin{proof}
+所有将输出端局部算符 $\widetilde P$ 拉回至 $C_n$ 输入端的算符 $R=C_n^\dagger\widetilde P C_n$ 均满足 $a\ne0$（见附录~\ref{core:pullbacks}），故 $\bra{0^n}R\ket{0^n}=0$。由 $R\ket{0^n}=i^k\ket a$ 和式~\eqref{core:background} 得 $\bra{\chi_\Theta}R\ket{0^n}=2^{-n/2}\Gamma e^{-i\Theta(a)}$。式~\eqref{core:defect-state} 中的两个交叉项于是给出式~\eqref{core:signal}。
+由式~\eqref{core:orbit} 中的轨道算符作共轭，即得式~\eqref{core:vertices} 的符号，从而得到式~\eqref{core:bloch-orbit} 的约化态。不同标签对应的单位向量恰有两个分量反号，故内积为 $-1/3$。对固定的 $j$，$\kappa_j$ 是 $e$ 的非零线性函数，与 $\sigma$ 独立，因此每对标签 $(\kappa_j,\sigma)$ 恰出现 $2^{n-2}$ 次。
+\end{proof}
 
 对Boolean相位$\Theta=tq$且$q(0)=1$，拉回算符分为两类：I类满足$\Gamma=-i$、$h\cdot a=1$；II类满足$\Gamma=-1$、$h\cdot a=0$。定义归一化Walsh系数
 \begin{equation}
@@ -132,7 +135,7 @@
 \end{equation}
 这里的减法取整数意义。因为$F(0)=1$，$d_n$仍为Boolean函数。被移除的只有物理全零串而非整个纤维$\mathcal L_nz=0$。
 
-图~\ref{fig:unified}(a)表明，对每个$n\ge5$，同一四特征核在从支撑中去掉物理零串后生成相位形变。图(b)给出统一的半径规律$r_n(t)/r_E(n)=1-\sin t$：当$t$从$-\pi/2$变到$\pi/2$时，共同半径从$2r_E(n)$严格递减，经$t=0$处的参考值降到零，此时全部单比特约化态均为最大混合态。因此，同一构造在保持四面体方向不变的同时，连接了半径增强端点与局部最大混合端点。
+图~\ref{fig:unified}(b) 展示了从基准测量出发时局部四面体的收缩与扩张。由式\eqref{core:vertices}，在任一比特上，不同顶点对应的两个约化态之间的迹距离为 $\sqrt{2/3}\,r_n(t)$，因而随半径一同加倍。图(a)给出对每个 $n\ge5$ 都能产生这一形变的四特征核。
 \input{sections/figure-unified}
 \begin{theorem}[统一半径增加族]
 \label{core:unified-theorem}
@@ -187,3 +190,5 @@
  \label{core:spectrum}
 \end{equation}
 相应的纠缠熵为$h_2((1+r_n(t))/2)$~\cite{PauwelsGisin2026}，其中$h_2(p)=-p\log_2p-(1-p)\log_2(1-p)$。Bloch半径增加时，这一二分纠缠熵下降。$t=\pi/2$时，式\eqref{core:defect-state}的单点修正消失；$t=-\pi/2$时，其干涉产生基准点两倍的局部信号。四个线性特征由此确定全部$n\ge5$的背景核；完整相位还保留零串修正，其实现见第~\ref{physics:implementation}~节。
+
+真正多体纠缠并发度取所有二分割并发度的最小值，因此单比特谱给出上界 $\sqrt{1-r_n(t)^2}$。第~\ref{physics:entanglement}~节将证明，两侧均至少含两个比特的每个划分都有严格更大的并发度，故沿整条路径，每个测量基态都达到单比特割给出的上界。

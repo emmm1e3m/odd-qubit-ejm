@@ -14,7 +14,7 @@ where $H_n$ acts only on the last qubit and $D$ is diagonal with unit-modulus en
  (X^{\otimes n})^\sigma\ket{\psi_0}.
  \label{core:orbit}
 \end{equation}
-This orbit propagates the seed's local Bloch vectors to all columns. To obtain regular tetrahedra with a common radius, it suffices to make the seed's signed local components equal. Our local coordinates are fixed throughout: only the final-qubit $Y$ component is sign-adjusted, $\widetilde Y_n=-Y_n$; every other $\widetilde P$ equals the corresponding physical Pauli operator. A common signed component $m\ge0$ therefore means seed Bloch vectors $m(1,1,1)$ for $j<n$ and $m(1,-1,1)$ for $j=n$.
+This orbit propagates the seed's local Bloch vectors to all columns. This is an example of extending a state to a basis by local unitaries~\cite{Pimpel2023}; for the two-qubit classification of iso-entangled bases, see Ref.~\cite{DelSanto2024}. To obtain regular tetrahedra with a common radius, it suffices to make the seed's signed local components equal. Our local coordinates are fixed throughout: only the final-qubit $Y$ component is sign-adjusted, $\widetilde Y_n=-Y_n$; every other $\widetilde P$ equals the corresponding physical Pauli operator. A common signed component $m\ge0$ therefore means seed Bloch vectors $m(1,1,1)$ for $j<n$ and $m(1,-1,1)$ for $j=n$.
 
 We deform the reference phase
 \begin{equation}
@@ -80,7 +80,10 @@ where $e_0=e_n=0$, $\kappa_j=e_{j-1}\oplus e_j$, and
 For each $j$, these four unit vectors form a regular tetrahedron, and each label $(q,s)$ occurs $2^{n-2}$ times.
 \end{lemma}
 
-Every operator $R=C_n^\dagger\widetilde P C_n$ that pulls a local output observable $\widetilde P$ back to the input of $C_n$ has $a\ne0$, so the correction in Eq.~\eqref{core:defect-state} has no diagonal contribution to a local expectation. Its two cross terms give Eq.~\eqref{core:signal}. Conjugation by the orbit operators in Eq.~\eqref{core:orbit} gives the tetrahedral signs in Eq.~\eqref{core:vertices}. Appendix~\ref{core:appendix} computes these operators by conjugating successively through the circuit gates and derives the reduced states.
+\begin{proof}
+Every operator $R=C_n^\dagger\widetilde P C_n$ that pulls a local output observable $\widetilde P$ back to the input of $C_n$ has $a\ne0$ (Appendix~\ref{core:pullbacks}), so $\bra{0^n}R\ket{0^n}=0$. Since $R\ket{0^n}=i^k\ket a$, Eq.~\eqref{core:background} gives $\bra{\chi_\Theta}R\ket{0^n}=2^{-n/2}\Gamma e^{-i\Theta(a)}$. The two cross terms in Eq.~\eqref{core:defect-state} then give Eq.~\eqref{core:signal}.
+Conjugation by the orbit operators in Eq.~\eqref{core:orbit} gives the signs in Eq.~\eqref{core:vertices} and hence the reduced states in Eq.~\eqref{core:bloch-orbit}. Distinct labels reverse two signs, so their unit vectors have dot product $-1/3$. For fixed $j$, $\kappa_j$ is a nonzero linear function of $e$ independent of $\sigma$, so each pair $(\kappa_j,\sigma)$ occurs $2^{n-2}$ times.
+\end{proof}
 
 For the Boolean phase $\Theta=tq$, $q(0)=1$, the pullbacks fall into two classes: class I has $\Gamma=-i$ and $h\cdot a=1$, while class II has $\Gamma=-1$ and $h\cdot a=0$. With normalized Walsh coefficients
 \begin{equation}
@@ -132,7 +135,7 @@ Define
 \end{equation}
 Here the subtraction is in the integers. Since $F(0)=1$, $d_n$ is still Boolean. Only the physical zero string is removed, not the whole fiber $\mathcal L_nz=0$.
 
-Figure~\ref{fig:unified}(a) shows that the same four-feature kernel generates the deformation for every $n\ge5$, with the physical zero string removed from its support. Panel (b) gives the resulting universal radius law $r_n(t)/r_E(n)=1-\sin t$: as $t$ runs from $-\pi/2$ to $\pi/2$, the common radius decreases strictly from $2r_E(n)$ through the reference value at $t=0$ to zero, where all one-qubit marginals are maximally mixed. Thus a single construction connects radius enhancement to locally maximally mixed states while keeping the tetrahedral directions fixed.
+Figure~\ref{fig:unified}(b) shows how the local tetrahedra contract or expand from the reference measurement. For any two distinct vertices at a given site, the trace distance between their reduced states is $\sqrt{2/3}\,r_n(t)$ by Eq.~\eqref{core:vertices}; it doubles when the radius doubles. Panel (a) shows the four-feature kernel that produces this deformation for every $n\ge5$.
 \input{sections/figure-unified}
 \begin{theorem}[Unified radius-increasing family]
 \label{core:unified-theorem}
@@ -187,3 +190,5 @@ The increase in radius has a direct interpretation in terms of entanglement betw
  \label{core:spectrum}
 \end{equation}
 Their entanglement entropy is $h_2((1+r_n(t))/2)$~\cite{PauwelsGisin2026}, where $h_2(p)=-p\log_2p-(1-p)\log_2(1-p)$. Increasing the Bloch radius decreases this bipartite entanglement entropy. At $t=\pi/2$, the point correction in Eq.~\eqref{core:defect-state} vanishes; at $t=-\pi/2$, its interference produces twice the reference local signal. Thus four linear features specify the background kernel for every $n\ge5$; the complete phase also retains the zero-string correction, as discussed in Sec.~\ref{physics:implementation}.
+
+Since the genuine multipartite concurrence is the minimum of the concurrence over all bipartitions, the one-qubit spectrum gives an upper bound of $\sqrt{1-r_n(t)^2}$. Section~\ref{physics:entanglement} shows that every cut with at least two qubits on either side has strictly larger concurrence, so every column attains the one-qubit bound along the entire path.

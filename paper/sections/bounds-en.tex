@@ -27,6 +27,8 @@ Bloch radius is
 \end{equation}
 Intervals with $m_d\ge0$ retain the original tetrahedral orientation.
 
+Reference~\cite{PauwelsGisin2026} numerically scanned, for $n\le8$, indicator supports obtained by fixing a subset of input bits to zero and excluding the all-zero string, finding the cosine law only for the selected even-qubit support. The present classification allows arbitrary two-valued generators.
+
 \begin{theorem}[Four allowed radius laws and the sharp Boolean-path bound]
 \label{bound:theorem}
 Let $n\ge3$ and let $d$ be admissible.  Set $c_n=2^{1-n}$.
@@ -51,8 +53,7 @@ For every $n\ge2$, with $r_E(n)=\sqrt3\,c_n$, the exact maximum over admissible 
 Both maxima are attained.
 \end{theorem}
 
-Reference~\cite{PauwelsGisin2026} numerically scanned, for $n\le8$, indicator supports obtained by fixing a subset of input bits to zero and excluding the all-zero string, finding the cosine law only for the selected even-qubit support. The present classification allows arbitrary two-valued generators.
-
+\begin{proof}[Proof sketch]
 At the reference point all these components equal $c_n>0$.
 Regularity therefore makes them equal on a neighborhood of the reference point.  Each component is a linear combination of $1$, $\cos t$, and
 $\sin t$, so equality on that neighborhood implies equality for all
@@ -88,9 +89,10 @@ The calculation for $n=2$, where class II is absent,
 also permits only these two laws.  Appendix~\ref{bound:appendix}
 gives the coefficient calculation and the $n=2$ proof; the exclusions at
 $n=3,4$ will be established as part of the local-rigidity and real-generator
-analysis in Sec.~\ref{low:section}.
+analysis in Sec.~\ref{low:section} (Appendices~\ref{low:app-rigidity} and~\ref{low:app-lines}).
 The reference point attains the low-dimensional maximum, while the unified
 family attains $2r_E$ at $t=-\pi/2$ for every $n\ge5$.
+\end{proof}
 
 Consequently, $n=5$ is the smallest system size permitting an
 increase of the radius along a straight phase path through the specified reference point with a two-valued real generator. General multivalued straight phase paths
