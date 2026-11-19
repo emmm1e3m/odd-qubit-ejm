@@ -1,7 +1,7 @@
 # 双语论文与编译说明
 
-**A unified construction of continuously tunable multiqubit elegant joint measurements**<br>
-**连续可调多比特优雅联合测量的统一构造**
+**Local polarization and multipartite entanglement in tunable multiqubit elegant joint measurements**<br>
+**可调多比特优雅联合测量中的局部极化与多体纠缠**
 
 作者：Tingyu Zhang、Yan Cen（通讯作者）。共同单位：Department of Physics, Fudan University, Shanghai, China。
 

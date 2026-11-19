@@ -106,6 +106,8 @@
 \section{全部\texorpdfstring{$n\ge5$}{n >= 5}的统一族}
 \label{core:unified}
 
+\subsection{相位构造}
+
 下面构造适用于全部整数$n\ge5$的半径增加族。式\eqref{core:signal}给出两项设计要求：消去所有背景项$B_R(t)$，并使剩余交叉项相等。对Boolean相位，前者化为式\eqref{core:boolean-background}中的Walsh消去条件，后者确定局部翻转处的取值$q(a)$。对每个整数$n\ge5$，使用四个线性特征将这两项要求归约为同一个四位核上的条件。定义两个内部奇偶块
 \begin{equation}
  \begin{aligned}
@@ -135,7 +137,7 @@
 \end{equation}
 这里的减法取整数意义。因为$F(0)=1$，$d_n$仍为Boolean函数。被移除的只有物理全零串而非整个纤维$\mathcal L_nz=0$。
 
-图~\ref{fig:unified}(b) 展示了从基准测量出发时局部四面体的收缩与扩张。由式\eqref{core:vertices}，在任一比特上，不同顶点对应的两个约化态之间的迹距离为 $\sqrt{2/3}\,r_n(t)$，因而随半径一同加倍。图(a)给出对每个 $n\ge5$ 都能产生这一形变的四特征核。
+图~\ref{fig:unified}(b) 展示了从基准测量出发时局部四面体的收缩与扩张。图(a)给出对每个 $n\ge5$ 都能产生这一形变的四特征核。
 \input{sections/figure-unified}
 \begin{theorem}[统一半径增加族]
 \label{core:unified-theorem}
@@ -183,12 +185,34 @@
 引理\ref{core:mechanism}把种子态恒等式传递到全部测量列。端点、基准点与半径取值区间的结论由对角相位以及$\sin t$在$J$上的严格单调性得到。
 \end{proof}
 
+$t=\pi/2$时，式\eqref{core:defect-state}的单点修正消失；$t=-\pi/2$时，其干涉产生基准点两倍的局部信号。四个线性特征由此确定全部$n\ge5$的背景核；完整相位还保留零串修正，其实现见第~\ref{physics:implementation}~节。
+
+\subsection{局部可区分性与最弱二分割上的纠缠}
+\label{physics:entanglement}
+
+为考察半径对局部可区分性的影响，取两个等先验的测量基态，使它们在比特 $j$ 上对应不同的四面体顶点。由式~\eqref{core:vertices}，这两个单比特约化态之间的迹距离为 $D=\sqrt{2/3}\,r_n(t)$。仅测量比特 $j$ 时，区分它们的最优成功概率为 $(1+D)/2$~\cite{Helstrom1967}，因而半径加倍时，成功概率超出随机猜测的部分也加倍。
+
 半径增加也直接反映在单比特与其余系统之间的纠缠熵上。所有测量结果、所有$1|(n-1)$划分共享同一局部谱
 \begin{equation}
  \lambda_\pm=\frac{1\pm r_n(t)}2,
  \qquad \operatorname{Tr}\rho_j^2=\frac{1+r_n(t)^2}{2}.
  \label{core:spectrum}
 \end{equation}
-相应的纠缠熵为$h_2((1+r_n(t))/2)$~\cite{PauwelsGisin2026}，其中$h_2(p)=-p\log_2p-(1-p)\log_2(1-p)$。Bloch半径增加时，这一二分纠缠熵下降。$t=\pi/2$时，式\eqref{core:defect-state}的单点修正消失；$t=-\pi/2$时，其干涉产生基准点两倍的局部信号。四个线性特征由此确定全部$n\ge5$的背景核；完整相位还保留零串修正，其实现见第~\ref{physics:implementation}~节。
+相应的纠缠熵为$h_2((1+r_n(t))/2)$~\cite{PauwelsGisin2026}，其中$h_2(p)=-p\log_2p-(1-p)\log_2(1-p)$。Bloch半径增加时，这一二分纠缠熵下降。
 
-真正多体纠缠并发度取所有二分割并发度的最小值，因此单比特谱给出上界 $\sqrt{1-r_n(t)^2}$。第~\ref{physics:entanglement}~节将证明，两侧均至少含两个比特的每个划分都有严格更大的并发度，故沿整条路径，每个测量基态都达到单比特割给出的上界。
+对非空真子系统 $A$ 记 $p_A=\Tr\rho_A^2$。真正多体纠缠并发度定义为~\cite{Ma2011}
+\begin{equation}
+ C_{\rm GME}(\psi)=\min_{\varnothing\ne A\subsetneq[n]}
+ \sqrt{2(1-p_A)}.
+ \label{physics:gme}
+\end{equation}
+取单比特划分便给出这一最小值的上界 $\sqrt{1-r_n(t)^2}$。附录~\ref{physics:app-purity} 证明，两侧均至少含两个比特的每个划分，其约化纯度都严格小于 $1/2$，而每个单比特约化态的纯度均为 $(1+r_n(t)^2)/2\ge1/2$。因此，最小值恰由 $1|(n-1)$ 划分取得。对每个 $n\ge5$、任意实参数 $t$ 和任意测量列 $k$，其精确值为
+\begin{equation}
+ C_{\rm GME}(\psi_k(t))=\sqrt{1-r_n(t)^2}>0.
+ \label{physics:gme-law}
+\end{equation}
+特别地，增强端点的半径等于 $r_E(n-1)$，且仍真正多体纠缠，因此不可能是较小 EJM 添加一个纯态比特得到的乘积扩展。
+
+为比较相同局部极化下的两族测量，固定一个偶数 $n\ge6$，考虑 Pauwels 和 Gisin 的余弦路径~\cite{PauwelsGisin2026}。沿这条路径，半径 $r=r_E(n)\cos\alpha$ 在 $0\le\alpha\le\pi/2$ 上取遍 $[0,r_E(n)]$，恰与统一族收缩支的半径范围相同。在各自的收缩支上，两套基态均随共同半径 $r$ 连续变化；由式~\eqref{core:bloch-orbit}，同一半径下对应测量结果在每个比特上的约化态逐项相同。
+
+在 $r=0$ 处，这些单比特约化态均为 $I/2$，式~\eqref{physics:gme-law} 给出统一族中每个基态的 $C_{\rm GME}=1$。对余弦端点 $\alpha=\pi/2$，第一、二比特的联合纯度为 $p_{12}=1/2+2^{3-n}$，从而将这对比特与其余系统分开便给出 $C_{\rm GME}\le\sqrt{1-2^{4-n}}<1$（附录~\ref{physics:app-invariants}）。对每个固定的偶数 $n\ge6$，这一严格的并发度差异在充分小的正半径处仍然存在。$C_{\rm GME}$ 是有限个连续的二分割并发度的最小值，故存在 $\varepsilon_n>0$，使得对所有 $0<r<\varepsilon_n$，统一族的 $C_{\rm GME}$ 仍严格大于余弦族。

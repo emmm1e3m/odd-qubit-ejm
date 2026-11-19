@@ -1,4 +1,4 @@
-# 连续可调多比特优雅联合测量的统一构造
+# 可调多比特优雅联合测量中的局部极化与多体纠缠
 
 中文 | [English](README.en.md)
 
@@ -7,7 +7,7 @@ Department of Physics, Fudan University, Shanghai, China<br>
 邮箱：[23300190021@m.fudan.edu.cn](mailto:23300190021@m.fudan.edu.cn) · [cenyan@fudan.edu.cn](mailto:cenyan@fudan.edu.cn)<br>
 **2026-11-19 双语修订稿**
 
-- 论文 PDF：[英文，22 页](paper/main.pdf) · [中文，23 页](paper/main-zh.pdf)
+- 论文 PDF：[英文，21 页](paper/main.pdf) · [中文，24 页](paper/main-zh.pdf)
 - LaTeX 源码：[英文](paper/main.tex) · [中文](paper/main-zh.tex)
 - 复现：[精确计算](paper/reproduce/README.md) · [Lean 工程](lean-unified/README.md) · [论文与形式化对应](lean-unified/COVERAGE.md)
 - [完整复现归档 1.2.0](archives/multiqubit-ejm-verification-1.2.0.zip) · [版本说明](archives/README.md)

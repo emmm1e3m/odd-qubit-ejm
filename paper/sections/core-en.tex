@@ -106,6 +106,8 @@ These formulas express the background terms in terms of Walsh coefficients of th
 \section{A unified family for all \texorpdfstring{$n\ge5$}{n >= 5}}
 \label{core:unified}
 
+\subsection{Phase construction}
+
 We now construct a radius-increasing family for every integer $n\ge5$. Equation~\eqref{core:signal} suggests two design requirements: cancel every background term $B_R(t)$, and make the remaining cross terms equal. For Boolean phases, the first requirement gives the Walsh cancellations in Eq.~\eqref{core:boolean-background}, while the second fixes the values $q(a)$ at the local flips. For every integer $n\ge5$, four linear features reduce these requirements to conditions on one fixed four-bit kernel. Define the two internal parity blocks
 \begin{equation}
  \begin{aligned}
@@ -135,7 +137,7 @@ Define
 \end{equation}
 Here the subtraction is in the integers. Since $F(0)=1$, $d_n$ is still Boolean. Only the physical zero string is removed, not the whole fiber $\mathcal L_nz=0$.
 
-Figure~\ref{fig:unified}(b) shows how the local tetrahedra contract or expand from the reference measurement. For any two distinct vertices at a given site, the trace distance between their reduced states is $\sqrt{2/3}\,r_n(t)$ by Eq.~\eqref{core:vertices}; it doubles when the radius doubles. Panel (a) shows the four-feature kernel that produces this deformation for every $n\ge5$.
+Figure~\ref{fig:unified}(b) shows how the local tetrahedra contract or expand from the reference measurement. Panel (a) shows the four-feature kernel that produces this deformation for every $n\ge5$.
 \input{sections/figure-unified}
 \begin{theorem}[Unified radius-increasing family]
 \label{core:unified-theorem}
@@ -183,12 +185,34 @@ Third, every class-I flip satisfies $F(\mathcal L_na)=0$, and every class-II fli
 Lemma~\ref{core:mechanism} transfers this seed identity to all measurement columns. The endpoint, reference-point, and image statements follow from the diagonal phase and the strict monotonicity of $\sin t$ on $J$.
 \end{proof}
 
+At $t=\pi/2$, the point correction in Eq.~\eqref{core:defect-state} vanishes; at $t=-\pi/2$, its interference produces twice the reference local signal. Thus four linear features specify the background kernel for every $n\ge5$; the complete phase also retains the zero-string correction, as discussed in Sec.~\ref{physics:implementation}.
+
+\subsection{Local distinguishability and entanglement across the weakest cut}
+\label{physics:entanglement}
+
+To see how the radius affects local distinguishability, take two equally likely measurement states with distinct tetrahedral vertices at site $j$. By Eq.~\eqref{core:vertices}, the trace distance between their one-qubit marginals is $D=\sqrt{2/3}\,r_n(t)$. Since the optimal success probability for distinguishing them by a measurement on qubit $j$ alone is $(1+D)/2$~\cite{Helstrom1967}, doubling the radius doubles the advantage over a random guess.
+
 The increase in radius has a direct interpretation in terms of entanglement between one qubit and the remaining system. All outcomes and all $1|(n-1)$ cuts share the spectrum
 \begin{equation}
  \lambda_\pm=\frac{1\pm r_n(t)}2,
  \qquad \operatorname{Tr}\rho_j^2=\frac{1+r_n(t)^2}{2}.
  \label{core:spectrum}
 \end{equation}
-Their entanglement entropy is $h_2((1+r_n(t))/2)$~\cite{PauwelsGisin2026}, where $h_2(p)=-p\log_2p-(1-p)\log_2(1-p)$. Increasing the Bloch radius decreases this bipartite entanglement entropy. At $t=\pi/2$, the point correction in Eq.~\eqref{core:defect-state} vanishes; at $t=-\pi/2$, its interference produces twice the reference local signal. Thus four linear features specify the background kernel for every $n\ge5$; the complete phase also retains the zero-string correction, as discussed in Sec.~\ref{physics:implementation}.
+Their entanglement entropy is $h_2((1+r_n(t))/2)$~\cite{PauwelsGisin2026}, where $h_2(p)=-p\log_2p-(1-p)\log_2(1-p)$. Increasing the Bloch radius decreases this bipartite entanglement entropy.
 
-Since the genuine multipartite concurrence is the minimum of the concurrence over all bipartitions, the one-qubit spectrum gives an upper bound of $\sqrt{1-r_n(t)^2}$. Section~\ref{physics:entanglement} shows that every cut with at least two qubits on either side has strictly larger concurrence, so every column attains the one-qubit bound along the entire path.
+For the unified family, write $p_A=\Tr\rho_A^2$ for a nonempty proper subsystem $A$. The genuine multipartite concurrence is~\cite{Ma2011}
+\begin{equation}
+ C_{\rm GME}(\psi)=\min_{\varnothing\ne A\subsetneq[n]}
+ \sqrt{2(1-p_A)}.
+ \label{physics:gme}
+\end{equation}
+The one-qubit cuts give an upper bound of $\sqrt{1-r_n(t)^2}$ on this minimum. Appendix~\ref{physics:app-purity} proves that every cut with at least two qubits on each side has purity strictly below $1/2$, whereas every one-qubit reduction has purity $(1+r_n(t)^2)/2\ge1/2$. The minimizing cuts are therefore precisely the $1|(n-1)$ cuts. For every $n\ge5$, every real $t$, and every column $k$, the exact concurrence is
+\begin{equation}
+ C_{\rm GME}(\psi_k(t))=\sqrt{1-r_n(t)^2}>0.
+ \label{physics:gme-law}
+\end{equation}
+In particular, the enhanced endpoint, whose radius equals $r_E(n-1)$, is genuinely multipartite entangled and therefore not a product extension of a smaller EJM.
+
+To compare the two families at the same local polarization, take an even $n\ge6$ and consider the cosine path of Pauwels and Gisin~\cite{PauwelsGisin2026}. Its radius $r=r_E(n)\cos\alpha$ for $0\le\alpha\le\pi/2$ covers the same interval $[0,r_E(n)]$ as the contracting branch of the unified family. On their contracting branches both bases vary continuously with the common radius $r$, and corresponding outcomes have the same one-qubit marginals at each site by Eq.~\eqref{core:bloch-orbit}.
+
+At $r=0$, all these marginals are $I/2$, and Eq.~\eqref{physics:gme-law} gives $C_{\rm GME}=1$ for every state in the unified basis. For the cosine endpoint $\alpha=\pi/2$, the two-qubit purity is $p_{12}=1/2+2^{3-n}$, and hence the cut separating this pair from the rest gives $C_{\rm GME}\le\sqrt{1-2^{4-n}}<1$ (Appendix~\ref{physics:app-invariants}). For each fixed even $n\ge6$, this strict concurrence gap persists at sufficiently small positive radii. Since $C_{\rm GME}$ is the minimum of finitely many continuous cut concurrences, it remains strictly larger on the unified branch for all $0<r<\varepsilon_n$ for some $\varepsilon_n>0$.
