@@ -1,7 +1,7 @@
-\section{Local formulas and the all-\texorpdfstring{$n$}{n} reduction}
+\section{Local phase formulas and two families of measurement paths}
 \label{core:appendix}
 
-This appendix derives the local phase formula in Lemma~\ref{core:mechanism} and proves the all-$n$ cancellations and orbit statements used in Theorem~\ref{core:unified-theorem}.
+We derive the local phase formulas of Lemma~\ref{core:mechanism} and obtain the marginals of the complete basis from the Pauli orbit of the seed. We use these formulas to verify the radius law for the unified family in Theorem~\ref{core:unified-theorem} and to construct a cosine contraction for odd numbers of qubits.
 
 \subsection{Complete measurement, reduced states, and multiplicity}
 \label{core:full-measurement}
@@ -135,3 +135,25 @@ These sets include both parities of the final internal coordinate. They prove th
 
 
 As supplementary information, the kernel equals one at six inputs with $s=0$ and four with $s=1$. Each feature fiber has size $2^{n-4}$, and the physical zero string is removed from $d_n$, so $|\operatorname{supp}d_n|=10\cdot2^{n-4}-1$.
+
+\subsection{Cosine contraction for odd qubit numbers}
+\label{core:odd-cosine}
+
+For the comparison at matched radii in Sec.~\ref{physics:entanglement}, we take the cosine kernel for odd $n\ge5$ to be
+\begin{equation}
+ q_{\rm o}(z)=\begin{cases}
+  1-z_2,& n=5,\ z_4=0,\\
+  1-z_3,& n=5,\ z_4=1,\\
+  (1-z_2)(1-o_n(z)),& n\ge7,
+ \end{cases}
+ \label{core:odd-cosine-kernel}
+\end{equation}
+where $o_n(z)=z_3\oplus z_5\oplus\cdots\oplus z_{n-2}$ in the last case. Put $d_{\rm o}(z)=q_{\rm o}(z)-\delta_{z,0}$ and take the diagonal phase $D(z)=i^{f_0(z)}e^{i\alpha d_{\rm o}(z)}$. Since $q_{\rm o}(0)=1$, the generator vanishes at the physical zero string. The phase at $\alpha=0$ is the reference phase.
+
+Each class-I flip $a$ in Table~\ref{core:pullback-table} is supported on sites $1,n-1,n$, so $q_{\rm o}(a)=1$. The class-II flips have adjacent support $\{j-1,j\}$, with site $n$ also flipped for $Y_j$. The kernel is independent of $z_n$. At $n=5$, the first two adjacent flips have $z_2=1$ and $z_4=0$, and the last has $z_3=z_4=1$. At odd $n\ge7$, the flips with $j=2,3$ have $z_2=1$, and those with $4\le j<n$ have $o_n=1$ since exactly one site of the pair contributes to that parity. Thus $q_{\rm o}(a)=0$ in class II.
+
+At odd $n\ge7$, both $q_{\rm o}$ and every $D_aq_{\rm o}$ depend only on $z_2$ and $o_n$. Their Walsh coefficients vanish outside the span of $\mathbf e_2$ and the binary mask of $o_n$. In class I, each character $h$ either contains site $n$ or is $\mathbf e_1$ or $\mathbf e_{n-1}$, so it lies outside this span. In class II, the $Y_j$ characters contain site $n$, and the $X_j$ characters consist of an adjacent pair. The mask of $o_n$ includes at least two nonadjacent sites, so the span contains no adjacent pair. All background terms in Eq.~\eqref{core:boolean-background} therefore vanish.
+
+At $n=5$, the class-I characters other than that of $-Y_5$ contain site $1$ or $5$, on which the kernel does not depend. For $-Y_5$, $h=\mathbf e_4$ and $q_{\rm o}$ is balanced over $(z_2,z_3)$ at each fixed $z_4$. The class-II $Y_j$ characters contain site $5$, and the $X_2$ character contains site $1$, so these coefficients also vanish. For $X_3$, the derivative under the flip of sites $2,3$ is constant. For $X_4$, the derivative is $1\oplus z_2\oplus z_3\oplus z_4$ and $h=\mathbf e_3\oplus\mathbf e_4$, so the summands cancel under a flip of site $2$.
+
+With zero backgrounds and the two flip values, Eq.~\eqref{core:signal} gives the common signed component $c_n\cos\alpha$. The orthonormality of $M[D]$ and the orbit formula~\eqref{core:bloch-orbit} give the same tetrahedral directions as at the reference point, with radius $r_E(n)\cos\alpha$ for $0\le\alpha\le\pi/2$.

@@ -1,9 +1,10 @@
 \section{Proof of the sharp bounds for Boolean straight phase paths}
 \label{bound:appendix}
 
-This appendix proves Theorem~\ref{bound:theorem}: tetrahedral regularity fixes the signed local components, coefficient comparison gives the four radius laws, and low-dimensional restrictions determine which laws are possible.
+We prove Theorem~\ref{bound:theorem} by first showing that tetrahedral regularity forces the signed local components to be equal. Comparing their coefficients gives four candidate radius laws. We then rule out a radius increase for $n=2,3,4$ and exhibit measurements attaining the upper bound in each dimension.
 
 \subsection{From tetrahedral regularity to equal signed components}
+\label{bound:app-regularity}
 This section proves that local tetrahedral regularity near the reference point is equivalent to equality of the signed components along the entire Boolean straight phase path. The local action of the Pauli orbit sends a seed Bloch vector $(x,y,z)$
 to the four vectors
 \begin{equation}
@@ -32,6 +33,7 @@ $\sqrt3\,|m_d|$.  This proves the local-to-global step used in
 Theorem~\ref{bound:theorem}.
 
 \subsection{Background terms and coefficient comparison}
+\label{bound:app-coefficients}
 This section compares the coefficients of the local components to derive the necessary and sufficient conditions and the four radius laws. Write $N=2^n$, $c=2/N$, and $q=d+\delta_0$.
 Then $q$ is Boolean with $q(0)=1$, and Eq.~\eqref{core:defect-state}
 applies with $\Theta=tq$. Combining the local formula
@@ -68,7 +70,8 @@ Equality of the sine and constant coefficients, respectively, gives
 The cosine coefficients then agree as well. Substitution proves both directions of Eq.~\eqref{bound:conditions} and yields the four allowed radius laws.
 Their maximum absolute values prove the general upper bound.
 
-\subsection{Analytic exclusions at \texorpdfstring{$n=2,3,4$}{n=2,3,4}}
+\subsection{Low-dimensional restrictions and measurements attaining the bounds}
+\label{bound:app-sharpness}
 This section excludes radius increase for $n=2,3,4$ and identifies measurements attaining the bounds in every dimension.
 For $n=2$, only class I occurs and its flip masks cover all three
 nonzero strings.  Equality of the cosine coefficients forces

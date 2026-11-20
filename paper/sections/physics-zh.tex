@@ -1,7 +1,7 @@
 \section{端点态与电路实现}
 \label{physics:section}
 
-\subsection{零半径端点的约化态}
+\subsection{统一族零半径端点的约化态}
 \label{physics:endpoints}
 
 在 $t=\pi/2$ 处，统一族的每个测量列均为 $1$-uniform 态~\cite{Scott2004}，即全部单比特约化态为 $I/2$。式~\eqref{physics:endpoint-pair-purity} 给出 $n=5$ 时 $p_{12}=11/32$，每个 $n\ge6$ 时 $p_{12}=5/16$。两者均大于 $1/4$，故该端点非 $2$-uniform。
@@ -19,11 +19,19 @@
 其中 $P=\operatorname{diag}(1,i)$、$Z_0=\ket{0^n}\bra{0^n}$，$q_n$ 表示 Boolean 核的对角算符。在 $t=0$ 处，该式恢复文献~\cite{PauwelsGisin2026} 给出的分解，该文也已证明基准点的层级为 $n+1$；本文新增的是核相位，以及增强和零半径端点处分别为 $n$ 和 $4$ 的层级。
 
 \input{sections/figure-clifford}
-图~\ref{fig:clifford}(a) 给出五比特种子态的制备顺序，图 (b) 将任意 $n\ge5$ 的完整对角相位分解为局域 $P$ 门、四特征核相位与零串条件相位。核相位的实现先将四个奇偶校验计算到四个干净辅助比特上，施加 $e^{itF}$，再反算这些校验；计算与反算共需 $O(n)$ 个 CNOT 门，并将辅助比特恢复为零。额外的 $R_0(\theta)=e^{i\theta Z_0}$ 是 $n$ 比特受控相位门，可用一个干净辅助比特和 $O(n)$ 个基本门实现~\cite{Barenco1995}。零串条件相位的角度为 $\pi/2-t$：在参考点 $t=0$ 和增强端点 $t=-\pi/2$，它使完整测量酉的精确 Clifford 层级分别为 $n+1$ 和 $n$；在零半径端点 $t=\pi/2$，这一条件相位消失，完整测量酉的层级降为与 $n$ 无关的四。
+图~\ref{fig:clifford}(a) 给出五比特种子态的制备顺序，图 (b) 将任意 $n\ge5$ 的完整对角相位分解为局域 $P$ 门、四特征核相位与零串条件相位。可逆编码 $\ket z\ket a\mapsto\ket z\ket{a\oplus\mathcal L_nz}$ 将四个奇偶校验计算到四个干净辅助比特上。施加 $e^{itF}$ 后反算这些校验，即可实现核相位并将辅助比特恢复为零，计算与反算共需 $O(n)$ 个 CNOT 门。额外的 $R_0(\theta)=e^{i\theta Z_0}$ 是 $n$ 比特受控相位门，可用一个干净辅助比特和 $O(n)$ 个基本门实现~\cite{Barenco1995}。零串条件相位的角度为 $\pi/2-t$：在参考点 $t=0$ 和增强端点 $t=-\pi/2$，它使完整测量酉的精确 Clifford 层级分别为 $n+1$ 和 $n$；在零半径端点 $t=\pi/2$，这一条件相位消失，完整测量酉的层级降为与 $n$ 无关的四。
 
-对角门 $i^{f(z)}$ 的 Clifford 层级判据为：模四多项式中，支撑于 $S$ 的非恒定单项式在系数为奇数时具有加权次数 $|S|+1$，系数为 $2$ 时具有加权次数 $|S|$；最大加权次数给出精确层级~\cite{GottesmanChuang1999,Cui2017}。在 $t=0$ 处，$\delta_{z,0}=\prod_j(1-z_j)$ 提供奇数系数的 $n$ 次项，给出层级 $n+1$。在 $t=-\pi/2$ 处，其系数加倍，给出层级 $n$。
+对于对角门 $i^{f(z)}$，$f$ 的模四多项式中支撑于 $S$ 的非恒定单项式在系数为奇数时具有加权次数 $|S|+1$，在系数为 $2$ 时具有加权次数 $|S|$。最大加权次数给出精确 Clifford 层级~\cite{GottesmanChuang1999,Cui2017}。在零半径端点 $t=\pi/2$ 处，零串修正消失，相位指数化为 $f_+=|z|-1+q_n$。四特征核的模四展开为
+\begin{equation}
+ \begin{aligned}
+ F={}&1+3x+3b+2xb+xc+bc+2xbc\\
+ &+3s+xs+2bs+2xbs+3bcs\pmod4.
+ \end{aligned}
+ \label{physics:kernel-mod-four}
+\end{equation}
+三次项 $3bcs$ 的加权次数为四，是该多项式中的最大值，故 $i^F$ 的精确层级为四。对 $n\ge5$，四个独立奇偶坐标可补成可逆二进制坐标变换，由 Clifford 门实现，因此将 $F$ 拉回为 $q_n$ 时保持这一层级。局域因子 $P^{\otimes n}$ 是 Clifford 门，故 $i^{f_+}$ 的层级也是四。
 
-在 $t=\pi/2$ 处，零串修正消失；$F$ 的模四多项式最高为三次，且含奇数系数的三次项，故精确层级为四。四个独立奇偶坐标可补成可逆二进制坐标变换，由 Clifford 门实现，因此将 $F$ 拉回为 $q_n$ 时保持这一层级。对 $n\ge5$，四层核无法抵消增强端点层级更高的零串项。局域因子 $P^{\otimes n}$ 及前后 Clifford 因子 $C_n,H^{\otimes n}$ 也保持这些层级。因此完整测量酉满足
+在 $t=0$ 处，$f_0$ 中的 $\delta_{z,0}=\prod_j(1-z_j)$ 提供奇数系数的 $n$ 次项，给出层级 $n+1$。在增强端点 $t=-\pi/2$ 处，相位指数为 $f_-=|z|-1-q_n+2\delta_{z,0}$。$2\delta_{z,0}$ 中的 $n$ 次项系数模四为 $2$，加权次数为 $n$。对 $n\ge5$，四层核无法抵消该项。由于 $C_n$ 和 $H^{\otimes n}$ 都是 Clifford 门，完整测量酉 $M_n(t)=C_nD_{n,t}H^{\otimes n}$ 在这三处与对角相位具有相同的层级，即
 \begin{equation}
  \begin{aligned}
  \ell(M_n(0))&=n+1,\\
@@ -32,4 +40,4 @@
  \end{aligned}
  \label{physics:levels}
 \end{equation}
-附录~\ref{physics:app-hierarchy} 给出完整模四多项式及推导。在文献~\cite{PauwelsLocalization2025,PauwelsGisin2026} 的局域化框架中，这些层级给出所需资源的上界。
+在文献~\cite{PauwelsLocalization2025,PauwelsGisin2026} 的局域化框架中，这些层级给出所需资源的上界。

@@ -1,7 +1,7 @@
 \section{Endpoint states and circuit implementation}
 \label{physics:section}
 
-\subsection{Reduced states at the zero-radius endpoint}
+\subsection{Reduced states at the unified zero-radius endpoint}
 \label{physics:endpoints}
 
 At $t=\pi/2$, every column of the unified family is $1$-uniform~\cite{Scott2004}: all one-qubit reductions are $I/2$. Equation~\eqref{physics:endpoint-pair-purity} gives $p_{12}=11/32$ for $n=5$ and $p_{12}=5/16$ for every $n\ge6$. Both exceed $1/4$, so the endpoint is not $2$-uniform.
@@ -19,11 +19,19 @@ The complete phase separates into the four-feature kernel and a correction at th
 where $P=\operatorname{diag}(1,i)$, $Z_0=\ket{0^n}\bra{0^n}$, and $q_n$ denotes the diagonal operator of the Boolean kernel. At $t=0$, this recovers the decomposition of Ref.~\cite{PauwelsGisin2026}, which also established the reference level $n+1$; the kernel phase and the levels $n$ and $4$ at the enhanced and zero-radius endpoints are obtained here.
 
 \input{sections/figure-clifford}
-Figure~\ref{fig:clifford}(a) gives the five-qubit seed preparation sequence, while panel (b) separates the complete diagonal phase for any $n\ge5$ into local $P$ gates, the four-feature kernel phase, and the zero-string conditional phase. The kernel phase is implemented by computing four parity checks into four clean auxiliaries, applying $e^{itF}$, and uncomputing the checks; computation and uncomputation use $O(n)$ CNOTs and restore the auxiliaries to zero. The additional gate $R_0(\theta)=e^{i\theta Z_0}$ is an $n$-qubit controlled phase, implementable with one clean ancilla and $O(n)$ elementary gates~\cite{Barenco1995}. The zero-string conditional phase has angle $\pi/2-t$: at the reference point $t=0$ and the enhanced endpoint $t=-\pi/2$, it gives the complete measurement unitary exact Clifford-hierarchy levels $n+1$ and $n$, respectively. At the zero-radius endpoint $t=\pi/2$, this conditional phase disappears and the level drops to four, independently of $n$.
+Figure~\ref{fig:clifford}(a) gives the five-qubit seed preparation sequence, while panel (b) separates the complete diagonal phase for any $n\ge5$ into local $P$ gates, the four-feature kernel phase, and the zero-string conditional phase. The reversible encoding $\ket z\ket a\mapsto\ket z\ket{a\oplus\mathcal L_nz}$ computes the four parity checks into four clean auxiliaries. Applying $e^{itF}$ and uncomputing the checks implements the kernel phase and restores the auxiliaries to zero, with $O(n)$ CNOTs for computation and uncomputation. The additional gate $R_0(\theta)=e^{i\theta Z_0}$ is an $n$-qubit controlled phase, implementable with one clean ancilla and $O(n)$ elementary gates~\cite{Barenco1995}. The zero-string conditional phase has angle $\pi/2-t$: at the reference point $t=0$ and the enhanced endpoint $t=-\pi/2$, it gives the complete measurement unitary exact Clifford-hierarchy levels $n+1$ and $n$, respectively. At the zero-radius endpoint $t=\pi/2$, this conditional phase disappears and the level drops to four, independently of $n$.
 
-For a diagonal gate $i^{f(z)}$, the Clifford-hierarchy criterion assigns a nonconstant mod-four monomial on $S$ weighted degree $|S|+1$ for an odd coefficient and $|S|$ for coefficient $2$; the largest weighted degree gives the exact level~\cite{GottesmanChuang1999,Cui2017}. At $t=0$, $\delta_{z,0}=\prod_j(1-z_j)$ contributes a degree-$n$ monomial with odd coefficient, giving level $n+1$. At $t=-\pi/2$, its coefficient is doubled, giving level $n$.
+For a diagonal gate $i^{f(z)}$, a nonconstant monomial on $S$ in the mod-four polynomial for $f$ has weighted degree $|S|+1$ when its coefficient is odd and $|S|$ when its coefficient is $2$. The largest weighted degree gives the exact Clifford level~\cite{GottesmanChuang1999,Cui2017}. At the zero-radius endpoint $t=\pi/2$, the zero-string correction vanishes and the exponent becomes $f_+=|z|-1+q_n$. The four-feature kernel has the mod-four expansion
+\begin{equation}
+ \begin{aligned}
+ F={}&1+3x+3b+2xb+xc+bc+2xbc\\
+ &+3s+xs+2bs+2xbs+3bcs\pmod4.
+ \end{aligned}
+ \label{physics:kernel-mod-four}
+\end{equation}
+The cubic term $3bcs$ has weighted degree four, the maximum in this polynomial. Thus $i^F$ has exact level four. For $n\ge5$, the four independent parity coordinates extend to an invertible binary change of variables implemented by Clifford gates. This preserves the level under pullback to $q_n$. The local factor $P^{\otimes n}$ is Clifford, so $i^{f_+}$ also has level four.
 
-At $t=\pi/2$, the zero-string correction vanishes. The mod-four polynomial of $F$ has degree three with an odd cubic coefficient, so its exact level is four. The four independent parity coordinates extend to an invertible binary change of variables, implemented by Clifford gates, which preserves this level when $F$ is pulled back to $q_n$. For $n\ge5$, the level-four kernel cannot cancel the higher-level zero-string term at the enhanced endpoint. The local factor $P^{\otimes n}$ and the Clifford factors $C_n,H^{\otimes n}$ also preserve these levels. Consequently the complete measurement unitary satisfies
+At $t=0$, the term $\delta_{z,0}=\prod_j(1-z_j)$ in $f_0$ contributes a degree-$n$ monomial with odd coefficient, giving level $n+1$. At the enhanced endpoint $t=-\pi/2$, the exponent is $f_-=|z|-1-q_n+2\delta_{z,0}$. The degree-$n$ monomial in $2\delta_{z,0}$ has coefficient $2\bmod4$ and weighted degree $n$. For $n\ge5$, the level-four kernel cannot cancel that term. Since $C_n$ and $H^{\otimes n}$ are Clifford, the complete measurement unitary $M_n(t)=C_nD_{n,t}H^{\otimes n}$ has the same levels as the diagonal phase at all three points,
 \begin{equation}
  \begin{aligned}
  \ell(M_n(0))&=n+1,\\
@@ -32,4 +40,4 @@ At $t=\pi/2$, the zero-string correction vanishes. The mod-four polynomial of $F
  \end{aligned}
  \label{physics:levels}
 \end{equation}
-Appendix~\ref{physics:app-hierarchy} gives the full mod-four polynomial and derivation. In the localization framework of Refs.~\cite{PauwelsLocalization2025,PauwelsGisin2026}, these levels give upper bounds on the required resources.
+In the localization framework of Refs.~\cite{PauwelsLocalization2025,PauwelsGisin2026}, these levels give upper bounds on the required resources.

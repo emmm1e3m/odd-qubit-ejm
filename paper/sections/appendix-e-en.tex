@@ -1,7 +1,7 @@
-\section{Entanglement and implementation proofs}
+\section{Weakest bipartitions and reduced states at zero radius}
 \label{physics:appendix}
 
-This appendix derives the all-cut concurrence law and the comparison at matched local polarization in Sec.~\ref{physics:entanglement}, together with the endpoint and circuit results of Sec.~\ref{physics:section}. We use the phase functions and measurement conventions of the main text.
+We compare reduced purities across all bipartitions to obtain the concurrence of the unified family in Sec.~\ref{physics:entanglement}. At zero radius, the purity of the first two qubits distinguishes the unified and cosine families. For the unified endpoint it also rules out $2$-uniformity and local-unitary equivalence to a stabilizer state, as stated in Sec.~\ref{physics:endpoints}.
 
 \subsection{Reduced purities and concurrence}
 \label{physics:app-purity}
@@ -36,6 +36,7 @@ The dependence on arbitrary lengths can be isolated directly in Eq.~\eqref{physi
 The last line depends only on the four boundary bits and $P$. The full amplitude is $2^{-(n+1)/2}Q(y)[h_\nu(y;u)+(i-u)\Delta(y)]$, where $Q(y)=-i\,i^{\sum_{j<n}(y_j\oplus y_{j+1})}$ and $\Delta(y)=\mathbf1_{y=0^n}+\mathbf1_{y=1^n}$.
 For the four strings $y,v,v_Ay_B,y_Av_B$ in the purity sum, the $Q$ factors leave only the crossing-edge sign $(-1)^{\sum_{j\in E_\times}(y_j\oplus v_j)(y_{j+1}\oplus v_{j+1})}$; here $E_\times$ indexes the crossing edges.
 
+\paragraph*{Prefix and suffix counts at cut rank one.}
 If $\kappa=1$, a nonsingle-qubit cut is a prefix of length $k$ and a suffix of length $l=n-k$. Retain the boundary and crossing-edge endpoints. Each remaining same-side string of length $L\ge1$ enters only through its parity $\epsilon$ and whether it is constant, with exact counts
 \begin{equation}
  \begin{aligned}
@@ -53,6 +54,7 @@ An empty group contributes one empty string of even parity. Applying these count
 \end{equation}
 The certificate supplies the length polynomials and their positive gap bounds, including the $n=5$ and $3|3$ cases.
 
+\paragraph*{Background purity and the zero-string correction at higher cut rank.}
 For $\kappa\ge2$, first consider the normalized background $\ket g=-iC_n\ket\chi$, where $\ket\chi=2^{-n/2}\sum_z i^{|z|}u^{q_n(z)}\ket z$. Removing single-qubit phases and same-side path edges puts its amplitudes in the form
 \begin{equation}
  \widetilde g_y=2^{-(n+1)/2}
@@ -95,11 +97,13 @@ Partial trace contracts the trace norm, while density matrices satisfy $|\Tr\rho
  \label{physics:complete-purity-bound}
 \end{equation}
 
+\paragraph*{Exact purities for short chains.}
 For $n=5,\ldots,9$, direct evaluation of Eq.~\eqref{physics:finite-purity} covers all $456$ nonsingle-qubit cuts, distinct up to complementation. For each integer coefficient tuple $(a,b,c,d,e)/D$, the bound $[a+\lceil\sqrt{b^2+c^2}\rceil+\lceil\sqrt{d^2+e^2}\rceil]/D$ is at most $522297/1048576<1/2$. The supplied verification reconstructs every coefficient from the original gates.
 
 Together these cases exhaust all cuts and give $\max_Ap_A=p_{\{j\}}=(1+r_n^2)/2$, with equality precisely at the single-qubit-versus-rest cuts. Equation~\eqref{physics:gme-law} follows; $r_n\le2r_E(n)<1$ gives positivity, and the Pauli orbit transfers the result to every column. The finite enumerations and coefficient certificates are independently reproduced by the supplied exact-arithmetic scripts; the reductions to finite cases and the analytic bounds are proved above.
 
-A short amplitude argument also certifies entanglement across every cut. Write $\psi(y)=\psi_0(y;t)$ in Eq.~\eqref{physics:amplitudes}. For $y=1^n$, the two input strings are $0^n$ and $e_n$, both with phase $1$, so $\psi(1^n)=0$. For a single flip $y=1^n\oplus e_j$, substitution in the kernel~\eqref{core:kernel} gives $d_n=0$ on both inputs of weights $1,2$ when $j=1,n$, and $d_n=1$ on both inputs of weights $2,3$ when $2\le j\le n-1$. Their phases are therefore $1,i$ or $iu,-u$, respectively. The sums or differences have modulus $\sqrt2$, hence $|\psi(1^n\oplus e_j)|=2^{-n/2}$ for every $j$.
+\paragraph*{Entanglement across every cut from a $2\times2$ minor.}
+Write $\psi(y)=\psi_0(y;t)$ in Eq.~\eqref{physics:amplitudes}. For $y=1^n$, the two input strings are $0^n$ and $e_n$, both with phase $1$, so $\psi(1^n)=0$. For a single flip $y=1^n\oplus e_j$, substitution in the kernel~\eqref{core:kernel} gives $d_n=0$ on both inputs of weights $1,2$ when $j=1,n$, and $d_n=1$ on both inputs of weights $2,3$ when $2\le j\le n-1$. Their phases are therefore $1,i$ or $iu,-u$, respectively. The sums or differences have modulus $\sqrt2$, hence $|\psi(1^n\oplus e_j)|=2^{-n/2}$ for every $j$.
 
 For any nontrivial cut $A|B$, arrange the amplitudes as a matrix $V_A$, with $A$ labeling its rows and $B$ its columns. Choose $j\in A$ and $k\in B$. The rows $1_A,1_A\oplus e_j$ and columns $1_B,1_B\oplus e_k$ give
 \[
@@ -113,10 +117,10 @@ For any nontrivial cut $A|B$, arrange the amplitudes as a matrix $V_A$, with $A$
 \]
 Its modulus is $2^{-n}>0$, so $V_A$ has rank at least two and the seed is entangled across every cut. The local Pauli orbit~\eqref{core:orbit} preserves the Schmidt spectra and transfers this conclusion to every column.
 
-\subsection{The zero-radius endpoint}
+\subsection{Two-qubit marginals at zero radius}
 \label{physics:app-invariants}
 
-This section uses a two-qubit purity to characterize the zero-radius endpoint. Evaluating the exact length counts of Appendix~\ref{physics:app-purity} for $A=\{1,2\}$ at $t=\pi/2$ gives
+For the unified family, evaluating the exact length counts of Appendix~\ref{physics:app-purity} for $A=\{1,2\}$ at $t=\pi/2$ gives
 \begin{equation}
  p_{12}=\begin{cases}11/32,&n=5,\\5/16,&n\ge6.\end{cases}
  \label{physics:endpoint-pair-purity}
@@ -125,16 +129,24 @@ Both values exceed $1/4$, whereas $2$-uniformity requires every two-qubit reduct
 
 To test stabilizer equivalence, expand $\rho_{ij}=\tfrac14\sum_{a,b=0}^3m_{ab}\sigma_a\otimes\sigma_b$, with $\sigma_0=I$. Then $4p_{ij}=\sum_{a,b}m_{ab}^2$. For a stabilizer pure state, every Pauli expectation belongs to $\{0,\pm1\}$~\cite{Gottesman1997}, so $4p_{ij}$ is an integer for every pair. Equation~\eqref{physics:endpoint-pair-purity} instead gives $4p_{12}=11/8$ or $5/4$. Reduced purities are local-unitary invariants~\cite{Grassl1998}: a product of single-qubit unitaries conjugates $\rho_{ij}$ by $U_i\otimes U_j$, preserving its spectrum. Qubit permutations only relabel the pairs. The noninteger value therefore excludes equivalence to any stabilizer pure state under these operations for every $n\ge5$. The Pauli orbit transfers both conclusions to every measurement column.
 
-For the cosine endpoint $\alpha=\pi/2$ at even $n\ge4$, the complete diagonal phase is $-i\,i^{|z|+q_A(z)}$, since $q_A(0)=1$. This input-phase structure was identified in Ref.~\cite{PauwelsGisin2026} as a smaller EJM phase polynomial on $E_n$ together with single-qubit phases on the other inputs. Because $q_A(z)=\prod_{j\in E_n}(1-z_j)$ does not depend on $z_1$ or $z_n$, the input to $C_n$ factorizes, up to a global phase, as $P\ket{+}\otimes\ket{\phi}\otimes P\ket{+}$, where $P\ket{+}$ is the $+1$ eigenstate of $Y$. Conjugation gives $C_n^\dagger(Y_1Z_2)C_n=Y_1$, $C_n^\dagger(Z_1Y_2)C_n=Y_1X_2$, and $C_n^\dagger(X_1X_2)C_n=X_2$. Hence $\langle Y_1Z_2\rangle=1$ and $\langle Z_1Y_2\rangle=\langle X_1X_2\rangle=a$, where $a=\langle X_2\rangle_\phi$. For fixed remaining coordinates, the phase $i^{z_2+q_A(z)}$ gives $\langle X_2\rangle=0$ if another coordinate of $E_n$ equals one, and $\langle X_2\rangle=1$ if all $n/2-2$ other coordinates vanish. Their uniform weights give $a=2^{2-n/2}$.
+For the cosine endpoint $\alpha=\pi/2$, let $q=q_A$ from Eq.~\eqref{embed:and-support} for even $n\ge4$ and $q=q_{\rm o}$ from Eq.~\eqref{core:odd-cosine-kernel} for odd $n\ge5$. In both cases $d=q-\delta_{z,0}$, so the diagonal phase is $-i\,i^{|z|+q(z)}$. For the even-qubit kernel, Ref.~\cite{PauwelsGisin2026} identified this input phase as that of a smaller EJM on $E_n$ together with single-qubit phases on the other inputs. Both kernels are independent of $z_1,z_n$, so the input to $C_n$ factorizes, up to a global phase, as $P\ket{+}\otimes\ket{\phi}\otimes P\ket{+}$, where $P\ket{+}$ is the $+1$ eigenstate of $Y$.
 
-The output is a $+1$ eigenstate of $Y_1Z_2$, so every Pauli operator anticommuting with it has zero expectation. Among the remaining terms, $\langle Y_1\rangle=\langle Z_2\rangle=0$ by the zero local radius, while $C_n^\dagger(X_1Y_2)C_n=Y_2Z_3\cdots Z_{n-1}X_n$ has zero expectation because the last input factor has $\langle X_n\rangle=0$. The identity $(Y_1Z_2)(X_1Y_2)=-Z_1X_2$ also gives $\langle Z_1X_2\rangle=0$. Thus
+Let $a=\langle X_2\rangle_\phi$. To evaluate it, fix the input coordinates other than $z_2$ and read off the phase $i^{z_2+q(z)}$. If $q=1-z_2$ on this slice, the two amplitudes have the same phase and the conditional $X_2$ expectation is one. If $q$ is independent of $z_2$, the expectation is zero. For even $n$, the first case occurs just when the other $n/2-2$ coordinates of $E_n$ are all zero, giving $a=2^{2-n/2}$. For $n=5$ it occurs when $z_4=0$, and for odd $n\ge7$ when $o_n(z)=0$. In both odd cases that condition has probability $1/2$, so $a=1/2$.
+
+Conjugation gives $C_n^\dagger(Y_1Z_2)C_n=Y_1$, $C_n^\dagger(Z_1Y_2)C_n=Y_1X_2$, and $C_n^\dagger(X_1X_2)C_n=X_2$. Hence the cosine seed has $\langle Y_1Z_2\rangle=1$ and $\langle Z_1Y_2\rangle=\langle X_1X_2\rangle=a$. The seed is a $+1$ eigenstate of $Y_1Z_2$, so every Pauli operator anticommuting with it has zero expectation. The zero radius also gives $\langle Y_1\rangle=\langle Z_2\rangle=0$. The pullback $C_n^\dagger(X_1Y_2)C_n=Y_2Z_3\cdots Z_{n-1}X_n$ has zero expectation because the last input factor has $\langle X_n\rangle=0$. The identity $(Y_1Z_2)(X_1Y_2)=-Z_1X_2$ gives $\langle Z_1X_2\rangle=0$ as well. Thus
 \[
- \begin{aligned}
- \rho_{12}&=\tfrac14[I+Y_1Z_2+a(X_1X_2+Z_1Y_2)],\\
- p_{12}&=\tfrac14(2+2a^2)=\tfrac12+2^{3-n}.
- \end{aligned}
+ \rho_{12}=\tfrac14[I+Y_1Z_2+a(X_1X_2+Z_1Y_2)],
 \]
-Hence $C_{\rm GME}\le\sqrt{2(1-p_{12})}=\sqrt{1-2^{4-n}}<1$. At $n=4$ this bound vanishes. The cosine path then ends in a product of two Bell pairs, with the weakest cut changing from $1|3$ near the reference point to $2|2$ at the endpoint~\cite{PauwelsGisin2026}. Since $C_{\rm GME}$ is invariant under local unitaries and qubit permutations, this endpoint is inequivalent to the unified zero-radius endpoint for every even $n\ge6$. The Pauli orbit extends the comparison to all measurement columns.
+and its purity is
+\begin{equation}
+ p_{12}^{\rm cos}=\frac{1+a^2}{2}
+ =\begin{cases}
+  5/8,& n\ \text{odd},\ n\ge5,\\
+  1/2+2^{3-n},& n\ \text{even},\ n\ge4.
+ \end{cases}
+ \label{physics:cosine-pair-purity}
+\end{equation}
+For every $n\ge5$, the cut separating qubits $1,2$ from the rest gives $C_{\rm GME}\le\sqrt{2(1-p_{12}^{\rm cos})}<1$ at the cosine endpoint. Equation~\eqref{physics:gme-law} gives $C_{\rm GME}=1$ at the unified endpoint. Since $C_{\rm GME}$ is invariant under local unitaries and qubit permutations, the two endpoints are inequivalent. The Pauli orbit extends the purity and concurrence comparison to all measurement columns. At $n=4$, the cosine path ends in a product of two Bell pairs, with the weakest cut changing from $1|3$ near the reference point to $2|2$ at the endpoint~\cite{PauwelsGisin2026}.
 
 For the unified seed at $t=\pi/2$, Eq.~\eqref{physics:factorization} gives input amplitudes proportional to $i^{|z|+q_n(z)}$ before $C_n$. To evaluate the same $Y_1Z_2$ correlation, use its pullback $Y_1$ and pair $z$ with $z'=z\oplus e_1$. The matrix element of $Y_1$ and the Hamming-weight phase give $i(-1)^{z_1}i^{|z|-|z'|}=1$. Averaging the paired contributions over uniform $z$ gives
 \begin{equation}
@@ -146,18 +158,3 @@ For the unified seed at $t=\pi/2$, Eq.~\eqref{physics:factorization} gives input
  \label{physics:endpoint-correlator}
 \end{equation}
 Indeed, flipping the first bit changes $x$ and $s$ and leaves $b,c$ fixed. By Eq.~\eqref{core:kernel}, the two kernel values have Boolean difference $1\oplus x\oplus s\oplus c\oplus bc$. The four features are independent and uniform for every $n\ge5$, and exactly one value of $x$ at each fixed $(b,c,s)$ makes this difference zero. The Pauli orbit of Eq.~\eqref{core:orbit} preserves the magnitude of the correlation in every measurement column.
-
-\subsection{The complete phase and Clifford levels}
-\label{physics:app-hierarchy}
-
-This section separates the kernel phase from the correction at the physical zero string to establish the factorization~\eqref{physics:factorization} and Clifford levels~\eqref{physics:levels}. Substituting $f_0(z)=|z|-1+\delta_{z,0}\pmod4$ and $d_n=q_n-\delta_{z,0}$ gives Eq.~\eqref{physics:factorization}. The reversible encoding $\ket z\ket a\mapsto\ket z\ket{a\oplus\mathcal L_nz}$ computes four linear parities with $O(n)$ CNOTs. Applying $e^{itF}$ between encoding and decoding, starting from $a=0$, implements $e^{itq_n}$ and restores the auxiliaries. The zero-string phase remains an additional factor.
-
-The diagonal Clifford criterion~\cite{Cui2017} assigns a nonconstant mod-four monomial on $S$ weighted degree $|S|+1$ for odd coefficient and $|S|$ for coefficient $2$; the largest degree is the exact level. Here
-\begin{equation}
- \begin{aligned}
- F={}&1+3x+3b+2xb+xc+bc+2xbc\\
- &+3s+xs+2bs+2xbs+3bcs\pmod4.
- \end{aligned}
- \label{physics:kernel-mod-four}
-\end{equation}
-The odd cubic term gives level four. For $n\ge5$, $\mathcal L_n$ is surjective, so its four parity coordinates can be completed to an invertible binary coordinate system; this Clifford change of variables preserves the level under pullback. The local factor $P^{\otimes n}$ contributes only level two. The endpoint exponents are $f_+=|z|-1+q_n$ and $f_-=|z|-1-q_n+2\delta_{z,0}$, with $\delta_{z,0}=\prod_j(1-z_j)$. Its highest coefficient is odd at the reference point and twice an odd integer at the negative endpoint, giving levels $n+1$ and $n$. For $n\ge5$ these terms cannot be canceled by the level-four kernel. At the positive endpoint the zero-string term disappears, leaving exact level four. The Clifford factors $C_n$ and $H^{\otimes n}$ preserve these levels on multiplication, yielding Eq.~\eqref{physics:levels} for the complete measurement unitary.

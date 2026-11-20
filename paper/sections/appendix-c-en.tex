@@ -4,6 +4,7 @@
 This appendix proves Theorem~\ref{embed:theorem} and the local $n=6$ branch statement in Sec.~\ref{embed:section}. It evaluates the mixed backgrounds for even $n\ge8$ and solves the phase equations for the four input groups near the reference measurement at $n=6$.
 
 \subsection{Reduction to six finite identities}
+\label{embed:app-mixed}
 
 We prove the joint-background cancellation used in Theorem~\ref{embed:theorem}. In this appendix, write $\mathcal B_R=2^n B_R$ for the unnormalized background expectation, where $B_R$ is the normalized quantity in Eq.~\eqref{core:signal}. For a pulled-back signed Pauli $R=i^pX^aZ^b$, put $h=a\oplus b$ and $\Gamma=i^{p-|a|}$. Equation~\eqref{embed:seed} gives
 \begin{equation}
@@ -61,6 +62,7 @@ Table~\ref{embed:sector-table} gives the complete counts obtained by substitutin
 In every row $N_k^+=N_k^-$ for each $k$, so Eq.~\eqref{embed:sector-counts} vanishes for every $v$. Equations~\eqref{embed:sectors} and \eqref{embed:defect} give the common signed component $2^{1-n}(\cos\alpha-\sin\beta)$ for all even $n\ge8$. Unitarity and the orbit transfer in Eq.~\eqref{core:bloch-orbit} then establish the full measurement statement.
 
 \subsection{The direct superposition at \texorpdfstring{$n=6$}{n=6}}
+\label{embed:app-six-direct}
 
 This section determines why direct superposition leaves a mixed background at $n=6$. Here $O_n=\{3\}$. The two additional terms $X_3,X_4$ both have $(A,H)=(4,4)$ in Eq.~\eqref{embed:finite-sector-sum}. Their counts for $k=-1,0,1$ are $(4,2),(4,4),(0,2)$; Eq.~\eqref{embed:sector-counts} therefore gives
 \begin{align}
@@ -76,9 +78,10 @@ Since $\Gamma=-1$, the unnormalized backgrounds are
 \end{equation}
 The other sixteen backgrounds vanish. All eighteen defect contributions still equal $2(\cos\alpha-\sin\beta)$, so equal signed components are equivalent to $\sin\alpha\sin\beta=0$ for all real parameters. In a neighborhood of the reference point, these are exactly the two coordinate axes. Changing only the zero-string phase cannot remove their difference: $X_2$ and $X_3$ belong to the same class and have identical defect terms.
 
-\subsection{Phases of four input groups and an independent zero-string phase}
+\subsection{The four-group phase model near the six-qubit reference point}
+\label{embed:app-six-local}
 
-This section classifies all regular measurements near the reference point when each of the four input groups has an independent phase and the physical zero-string phase can be adjusted separately. All signed components are positive at the reference point. By Appendix~\ref{bound:appendix}, in a sufficiently small neighborhood the common-radius tetrahedral conditions are therefore equivalent to equality of these components.
+This section classifies all regular measurements near the reference point when each of the four input groups has an independent phase and the physical zero-string phase can be adjusted separately. All signed components are positive at the reference point. By the local criterion in Appendix~\ref{bound:app-regularity}, in a sufficiently small neighborhood the common-radius tetrahedral conditions are therefore equivalent to equality of these components.
 
 For this stronger local statement, allow arbitrary phases on the four values of $(q_A,q_B)$. After removing a global phase, write
 \begin{equation}

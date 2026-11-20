@@ -4,6 +4,7 @@
 本附录证明定理~\ref{embed:theorem}与第~\ref{embed:section}节的$n=6$局部分支结论，计算偶数$n\ge8$时的混合背景项，并求解$n=6$基准测量附近的四组输入的相位方程。
 
 \subsection{归约为六个有限恒等式}
+\label{embed:app-mixed}
 
 本节证明定理~\ref{embed:theorem} 所需的联合背景项消去。在本附录中，以 $\mathcal B_R=2^n B_R$ 表示未归一化背景期望，其中 $B_R$ 是式~\eqref{core:signal} 的归一化量。对拉回的带符号Pauli 算符 $R=i^pX^aZ^b$，令 $h=a\oplus b$、$\Gamma=i^{p-|a|}$。由式~\eqref{embed:seed} 得
 \begin{equation}
@@ -60,6 +61,7 @@ $h=e_{j-1}\oplus\bigoplus_{k=j+1}^n e_k$。当 $j=2,4$ 时，它在 $O_n$ 上全
 表中每一行对每个$k$均有$N_k^+=N_k^-$，故式~\eqref{embed:sector-counts} 对所有$v$恒为零。联立式~\eqref{embed:sectors} 与式~\eqref{embed:defect}，对全部偶数 $n\ge8$ 得共同带符号分量 $2^{1-n}(\cos\alpha-\sin\beta)$。酉性及式~\eqref{core:bloch-orbit} 的轨道传递随后给出完整测量结论。
 
 \subsection{\texorpdfstring{$n=6$}{n=6} 时的直接叠加}
+\label{embed:app-six-direct}
 
 本节判断$n=6$时直接叠加为何留下混合背景项。此时$O_n=\{3\}$。两个额外项 $X_3,X_4$ 在式~\eqref{embed:finite-sector-sum} 中均有 $(A,H)=(4,4)$。它们对应 $k=-1,0,1$ 的计数为 $(4,2),(4,4),(0,2)$，由式~\eqref{embed:sector-counts} 得到
 \begin{align}
@@ -75,9 +77,10 @@ $h=e_{j-1}\oplus\bigoplus_{k=j+1}^n e_k$。当 $j=2,4$ 时，它在 $O_n$ 上全
 \end{equation}
 其余十六个背景项均为零。全部十八项缺陷贡献仍等于 $2(\cos\alpha-\sin\beta)$，所以对全部实参数，相同带符号分量等价于 $\sin\alpha\sin\beta=0$。在基准点邻域内，这恰为两条坐标轴。只改变零串相位无法消除分量之差，因为 $X_2$ 与 $X_3$ 属于同一类，缺陷项完全相同。
 
-\subsection{四组输入的相位与独立零串相位}
+\subsection{六比特基准点附近的四组相位模型}
+\label{embed:app-six-local}
 
-本节允许四组输入分别取独立相位，并单独调节物理零串的相位，分类基准点附近的全部规则测量。基准点处所有带符号分量均为正。由附录~\ref{bound:appendix}，在足够小的邻域内，共同半径正四面体条件等价于这些分量相等。
+本节允许四组输入分别取独立相位，并单独调节物理零串的相位，分类基准点附近的全部规则测量。基准点处所有带符号分量均为正。由附录~\ref{bound:app-regularity} 的局部判据，在足够小的邻域内，共同半径正四面体条件等价于这些分量相等。
 
 为得到这一更强的局部结论，允许对 $(q_A,q_B)$ 的四种取值赋任意相位。去除整体相位后写为
 \begin{equation}

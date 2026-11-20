@@ -189,8 +189,8 @@ def figure_curved():
     ax.scatter([0, np.pi/4], [1, 1+1/np.sqrt(2)], s=21, color=BLUE, zorder=4)
     ax.text(0.035, 0.947, "reference point", fontsize=8, ha="left", va="center")
     ax.annotate(r"$1+1/\sqrt{2}$", xy=(np.pi/4, 1+1/np.sqrt(2)),
-                xytext=(0, 7), textcoords="offset points", fontsize=9,
-                ha="center", va="bottom")
+                xytext=(0, -7), textcoords="offset points", fontsize=9,
+                ha="center", va="top")
     ax.set(xlim=(-0.025, np.pi/4+0.028), ylim=(0.90, 1.84), xlabel=r"$b$", ylabel=r"$r_4/r_E(4)$")
     ax.set_xticks([0, np.pi/8, np.pi/4], [r"$0$", r"$\pi/8$", r"$\pi/4$"])
     ax.set_yticks([1, 1.25, 1.5, 1.75], [r"$1$", r"$1.25$", r"$1.5$", r"$1.75$"])

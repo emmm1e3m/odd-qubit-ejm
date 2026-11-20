@@ -14,7 +14,7 @@
  (X^{\otimes n})^\sigma\ket{\psi_0}.
  \label{core:orbit}
 \end{equation}
-这一轨道将种子态的局部Bloch向量传递到全部测量列。它给出了通过局部酉变换将一个态扩展为一组基的具体构造~\cite{Pimpel2023}；两比特等纠缠基的分类见文献~\cite{DelSanto2024}。要得到共同半径的正四面体，只需使种子态的带符号局部分量相等。本文固定局部坐标，仅对末位比特的$Y$分量作符号调整：$\widetilde Y_n=-Y_n$；其余$\widetilde P$均等于相应的物理Pauli算符。因此，共同带符号分量$m\ge0$对应的种子态Bloch向量为：$j<n$时$m(1,1,1)$，$j=n$时$m(1,-1,1)$。
+这一轨道将种子态的局部 Bloch 向量传递到全部测量列（附录~\ref{core:full-measurement}）。它给出了通过局部酉变换将一个态扩展为一组基的具体构造~\cite{Pimpel2023}；两比特等纠缠基的分类见文献~\cite{DelSanto2024}。要得到共同半径的正四面体，只需使种子态的带符号局部分量相等。本文固定局部坐标，仅对末位比特的$Y$分量作符号调整：$\widetilde Y_n=-Y_n$；其余$\widetilde P$均等于相应的物理Pauli算符。因此，共同带符号分量$m\ge0$对应的种子态Bloch向量为：$j<n$时$m(1,1,1)$，$j=n$时$m(1,-1,1)$。
 
 相位变形从指定基准点出发，其相位为
 \begin{equation}
@@ -101,7 +101,7 @@
  \end{cases}
  \label{core:boolean-background}
 \end{equation}
-这些公式将背景项写成相位函数及其导数的Walsh系数。
+这些公式将背景项写成相位函数及其导数的 Walsh 系数，推导见附录~\ref{core:pairing}。
 
 \section{全部\texorpdfstring{$n\ge5$}{n >= 5}的统一族}
 \label{core:unified}
@@ -213,6 +213,14 @@ $t=\pi/2$时，式\eqref{core:defect-state}的单点修正消失；$t=-\pi/2$时
 \end{equation}
 特别地，增强端点的半径等于 $r_E(n-1)$，且仍真正多体纠缠，因此不可能是较小 EJM 添加一个纯态比特得到的乘积扩展。
 
-为比较相同局部极化下的两族测量，固定一个偶数 $n\ge6$，考虑 Pauwels 和 Gisin 的余弦路径~\cite{PauwelsGisin2026}。沿这条路径，半径 $r=r_E(n)\cos\alpha$ 在 $0\le\alpha\le\pi/2$ 上取遍 $[0,r_E(n)]$，恰与统一族收缩支的半径范围相同。在各自的收缩支上，两套基态均随共同半径 $r$ 连续变化；由式~\eqref{core:bloch-orbit}，同一半径下对应测量结果在每个比特上的约化态逐项相同。
+为在固定局部极化下比较两族测量，对偶数 $n\ge6$ 采用 Pauwels 和 Gisin 的余弦路径~\cite{PauwelsGisin2026}，对奇数 $n\ge5$ 采用附录~\ref{core:odd-cosine} 构造的余弦路径。两种余弦路径均满足 $r=r_E(n)\cos\alpha$，其中 $0\le\alpha\le\pi/2$。余弦路径和统一族的收缩支都随 $r\in[0,r_E(n)]$ 连续变化。由式~\eqref{core:bloch-orbit}，在每个共同半径上，对应测量结果在每个比特上的约化态均相同。
 
-在 $r=0$ 处，这些单比特约化态均为 $I/2$，式~\eqref{physics:gme-law} 给出统一族中每个基态的 $C_{\rm GME}=1$。对余弦端点 $\alpha=\pi/2$，第一、二比特的联合纯度为 $p_{12}=1/2+2^{3-n}$，从而将这对比特与其余系统分开便给出 $C_{\rm GME}\le\sqrt{1-2^{4-n}}<1$（附录~\ref{physics:app-invariants}）。由于每条分支的 $C_{\rm GME}$ 都是有限个连续二分割并发度的最小值，对每个固定的偶数 $n\ge6$，这一严格差异都在某个区间 $0<r<\varepsilon_n$ 内保持。
+在 $r=0$ 处，这些单比特约化态均为 $I/2$，式~\eqref{physics:gme-law} 给出统一族中每个基态的 $C_{\rm GME}=1$。在余弦端点 $\alpha=\pi/2$，附录~\ref{physics:app-invariants} 给出每个基态的第一、二比特联合纯度
+\[
+ p_{12}^{\rm cos}=
+ \begin{cases}
+  5/8, & n\text{ 为奇数},\\
+  1/2+2^{3-n}, & n\text{ 为偶数}.
+ \end{cases}
+\]
+两种情形的纯度均大于 $1/2$，将这对比特与其余系统分开便给出 $C_{\rm GME}^{\rm cos}\le\sqrt{2(1-p_{12}^{\rm cos})}<1$。由于每条分支的 $C_{\rm GME}$ 都是有限个连续二分割并发度的最小值，对每个固定的 $n\ge5$，这一严格差异在某个区间 $0<r<\varepsilon_n$ 内保持。

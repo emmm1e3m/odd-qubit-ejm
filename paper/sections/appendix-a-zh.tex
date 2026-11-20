@@ -1,7 +1,7 @@
-\section{局部公式与全\texorpdfstring{$n$}{n}归约}
+\section{局部相位公式与两类测量路径}
 \label{core:appendix}
 
-本附录推导引理~\ref{core:mechanism}中的局部相位公式，并证明定理~\ref{core:unified-theorem}所用的全$n$消去关系与测量轨道性质。
+本附录推导引理~\ref{core:mechanism} 中的局部相位公式，并由种子态的 Pauli 轨道确定整套测量的约化态。我们用这些公式验证定理~\ref{core:unified-theorem} 中统一族的半径规律，并构造奇数比特的余弦收缩路径。
 
 \subsection{完整测量、约化态与重数}
 \label{core:full-measurement}
@@ -135,3 +135,25 @@ I类中，$D_aq$沿$a$平移不变，而$h\cdot a=1$，故其Walsh系数由配�
 
 
 作为附带结果，该核在$s=0$时有六个输入取值为一，$s=1$时有四个。每个特征纤维的大小为$2^{n-4}$，而$d_n$去除了物理零串，故$|\operatorname{supp}d_n|=10\cdot2^{n-4}-1$。
+
+\subsection{奇数比特的余弦收缩}
+\label{core:odd-cosine}
+
+为在相同半径下与统一族比较纠缠（第~\ref{physics:entanglement} 节），我们对奇数 $n\ge5$ 取余弦路径的相位核为
+\begin{equation}
+ q_{\rm o}(z)=\begin{cases}
+  1-z_2,& n=5,\ z_4=0,\\
+  1-z_3,& n=5,\ z_4=1,\\
+  (1-z_2)(1-o_n(z)),& n\ge7,
+ \end{cases}
+ \label{core:odd-cosine-kernel}
+\end{equation}
+其中最后一种情形取 $o_n(z)=z_3\oplus z_5\oplus\cdots\oplus z_{n-2}$。令 $d_{\rm o}(z)=q_{\rm o}(z)-\delta_{z,0}$，取对角相位 $D(z)=i^{f_0(z)}e^{i\alpha d_{\rm o}(z)}$。由 $q_{\rm o}(0)=1$，生成元在物理零串处取零。$\alpha=0$ 时恢复基准相位。
+
+表~\ref{core:pullback-table} 中的 I 类翻转 $a$ 只涉及第 $1,n-1,n$ 位，故 $q_{\rm o}(a)=1$。II 类翻转涉及相邻位 $\{j-1,j\}$，其中 $Y_j$ 对应的翻转还包括第 $n$ 位，而核函数与 $z_n$ 无关。$n=5$ 时，前两对相邻翻转使 $z_2=1$、$z_4=0$，最后一对使 $z_3=z_4=1$。奇数 $n\ge7$ 时，$j=2,3$ 对应的翻转使 $z_2=1$；$4\le j<n$ 时，每对相邻位恰有一位进入奇偶和，故 $o_n=1$。因此 II 类均有 $q_{\rm o}(a)=0$。
+
+对奇数 $n\ge7$，$q_{\rm o}$ 与所有 $D_aq_{\rm o}$ 只依赖 $z_2$ 和 $o_n$，所以它们的 Walsh 系数在 $\mathbf e_2$ 与 $o_n$ 对应的二进制掩码所张成的空间之外均为零。I 类字符 $h$ 或含第 $n$ 位，或为 $\mathbf e_1$、$\mathbf e_{n-1}$，均在该空间之外。II 类中，$Y_j$ 的字符含第 $n$ 位，$X_j$ 的字符则由一对相邻位组成。$o_n$ 的掩码至少含两个不相邻的位，故该空间内没有相邻位对。因此式~\eqref{core:boolean-background} 中的背景项全部相消。
+
+$n=5$ 时，除 $-Y_5$ 外，I 类字符均含第 $1$ 或第 $5$ 位，而核函数与这两位无关。对 $-Y_5$，$h=\mathbf e_4$；固定 $z_4$ 时，$q_{\rm o}$ 在 $(z_2,z_3)$ 上取零与取一的次数相同。II 类 $Y_j$ 的字符含第 $5$ 位，$X_2$ 的字符含第 $1$ 位，对应系数也为零。对 $X_3$，翻转第 $2,3$ 位的导数为常数。对 $X_4$，导数为 $1\oplus z_2\oplus z_3\oplus z_4$，而 $h=\mathbf e_3\oplus\mathbf e_4$，故求和项在翻转第 $2$ 位后成对相消。
+
+将两类翻转处的取值与零背景代入式~\eqref{core:signal}，得到共同的有号分量 $c_n\cos\alpha$。$M[D]$ 的正交归一性与轨道公式~\eqref{core:bloch-orbit} 给出与基准测量相同的四面体方向，半径在 $0\le\alpha\le\pi/2$ 上为 $r_E(n)\cos\alpha$。

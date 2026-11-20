@@ -14,7 +14,7 @@ where $H_n$ acts only on the last qubit and $D$ is diagonal with unit-modulus en
  (X^{\otimes n})^\sigma\ket{\psi_0}.
  \label{core:orbit}
 \end{equation}
-This orbit propagates the seed's local Bloch vectors to all columns. This is an example of extending a state to a basis by local unitaries~\cite{Pimpel2023}; for the two-qubit classification of iso-entangled bases, see Ref.~\cite{DelSanto2024}. To obtain regular tetrahedra with a common radius, it suffices to make the seed's signed local components equal. Our local coordinates are fixed throughout: only the final-qubit $Y$ component is sign-adjusted, $\widetilde Y_n=-Y_n$; every other $\widetilde P$ equals the corresponding physical Pauli operator. A common signed component $m\ge0$ therefore means seed Bloch vectors $m(1,1,1)$ for $j<n$ and $m(1,-1,1)$ for $j=n$.
+This orbit propagates the seed's local Bloch vectors to all columns (Appendix~\ref{core:full-measurement}). This is an example of extending a state to a basis by local unitaries~\cite{Pimpel2023}; for the two-qubit classification of iso-entangled bases, see Ref.~\cite{DelSanto2024}. To obtain regular tetrahedra with a common radius, it suffices to make the seed's signed local components equal. Our local coordinates are fixed throughout: only the final-qubit $Y$ component is sign-adjusted, $\widetilde Y_n=-Y_n$; every other $\widetilde P$ equals the corresponding physical Pauli operator. A common signed component $m\ge0$ therefore means seed Bloch vectors $m(1,1,1)$ for $j<n$ and $m(1,-1,1)$ for $j=n$.
 
 We deform the reference phase
 \begin{equation}
@@ -101,7 +101,7 @@ the background term is
  \end{cases}
  \label{core:boolean-background}
 \end{equation}
-These formulas express the background terms in terms of Walsh coefficients of the phase function and its derivatives.
+Appendix~\ref{core:pairing} derives these expressions for the background terms from the Walsh coefficients of the phase function and its derivatives.
 
 \section{A unified family for all \texorpdfstring{$n\ge5$}{n >= 5}}
 \label{core:unified}
@@ -169,7 +169,7 @@ The proof separates the dimension-dependent feature map from six fixed four-bit 
 \end{equation}
 vanishes when $h$ is outside the row space of $\mathcal L_n$: a translation $z\mapsto z\oplus w$ with $\mathcal L_nw=0$ and $h\cdot w=1$ reverses each summand's sign. Inside that row space, write $h=\mathcal L_n^TH$. Equal fiber sizes reduce Eq.~\eqref{core:pairing-sum} to $2^{-4}\sum_v(-1)^{H\cdot v}G(v)$. The same argument applies to a derivative of $q_n$, since $D_aq_n=(D_AF)\circ\mathcal L_n$ with $A=\mathcal L_na$.
 
-Second, the local characters in the pullback table leave only
+Second, the local characters in Table~\ref{core:pullback-table} leave only
 \begin{align}
  W_F(9)&=W_F(11)=W_F(15)=0,\nonumber\\
  W_{D_6F}(6)&=W_{D_7F}(13)=W_{D_7F}(11)=0.
@@ -213,6 +213,14 @@ The one-qubit cuts give an upper bound of $\sqrt{1-r_n(t)^2}$ on this minimum. A
 \end{equation}
 In particular, the enhanced endpoint, whose radius equals $r_E(n-1)$, is genuinely multipartite entangled and therefore not a product extension of a smaller EJM.
 
-To compare the two families at the same local polarization, take an even $n\ge6$ and consider the cosine path of Pauwels and Gisin~\cite{PauwelsGisin2026}. Its radius $r=r_E(n)\cos\alpha$ for $0\le\alpha\le\pi/2$ covers the same interval $[0,r_E(n)]$ as the contracting branch of the unified family. On their contracting branches both bases vary continuously with the common radius $r$, and corresponding outcomes have the same one-qubit marginals at each site by Eq.~\eqref{core:bloch-orbit}.
+For a comparison at fixed local polarization, take the cosine path of Pauwels and Gisin~\cite{PauwelsGisin2026} for even $n\ge6$ and the path constructed in Appendix~\ref{core:odd-cosine} for odd $n\ge5$. Along either cosine path, $r=r_E(n)\cos\alpha$ for $0\le\alpha\le\pi/2$. The cosine path and the contracting branch of the unified family both vary continuously with $r\in[0,r_E(n)]$. At each shared radius, corresponding outcomes have identical one-qubit marginals at every site by Eq.~\eqref{core:bloch-orbit}.
 
-At $r=0$, all these marginals are $I/2$, and Eq.~\eqref{physics:gme-law} gives $C_{\rm GME}=1$ for every state in the unified basis. For the cosine endpoint $\alpha=\pi/2$, the two-qubit purity is $p_{12}=1/2+2^{3-n}$, and hence the cut separating this pair from the rest gives $C_{\rm GME}\le\sqrt{1-2^{4-n}}<1$ (Appendix~\ref{physics:app-invariants}). For each fixed even $n\ge6$, this strict gap persists on some interval $0<r<\varepsilon_n$ because $C_{\rm GME}$ on each branch is the minimum of finitely many continuous cut concurrences.
+At $r=0$, all these marginals are $I/2$, and Eq.~\eqref{physics:gme-law} gives $C_{\rm GME}=1$ for every state in the unified basis. At the cosine endpoint $\alpha=\pi/2$, Appendix~\ref{physics:app-invariants} gives the purity of the first two qubits for every basis state
+\[
+ p_{12}^{\rm cos}=
+ \begin{cases}
+  5/8, & n\ \text{odd},\\
+  1/2+2^{3-n}, & n\ \text{even}.
+ \end{cases}
+\]
+In both cases the purity exceeds $1/2$, so the cut separating this pair from the rest gives $C_{\rm GME}^{\rm cos}\le\sqrt{2(1-p_{12}^{\rm cos})}<1$. For each fixed $n\ge5$, this strict gap persists on some interval $0<r<\varepsilon_n$ because $C_{\rm GME}$ on each branch is the minimum of finitely many continuous cut concurrences.
