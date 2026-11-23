@@ -5,7 +5,7 @@
 **Tingyu Zhang、Yan Cen（通讯作者）**<br>
 Department of Physics, Fudan University, Shanghai, China<br>
 邮箱：[23300190021@m.fudan.edu.cn](mailto:23300190021@m.fudan.edu.cn) · [cenyan@fudan.edu.cn](mailto:cenyan@fudan.edu.cn)<br>
-**2026-11-23 双语修订稿**
+**2026-11-24 双语修订稿**
 
 - 论文 PDF：[英文，21 页](paper/main.pdf) · [中文，23 页](paper/main-zh.pdf)
 - LaTeX 源码：[英文](paper/main.tex) · [中文](paper/main-zh.tex)
