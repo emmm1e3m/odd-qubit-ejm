@@ -5,9 +5,9 @@
 **Tingyu Zhang and Yan Cen (corresponding author)**<br>
 Department of Physics, Fudan University, Shanghai, China<br>
 Email: [23300190021@m.fudan.edu.cn](mailto:23300190021@m.fudan.edu.cn) · [cenyan@fudan.edu.cn](mailto:cenyan@fudan.edu.cn)<br>
-**Revised bilingual manuscript, November 24, 2026**
+**Revised bilingual manuscript, November 27, 2026**
 
-- Paper PDFs: [English, 21 pages](paper/main.pdf) · [Chinese, 23 pages](paper/main-zh.pdf)
+- Paper PDFs: [English, 22 pages](paper/main.pdf) · [Chinese, 23 pages](paper/main-zh.pdf)
 - LaTeX sources: [English](paper/main.tex) · [Chinese](paper/main-zh.tex)
 - Reproduction: [exact computations](paper/reproduce/README.md) · [Lean project](lean-unified/README.md) · [formal coverage](lean-unified/COVERAGE.md)
 - [Complete verification archive 1.2.0](archives/multiqubit-ejm-verification-1.2.0.zip) · [Version notes](archives/README.md)
